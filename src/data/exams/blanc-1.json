@@ -1,0 +1,2620 @@
+{
+  "id": "blanc-1",
+  "title": "Examen Blanc 1",
+  "category": "blanc",
+  "subject": "Spécialité Informatique",
+  "durationMinutes": 240,
+  "coefficient": 20,
+  "totalQuestions": 80,
+  "questions": [
+    {
+      "id": 1,
+      "partTitle": "PARTIE 1 : Développement",
+      "prompt": "On considère la fonction récursive C suivante :\n\n{{CODE_0}}\n\n**Qu'affiche l'appel `printf(\"%d\", puissance(2, 4));` ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "16"
+        },
+        {
+          "key": "B",
+          "text": "8"
+        },
+        {
+          "key": "C",
+          "text": "32"
+        },
+        {
+          "key": "D",
+          "text": "4"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "A",
+      "correctAnswerRaw": "✅ Réponse correcte : A (`16`)",
+      "explanation": "La fonction déroule les appels : `2 × puissance(2,3)`, puis `2 × 2 × puissance(2,2)`, etc. On obtient `2 × 2 × 2 × 2 = 16`.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** Le cas de base `n = 0` renvoie `1`, pas `0`. Sans ce cas de base, la récursion ne s'arrêterait jamais (débordement de pile).",
+      "codeBlocks": [
+        {
+          "language": "c",
+          "code": "int puissance(int x, int n) {\n    if (n == 0) return 1;\n    return x * puissance(x, n - 1);\n}"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "partTitle": "PARTIE 1 : Développement",
+      "prompt": "On considère le programme C suivant :\n\n{{CODE_0}}\n\n**Qu'affiche ce programme ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "3 8"
+        },
+        {
+          "key": "B",
+          "text": "8 3"
+        },
+        {
+          "key": "C",
+          "text": "8 8"
+        },
+        {
+          "key": "D",
+          "text": "3 3"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctAnswerRaw": "✅ Réponse correcte : B (`8 3`)",
+      "explanation": "La fonction reçoit les **adresses** de `x` et `y`. Elle échange les valeurs pointées : `*a` reçoit `8`, `*b` reçoit `3`. Les variables d'origine sont donc modifiées.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** Sans les `*` dans les paramètres et sans `&` à l'appel, la fonction échangerait seulement des copies locales. Ici, le passage par adresse modifie bien `x` et `y`.",
+      "codeBlocks": [
+        {
+          "language": "c",
+          "code": "#include <stdio.h>\n\nvoid echanger(int *a, int *b) {\n    int temp = *a;\n    *a = *b;\n    *b = temp;\n}\n\nint main(void) {\n    int x = 3, y = 8;\n    echanger(&x, &y);\n    printf(\"%d %d\", x, y);\n    return 0;\n}"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "partTitle": "PARTIE 1 : Développement",
+      "prompt": "On considère la table `employe(id, nom, salaire, service)`.\n**Quelle requête affiche les services dont le salaire moyen est supérieur à 5000 ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "`SELECT service FROM employe WHERE AVG(salaire) > 5000 GROUP BY service;`"
+        },
+        {
+          "key": "B",
+          "text": "`SELECT service FROM employe HAVING AVG(salaire) > 5000;`"
+        },
+        {
+          "key": "C",
+          "text": "`SELECT service FROM employe GROUP BY service HAVING AVG(salaire) > 5000;`"
+        },
+        {
+          "key": "D",
+          "text": "`SELECT service, AVG(salaire) FROM employe GROUP BY service WHERE AVG(salaire) > 5000;`"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctAnswerRaw": "✅ Réponse correcte : C",
+      "explanation": "`GROUP BY service` regroupe les employés par service. `HAVING AVG(salaire) > 5000` filtre les groupes dont la moyenne dépasse 5000.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** `WHERE` ne peut pas filtrer un agrégat comme `AVG`. Il faut utiliser `HAVING`, et celui-ci se place **après** `GROUP BY`."
+    },
+    {
+      "id": 4,
+      "partTitle": "PARTIE 1 : Développement",
+      "prompt": "On considère le code HTML suivant :\n\n{{CODE_0}}\n\n**Quel est l'effet de l'attribut `rowspan=\"2\"` sur la cellule A ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Elle fusionne deux colonnes."
+        },
+        {
+          "key": "B",
+          "text": "Elle crée une deuxième ligne automatiquement."
+        },
+        {
+          "key": "C",
+          "text": "Elle masque la cellule B."
+        },
+        {
+          "key": "D",
+          "text": "Elle occupe la hauteur de deux lignes."
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "D",
+      "correctAnswerRaw": "✅ Réponse correcte : D (elle occupe la hauteur de deux lignes)",
+      "explanation": "`rowspan=\"2\"` signifie que la cellule A s'étend sur **deux lignes**. La deuxième ligne ne contient donc qu'une seule cellule, `C`, placée à droite de A.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** `colspan` fusionne des **colonnes** ; `rowspan` fusionne des **lignes**. Ne confonds pas les deux attributs.",
+      "codeBlocks": [
+        {
+          "language": "html",
+          "code": "<table border=\"1\">\n  <tr>\n    <td rowspan=\"2\">A</td>\n    <td>B</td>\n  </tr>\n  <tr>\n    <td>C</td>\n  </tr>\n</table>"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "partTitle": "PARTIE 1 : Développement",
+      "prompt": "On considère la structure et la fonction C suivantes :\n\n{{CODE_0}}\n\n**Que fait cette fonction ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Elle insère un nouveau nœud en tête de liste."
+        },
+        {
+          "key": "B",
+          "text": "Elle insère un nouveau nœud en fin de liste."
+        },
+        {
+          "key": "C",
+          "text": "Elle supprime le premier nœud."
+        },
+        {
+          "key": "D",
+          "text": "Elle libère toute la liste."
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "A",
+      "correctAnswerRaw": "✅ Réponse correcte : A (insertion en tête)",
+      "explanation": "Le nouveau nœud `n` reçoit la valeur `v`, puis `n->suivant` pointe vers l'ancienne tête. La fonction retourne `n`, qui devient la nouvelle tête.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** Pour insérer en queue, il faudrait parcourir la liste jusqu'au dernier nœud. Ici, le chaînage direct vers `tete` réalise une insertion en **O(1)** en tête.",
+      "codeBlocks": [
+        {
+          "language": "c",
+          "code": "typedef struct Noeud {\n    int val;\n    struct Noeud *suivant;\n} Noeud;\n\nNoeud *insererTete(Noeud *tete, int v) {\n    Noeud *n = malloc(sizeof(Noeud));\n    n->val = v;\n    n->suivant = tete;\n    return n;\n}"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "partTitle": "PARTIE 1 : Développement",
+      "prompt": "On considère le programme Java suivant :\n\n{{CODE_0}}\n\n**Qu'affiche ce programme ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "A"
+        },
+        {
+          "key": "B",
+          "text": "AB"
+        },
+        {
+          "key": "C",
+          "text": "B"
+        },
+        {
+          "key": "D",
+          "text": "BA"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctAnswerRaw": "✅ Réponse correcte : B (`AB`)",
+      "explanation": "`B.f()` appelle d'abord `super.f()`, qui exécute la méthode de `A` et affiche `A`. Ensuite, elle affiche `B`. Résultat : `AB`.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** `super.f()` ne crée pas un nouvel objet : il appelle la version de la classe mère sur l'objet courant. Sans `super`, la méthode de `A` ne serait pas exécutée.",
+      "codeBlocks": [
+        {
+          "language": "java",
+          "code": "class A {\n    void f() { System.out.print(\"A\"); }\n}\n\nclass B extends A {\n    void f() {\n        super.f();\n        System.out.print(\"B\");\n    }\n}\n\npublic class Test {\n    public static void main(String[] args) {\n        new B().f();\n    }\n}"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "partTitle": "PARTIE 1 : Développement",
+      "prompt": "On considère l'algorithme suivant :\n\n{{CODE_0}}\n\n**Combien d'étoiles sont affichées au total ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "4"
+        },
+        {
+          "key": "B",
+          "text": "8"
+        },
+        {
+          "key": "C",
+          "text": "10"
+        },
+        {
+          "key": "D",
+          "text": "16"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctAnswerRaw": "✅ Réponse correcte : C (`10`)",
+      "explanation": "La boucle interne affiche `i` étoiles pour chaque ligne :\n  * ligne 1 : 1 étoile.\n  * ligne 2 : 2 étoiles.\n  * ligne 3 : 3 étoiles.\n  * ligne 4 : 4 étoiles.\n  * Total : `1 + 2 + 3 + 4 = 10`.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** Ce n'est pas `4 × 4 = 16` : la borne de la boucle interne dépend de `i`. C'est une boucle triangulaire.",
+      "codeBlocks": [
+        {
+          "language": "pascal",
+          "code": "Pour i de 1 à 4 Faire\n    Pour j de 1 à i Faire\n        Ecrire(\"*\")\n    Fin Pour\n    Ecrire(\"\")\nFin Pour"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "partTitle": "PARTIE 1 : Développement",
+      "prompt": "On considère le MCD suivant : `Etudiant` et `Module` sont reliés par l'association `Inscription` de cardinalités `(1,N)` — `(1,N)`, avec l'attribut `date_inscription`.\n**Quelle table faut-il créer lors du passage au modèle relationnel ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Ajouter `id_module` dans `Etudiant`."
+        },
+        {
+          "key": "B",
+          "text": "Ajouter `id_etudiant` dans `Module`."
+        },
+        {
+          "key": "C",
+          "text": "Fusionner `Etudiant` et `Module` en une seule table."
+        },
+        {
+          "key": "D",
+          "text": "Créer une table `Inscription(id_etudiant, id_module, date_inscription)`."
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "D",
+      "correctAnswerRaw": "✅ Réponse correcte : D",
+      "explanation": "Une association plusieurs-à-plusieurs (`N:N`) devient une **table d'association**. Elle contient les clés étrangères des deux entités et les attributs propres à l'association, ici `date_inscription`.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** On ne peut pas stocker une clé étrangère dans une seule des deux entités pour une relation `N:N`, car un étudiant peut avoir plusieurs modules et inversement."
+    },
+    {
+      "id": 9,
+      "partTitle": "PARTIE 1 : Développement",
+      "prompt": "On considère un algorithme qui vérifie si une chaîne est un palindrome en comparant le premier caractère avec le dernier, le deuxième avec l'avant-dernier, etc.\n**Combien de comparaisons effectue-t-il pour la chaîne `RADAR` ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "1"
+        },
+        {
+          "key": "B",
+          "text": "3"
+        },
+        {
+          "key": "C",
+          "text": "4"
+        },
+        {
+          "key": "D",
+          "text": "5"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "E",
+      "correctAnswerRaw": "✅ Réponse correcte : E (le nombre exact est `2`)",
+      "explanation": "`RADAR` contient 5 caractères :\n  * Comparaison `R` / `R` : positions 1 et 5.\n  * Comparaison `A` / `A` : positions 2 et 4.\n  * Le caractère central `D` n'a pas de paire : aucune comparaison.\n  * Total : **2 comparaisons**.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** On ne compare pas le caractère central avec lui-même. Le nombre de comparaisons est `Longueur(ch) DIV 2`, soit `5 DIV 2 = 2`."
+    },
+    {
+      "id": 10,
+      "partTitle": "PARTIE 1 : Développement",
+      "prompt": "On considère le code C suivant :\n\n{{CODE_0}}\n\n**Quel problème présente ce code ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Le premier bloc alloué n'est jamais libéré : c'est une fuite mémoire."
+        },
+        {
+          "key": "B",
+          "text": "Le second appel à `malloc` est interdit tant que le premier bloc existe."
+        },
+        {
+          "key": "C",
+          "text": "Il faut appeler `free` deux fois sur le même pointeur."
+        },
+        {
+          "key": "D",
+          "text": "`sizeof(int)` est invalide dans un appel à `malloc`."
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "A",
+      "correctAnswerRaw": "✅ Réponse correcte : A (fuite mémoire)",
+      "explanation": "Le pointeur `p` est réaffecté par le second `malloc`. L'adresse du premier bloc est perdue, donc ce bloc ne pourra plus être libéré : c'est une fuite mémoire. `free(p)` ne libère que le second bloc.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** `malloc` n'initialise pas la mémoire ; `calloc` initialise à zéro et `realloc` redimensionne un bloc existant. Il faut conserver l'ancien pointeur ou utiliser `realloc` avant de réaffecter, et appeler `free` une seule fois par bloc alloué.",
+      "codeBlocks": [
+        {
+          "language": "c",
+          "code": "int *p = malloc(10 * sizeof(int));\np = malloc(20 * sizeof(int));\nfree(p);"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "partTitle": "PARTIE 1 : Développement",
+      "prompt": "On considère le code HTML et CSS suivant :\n\n{{CODE_0}}\n\n{{CODE_1}}\n\n**De quelle couleur sera affiché le texte `Test` ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "bleu"
+        },
+        {
+          "key": "B",
+          "text": "rouge"
+        },
+        {
+          "key": "C",
+          "text": "vert"
+        },
+        {
+          "key": "D",
+          "text": "noir"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctAnswerRaw": "✅ Réponse correcte : B (rouge)",
+      "explanation": "La règle `#menu .item` contient un **identifiant** et une **classe** : sa spécificité est plus forte que `.item` (une classe) et que `div.item` (une classe + une balise).",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** La spécificité se compare par catégories : ID > classe > balise. Ici, la présence de `#menu` suffit à imposer le rouge, même si la règle `div.item` est écrite après.",
+      "codeBlocks": [
+        {
+          "language": "html",
+          "code": "<div id=\"menu\"><p class=\"item\">Test</p></div>"
+        },
+        {
+          "language": "css",
+          "code": "#menu .item { color: red; }\n.item { color: blue; }\ndiv.item { color: green; }"
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "partTitle": "PARTIE 1 : Développement",
+      "prompt": "On insère successivement les valeurs `50, 30, 70, 20, 40, 60, 80` dans un arbre binaire de recherche (ABR).\n**Quel est le successeur infixe de la valeur `40` ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "30"
+        },
+        {
+          "key": "B",
+          "text": "40"
+        },
+        {
+          "key": "C",
+          "text": "50"
+        },
+        {
+          "key": "D",
+          "text": "60"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctAnswerRaw": "✅ Réponse correcte : C (`50`)",
+      "explanation": "Le parcours infixe donne les valeurs dans l'ordre croissant : `20, 30, 40, 50, 60, 70, 80`. Le successeur de `40` est donc **`50`**.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** Dans un ABR, le successeur infixe d'un nœud ayant un sous-arbre droit est le **minimum de son sous-arbre droit**. Ici, le sous-arbre droit de `40` est vide ; il faut remonter au premier ancêtre dont `40` est dans le sous-arbre gauche, c'est `50`."
+    },
+    {
+      "id": 13,
+      "partTitle": "PARTIE 1 : Développement",
+      "prompt": "On considère le projet suivant :\n\n{{TABLE}}\n\n**Quelle est la marge totale de la tâche `E` ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "0"
+        },
+        {
+          "key": "B",
+          "text": "2"
+        },
+        {
+          "key": "C",
+          "text": "3"
+        },
+        {
+          "key": "D",
+          "text": "4"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "D",
+      "correctAnswerRaw": "✅ Réponse correcte : D (`4`)",
+      "explanation": "* Dates au plus tôt : `A` 0-3, `B` 3-7, `C` 3-5, `D` 7-12, `E` 5-8, `F` 12-14.\n  * Dates au plus tard : `F` 12-14, `D` 7-12, `E` 9-12, `B` 3-7, `C` 7-9, `A` 0-3.\n  * Marge totale de `E` = date au plus tard de fin - date au plus tôt de fin = `12 - 8 = 4`.\n  * Le chemin critique est `A → B → D → F`, de durée `14`.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** La marge totale se calcule avec les dates au plus tard et au plus tôt de la tâche. Une marge nulle indique une tâche critique. Ne confonds pas marge totale et marge libre, qui utilise la date au plus tôt de la tâche suivante.",
+      "tableMarkdown": "| Tâche | Durée | Dépend de |\n|---|---:|---|\n| A | 3 | — |\n| B | 4 | A |\n| C | 2 | A |\n| D | 5 | B |\n| E | 3 | C |\n| F | 2 | D et E |"
+    },
+    {
+      "id": 14,
+      "partTitle": "PARTIE 1 : Développement",
+      "prompt": "On considère la fonction récursive suivante :\n\n{{CODE_0}}\n\n**Que retourne `pgcd(48, 18)` ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "6"
+        },
+        {
+          "key": "B",
+          "text": "12"
+        },
+        {
+          "key": "C",
+          "text": "3"
+        },
+        {
+          "key": "D",
+          "text": "18"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "A",
+      "correctAnswerRaw": "✅ Réponse correcte : A (`6`)",
+      "explanation": "On applique l'algorithme d'Euclide :\n  * `pgcd(48, 18)` → `pgcd(18, 12)` car `48 % 18 = 12`.\n  * `pgcd(18, 12)` → `pgcd(12, 6)` car `18 % 12 = 6`.\n  * `pgcd(12, 6)` → `pgcd(6, 0)` car `12 % 6 = 0`.\n  * `b = 0`, on retourne `6`.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** Le PGCD n'est pas le produit des nombres ni leur différence. C'est le dernier reste non nul, obtenu ici par `6`.",
+      "codeBlocks": [
+        {
+          "language": "c",
+          "code": "int pgcd(int a, int b) {\n    if (b == 0) return a;\n    return pgcd(b, a % b);\n}"
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "partTitle": "PARTIE 1 : Développement",
+      "prompt": "**En Java, quelle visibilité limite un attribut à l'intérieur de sa seule classe ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "`public`"
+        },
+        {
+          "key": "B",
+          "text": "`private`"
+        },
+        {
+          "key": "C",
+          "text": "`protected`"
+        },
+        {
+          "key": "D",
+          "text": "La visibilité par défaut (package)"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctAnswerRaw": "✅ Réponse correcte : B (`private`)",
+      "explanation": "Un membre `private` n'est accessible que depuis la classe qui le déclare. `public` autorise l'accès partout, `protected` autorise les sous-classes et le package, et la visibilité par défaut autorise le package.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** L'encapsulation consiste souvent à déclarer les attributs `private` et à fournir des accesseurs `get`/`set` publics. Ne confonds pas `private` et `protected`."
+    },
+    {
+      "id": 16,
+      "partTitle": "PARTIE 1 : Développement",
+      "prompt": "On considère une table `employe` contenant 5 lignes, dont une seule a la colonne `email` à `NULL`.\n**Quels sont les résultats de `COUNT(*)` et de `COUNT(email)` ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "5 et 5"
+        },
+        {
+          "key": "B",
+          "text": "4 et 4"
+        },
+        {
+          "key": "C",
+          "text": "5 et 4"
+        },
+        {
+          "key": "D",
+          "text": "4 et 5"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctAnswerRaw": "✅ Réponse correcte : C (`5` et `4`)",
+      "explanation": "`COUNT(*)` compte toutes les lignes, y compris celles qui contiennent des `NULL` : résultat `5`. `COUNT(email)` compte uniquement les valeurs non nulles de la colonne : résultat `4`.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** `COUNT(colonne)` ignore les `NULL`, alors que `COUNT(*)` ne les ignore pas. C'est une différence classique en SQL."
+    },
+    {
+      "id": 17,
+      "partTitle": "PARTIE 1 : Développement",
+      "prompt": "On utilise une pile pour vérifier l'expression `{[()()]}`.\n**Quel est le résultat de la vérification ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "L'expression est invalide."
+        },
+        {
+          "key": "B",
+          "text": "La pile déborde."
+        },
+        {
+          "key": "C",
+          "text": "Le résultat est `0`."
+        },
+        {
+          "key": "D",
+          "text": "L'expression est bien parenthésée."
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "D",
+      "correctAnswerRaw": "✅ Réponse correcte : D (l'expression est bien parenthésée)",
+      "explanation": "On empile les ouvrants `{`, `[`, `(`. À chaque fermant, on dépile et on vérifie la correspondance :\n  * `)` correspond à `(`.\n  * `(` puis `)` : correct.\n  * `]` correspond à `[`.\n  * `}` correspond à `{`.\n  * À la fin, la pile est vide : l'expression est valide.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** Il ne suffit pas de compter les ouvrants et les fermants : il faut aussi respecter l'**ordre d'imbrication**. `([)]` serait invalide malgré un nombre équilibré."
+    },
+    {
+      "id": 18,
+      "partTitle": "PARTIE 1 : Développement",
+      "prompt": "**Où sont stockées les données de session PHP (`$_SESSION`) ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Dans un cookie envoyé au navigateur"
+        },
+        {
+          "key": "B",
+          "text": "Dans l'URL de la page"
+        },
+        {
+          "key": "C",
+          "text": "Dans le cache du navigateur"
+        },
+        {
+          "key": "D",
+          "text": "Dans le code HTML de la page"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "E",
+      "correctAnswerRaw": "✅ Réponse correcte : E (les données sont stockées côté serveur)",
+      "explanation": "`session_start()` crée une session côté **serveur**. Les variables `$_SESSION` y sont stockées. Seul un identifiant de session est généralement envoyé au client, via un cookie.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** Les données sensibles ne doivent pas être stockées dans un cookie, car le client peut les lire ou les modifier. La session serveur est plus sûre ; seul le `PHPSESSID` circule."
+    },
+    {
+      "id": 19,
+      "partTitle": "PARTIE 1 : Développement",
+      "prompt": "On considère le tableau `T = [12, 45, 7, 30, 22]`.\n**Quelle est la deuxième plus grande valeur ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "30"
+        },
+        {
+          "key": "B",
+          "text": "45"
+        },
+        {
+          "key": "C",
+          "text": "22"
+        },
+        {
+          "key": "D",
+          "text": "12"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "A",
+      "correctAnswerRaw": "✅ Réponse correcte : A (`30`)",
+      "explanation": "La plus grande valeur est `45`. La deuxième plus grande est **`30`** : les autres valeurs sont `22`, `12` et `7`.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** Si le tableau contenait des doublons du maximum, il faudrait décider si l'on veut la deuxième **valeur distincte** ou la deuxième **occurrence**. Ici, les valeurs sont uniques."
+    },
+    {
+      "id": 20,
+      "partTitle": "PARTIE 1 : Développement",
+      "prompt": "On considère le programme C++ suivant :\n\n{{CODE_0}}\n\n**Qu'affiche ce programme ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "AB~A~B"
+        },
+        {
+          "key": "B",
+          "text": "AB~B~A"
+        },
+        {
+          "key": "C",
+          "text": "BA~A~B"
+        },
+        {
+          "key": "D",
+          "text": "BA~B~A"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctAnswerRaw": "✅ Réponse correcte : B (`AB~B~A`)",
+      "explanation": "À la construction, le constructeur de la classe mère `A` s'exécute avant celui de `B` : `AB`. À la destruction, l'ordre est inverse : le destructeur de `B` s'exécute avant celui de `A` : `~B~A`.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** Retiens la règle : **construction de la base vers la dérivée, destruction de la dérivée vers la base**. C'est l'inverse pour les destructeurs.",
+      "codeBlocks": [
+        {
+          "language": "cpp",
+          "code": "#include <iostream>\nusing namespace std;\n\nclass A {\npublic:\n    A()  { cout << \"A\"; }\n    ~A() { cout << \"~A\"; }\n};\n\nclass B : public A {\npublic:\n    B()  { cout << \"B\"; }\n    ~B() { cout << \"~B\"; }\n};\n\nint main() {\n    B b;\n    return 0;\n}"
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "partTitle": "PARTIE 1 : Développement",
+      "prompt": "Dans un diagramme de cas d'utilisation UML, le cas « Payer par carte » est un comportement **optionnel** déclenché depuis le cas « Passer commande ».\n**Quelle relation faut-il utiliser ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "`<<include>>`"
+        },
+        {
+          "key": "B",
+          "text": "Une généralisation"
+        },
+        {
+          "key": "C",
+          "text": "`<<extend>>`"
+        },
+        {
+          "key": "D",
+          "text": "Une composition"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctAnswerRaw": "✅ Réponse correcte : C (`<<extend>>`)",
+      "explanation": "`<<extend>>` représente un comportement **optionnel** ou conditionnel qui étend un cas d'utilisation de base. Ici, le paiement par carte peut être ajouté à « Passer commande ».",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** `<<include>>` est **obligatoire** et systématique. Si le paiement par carte était toujours nécessaire, on utiliserait `include` ; comme il est optionnel, c'est `extend`."
+    },
+    {
+      "id": 22,
+      "partTitle": "PARTIE 1 : Développement",
+      "prompt": "On considère le tableau `T = [3, 8, 5, 2]`.\n**Quel est le résultat d'un décalage circulaire de une position vers la droite ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "`[3, 8, 5, 2]`"
+        },
+        {
+          "key": "B",
+          "text": "`[8, 5, 2, 3]`"
+        },
+        {
+          "key": "C",
+          "text": "`[3, 8, 2, 5]`"
+        },
+        {
+          "key": "D",
+          "text": "`[2, 3, 8, 5]`"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "D",
+      "correctAnswerRaw": "✅ Réponse correcte : D (`[2, 3, 8, 5]`)",
+      "explanation": "Un décalage circulaire vers la droite déplace chaque élément d'une case vers la droite. Le dernier élément `2` revient au début : `[2, 3, 8, 5]`.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** Un décalage **non circulaire** perdrait le dernier élément. Ici, le mot « circulaire » signifie que `2` revient en première position."
+    },
+    {
+      "id": 23,
+      "partTitle": "PARTIE 1 : Développement",
+      "prompt": "On considère le programme C suivant :\n\n{{CODE_0}}\n\nLe fichier `nombres.txt` contient : `5 -3 8 0 -1 2`.\n**Que contient le fichier `positifs.txt` ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "`5 8 2 `"
+        },
+        {
+          "key": "B",
+          "text": "`5 -3 8 0 -1 2`"
+        },
+        {
+          "key": "C",
+          "text": "`5 8`"
+        },
+        {
+          "key": "D",
+          "text": "`-3 0 -1`"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "A",
+      "correctAnswerRaw": "✅ Réponse correcte : A (`5 8 2 `)",
+      "explanation": "La boucle lit chaque entier et n'écrit dans le fichier de sortie que ceux qui sont **strictement positifs** : `5`, `8` et `2`. Les nombres négatifs et `0` sont ignorés.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** `0` n'est pas positif. `x > 0` exclut donc `0`, contrairement à `x >= 0`. Le fichier de sortie est ouvert en mode `\"w\"`, il est donc créé ou écrasé.",
+      "codeBlocks": [
+        {
+          "language": "c",
+          "code": "FILE *in = fopen(\"nombres.txt\", \"r\");\nFILE *out = fopen(\"positifs.txt\", \"w\");\nint x;\n\nwhile (fscanf(in, \"%d\", &x) == 1) {\n    if (x > 0) fprintf(out, \"%d \", x);\n}\nfclose(in);\nfclose(out);"
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "partTitle": "PARTIE 1 : Développement",
+      "prompt": "**Quelle requête SQL affiche les employés dont le salaire est supérieur au salaire moyen de tous les employés ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "`SELECT nom FROM employe WHERE salaire > AVG(salaire);`"
+        },
+        {
+          "key": "B",
+          "text": "`SELECT nom FROM employe WHERE salaire > (SELECT AVG(salaire) FROM employe);`"
+        },
+        {
+          "key": "C",
+          "text": "`SELECT nom FROM employe WHERE salaire IN (SELECT AVG(salaire) FROM employe);`"
+        },
+        {
+          "key": "D",
+          "text": "`SELECT nom FROM employe HAVING salaire > AVG(salaire);`"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctAnswerRaw": "✅ Réponse correcte : B",
+      "explanation": "La sous-requête `(SELECT AVG(salaire) FROM employe)` calcule la moyenne globale. La requête principale compare ensuite chaque salaire à cette valeur.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** On ne peut pas écrire `WHERE salaire > AVG(salaire)` directement : un agrégat ne peut pas être utilisé seul dans un `WHERE`. Il faut passer par une sous-requête."
+    },
+    {
+      "id": 25,
+      "partTitle": "PARTIE 1 : Développement",
+      "prompt": "On considère le graphe orienté dont la matrice d'adjacence est :\n\n{{TABLE}}\n\n**Quels sont le degré entrant et le degré sortant du sommet `C` ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Degré entrant `1`, degré sortant `2`"
+        },
+        {
+          "key": "B",
+          "text": "Degré entrant `2`, degré sortant `2`"
+        },
+        {
+          "key": "C",
+          "text": "Degré entrant `2`, degré sortant `1`"
+        },
+        {
+          "key": "D",
+          "text": "Degré entrant `3`, degré sortant `1`"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctAnswerRaw": "✅ Réponse correcte : C (entrant `2`, sortant `1`)",
+      "explanation": "Le degré entrant se lit dans la **colonne** du sommet : la colonne `C` contient deux `1` (`A → C` et `B → C`), donc le degré entrant vaut `2`. Le degré sortant se lit dans la **ligne** du sommet : la ligne `C` contient un `1` (`C → A`), donc le degré sortant vaut `1`.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** Dans une matrice d'adjacence orientée, la ligne donne les arcs **sortants** et la colonne donne les arcs **entrants**. Pour un graphe non orienté, la matrice est symétrique et le degré se lit indifféremment sur la ligne ou la colonne.",
+      "tableMarkdown": "|       | A | B | C |\n|-------|---|---|---|\n| **A** | 0 | 1 | 1 |\n| **B** | 0 | 0 | 1 |\n| **C** | 1 | 0 | 0 |"
+    },
+    {
+      "id": 26,
+      "partTitle": "PARTIE 1 : Développement",
+      "prompt": "On considère le CSS suivant :\n\n{{CODE_0}}\n\n**Quelle est la largeur totale occupée par le bloc (contenu + padding + bordures) ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "200px"
+        },
+        {
+          "key": "B",
+          "text": "220px"
+        },
+        {
+          "key": "C",
+          "text": "240px"
+        },
+        {
+          "key": "D",
+          "text": "250px"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "D",
+      "correctAnswerRaw": "✅ Réponse correcte : D (`250px`)",
+      "explanation": "Avec `content-box`, la largeur `200px` ne concerne que le contenu. Il faut ajouter :\n  * padding gauche + droit : `20 + 20 = 40` ;\n  * bordures gauche + droite : `5 + 5 = 10` ;\n  * total : `200 + 40 + 10 = 250px`.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** Avec `box-sizing: border-box`, la largeur totale aurait été directement `200px`. Ici, `content-box` oblige à additionner padding et bordures.",
+      "codeBlocks": [
+        {
+          "language": "css",
+          "code": "div {\n    width: 200px;\n    padding: 20px;\n    border: 5px solid black;\n    box-sizing: content-box;\n}"
+        }
+      ]
+    },
+    {
+      "id": 27,
+      "partTitle": "PARTIE 1 : Développement",
+      "prompt": "On considère une liste simplement chaînée. `prev` pointe sur le nœud qui précède `courant`, et `courant` est le nœud à supprimer.\n**Quelle instruction détache correctement `courant` de la liste ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "`prev->suivant = courant->suivant;`"
+        },
+        {
+          "key": "B",
+          "text": "`prev->suivant = courant;`"
+        },
+        {
+          "key": "C",
+          "text": "`courant->suivant = prev;`"
+        },
+        {
+          "key": "D",
+          "text": "`prev->suivant = NULL;`"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "A",
+      "correctAnswerRaw": "✅ Réponse correcte : A",
+      "explanation": "Pour supprimer `courant`, le nœud précédent doit pointer directement vers le nœud qui suit `courant` : `prev->suivant = courant->suivant`. Il faut ensuite libérer `courant` avec `free`.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** Si l'on met `prev->suivant = NULL`, on perd toute la fin de la liste. Et si l'on libère `courant` sans avoir reculé le pointeur, on crée un chaînage vers une zone mémoire libérée."
+    },
+    {
+      "id": 28,
+      "partTitle": "PARTIE 1 : Développement",
+      "prompt": "On considère le programme Java suivant :\n\n{{CODE_0}}\n\n**Qu'affiche ce programme ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "double"
+        },
+        {
+          "key": "B",
+          "text": "int"
+        },
+        {
+          "key": "C",
+          "text": "Une erreur de compilation"
+        },
+        {
+          "key": "D",
+          "text": "intdouble"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctAnswerRaw": "✅ Réponse correcte : B (`int`)",
+      "explanation": "`5` est un entier littéral de type `int`. Java choisit la méthode la plus spécifique : `f(int)` est prioritaire sur `f(double)`, qui nécessiterait une conversion.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** C'est de la **surcharge** (*overloading*) : même nom, paramètres différents. La méthode choisie dépend du type des arguments à la compilation.",
+      "codeBlocks": [
+        {
+          "language": "java",
+          "code": "public class Test {\n    static void f(int x)   { System.out.print(\"int\"); }\n    static void f(double x) { System.out.print(\"double\"); }\n\n    public static void main(String[] args) {\n        f(5);\n    }\n}"
+        }
+      ]
+    },
+    {
+      "id": 29,
+      "partTitle": "PARTIE 1 : Développement",
+      "prompt": "On considère une relation `Client (1,N)` — `Commande (1,1)` : un client peut passer plusieurs commandes, et chaque commande appartient à un seul client.\n**Lors du passage au modèle relationnel, où faut-il placer la clé étrangère ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "`id_commande` dans la table `Client`"
+        },
+        {
+          "key": "B",
+          "text": "Dans une table d'association `Client_Commande`"
+        },
+        {
+          "key": "C",
+          "text": "`id_client` dans la table `Client`"
+        },
+        {
+          "key": "D",
+          "text": "Aucune clé étrangère n'est nécessaire"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "E",
+      "correctAnswerRaw": "✅ Réponse correcte : E (la clé étrangère `id_client` doit être placée dans la table `Commande`)",
+      "explanation": "Dans une relation `1:N`, la clé étrangère migre du côté **N**, c'est-à-dire dans la table `Commande`. Chaque commande contient donc `id_client`.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** On ne crée pas de table d'association pour une relation `1:N`. La table d'association est réservée aux relations `N:N`."
+    },
+    {
+      "id": 30,
+      "partTitle": "PARTIE 1 : Développement",
+      "prompt": "On applique le tri par sélection au tableau `T = [7, 3, 9, 1, 6]`.\n**Quel est l'état du tableau après les deux premiers passages ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "`[1, 3, 7, 9, 6]`"
+        },
+        {
+          "key": "B",
+          "text": "`[1, 3, 6, 7, 9]`"
+        },
+        {
+          "key": "C",
+          "text": "`[1, 3, 9, 7, 6]`"
+        },
+        {
+          "key": "D",
+          "text": "`[3, 1, 9, 7, 6]`"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctAnswerRaw": "✅ Réponse correcte : C (`[1, 3, 9, 7, 6]`)",
+      "explanation": "* Passage 1 : le minimum est `1`, on l'échange avec `7` → `[1, 3, 9, 7, 6]`.\n  * Passage 2 : le minimum du reste `[3, 9, 7, 6]` est `3`, déjà à sa place → tableau inchangé.\n  * Résultat après deux passages : **`[1, 3, 9, 7, 6]`**.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** Le tri par sélection ne trie pas tout le tableau en un passage. Après `k` passages, les `k` plus petits éléments sont à leur place, mais le reste n'est pas encore trié."
+    },
+    {
+      "id": 31,
+      "partTitle": "PARTIE 1 : Développement",
+      "prompt": "On évalue l'expression postfixée (notation polonaise inverse) suivante :\n\n{{CODE_0}}\n\n**Quel est le résultat ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "10"
+        },
+        {
+          "key": "B",
+          "text": "13"
+        },
+        {
+          "key": "C",
+          "text": "15"
+        },
+        {
+          "key": "D",
+          "text": "16"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "D",
+      "correctAnswerRaw": "✅ Réponse correcte : D (`16`)",
+      "explanation": "* On empile `5`, puis `3`.\n  * `+` dépile `3` et `5`, calcule `5 + 3 = 8`, et empile `8`.\n  * On empile `2`.\n  * `*` dépile `2` et `8`, calcule `8 × 2 = 16`.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** En NPI, l'opérateur s'applique aux **deux derniers** éléments empilés. L'ordre est important pour la soustraction et la division.",
+      "codeBlocks": [
+        {
+          "language": "text",
+          "code": "5 3 + 2 *"
+        }
+      ]
+    },
+    {
+      "id": 32,
+      "partTitle": "PARTIE 1 : Développement",
+      "prompt": "**Dans un formulaire HTML, quels attributs indiquent respectivement l'URL d'envoi et le caractère obligatoire d'un champ ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "`action` et `required`"
+        },
+        {
+          "key": "B",
+          "text": "`method` et `pattern`"
+        },
+        {
+          "key": "C",
+          "text": "`target` et `readonly`"
+        },
+        {
+          "key": "D",
+          "text": "`action` et `placeholder`"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "A",
+      "correctAnswerRaw": "✅ Réponse correcte : A (`action` et `required`)",
+      "explanation": "L'attribut `action` du formulaire contient l'URL vers laquelle les données sont envoyées. L'attribut `required` sur un champ impose qu'il soit rempli avant l'envoi.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** `method` choisit la méthode HTTP (`GET` ou `POST`), `pattern` impose une expression régulière, `placeholder` affiche une indication et `readonly` rend le champ non modifiable mais toujours envoyé. Ne confonds pas `required` avec `readonly`."
+    },
+    {
+      "id": 33,
+      "partTitle": "PARTIE 1 : Développement",
+      "prompt": "On considère le script PHP suivant :\n\n{{CODE_0}}\n\n**Quel est l'effet de ce script ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Il définit un cookie sans redirection."
+        },
+        {
+          "key": "B",
+          "text": "Il définit un cookie puis redirige vers `index.php`."
+        },
+        {
+          "key": "C",
+          "text": "Il supprime le cookie `lang`."
+        },
+        {
+          "key": "D",
+          "text": "Il démarre une session et affiche `index.php`."
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctAnswerRaw": "✅ Réponse correcte : B",
+      "explanation": "`setcookie` crée un cookie `lang` valable une heure. Ensuite, `header(\"Location: index.php\")` envoie une redirection HTTP vers `index.php`.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** `header` doit être appelé avant tout affichage HTML, sinon une erreur « headers already sent » se produit. Le cookie est envoyé au client, puis le serveur redirige.",
+      "codeBlocks": [
+        {
+          "language": "php",
+          "code": "<?php\nsetcookie(\"lang\", \"fr\", time() + 3600);\nheader(\"Location: index.php\");\n?>"
+        }
+      ]
+    },
+    {
+      "id": 34,
+      "partTitle": "PARTIE 1 : Développement",
+      "prompt": "**En Java, que signifie le mot-clé `final` appliqué à une méthode ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "La méthode est abstraite."
+        },
+        {
+          "key": "B",
+          "text": "La méthode est statique."
+        },
+        {
+          "key": "C",
+          "text": "La méthode ne peut pas être redéfinie dans une sous-classe."
+        },
+        {
+          "key": "D",
+          "text": "La méthode ne retourne aucune valeur."
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctAnswerRaw": "✅ Réponse correcte : C",
+      "explanation": "Une méthode `final` ne peut pas être **redéfinie** (*overridden*) par une sous-classe. Elle peut toujours être appelée, mais son comportement est figé.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** `abstract` signifie « sans implémentation, à redéfinir » ; `final` signifie l'inverse : « implémentation définitive, non redéfinissable ». Ne les confonds pas."
+    },
+    {
+      "id": 35,
+      "partTitle": "PARTIE 1 : Développement",
+      "prompt": "On considère le code C suivant :\n\n{{CODE_0}}\n\n**Pourquoi le résultat de ce code n'est-il pas fiable ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Parce que `printf` utilise le mauvais format."
+        },
+        {
+          "key": "B",
+          "text": "Parce que `x` est déclaré `const`."
+        },
+        {
+          "key": "C",
+          "text": "Parce que l'addition provoque toujours un dépassement."
+        },
+        {
+          "key": "D",
+          "text": "Parce que `x` est modifié deux fois sans point de séquence, ce qui est un comportement indéfini."
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "D",
+      "correctAnswerRaw": "✅ Réponse correcte : D",
+      "explanation": "`++x` et `x++` modifient tous les deux `x` dans la même expression, sans point de séquence entre les modifications. En C, cela produit un **comportement indéfini** : le résultat dépend du compilateur.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** Ne calcule pas `6 + 6` ou `6 + 5` comme si l'ordre était garanti. En C, une expression qui modifie deux fois la même variable sans séquencement n'a pas de résultat standard.",
+      "codeBlocks": [
+        {
+          "language": "c",
+          "code": "int x = 5;\nint y = ++x + x++;\nprintf(\"%d\", y);"
+        }
+      ]
+    },
+    {
+      "id": 36,
+      "partTitle": "PARTIE 1 : Développement",
+      "prompt": "Dans un diagramme de cas d'utilisation UML, l'acteur `Administrateur` hérite de tous les cas d'utilisation de l'acteur `Utilisateur`.\n**Quelle relation faut-il représenter entre les deux acteurs ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Une généralisation"
+        },
+        {
+          "key": "B",
+          "text": "Un `<<include>>`"
+        },
+        {
+          "key": "C",
+          "text": "Un `<<extend>>`"
+        },
+        {
+          "key": "D",
+          "text": "Une composition"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "A",
+      "correctAnswerRaw": "✅ Réponse correcte : A (une généralisation)",
+      "explanation": "La généralisation entre acteurs représente un héritage de comportements : `Administrateur` est une spécialisation de `Utilisateur` et hérite de ses cas d'utilisation.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** `include` et `extend` relient des **cas d'utilisation**, pas des acteurs. La généralisation peut relier des acteurs ou des cas d'utilisation."
+    },
+    {
+      "id": 37,
+      "partTitle": "PARTIE 2 : Systèmes et Réseaux",
+      "prompt": "**Un processus qui vient d'être créé par le système d'exploitation passe généralement dans quel état ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Élu"
+        },
+        {
+          "key": "B",
+          "text": "Prêt"
+        },
+        {
+          "key": "C",
+          "text": "Bloqué"
+        },
+        {
+          "key": "D",
+          "text": "Terminé"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctAnswerRaw": "✅ Réponse correcte : B (Prêt)",
+      "explanation": "Un processus nouvellement créé est placé dans la file des processus **prêts**. Il attend que l'ordonnanceur lui attribue le processeur pour passer à l'état **élu** (en exécution).",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** « Prêt » ne signifie pas « en train de s'exécuter ». Il signifie que toutes les ressources sont disponibles sauf le processeur."
+    },
+    {
+      "id": 38,
+      "partTitle": "PARTIE 2 : Systèmes et Réseaux",
+      "prompt": "**Dans une topologie maillée complète reliant `6` équipements, combien de câbles faut-il ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "6"
+        },
+        {
+          "key": "B",
+          "text": "12"
+        },
+        {
+          "key": "C",
+          "text": "15"
+        },
+        {
+          "key": "D",
+          "text": "30"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctAnswerRaw": "✅ Réponse correcte : C (`15`)",
+      "explanation": "Chaque équipement est relié à tous les autres. Le nombre de liaisons est donné par la formule :\n  `n(n - 1) / 2 = 6 × 5 / 2 = 15`.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** Ne réponds pas `6 × 5 = 30` : chaque câble est compté deux fois (une fois par extrémité). Il faut diviser par 2."
+    },
+    {
+      "id": 39,
+      "partTitle": "PARTIE 2 : Systèmes et Réseaux",
+      "prompt": "**Quel est l'unité de données (PDU) de la couche réseau du modèle OSI ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Le bit"
+        },
+        {
+          "key": "B",
+          "text": "La trame"
+        },
+        {
+          "key": "C",
+          "text": "Le segment"
+        },
+        {
+          "key": "D",
+          "text": "Le paquet"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "D",
+      "correctAnswerRaw": "✅ Réponse correcte : D (le paquet)",
+      "explanation": "À la couche réseau (couche 3), l'unité de données est le **paquet** (ou datagramme). La couche liaison utilise la trame, la couche transport le segment, et la couche physique le bit.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** Ne confonds pas segment (transport), paquet (réseau) et trame (liaison). Chaque couche encapsule le PDU de la couche supérieure."
+    },
+    {
+      "id": 40,
+      "partTitle": "PARTIE 2 : Systèmes et Réseaux",
+      "prompt": "**Que vaut le nombre binaire `110101` en décimal ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "51"
+        },
+        {
+          "key": "B",
+          "text": "52"
+        },
+        {
+          "key": "C",
+          "text": "54"
+        },
+        {
+          "key": "D",
+          "text": "55"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "E",
+      "correctAnswerRaw": "✅ Réponse correcte : E (la valeur exacte est `53`)",
+      "explanation": "On additionne les puissances de 2 :\n  `110101` = `32 + 16 + 4 + 1 = 53`.\n  La valeur `53` n'apparaît pas dans les choix A à D.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** Compte les positions depuis la droite en partant de `2^0`. Le bit le plus à gauche vaut `32`, pas `64`."
+    },
+    {
+      "id": 41,
+      "partTitle": "PARTIE 2 : Systèmes et Réseaux",
+      "prompt": "**Quelle information ne figure généralement pas dans le bloc de contrôle de processus (PCB) ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Le contenu complet du disque dur"
+        },
+        {
+          "key": "B",
+          "text": "L'identifiant du processus (PID)"
+        },
+        {
+          "key": "C",
+          "text": "L'état du processus"
+        },
+        {
+          "key": "D",
+          "text": "Les valeurs des registres sauvegardées"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "A",
+      "correctAnswerRaw": "✅ Réponse correcte : A (le contenu complet du disque dur)",
+      "explanation": "Le PCB contient les informations nécessaires à la gestion d'un processus : PID, état, pointeur de pile, registres sauvegardés, priorité, fichiers ouverts, etc. Il ne stocke pas le contenu du disque dur.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** Le PCB est une structure **en mémoire centrale**, propre à chaque processus. Le disque est géré par le système de fichiers, pas par le PCB."
+    },
+    {
+      "id": 42,
+      "partTitle": "PARTIE 2 : Systèmes et Réseaux",
+      "prompt": "Un switch possède 4 ports. Chaque port est relié à un hub auquel sont connectés 3 ordinateurs. Il n'y a pas de VLAN.\n**Combien y a-t-il de domaines de collision et de domaines de diffusion ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "1 domaine de collision et 1 domaine de diffusion"
+        },
+        {
+          "key": "B",
+          "text": "4 domaines de collision et 1 domaine de diffusion"
+        },
+        {
+          "key": "C",
+          "text": "4 domaines de collision et 4 domaines de diffusion"
+        },
+        {
+          "key": "D",
+          "text": "1 domaine de collision et 4 domaines de diffusion"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctAnswerRaw": "✅ Réponse correcte : B (4 collisions, 1 diffusion)",
+      "explanation": "Chaque port du switch constitue un **domaine de collision** distinct : il y a donc 4 domaines de collision. Le switch, sans VLAN, forme un seul **domaine de diffusion** : les broadcasts sont propagés à tous les ports.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** Un hub ne sépare pas les domaines de collision ; c'est le switch qui les sépare. Pour séparer les domaines de diffusion, il faut un routeur ou des VLAN."
+    },
+    {
+      "id": 43,
+      "partTitle": "PARTIE 2 : Systèmes et Réseaux",
+      "prompt": "**Quelle porte logique donne une sortie `0` uniquement lorsque ses deux entrées valent `1` ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "La porte AND"
+        },
+        {
+          "key": "B",
+          "text": "La porte OR"
+        },
+        {
+          "key": "C",
+          "text": "La porte NAND"
+        },
+        {
+          "key": "D",
+          "text": "La porte NOR"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctAnswerRaw": "✅ Réponse correcte : C (NAND)",
+      "explanation": "La porte NAND est l'inverse de AND. Elle vaut `0` seulement quand `A = 1` et `B = 1` ; dans tous les autres cas, elle vaut `1`.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** NOR vaut `1` uniquement quand les deux entrées valent `0`. NAND et NOR sont les portes universelles : chacune permet de construire toutes les autres."
+    },
+    {
+      "id": 44,
+      "partTitle": "PARTIE 2 : Systèmes et Réseaux",
+      "prompt": "Trois processus arrivent dans l'ordre suivant et sont ordonnancés en **FCFS** :\n\n{{TABLE}}\n\n**Quel est le temps d'attente moyen ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "2"
+        },
+        {
+          "key": "B",
+          "text": "3"
+        },
+        {
+          "key": "C",
+          "text": "5"
+        },
+        {
+          "key": "D",
+          "text": "3,33"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "D",
+      "correctAnswerRaw": "✅ Réponse correcte : D (`3,33`)",
+      "explanation": "En FCFS, l'ordre est P1, P2, P3 :\n  * P1 s'exécute de 0 à 5 : attente `0`.\n  * P2 s'exécute de 5 à 8 : attente `5 - 1 = 4`.\n  * P3 s'exécute de 8 à 10 : attente `8 - 2 = 6`.\n  * Moyenne : `(0 + 4 + 6) / 3 = 10 / 3 ≈ 3,33`.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** Le temps d'attente se calcule avec `début d'exécution - instant d'arrivée`, et non avec la durée du processus.",
+      "tableMarkdown": "| Processus | Arrivée | Durée |\n|---|---:|---:|\n| P1 | 0 | 5 |\n| P2 | 1 | 3 |\n| P3 | 2 | 2 |"
+    },
+    {
+      "id": 45,
+      "partTitle": "PARTIE 2 : Systèmes et Réseaux",
+      "prompt": "On considère l'adresse `172.16.45.130/20`.\n**Quelle est l'adresse du réseau et quelle est l'adresse de diffusion ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Réseau `172.16.32.0`, diffusion `172.16.47.255`"
+        },
+        {
+          "key": "B",
+          "text": "Réseau `172.16.45.0`, diffusion `172.16.45.255`"
+        },
+        {
+          "key": "C",
+          "text": "Réseau `172.16.32.0`, diffusion `172.16.32.255`"
+        },
+        {
+          "key": "D",
+          "text": "Réseau `172.16.40.0`, diffusion `172.16.47.255`"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "A",
+      "correctAnswerRaw": "✅ Réponse correcte : A",
+      "explanation": "Le masque `/20` correspond à `255.255.240.0`. Le troisième octet varie par blocs de `16` : `32-47`. L'adresse `45` appartient donc au réseau `172.16.32.0`, et la diffusion est `172.16.47.255`.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** Ne regarde pas seulement le premier octet. Le découpage se fait dans le troisième octet ici, avec un pas de `256 - 240 = 16`."
+    },
+    {
+      "id": 46,
+      "partTitle": "PARTIE 2 : Systèmes et Réseaux",
+      "prompt": "On additionne deux nombres sur 8 bits en complément à deux : `0111 1111` + `0000 0001`.\n**Quel est le résultat et que se passe-t-il ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "`1000 0000`, soit `128` sans dépassement"
+        },
+        {
+          "key": "B",
+          "text": "`1000 0000`, soit `-128`, avec dépassement de capacité"
+        },
+        {
+          "key": "C",
+          "text": "`0000 0000`, sans dépassement"
+        },
+        {
+          "key": "D",
+          "text": "`1111 1111`, soit `-1`, sans dépassement"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctAnswerRaw": "✅ Réponse correcte : B",
+      "explanation": "`0111 1111` vaut `127`. Ajouter `1` donne `1000 0000`, qui vaut `-128` en complément à deux sur 8 bits. La somme dépasse la capacité maximale `127` : il y a **dépassement**.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** En complément à deux, le bit de poids fort est le bit de signe. `1000 0000` n'est pas `128` mais `-128`. Un dépassement se produit quand on additionne deux positifs et que le résultat devient négatif."
+    },
+    {
+      "id": 47,
+      "partTitle": "PARTIE 2 : Systèmes et Réseaux",
+      "prompt": "On applique l'ordonnancement **SJF non préemptif** aux processus suivants :\n\n{{TABLE}}\n\n**Quel est le temps d'attente moyen ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "2,50"
+        },
+        {
+          "key": "B",
+          "text": "3,25"
+        },
+        {
+          "key": "C",
+          "text": "3,75"
+        },
+        {
+          "key": "D",
+          "text": "4,25"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctAnswerRaw": "✅ Réponse correcte : C (`3,75`)",
+      "explanation": "P1 s'exécute de 0 à 7. À l'instant 7, les processus disponibles sont P2 (4), P3 (1) et P4 (3) : on choisit P3, puis P4, puis P2.\n  * P1 : attente `0`.\n  * P2 : commence à 11, attente `11 - 2 = 9`.\n  * P3 : commence à 7, attente `7 - 4 = 3`.\n  * P4 : commence à 8, attente `8 - 5 = 3`.\n  * Moyenne : `(0 + 9 + 3 + 3) / 4 = 15 / 4 = 3,75`.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** En SJF non préemptif, on ne choisit un nouveau processus qu'à la fin du processus courant. Un processus plus court arrivé entre-temps ne peut pas interrompre P1.",
+      "tableMarkdown": "| Processus | Arrivée | Durée |\n|---|---:|---:|\n| P1 | 0 | 7 |\n| P2 | 2 | 4 |\n| P3 | 4 | 1 |\n| P4 | 5 | 3 |"
+    },
+    {
+      "id": 48,
+      "partTitle": "PARTIE 2 : Systèmes et Réseaux",
+      "prompt": "**Quel est l'ordre correct de l'encapsulation des données, de la couche application vers la couche physique ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Bits → trame → paquet → segment → données"
+        },
+        {
+          "key": "B",
+          "text": "Paquet → segment → trame → bits → données"
+        },
+        {
+          "key": "C",
+          "text": "Trame → paquet → segment → données → bits"
+        },
+        {
+          "key": "D",
+          "text": "Données → segment → paquet → trame → bits"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "D",
+      "correctAnswerRaw": "✅ Réponse correcte : D",
+      "explanation": "Les données descendent la pile protocolaire : données applicatives → segment (transport) → paquet (réseau) → trame (liaison) → bits (physique).",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** À la réception, l'ordre est inverse : on désencapsule les bits, puis la trame, le paquet et le segment. Chaque couche ajoute son en-tête."
+    },
+    {
+      "id": 49,
+      "partTitle": "PARTIE 2 : Systèmes et Réseaux",
+      "prompt": "**Quelle égalité traduit correctement la loi de De Morgan pour `NOT(A AND B)` ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "`(NOT A) AND (NOT B)`"
+        },
+        {
+          "key": "B",
+          "text": "`A OR B`"
+        },
+        {
+          "key": "C",
+          "text": "`NOT(A OR B)`"
+        },
+        {
+          "key": "D",
+          "text": "`A AND (NOT B)`"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "E",
+      "correctAnswerRaw": "✅ Réponse correcte : E (la bonne réponse est `(NOT A) OR (NOT B)`)",
+      "explanation": "La loi de De Morgan dit que la négation d'un ET devient un OU de négations :\n  `NOT(A AND B) = (NOT A) OR (NOT B)`.\n  Cette expression n'est pas proposée dans les choix A à D.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** On ne se contente pas de nier chaque variable : il faut aussi **changer l'opérateur**. `NOT(A AND B)` ne donne pas `NOT A AND NOT B`."
+    },
+    {
+      "id": 50,
+      "partTitle": "PARTIE 2 : Systèmes et Réseaux",
+      "prompt": "On applique l'ordonnancement **SRTF** (SJF préemptif) aux processus suivants :\n\n{{TABLE}}\n\n**Quel est le temps d'attente moyen ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "2"
+        },
+        {
+          "key": "B",
+          "text": "2,33"
+        },
+        {
+          "key": "C",
+          "text": "3"
+        },
+        {
+          "key": "D",
+          "text": "3,33"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "A",
+      "correctAnswerRaw": "✅ Réponse correcte : A (`2`)",
+      "explanation": "* `0-2` : P1 (reste 5).\n  * `2-4` : P2, plus court que P1 (reste 2).\n  * `4-5` : P3 (durée 1) termine.\n  * `5-7` : P2 termine.\n  * `7-12` : P1 termine.\n  * Attentes : P1 = `12 - 0 - 7 = 5` ; P2 = `7 - 2 - 4 = 1` ; P3 = `5 - 4 - 1 = 0`.\n  * Moyenne : `(5 + 1 + 0) / 3 = 2`.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** En SRTF, on compare le **temps restant** à chaque arrivée, pas la durée initiale. P1 est interrompu deux fois.",
+      "tableMarkdown": "| Processus | Arrivée | Durée |\n|---|---:|---:|\n| P1 | 0 | 7 |\n| P2 | 2 | 4 |\n| P3 | 4 | 1 |"
+    },
+    {
+      "id": 51,
+      "partTitle": "PARTIE 2 : Systèmes et Réseaux",
+      "prompt": "On considère l'adresse `192.168.5.70/28`.\n**Quelles sont la première et la dernière adresse utilisables de son sous-réseau ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "`192.168.5.64` et `192.168.5.79`"
+        },
+        {
+          "key": "B",
+          "text": "`192.168.5.65` et `192.168.5.78`"
+        },
+        {
+          "key": "C",
+          "text": "`192.168.5.65` et `192.168.5.79`"
+        },
+        {
+          "key": "D",
+          "text": "`192.168.5.66` et `192.168.5.78`"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctAnswerRaw": "✅ Réponse correcte : B",
+      "explanation": "`/28` donne un bloc de `16` adresses : `64` à `79`. L'adresse réseau est `192.168.5.64` et la diffusion `192.168.5.79`. Les adresses utilisables vont donc de `192.168.5.65` à `192.168.5.78`.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** L'adresse réseau et l'adresse de diffusion ne sont jamais attribuables à une machine. Il reste `16 - 2 = 14` adresses utilisables."
+    },
+    {
+      "id": 52,
+      "partTitle": "PARTIE 2 : Systèmes et Réseaux",
+      "prompt": "**Quelle porte logique donne une sortie `1` lorsque ses deux entrées sont différentes ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "La porte AND"
+        },
+        {
+          "key": "B",
+          "text": "La porte OR"
+        },
+        {
+          "key": "C",
+          "text": "La porte XOR"
+        },
+        {
+          "key": "D",
+          "text": "La porte NOR"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctAnswerRaw": "✅ Réponse correcte : C (XOR)",
+      "explanation": "La porte XOR (OU exclusif) vaut `1` si les entrées sont différentes (`0,1` ou `1,0`) et `0` si elles sont identiques (`0,0` ou `1,1`).",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** XOR est très utilisée pour la parité et le chiffrement. Ne la confonds pas avec OR, qui vaut aussi `1` quand les deux entrées valent `1`."
+    },
+    {
+      "id": 53,
+      "partTitle": "PARTIE 2 : Systèmes et Réseaux",
+      "prompt": "**Quelle commande Linux permet de rechercher récursivement tous les fichiers dont le nom se termine par `.c` dans le répertoire courant ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "`grep -r \"*.c\" .`"
+        },
+        {
+          "key": "B",
+          "text": "`ls *.c`"
+        },
+        {
+          "key": "C",
+          "text": "`find . -type c`"
+        },
+        {
+          "key": "D",
+          "text": "`find . -name \"*.c\"`"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "D",
+      "correctAnswerRaw": "✅ Réponse correcte : D (`find . -name \"*.c\"`)",
+      "explanation": "`find .` parcourt le répertoire courant et ses sous-répertoires. `-name \"*.c\"` filtre les fichiers dont le nom correspond au motif `.c`.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** `grep` cherche du **contenu** dans des fichiers, pas des noms de fichiers. `ls *.c` ne regarde que le répertoire courant, sans descente récursive."
+    },
+    {
+      "id": 54,
+      "partTitle": "PARTIE 2 : Systèmes et Réseaux",
+      "prompt": "**Quelle commande Windows affiche la liste des processus en cours d'exécution ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "`tasklist`"
+        },
+        {
+          "key": "B",
+          "text": "`taskkill`"
+        },
+        {
+          "key": "C",
+          "text": "`attrib`"
+        },
+        {
+          "key": "D",
+          "text": "`sfc`"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "A",
+      "correctAnswerRaw": "✅ Réponse correcte : A (`tasklist`)",
+      "explanation": "`tasklist` liste les processus actifs avec leur PID et leur utilisation mémoire. `taskkill` sert à terminer un processus, `attrib` gère les attributs de fichiers, `sfc` vérifie les fichiers système.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** `tasklist` = lister ; `taskkill` = tuer. Ces deux commandes sont souvent proposées ensemble pour tester la confusion."
+    },
+    {
+      "id": 55,
+      "partTitle": "PARTIE 2 : Systèmes et Réseaux",
+      "prompt": "On veut simplifier la fonction booléenne :\n`F = A'B' + A'B + AB`\n**Quelle est l'expression simplifiée ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "`A + B`"
+        },
+        {
+          "key": "B",
+          "text": "`A' + B`"
+        },
+        {
+          "key": "C",
+          "text": "`A.B`"
+        },
+        {
+          "key": "D",
+          "text": "`A'.B'`"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctAnswerRaw": "✅ Réponse correcte : B (`A' + B`)",
+      "explanation": "On regroupe d'abord `A'B' + A'B = A'(B' + B) = A'`. Il reste `A' + AB`. Par absorption, `A' + AB = A' + B`.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** `A' + AB` n'est pas égal à `A' + A` ni à `B` seul. L'absorption donne bien `A' + B` : si `A = 0`, `F = 1` ; si `A = 1`, `F = B`."
+    },
+    {
+      "id": 56,
+      "partTitle": "PARTIE 2 : Systèmes et Réseaux",
+      "prompt": "Dans une topologie en étoile, `8` postes sont reliés à un switch central.\n**Combien de câbles sont nécessaires ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "7"
+        },
+        {
+          "key": "B",
+          "text": "16"
+        },
+        {
+          "key": "C",
+          "text": "8"
+        },
+        {
+          "key": "D",
+          "text": "28"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctAnswerRaw": "✅ Réponse correcte : C (`8`)",
+      "explanation": "Chaque poste possède un câble dédié vers le switch central. Pour `8` postes, il faut donc **8 câbles**.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** La formule `n(n-1)/2` s'applique à une topologie **maillée**, pas à une étoile. En étoile, le nombre de câbles est égal au nombre de postes."
+    },
+    {
+      "id": 57,
+      "partTitle": "PARTIE 2 : Systèmes et Réseaux",
+      "prompt": "**Quelle commande Linux affiche les noms d'utilisateurs triés, extraits du fichier `/etc/passwd` ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "`sort /etc/passwd | cut -f1`"
+        },
+        {
+          "key": "B",
+          "text": "`grep -f1 /etc/passwd | sort`"
+        },
+        {
+          "key": "C",
+          "text": "`wc -l /etc/passwd | sort`"
+        },
+        {
+          "key": "D",
+          "text": "`cut -d: -f1 /etc/passwd | sort`"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "D",
+      "correctAnswerRaw": "✅ Réponse correcte : D (`cut -d: -f1 /etc/passwd | sort`)",
+      "explanation": "`cut -d: -f1` découpe chaque ligne avec le séparateur `:` et garde le premier champ, c'est-à-dire le nom d'utilisateur. Le tube `|` envoie le résultat à `sort`, qui trie les noms par ordre alphabétique.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** Sans `-d:`, `cut` utilise la tabulation par défaut et ne découpe pas correctement `/etc/passwd`. L'ordre des commandes dans le tube est aussi important. Pour filtrer des lignes, utilise `grep` (options `-i`, `-v`, `-n`) ; pour compter, `wc -l` ; `>` redirige la sortie, `>>` ajoute et `|` enchaîne les commandes."
+    },
+    {
+      "id": 58,
+      "partTitle": "PARTIE 2 : Systèmes et Réseaux",
+      "prompt": "**Quel équipement travaille principalement au niveau 3 (couche réseau) du modèle OSI ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Le hub"
+        },
+        {
+          "key": "B",
+          "text": "Le switch"
+        },
+        {
+          "key": "C",
+          "text": "Le répéteur"
+        },
+        {
+          "key": "D",
+          "text": "Le pont"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "E",
+      "correctAnswerRaw": "✅ Réponse correcte : E (la bonne réponse est le routeur)",
+      "explanation": "Le routeur travaille au niveau 3 : il prend des décisions d'acheminement à partir des adresses IP. Le hub et le répéteur sont au niveau 1, le switch et le pont au niveau 2.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** Un switch peut être « multicouche » et faire du routage, mais un switch classique reste un équipement de niveau 2. La question porte sur le rôle principal."
+    },
+    {
+      "id": 59,
+      "partTitle": "PARTIE 2 : Systèmes et Réseaux",
+      "prompt": "**Quel registre du processeur contient l'adresse de la prochaine instruction à exécuter ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Le compteur de programme (PC)"
+        },
+        {
+          "key": "B",
+          "text": "Le registre d'instruction (IR)"
+        },
+        {
+          "key": "C",
+          "text": "L'accumulateur (ACC)"
+        },
+        {
+          "key": "D",
+          "text": "Le registre d'état (PSW)"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "A",
+      "correctAnswerRaw": "✅ Réponse correcte : A (PC)",
+      "explanation": "Le PC (*Program Counter*) contient l'adresse de la prochaine instruction. L'IR contient l'instruction en cours de décodage, l'ACC stocke des données temporaires, et le PSW contient les indicateurs d'état.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** Le PC est mis à jour après chaque instruction, souvent en l'incrémentant, ou modifié par un saut. Ne le confonds pas avec l'IR, qui contient l'instruction elle-même."
+    },
+    {
+      "id": 60,
+      "partTitle": "PARTIE 2 : Systèmes et Réseaux",
+      "prompt": "**Quel est le résultat binaire de la soustraction `1011 - 0110` ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "`0100`"
+        },
+        {
+          "key": "B",
+          "text": "`0101`"
+        },
+        {
+          "key": "C",
+          "text": "`0110`"
+        },
+        {
+          "key": "D",
+          "text": "`1111`"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctAnswerRaw": "✅ Réponse correcte : B (`0101`)",
+      "explanation": "`1011` vaut `11` et `0110` vaut `6`. Donc `11 - 6 = 5`, et `5` s'écrit `0101` en binaire.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** Vérifie le résultat par addition : `0101 + 0110 = 1011`. En binaire, `1 - 0 = 1` et `0 - 1` nécessite un emprunt."
+    },
+    {
+      "id": 61,
+      "partTitle": "PARTIE 3 : Logiciels et Multimédia",
+      "prompt": "Dans un publipostage Word, on veut afficher « Monsieur » ou « Madame » selon la civilité du destinataire.\n**Quel champ de fusion permet de réaliser ce choix conditionnel ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "`MERGEFIELD`"
+        },
+        {
+          "key": "B",
+          "text": "`NEXT`"
+        },
+        {
+          "key": "C",
+          "text": "`IF`"
+        },
+        {
+          "key": "D",
+          "text": "`PAGE`"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctAnswerRaw": "✅ Réponse correcte : C (`IF`)",
+      "explanation": "Le champ `IF` permet d'insérer une condition dans un publipostage : si la civilité vaut « M. », afficher « Monsieur », sinon afficher « Madame ». C'est un champ de fusion conditionnel.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** `MERGEFIELD` insère simplement la valeur d'un champ de la source de données ; il ne prend pas de décision. `NEXT` passe à l'enregistrement suivant."
+    },
+    {
+      "id": 62,
+      "partTitle": "PARTIE 3 : Logiciels et Multimédia",
+      "prompt": "Dans Word, on veut qu'une partie du document possède un en-tête différent, sans modifier l'en-tête des autres parties.\n**Que faut-il faire ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Insérer un saut de page simple."
+        },
+        {
+          "key": "B",
+          "text": "Insérer un saut de colonne."
+        },
+        {
+          "key": "C",
+          "text": "Changer la police de l'en-tête."
+        },
+        {
+          "key": "D",
+          "text": "Insérer un saut de section, puis désactiver « Lier au précédent » dans l'en-tête."
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "D",
+      "correctAnswerRaw": "✅ Réponse correcte : D",
+      "explanation": "Un saut de section crée une nouvelle section. En désactivant « Lier au précédent », l'en-tête de cette section devient indépendant de celui de la section précédente.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** Un saut de page ne crée pas de nouvelle section : l'en-tête reste lié. Il faut bien un **saut de section** pour modifier la mise en page ou les en-têtes."
+    },
+    {
+      "id": 63,
+      "partTitle": "PARTIE 3 : Logiciels et Multimédia",
+      "prompt": "**Quel est l'intérêt d'appliquer les styles « Titre 1 », « Titre 2 », etc. avant d'insérer une table des matières dans Word ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "La table des matières peut être générée et mise à jour automatiquement."
+        },
+        {
+          "key": "B",
+          "text": "Le document devient impossible à modifier."
+        },
+        {
+          "key": "C",
+          "text": "Les images sont supprimées."
+        },
+        {
+          "key": "D",
+          "text": "Le document est automatiquement converti en PDF."
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "A",
+      "correctAnswerRaw": "✅ Réponse correcte : A",
+      "explanation": "Word repère les paragraphes portant les styles de titre et construit la table des matières à partir de leur niveau hiérarchique. Après modification, il suffit de mettre à jour la table.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** Mettre le texte en gras et en grand ne crée pas un titre structurel. Pour une table des matières fiable, il faut utiliser les **styles de titre**, pas un simple formatage manuel."
+    },
+    {
+      "id": 64,
+      "partTitle": "PARTIE 3 : Logiciels et Multimédia",
+      "prompt": "**Quelle est la différence entre un saut de page et un saut de section dans Word ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Le saut de page permet de changer les en-têtes ; le saut de section non."
+        },
+        {
+          "key": "B",
+          "text": "Le saut de section permet d'avoir une mise en page et des en-têtes indépendants ; le saut de page non."
+        },
+        {
+          "key": "C",
+          "text": "Les deux sont strictement identiques."
+        },
+        {
+          "key": "D",
+          "text": "Le saut de section supprime le texte qui le suit."
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctAnswerRaw": "✅ Réponse correcte : B",
+      "explanation": "Le saut de page force un passage à la page suivante dans la même section. Le saut de section crée une nouvelle section, qui peut avoir ses propres marges, orientation, en-têtes et pieds de page.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** Pour changer l'orientation d'une seule page ou avoir des en-têtes différents, il faut un saut de section. Un saut de page ne suffit pas."
+    },
+    {
+      "id": 65,
+      "partTitle": "PARTIE 3 : Logiciels et Multimédia",
+      "prompt": "On considère la formule Excel suivante :\n\n{{CODE_0}}\n\nAvec `A1 = 12`, `B1 = \"Non\"` et `C1 = 7`.\n**Quel est le résultat affiché ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Refusé"
+        },
+        {
+          "key": "B",
+          "text": "Erreur"
+        },
+        {
+          "key": "C",
+          "text": "Validé"
+        },
+        {
+          "key": "D",
+          "text": "VRAI"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctAnswerRaw": "✅ Réponse correcte : C (`Validé`)",
+      "explanation": "* `A1>=10` est vrai (`12>=10`).\n  * `B1=\"Oui\"` est faux, mais `C1>5` est vrai (`7>5`). Le `OU` renvoie donc vrai.\n  * `ET(VRAI;VRAI)` renvoie vrai. La formule affiche « Validé ».",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** Le `OU` n'a besoin que d'**une seule** condition vraie. Le `ET` exige que **toutes** les conditions soient vraies.",
+      "codeBlocks": [
+        {
+          "language": "excel",
+          "code": "=SI(ET(A1>=10;OU(B1=\"Oui\";C1>5));\"Validé\";\"Refusé\")"
+        }
+      ]
+    },
+    {
+      "id": 66,
+      "partTitle": "PARTIE 3 : Logiciels et Multimédia",
+      "prompt": "Dans Excel, la cellule `D2` contient la formule `=$A2*B$1`. On copie cette formule vers la cellule `E3`.\n**Quelle formule obtient-on ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "`=$A2*B$1`"
+        },
+        {
+          "key": "B",
+          "text": "`=$A3*B$1`"
+        },
+        {
+          "key": "C",
+          "text": "`=A3*C1`"
+        },
+        {
+          "key": "D",
+          "text": "`=$A3*C$1`"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "D",
+      "correctAnswerRaw": "✅ Réponse correcte : D (`=$A3*C$1`)",
+      "explanation": "* `$A2` : la colonne A est absolue, la ligne 2 est relative. En descendant de D2 à E3, la ligne devient 3 → `$A3`.\n  * `B$1` : la colonne B est relative, la ligne 1 est absolue. En allant de D à E, la colonne devient C → `C$1`.\n  * Résultat : `=$A3*C$1`.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** Le `$` bloque uniquement l'élément qui le suit. `$A2` ne bloque pas la ligne ; `B$1` ne bloque pas la colonne."
+    },
+    {
+      "id": 67,
+      "partTitle": "PARTIE 3 : Logiciels et Multimédia",
+      "prompt": "**Que signifie la référence Excel `$A1` ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "La colonne et la ligne sont relatives."
+        },
+        {
+          "key": "B",
+          "text": "La colonne est relative et la ligne est absolue."
+        },
+        {
+          "key": "C",
+          "text": "La colonne et la ligne sont absolues."
+        },
+        {
+          "key": "D",
+          "text": "La référence est invalide."
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "E",
+      "correctAnswerRaw": "✅ Réponse correcte : E (la colonne A est absolue, la ligne 1 est relative)",
+      "explanation": "Dans `$A1`, le `$` est placé devant la colonne A : la colonne est **fixe**. La ligne 1 n'a pas de `$` : elle est **relative** et changera lors d'une copie verticale.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** `$A$1` fixe la colonne et la ligne ; `A$1` fixe seulement la ligne ; `$A1` fixe seulement la colonne."
+    },
+    {
+      "id": 68,
+      "partTitle": "PARTIE 3 : Logiciels et Multimédia",
+      "prompt": "On considère la formule Excel suivante :\n\n{{CODE_0}}\n\nAvec `A1 = 8`, `B1 = \"Oui\"` et `C1 = 4`.\n**Quel est le résultat affiché ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "1"
+        },
+        {
+          "key": "B",
+          "text": "0"
+        },
+        {
+          "key": "C",
+          "text": "VRAI"
+        },
+        {
+          "key": "D",
+          "text": "Erreur"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "A",
+      "correctAnswerRaw": "✅ Réponse correcte : A (`1`)",
+      "explanation": "* `A1>10` est faux (`8>10`).\n  * `B1=\"Oui\"` est vrai et `C1<=5` est vrai (`4<=5`), donc le `ET` renvoie vrai.\n  * `OU(FAUX;VRAI)` renvoie vrai. La formule affiche `1`.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** Le `OU` est évalué avant le `ET` ? Non : les parenthèses imposent l'ordre. Ici, le `ET` est calculé d'abord, puis le `OU` combine les deux résultats.",
+      "codeBlocks": [
+        {
+          "language": "excel",
+          "code": "=SI(OU(A1>10;ET(B1=\"Oui\";C1<=5));1;0)"
+        }
+      ]
+    },
+    {
+      "id": 69,
+      "partTitle": "PARTIE 3 : Logiciels et Multimédia",
+      "prompt": "On considère la formule Excel suivante :\n\n{{CODE_0}}\n\nAvec `A1` vide et `B1 = 200`.\n**Quel est le résultat affiché ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "20"
+        },
+        {
+          "key": "B",
+          "text": "0"
+        },
+        {
+          "key": "C",
+          "text": "200"
+        },
+        {
+          "key": "D",
+          "text": "Erreur"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctAnswerRaw": "✅ Réponse correcte : B (`0`)",
+      "explanation": "La condition `A1<>\"\"` est fausse puisque `A1` est vide. Le `ET` renvoie donc faux, et la formule affiche la valeur prévue pour le cas faux : `0`.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** `B1>100` est vrai, mais le `ET` exige que les deux conditions soient vraies. Une seule condition fausse suffit pour que tout le `ET` soit faux.",
+      "codeBlocks": [
+        {
+          "language": "excel",
+          "code": "=SI(ET(A1<>\"\";B1>100);B1*10%;0)"
+        }
+      ]
+    },
+    {
+      "id": 70,
+      "partTitle": "PARTIE 3 : Logiciels et Multimédia",
+      "prompt": "**Quel est le rôle du masque des diapositives dans PowerPoint ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Il enregistre uniquement les commentaires du présentateur."
+        },
+        {
+          "key": "B",
+          "text": "Il définit uniquement les transitions entre les diapositives."
+        },
+        {
+          "key": "C",
+          "text": "Il définit la mise en forme globale : arrière-plan, polices, emplacements et dispositions."
+        },
+        {
+          "key": "D",
+          "text": "Il crée automatiquement une animation pour chaque objet."
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctAnswerRaw": "✅ Réponse correcte : C",
+      "explanation": "Le masque des diapositives centralise le style de la présentation : arrière-plan, couleurs, polices, logos et disposition des zones de texte. Toutes les diapositives qui utilisent ce masque héritent de ces réglages.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** Modifier une diapositive individuellement ne modifie pas le masque. Pour appliquer un style à toute la présentation, il faut passer par le masque."
+    },
+    {
+      "id": 71,
+      "partTitle": "PARTIE 3 : Logiciels et Multimédia",
+      "prompt": "**Quel outil de PowerPoint permet d'enregistrer la durée de chaque diapositive pour créer un diaporama automatique ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Le mode Présentateur"
+        },
+        {
+          "key": "B",
+          "text": "Le volet Commentaires"
+        },
+        {
+          "key": "C",
+          "text": "Le volet Animations"
+        },
+        {
+          "key": "D",
+          "text": "La répétition des diapositives (minutage)"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "D",
+      "correctAnswerRaw": "✅ Réponse correcte : D (la répétition des diapositives)",
+      "explanation": "La répétition des diapositives enregistre le temps passé sur chaque diapositive. Ces durées peuvent ensuite être utilisées pour un défilement automatique.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** Le minutage est différent d'une animation : il contrôle le passage d'une diapositive à l'autre, pas le déplacement d'un objet dans une diapositive."
+    },
+    {
+      "id": 72,
+      "partTitle": "PARTIE 3 : Logiciels et Multimédia",
+      "prompt": "**Que faut-il activer pour qu'un diaporama PowerPoint avance automatiquement sans clic ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Utiliser le minutage enregistré pour les transitions."
+        },
+        {
+          "key": "B",
+          "text": "Appuyer sur la touche Entrée après chaque diapositive."
+        },
+        {
+          "key": "C",
+          "text": "Masquer toutes les diapositives."
+        },
+        {
+          "key": "D",
+          "text": "Enregistrer la présentation au format PDF."
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "A",
+      "correctAnswerRaw": "✅ Réponse correcte : A",
+      "explanation": "Dans l'onglet Diaporama, on peut cocher « Utiliser le minutage » et définir une durée de transition. PowerPoint passe alors automatiquement à la diapositive suivante.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** Le mode automatique ne dépend pas du nombre de clics. Il faut que les durées soient définies, sinon PowerPoint attend une action manuelle."
+    },
+    {
+      "id": 73,
+      "partTitle": "PARTIE 3 : Logiciels et Multimédia",
+      "prompt": "Dans Access, la table `Employe(nom, service, salaire)` contient plusieurs enregistrements.\n**Que renvoie une requête dont le critère est `service = \"Informatique\" ET salaire > 5000` ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Tous les employés du service Informatique."
+        },
+        {
+          "key": "B",
+          "text": "Les employés du service Informatique dont le salaire est supérieur à 5000."
+        },
+        {
+          "key": "C",
+          "text": "Tous les employés dont le salaire est supérieur à 5000."
+        },
+        {
+          "key": "D",
+          "text": "Aucun enregistrement."
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctAnswerRaw": "✅ Réponse correcte : B",
+      "explanation": "Le critère `ET` impose que les deux conditions soient vraies en même temps : appartenir au service Informatique **et** avoir un salaire supérieur à 5000.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** Si l'on voulait les employés de l'un ou l'autre service, il faudrait utiliser `OU`. `ET` est plus restrictif que `OU`."
+    },
+    {
+      "id": 74,
+      "partTitle": "PARTIE 3 : Logiciels et Multimédia",
+      "prompt": "Dans Access, on utilise le critère `service = \"Informatique\" OU service = \"Maths\"`.\n**Quels employés sont affichés ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Uniquement ceux du service Informatique."
+        },
+        {
+          "key": "B",
+          "text": "Uniquement ceux du service Maths."
+        },
+        {
+          "key": "C",
+          "text": "Ceux du service Informatique ou du service Maths."
+        },
+        {
+          "key": "D",
+          "text": "Aucun employé."
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctAnswerRaw": "✅ Réponse correcte : C",
+      "explanation": "Le `OU` est inclusif : il suffit qu'une des deux conditions soit vraie. Les employés de l'un ou l'autre des deux services sont donc affichés.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** `OU` n'est pas exclusif : un employé ne peut pas appartenir aux deux services à la fois ici, mais le critère n'exige pas l'exclusion. Ne le confonds pas avec XOR."
+    },
+    {
+      "id": 75,
+      "partTitle": "PARTIE 3 : Logiciels et Multimédia",
+      "prompt": "Dans Access, on exécute la requête suivante :\n\n{{CODE_0}}\n\n**Que produit cette requête ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "La liste de tous les employés."
+        },
+        {
+          "key": "B",
+          "text": "La moyenne des salaires par service."
+        },
+        {
+          "key": "C",
+          "text": "Le nombre d'employés par service."
+        },
+        {
+          "key": "D",
+          "text": "Le total des salaires par service."
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "D",
+      "correctAnswerRaw": "✅ Réponse correcte : D",
+      "explanation": "`GROUP BY service` regroupe les employés par service, et `SUM(salaire)` additionne les salaires de chaque groupe. On obtient donc le total des salaires par service.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** `SUM` additionne, `AVG` calcule la moyenne, `COUNT` compte. Ne confonds pas le total avec la moyenne.",
+      "codeBlocks": [
+        {
+          "language": "sql",
+          "code": "SELECT service, SUM(salaire)\nFROM Employe\nGROUP BY service;"
+        }
+      ]
+    },
+    {
+      "id": 76,
+      "partTitle": "PARTIE 3 : Logiciels et Multimédia",
+      "prompt": "Dans Access, on place `[Entrez le service :]` dans la ligne Critères d'une requête.\n**Quel est l'effet de cette écriture ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Elle filtre sur le texte littéral « Entrez le service »."
+        },
+        {
+          "key": "B",
+          "text": "Elle crée une nouvelle table."
+        },
+        {
+          "key": "C",
+          "text": "Elle supprime les doublons."
+        },
+        {
+          "key": "D",
+          "text": "Elle calcule automatiquement une somme."
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "E",
+      "correctAnswerRaw": "✅ Réponse correcte : E (elle demande une valeur à l'utilisateur à l'exécution)",
+      "explanation": "Les crochets définissent un **paramètre de requête**. À l'exécution, Access affiche une boîte de dialogue demandant le service, puis filtre avec la valeur saisie.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** Sans crochets, le texte serait pris comme une valeur littérale. Les paramètres rendent la requête réutilisable sans modifier son code."
+    },
+    {
+      "id": 77,
+      "partTitle": "PARTIE 3 : Logiciels et Multimédia",
+      "prompt": "On considère une image non compressée de `800 × 600` pixels, avec une profondeur de `24 bits` par pixel.\n**Quel est son poids approximatif en Mo (1 Mo = 1 048 576 octets) ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "1,37 Mo"
+        },
+        {
+          "key": "B",
+          "text": "1,44 Mo"
+        },
+        {
+          "key": "C",
+          "text": "2,75 Mo"
+        },
+        {
+          "key": "D",
+          "text": "0,69 Mo"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "A",
+      "correctAnswerRaw": "✅ Réponse correcte : A (`1,37 Mo`)",
+      "explanation": "`24 bits = 3 octets` par pixel. Poids = `800 × 600 × 3 = 1 440 000 octets`. En Mo binaires : `1 440 000 / 1 048 576 ≈ 1,37 Mo`.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** `1,44 Mo` correspond à une conversion décimale (1 Mo = 1 000 000 octets). La question précise la conversion binaire ; il faut donc diviser par 1 048 576."
+    },
+    {
+      "id": 78,
+      "partTitle": "PARTIE 3 : Logiciels et Multimédia",
+      "prompt": "Une image non compressée pèse `1 440 Ko`. Après compression, elle pèse `360 Ko`.\n**Quel est le taux de compression obtenu ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "25 %"
+        },
+        {
+          "key": "B",
+          "text": "75 %"
+        },
+        {
+          "key": "C",
+          "text": "80 %"
+        },
+        {
+          "key": "D",
+          "text": "400 %"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctAnswerRaw": "✅ Réponse correcte : B (`75 %`)",
+      "explanation": "On a supprimé `1 440 - 360 = 1 080 Ko`. Le taux de compression est `1 080 / 1 440 × 100 = 75 %`. Il reste 25 % de la taille initiale.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** Ne confonds pas le taux de compression (75 %) avec le taux de conservation (25 %). La compression réduit ici le poids de trois quarts."
+    },
+    {
+      "id": 79,
+      "partTitle": "PARTIE 3 : Logiciels et Multimédia",
+      "prompt": "Une image de `1024 × 768` pixels est codée sur `3 octets` par pixel. Elle est compressée avec une réduction de `80 %` de sa taille.\n**Quel est le poids approximatif de l'image compressée en Ko (1 Ko = 1024 octets) ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "2 304 Ko"
+        },
+        {
+          "key": "B",
+          "text": "1 843 Ko"
+        },
+        {
+          "key": "C",
+          "text": "461 Ko"
+        },
+        {
+          "key": "D",
+          "text": "922 Ko"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctAnswerRaw": "✅ Réponse correcte : C (`461 Ko`)",
+      "explanation": "* Poids non compressé : `1024 × 768 × 3 = 2 359 296 octets`, soit `2 304 Ko`.\n  * Une réduction de `80 %` laisse `20 %` : `2 304 × 0,20 = 460,8 Ko ≈ 461 Ko`.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** Une réduction de 80 % ne signifie pas que le poids devient 80 % : il devient 20 % du poids initial. C'est l'erreur la plus fréquente."
+    },
+    {
+      "id": 80,
+      "partTitle": "PARTIE 3 : Logiciels et Multimédia",
+      "prompt": "Une image de `640 × 480` pixels utilise `256` couleurs.\n**Quel est son poids non compressé approximatif en Ko (1 Ko = 1024 octets) ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "150 Ko"
+        },
+        {
+          "key": "B",
+          "text": "600 Ko"
+        },
+        {
+          "key": "C",
+          "text": "1 200 Ko"
+        },
+        {
+          "key": "D",
+          "text": "300 Ko"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "D",
+      "correctAnswerRaw": "✅ Réponse correcte : D (`300 Ko`)",
+      "explanation": "`256 = 2^8`, donc chaque pixel utilise `8 bits = 1 octet`. Poids = `640 × 480 × 1 = 307 200 octets`, soit `307 200 / 1024 = 300 Ko`.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** Le nombre de couleurs détermine la profondeur : `256` couleurs = `8 bits`, pas `24 bits`. Ne multiplie pas par 3 octets dans ce cas."
+    }
+  ]
+}

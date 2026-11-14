@@ -1,0 +1,2557 @@
+{
+  "id": "blanc-3",
+  "title": "Examen Blanc 3",
+  "category": "blanc",
+  "subject": "Spécialité Informatique",
+  "durationMinutes": 240,
+  "coefficient": 20,
+  "totalQuestions": 80,
+  "questions": [
+    {
+      "id": 1,
+      "partTitle": "PARTIE 1 : Systèmes, Architecture et Réseaux",
+      "prompt": "**Quand se produit un défaut de page (page fault) ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Lorsqu'un processus accède à une page qui n'est pas présente en mémoire physique."
+        },
+        {
+          "key": "B",
+          "text": "Lorsque le cache du processeur est plein."
+        },
+        {
+          "key": "C",
+          "text": "Lorsqu'une opération de division par zéro est exécutée."
+        },
+        {
+          "key": "D",
+          "text": "Lorsqu'une page est plus grande que le disque dur."
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "A",
+      "correctAnswerRaw": "✅ Réponse correcte : A",
+      "explanation": "Le processus demande une page virtuelle qui n'est pas chargée en mémoire centrale. Le système doit alors la charger depuis le disque, ce qui provoque un défaut de page.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** Un défaut de page n'est pas forcément une erreur : c'est un mécanisme normal de la mémoire virtuelle. Il devient problématique lorsqu'il est trop fréquent (thrashing)."
+    },
+    {
+      "id": 2,
+      "partTitle": "PARTIE 1 : Systèmes, Architecture et Réseaux",
+      "prompt": "On considère l'adresse IPv6 complète suivante :\n`2001:0db8:0000:0000:0000:ff00:0042:8329`\n\n**Quelle est son écriture abrégée la plus courte et correcte ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "`2001:db8:0:0:0:ff00:42:8329`"
+        },
+        {
+          "key": "B",
+          "text": "`2001:db8::ff00:42:8329`"
+        },
+        {
+          "key": "C",
+          "text": "`2001:db8::ff00:42:8329::`"
+        },
+        {
+          "key": "D",
+          "text": "`2001:db8:0:0:ff00:42:8329`"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctAnswerRaw": "✅ Réponse correcte : B",
+      "explanation": "On supprime les zéros de tête de chaque groupe : `0db8` devient `db8`, `0042` devient `42`. On remplace la plus longue suite de groupes nuls par `::` une seule fois : les quatre groupes `0000` deviennent `::`.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** `::` ne peut apparaître qu'**une seule fois** dans une adresse IPv6. L'écriture C est invalide car elle contient deux `::`. L'écriture D ne contient pas assez de groupes."
+    },
+    {
+      "id": 3,
+      "partTitle": "PARTIE 1 : Systèmes, Architecture et Réseaux",
+      "prompt": "**Quel encodage représente les caractères Unicode avec un nombre variable d'octets et reste compatible avec l'ASCII ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "ASCII sur 7 bits"
+        },
+        {
+          "key": "B",
+          "text": "UTF-16"
+        },
+        {
+          "key": "C",
+          "text": "UTF-8"
+        },
+        {
+          "key": "D",
+          "text": "ISO-8859-1"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctAnswerRaw": "✅ Réponse correcte : C (UTF-8)",
+      "explanation": "UTF-8 utilise 1 octet pour les caractères ASCII et jusqu'à 4 octets pour les autres caractères Unicode. Les 128 premiers caractères sont codés exactement comme en ASCII.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** UTF-16 utilise généralement 2 ou 4 octets et n'est pas compatible avec l'ASCII octet par octet. UTF-8 est le standard du Web pour cette raison."
+    },
+    {
+      "id": 4,
+      "partTitle": "PARTIE 1 : Systèmes, Architecture et Réseaux",
+      "prompt": "On utilise l'algorithme de remplacement de pages **FIFO** avec `3` cadres et la chaîne de références suivante :\n`1, 2, 3, 1, 4, 1, 5`\n\n**Combien de défauts de page se produisent ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "3"
+        },
+        {
+          "key": "B",
+          "text": "4"
+        },
+        {
+          "key": "C",
+          "text": "5"
+        },
+        {
+          "key": "D",
+          "text": "6"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "D",
+      "correctAnswerRaw": "✅ Réponse correcte : D (`6`)",
+      "explanation": "* `1` : défaut, cadre `[1]`.\n  * `2` : défaut, `[1,2]`.\n  * `3` : défaut, `[1,2,3]`.\n  * `1` : présent, aucun défaut.\n  * `4` : défaut, remplace `1` (le plus ancien) → `[4,2,3]`.\n  * `1` : défaut, remplace `2` → `[4,1,3]`.\n  * `5` : défaut, remplace `3` → `[4,1,5]`.\n  * Total : **6 défauts**.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** FIFO remplace la page **chargée depuis le plus longtemps**, même si elle est encore utilisée. Ne confonds pas FIFO avec LRU, qui se base sur la dernière utilisation."
+    },
+    {
+      "id": 5,
+      "partTitle": "PARTIE 1 : Systèmes, Architecture et Réseaux",
+      "prompt": "**Quel est le rôle principal d'un pare-feu (firewall) ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Router les paquets entre deux réseaux."
+        },
+        {
+          "key": "B",
+          "text": "Attribuer automatiquement des adresses IP."
+        },
+        {
+          "key": "C",
+          "text": "Résoudre les noms de domaine."
+        },
+        {
+          "key": "D",
+          "text": "Chiffrer tous les fichiers du disque dur."
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "E",
+      "correctAnswerRaw": "✅ Réponse correcte : E (filtrer le trafic selon des règles de sécurité)",
+      "explanation": "Un pare-feu contrôle les flux entrants et sortants selon des règles : adresses, ports, protocoles. Il peut autoriser, bloquer ou journaliser le trafic.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** Un routeur achemine les paquets ; un pare-feu les filtre. Un serveur DHCP attribue les adresses ; un serveur DNS résout les noms. Ne confonds pas les rôles."
+    },
+    {
+      "id": 6,
+      "partTitle": "PARTIE 1 : Systèmes, Architecture et Réseaux",
+      "prompt": "**Qu'est-ce que le thrashing (écroulement par pagination) ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Un état où le système passe plus de temps à échanger des pages qu'à exécuter les processus."
+        },
+        {
+          "key": "B",
+          "text": "Une surchauffe du processeur due à une ventilation insuffisante."
+        },
+        {
+          "key": "C",
+          "text": "Un disque dur complètement saturé."
+        },
+        {
+          "key": "D",
+          "text": "Un défaut de cache interne au processeur."
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "A",
+      "correctAnswerRaw": "✅ Réponse correcte : A",
+      "explanation": "Le thrashing survient lorsque la mémoire physique est insuffisante : les processus provoquent sans cesse des défauts de page, et le système passe son temps à charger et décharger des pages.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** Le thrashing n'est pas une panne matérielle. On le réduit en augmentant la mémoire, en ajustant le degré de multiprogrammation ou en utilisant un algorithme de remplacement adapté."
+    },
+    {
+      "id": 7,
+      "partTitle": "PARTIE 1 : Systèmes, Architecture et Réseaux",
+      "prompt": "**Quel protocole de routage dynamique est un protocole à état de liens utilisant l'algorithme de Dijkstra ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "RIP"
+        },
+        {
+          "key": "B",
+          "text": "OSPF"
+        },
+        {
+          "key": "C",
+          "text": "BGP"
+        },
+        {
+          "key": "D",
+          "text": "DHCP"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctAnswerRaw": "✅ Réponse correcte : B (OSPF)",
+      "explanation": "OSPF construit une carte complète du réseau et calcule les meilleurs chemins avec l'algorithme de Dijkstra. Le coût dépend souvent de la bande passante.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** RIP est un protocole à vecteur de distance, limité à 15 sauts. OSPF est à état de liens et converge plus rapidement sur les grands réseaux."
+    },
+    {
+      "id": 8,
+      "partTitle": "PARTIE 1 : Systèmes, Architecture et Réseaux",
+      "prompt": "**Quel est l'ordre correct du cycle d'exécution d'une instruction dans un processeur ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Décoder → charger → exécuter"
+        },
+        {
+          "key": "B",
+          "text": "Exécuter → décoder → charger"
+        },
+        {
+          "key": "C",
+          "text": "Charger (Fetch) → décoder (Decode) → exécuter (Execute)"
+        },
+        {
+          "key": "D",
+          "text": "Charger → exécuter → décoder"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctAnswerRaw": "✅ Réponse correcte : C",
+      "explanation": "Le processeur récupère l'instruction en mémoire (Fetch), la décode pour identifier l'opération (Decode), puis l'exécute (Execute). Il met ensuite à jour le compteur de programme.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** Le pipeline permet de chevaucher ces étapes : pendant qu'une instruction s'exécute, la suivante se décode et une autre se charge. Cela augmente le débit, pas nécessairement la latence d'une instruction isolée."
+    },
+    {
+      "id": 9,
+      "partTitle": "PARTIE 1 : Systèmes, Architecture et Réseaux",
+      "prompt": "On utilise l'algorithme de remplacement de pages **LRU** avec `3` cadres et la chaîne de références suivante :\n`1, 2, 3, 4, 1, 2, 5, 1, 2, 3, 4, 5`\n\n**Combien de défauts de page se produisent ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "6"
+        },
+        {
+          "key": "B",
+          "text": "8"
+        },
+        {
+          "key": "C",
+          "text": "9"
+        },
+        {
+          "key": "D",
+          "text": "10"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "D",
+      "correctAnswerRaw": "✅ Réponse correcte : D (`10`)",
+      "explanation": "LRU remplace la page la moins récemment utilisée. Les défauts se produisent pour `1, 2, 3, 4, 1, 2, 5, 3, 4, 5`, soit **10 défauts**. Les références `1` et `2` après le chargement de `5` sont des succès.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** LRU nécessite de suivre l'ordre d'utilisation, pas seulement l'ordre de chargement. Une page peut être ancienne mais encore fréquemment utilisée : elle ne doit pas être remplacée."
+    },
+    {
+      "id": 10,
+      "partTitle": "PARTIE 1 : Systèmes, Architecture et Réseaux",
+      "prompt": "**Quel enregistrement DNS associe un nom de domaine à une adresse IPv4 ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "`AAAA`"
+        },
+        {
+          "key": "B",
+          "text": "`CNAME`"
+        },
+        {
+          "key": "C",
+          "text": "`MX`"
+        },
+        {
+          "key": "D",
+          "text": "`PTR`"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "E",
+      "correctAnswerRaw": "✅ Réponse correcte : E (l'enregistrement `A`)",
+      "explanation": "Un enregistrement `A` associe un nom à une adresse IPv4. `AAAA` associe un nom à une adresse IPv6, `CNAME` crée un alias, `MX` désigne un serveur de messagerie et `PTR` fait la résolution inverse.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** `A` = IPv4, `AAAA` = IPv6. Le moyen mnémotechnique : `AAAA` est plus long, comme une adresse IPv6."
+    },
+    {
+      "id": 11,
+      "partTitle": "PARTIE 1 : Systèmes, Architecture et Réseaux",
+      "prompt": "**Parmi les affirmations suivantes sur les systèmes de fichiers, laquelle est correcte ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "ext4 est un système de fichiers journalisé de Linux qui utilise des inodes ; NTFS est natif de Windows et FAT32 est plus ancien et plus limité."
+        },
+        {
+          "key": "B",
+          "text": "FAT32 est le système de fichiers natif de Linux et gère les permissions Unix."
+        },
+        {
+          "key": "C",
+          "text": "NTFS est le système de fichiers natif de Linux et n'utilise aucun journal."
+        },
+        {
+          "key": "D",
+          "text": "ext4 ne stocke aucune métadonnée et n'utilise pas d'inode."
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "A",
+      "correctAnswerRaw": "✅ Réponse correcte : A",
+      "explanation": "ext4 est le système de fichiers journalisé standard de nombreuses distributions Linux ; il utilise des inodes pour stocker les métadonnées. NTFS est le système natif de Windows, avec journalisation et permissions avancées. FAT32 est plus ancien, sans journalisation ni permissions Unix, avec une limite de taille de fichier de 4 Go.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** L'inode contient les métadonnées (taille, permissions, pointeurs de blocs) mais **pas le nom du fichier** : le nom est stocké dans l'entrée de répertoire, qui associe un nom à un numéro d'inode. Ne confonds pas FAT32 (limité) et NTFS/ext4 (journalisés)."
+    },
+    {
+      "id": 12,
+      "partTitle": "PARTIE 1 : Systèmes, Architecture et Réseaux",
+      "prompt": "**À quel type d'adresse IPv6 appartient le préfixe `fe80::/10` ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Adresse globale (Global Unicast)"
+        },
+        {
+          "key": "B",
+          "text": "Adresse lien-local (Link-Local)"
+        },
+        {
+          "key": "C",
+          "text": "Adresse multicast"
+        },
+        {
+          "key": "D",
+          "text": "Adresse de bouclage (Loopback)"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctAnswerRaw": "✅ Réponse correcte : B (Link-Local)",
+      "explanation": "Les adresses `fe80::/10` sont des adresses lien-local : elles ne sont valides que sur le lien local et ne sont pas routées sur Internet. Elles servent notamment à la découverte de voisins.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** `::1` est l'adresse de bouclage IPv6, équivalent de `127.0.0.1`. `ff00::/8` est la plage multicast. Ne confonds pas link-local et loopback."
+    },
+    {
+      "id": 13,
+      "partTitle": "PARTIE 1 : Systèmes, Architecture et Réseaux",
+      "prompt": "**Quel type d'aléa (hazard) correspond à une dépendance de données entre deux instructions dans un pipeline ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Aléa structurel"
+        },
+        {
+          "key": "B",
+          "text": "Aléa de contrôle"
+        },
+        {
+          "key": "C",
+          "text": "Aléa de données"
+        },
+        {
+          "key": "D",
+          "text": "Aléa thermique"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctAnswerRaw": "✅ Réponse correcte : C (aléa de données)",
+      "explanation": "Un aléa de données survient lorsqu'une instruction a besoin du résultat d'une instruction précédente qui n'est pas encore disponible. On peut insérer des bulles, utiliser du forwarding ou renommer les registres.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** L'aléa de contrôle vient d'un branchement conditionnel, et l'aléa structurel d'un conflit d'accès à une ressource matérielle. Ce sont trois causes différentes."
+    },
+    {
+      "id": 14,
+      "partTitle": "PARTIE 1 : Systèmes, Architecture et Réseaux",
+      "prompt": "**Quel algorithme de remplacement de pages nécessite de connaître les références futures et sert de référence théorique ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "FIFO"
+        },
+        {
+          "key": "B",
+          "text": "LRU"
+        },
+        {
+          "key": "C",
+          "text": "LFU"
+        },
+        {
+          "key": "D",
+          "text": "Optimal (MIN)"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "D",
+      "correctAnswerRaw": "✅ Réponse correcte : D (Optimal)",
+      "explanation": "L'algorithme optimal remplace la page qui ne sera pas utilisée pendant la plus longue période. Il donne le minimum théorique de défauts de page, mais il est impossible à implémenter réellement car il faut connaître le futur.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** Optimal sert à évaluer les autres algorithmes, pas à être déployé. LRU est une approximation pratique qui utilise le passé récent au lieu du futur."
+    },
+    {
+      "id": 15,
+      "partTitle": "PARTIE 1 : Systèmes, Architecture et Réseaux",
+      "prompt": "**Quel est le rôle d'un VPN (réseau privé virtuel) ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Augmenter la bande passante du réseau local."
+        },
+        {
+          "key": "B",
+          "text": "Attribuer des adresses MAC aux équipements."
+        },
+        {
+          "key": "C",
+          "text": "Remplacer complètement un pare-feu."
+        },
+        {
+          "key": "D",
+          "text": "Compresser les fichiers avant leur envoi."
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "E",
+      "correctAnswerRaw": "✅ Réponse correcte : E (créer un tunnel chiffré sécurisé sur un réseau public)",
+      "explanation": "Un VPN établit un tunnel chiffré entre un client et un réseau privé, ou entre deux sites. Les données circulent de manière confidentielle sur Internet.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** Un VPN ne remplace pas un pare-feu et n'augmente pas la bande passante. Il assure la confidentialité et l'authentification, mais peut ajouter de la latence."
+    },
+    {
+      "id": 16,
+      "partTitle": "PARTIE 1 : Systèmes, Architecture et Réseaux",
+      "prompt": "**Quel mode d'entrée/sortie permet à un périphérique de transférer des données directement vers la mémoire sans que le processeur gère chaque octet ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Le DMA (Direct Memory Access)"
+        },
+        {
+          "key": "B",
+          "text": "Le polling (scrutation)"
+        },
+        {
+          "key": "C",
+          "text": "L'interruption simple"
+        },
+        {
+          "key": "D",
+          "text": "Le spooling"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "A",
+      "correctAnswerRaw": "✅ Réponse correcte : A (DMA)",
+      "explanation": "Le contrôleur DMA prend en charge le transfert entre le périphérique et la mémoire. Le processeur est libéré et reçoit une interruption à la fin du transfert.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** Le polling occupe le processeur à vérifier l'état du périphérique. L'interruption prévient le processeur à chaque événement. Le DMA est le plus efficace pour les gros transferts."
+    },
+    {
+      "id": 17,
+      "partTitle": "PARTIE 1 : Systèmes, Architecture et Réseaux",
+      "prompt": "**Quel est le rôle de SSL/TLS ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Router les paquets entre les réseaux."
+        },
+        {
+          "key": "B",
+          "text": "Chiffrer et authentifier les communications sur un réseau."
+        },
+        {
+          "key": "C",
+          "text": "Résoudre les noms de domaine."
+        },
+        {
+          "key": "D",
+          "text": "Attribuer des adresses IP aux clients."
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctAnswerRaw": "✅ Réponse correcte : B",
+      "explanation": "TLS (successeur de SSL) assure la confidentialité, l'intégrité et l'authentification des communications. Il est utilisé par HTTPS pour sécuriser les échanges entre le navigateur et le serveur.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** TLS ne remplace pas le DNS ni le routage. Il protège les données au-dessus de la couche transport, mais ne garantit pas que le serveur est digne de confiance : le certificat doit être valide."
+    },
+    {
+      "id": 18,
+      "partTitle": "PARTIE 1 : Systèmes, Architecture et Réseaux",
+      "prompt": "**Quel est l'objectif du renommage de registres (register renaming) dans un processeur pipeline ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Augmenter la fréquence de l'horloge."
+        },
+        {
+          "key": "B",
+          "text": "Réduire la taille du cache."
+        },
+        {
+          "key": "C",
+          "text": "Éliminer les fausses dépendances (WAR et WAW) et améliorer l'exécution dans le pipeline."
+        },
+        {
+          "key": "D",
+          "text": "Remplacer l'étape de décodage."
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctAnswerRaw": "✅ Réponse correcte : C",
+      "explanation": "Le renommage associe les registres logiques à des registres physiques différents. Il supprime les dépendances artificielles WAR (Write After Read) et WAW (Write After Write), ce qui permet d'exécuter davantage d'instructions en parallèle.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** Le renommage ne supprime pas les vraies dépendances RAW (Read After Write), car la valeur produite doit réellement être consommée. Il ne change pas non plus la fréquence du processeur."
+    },
+    {
+      "id": 19,
+      "partTitle": "PARTIE 1 : Systèmes, Architecture et Réseaux",
+      "prompt": "**Parmi les associations de commandes Linux suivantes, laquelle est correcte ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "`ps -ef` lance un processus en arrière-plan ; `&` liste les processus."
+        },
+        {
+          "key": "B",
+          "text": "`kill -9` suspend un processus ; `fg` le termine."
+        },
+        {
+          "key": "C",
+          "text": "`nohup` supprime un utilisateur ; `passwd` affiche les processus."
+        },
+        {
+          "key": "D",
+          "text": "`./script.sh &` lance un script en arrière-plan ; `useradd` crée un utilisateur."
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "D",
+      "correctAnswerRaw": "✅ Réponse correcte : D",
+      "explanation": "Le `&` en fin de commande lance le processus en arrière-plan. `useradd` crée un compte utilisateur ; `passwd` permet ensuite de définir ou modifier son mot de passe.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** `ps -ef` **liste** les processus, `kill -9` **termine** un processus, `fg` le ramène au premier plan, `bg` le remet en arrière-plan, `jobs` liste les tâches du shell, `nohup` rend un processus insensible à la déconnexion et `top` affiche les processus en temps réel. Ne confonds pas `&` (arrière-plan) avec `&&` (enchaînement conditionnel)."
+    },
+    {
+      "id": 20,
+      "partTitle": "PARTIE 1 : Systèmes, Architecture et Réseaux",
+      "prompt": "**Quel protocole est utilisé pour envoyer un courrier électronique depuis un client vers un serveur de messagerie ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "POP3"
+        },
+        {
+          "key": "B",
+          "text": "IMAP"
+        },
+        {
+          "key": "C",
+          "text": "HTTP"
+        },
+        {
+          "key": "D",
+          "text": "FTP"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "E",
+      "correctAnswerRaw": "✅ Réponse correcte : E (SMTP)",
+      "explanation": "SMTP (Simple Mail Transfer Protocol) sert à **envoyer** les messages. POP3 et IMAP servent à **recevoir** les messages depuis une boîte aux lettres.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** Ne confonds pas l'envoi et la réception. SMTP pousse le message vers le serveur ; IMAP synchronise la boîte, POP3 télécharge généralement les messages."
+    },
+    {
+      "id": 21,
+      "partTitle": "PARTIE 1 : Systèmes, Architecture et Réseaux",
+      "prompt": "**Quel est l'ordre correct de la hiérarchie mémoire, du plus rapide au plus lent ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Registres → cache → mémoire RAM → disque"
+        },
+        {
+          "key": "B",
+          "text": "Cache → registres → mémoire RAM → disque"
+        },
+        {
+          "key": "C",
+          "text": "Mémoire RAM → cache → registres → disque"
+        },
+        {
+          "key": "D",
+          "text": "Disque → mémoire RAM → cache → registres"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "A",
+      "correctAnswerRaw": "✅ Réponse correcte : A",
+      "explanation": "Les registres sont internes au processeur et les plus rapides. Viennent ensuite les caches (L1, L2, L3), puis la mémoire centrale RAM, et enfin le stockage disque, beaucoup plus lent.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** Plus une mémoire est rapide, plus elle est petite et chère. La hiérarchie vise à rapprocher les données fréquemment utilisées du processeur."
+    },
+    {
+      "id": 22,
+      "partTitle": "PARTIE 1 : Systèmes, Architecture et Réseaux",
+      "prompt": "**Quelle caractéristique est typique d'une architecture RISC ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Des instructions complexes et de longueur variable."
+        },
+        {
+          "key": "B",
+          "text": "Des instructions simples, de longueur fixe, avec de nombreux registres."
+        },
+        {
+          "key": "C",
+          "text": "Un fort recours à la microprogrammation pour chaque instruction."
+        },
+        {
+          "key": "D",
+          "text": "L'absence totale de pipeline."
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctAnswerRaw": "✅ Réponse correcte : B",
+      "explanation": "RISC (Reduced Instruction Set Computer) privilégie des instructions simples et régulières, de longueur fixe, exécutables rapidement et adaptées au pipeline. Les accès mémoire sont souvent séparés des opérations arithmétiques.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** CISC (Complex Instruction Set Computer) propose des instructions plus complexes et variables, comme l'architecture x86. RISC n'est pas « sans pipeline » : il est au contraire très adapté au pipeline."
+    },
+    {
+      "id": 23,
+      "partTitle": "PARTIE 1 : Systèmes, Architecture et Réseaux",
+      "prompt": "**Quelle mémoire est volatile et doit être rafraîchie périodiquement pour conserver ses données ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "La SRAM"
+        },
+        {
+          "key": "B",
+          "text": "La ROM"
+        },
+        {
+          "key": "C",
+          "text": "La DRAM"
+        },
+        {
+          "key": "D",
+          "text": "La mémoire Flash"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctAnswerRaw": "✅ Réponse correcte : C (DRAM)",
+      "explanation": "La DRAM stocke chaque bit dans un condensateur qui se décharge. Elle doit être rafraîchie régulièrement. Elle est volatile : elle perd ses données lorsqu'elle n'est plus alimentée.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** La SRAM est aussi volatile mais plus rapide et ne nécessite pas de rafraîchissement ; elle est utilisée pour les caches. La ROM et la Flash sont non volatiles."
+    },
+    {
+      "id": 24,
+      "partTitle": "PARTIE 1 : Systèmes, Architecture et Réseaux",
+      "prompt": "**Quelle affirmation décrit correctement UEFI par rapport au BIOS traditionnel ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "UEFI est une mémoire RAM externe."
+        },
+        {
+          "key": "B",
+          "text": "Le BIOS est toujours plus rapide et plus moderne qu'UEFI."
+        },
+        {
+          "key": "C",
+          "text": "La CMOS stocke le système d'exploitation complet."
+        },
+        {
+          "key": "D",
+          "text": "UEFI est un firmware moderne qui prend en charge les disques GPT, l'interface graphique et le Secure Boot."
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "D",
+      "correctAnswerRaw": "✅ Réponse correcte : D",
+      "explanation": "UEFI remplace le BIOS traditionnel. Il gère les disques GPT, propose une interface graphique, des pilotes pré-OS et des fonctions de sécurité comme le Secure Boot.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** Le CMOS est une petite mémoire alimentée par pile qui conserve les paramètres de configuration, pas le système d'exploitation. UEFI n'est pas une RAM externe."
+    },
+    {
+      "id": 25,
+      "partTitle": "PARTIE 2 : Développement",
+      "prompt": "On considère la fonction récursive suivante :\n\n{{CODE_0}}\n\n**Qu'affiche l'appel `binaire(13)` ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "1101"
+        },
+        {
+          "key": "B",
+          "text": "1011"
+        },
+        {
+          "key": "C",
+          "text": "1110"
+        },
+        {
+          "key": "D",
+          "text": "0111"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "A",
+      "correctAnswerRaw": "✅ Réponse correcte : A (`1101`)",
+      "explanation": "Les appels empilés sont `13 → 6 → 3 → 1`. En remontant la pile, on affiche les restes : `1 % 2 = 1`, `3 % 2 = 1`, `6 % 2 = 0`, `13 % 2 = 1`, soit `1101`.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** L'affichage se fait après l'appel récursif, ce qui produit les bits dans le bon ordre (poids fort en premier). Si l'on affichait avant l'appel, on obtiendrait l'ordre inverse.",
+      "codeBlocks": [
+        {
+          "language": "c",
+          "code": "void binaire(int n) {\n    if (n > 1) binaire(n / 2);\n    printf(\"%d\", n % 2);\n}"
+        }
+      ]
+    },
+    {
+      "id": 26,
+      "partTitle": "PARTIE 2 : Développement",
+      "prompt": "**Quelle suite d'opérations inverse correctement une liste simplement chaînée ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "`courant->suivant = courant;`"
+        },
+        {
+          "key": "B",
+          "text": "`precedent->suivant = courant;`"
+        },
+        {
+          "key": "C",
+          "text": "Sauvegarder `suivant`, faire pointer `courant->suivant` vers `precedent`, avancer `precedent` et `courant`."
+        },
+        {
+          "key": "D",
+          "text": "`courant = precedent;`"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctAnswerRaw": "✅ Réponse correcte : C",
+      "explanation": "On parcourt la liste en conservant trois pointeurs : `precedent`, `courant` et `suivant`. On inverse le lien de `courant` vers `precedent`, puis on avance les deux pointeurs. À la fin, `precedent` est la nouvelle tête.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** Il faut sauvegarder `courant->suivant` avant de modifier le lien, sinon on perd la suite de la liste. C'est l'erreur classique dans l'inversion d'une liste chaînée."
+    },
+    {
+      "id": 27,
+      "partTitle": "PARTIE 2 : Développement",
+      "prompt": "On considère le programme C suivant :\n\n{{CODE_0}}\n\n**Qu'affiche ce programme ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "123"
+        },
+        {
+          "key": "B",
+          "text": "111"
+        },
+        {
+          "key": "C",
+          "text": "000"
+        },
+        {
+          "key": "D",
+          "text": "333"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "A",
+      "correctAnswerRaw": "✅ Réponse correcte : A (`123`)",
+      "explanation": "Une variable locale `static` est initialisée une seule fois et conserve sa valeur entre les appels. `x` vaut successivement `1`, `2`, puis `3`.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** Sans `static`, `x` serait réinitialisé à `0` à chaque appel et le programme afficherait `111`. La durée de vie d'une variable statique locale est celle du programme.",
+      "codeBlocks": [
+        {
+          "language": "c",
+          "code": "void f(void) {\n    static int x = 0;\n    x++;\n    printf(\"%d\", x);\n}\n\nint main(void) {\n    f();\n    f();\n    f();\n    return 0;\n}"
+        }
+      ]
+    },
+    {
+      "id": 28,
+      "partTitle": "PARTIE 2 : Développement",
+      "prompt": "On considère le code C++ suivant :\n\n{{CODE_0}}\n\n**Quel constructeur est appelé pour initialiser `b` ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Le constructeur de copie."
+        },
+        {
+          "key": "B",
+          "text": "Le constructeur par défaut."
+        },
+        {
+          "key": "C",
+          "text": "Le destructeur."
+        },
+        {
+          "key": "D",
+          "text": "Un constructeur statique."
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "A",
+      "correctAnswerRaw": "✅ Réponse correcte : A (le constructeur de copie)",
+      "explanation": "`A b = a;` initialise un nouvel objet `b` à partir de l'objet existant `a`. Le constructeur de copie `A(const A&)` est appelé pour recopier les attributs.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** Si la classe gère des ressources dynamiques, le constructeur de copie par défaut fait une copie superficielle : les deux objets partagent le même pointeur, ce qui peut provoquer un double `free`. Il faut alors définir une copie profonde.",
+      "codeBlocks": [
+        {
+          "language": "cpp",
+          "code": "A a;\nA b = a;"
+        }
+      ]
+    },
+    {
+      "id": 29,
+      "partTitle": "PARTIE 2 : Développement",
+      "prompt": "**Quelle affirmation est correcte à propos du positionnement CSS `position: absolute` ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "L'élément est positionné par rapport à son plus proche ancêtre positionné (ou le bloc initial)."
+        },
+        {
+          "key": "B",
+          "text": "L'élément est toujours positionné par rapport à la fenêtre du navigateur."
+        },
+        {
+          "key": "C",
+          "text": "L'élément reste dans le flux normal et ne peut pas être déplacé."
+        },
+        {
+          "key": "D",
+          "text": "L'élément est positionné par rapport à son parent direct, même si ce parent est `static`."
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "A",
+      "correctAnswerRaw": "✅ Réponse correcte : A",
+      "explanation": "Un élément `absolute` est retiré du flux normal et se positionne par rapport au plus proche ancêtre dont la position n'est pas `static`. S'il n'y en a pas, il se positionne par rapport au bloc initial.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** `fixed` se positionne par rapport à la fenêtre, pas au parent. `relative` reste dans le flux et sert souvent de référence à un enfant `absolute`."
+    },
+    {
+      "id": 30,
+      "partTitle": "PARTIE 2 : Développement",
+      "prompt": "**Quelle est la différence entre `UNION` et `UNION ALL` en SQL ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "`UNION ALL` supprime les doublons ; `UNION` les conserve."
+        },
+        {
+          "key": "B",
+          "text": "Les deux suppriment toujours les doublons."
+        },
+        {
+          "key": "C",
+          "text": "`UNION` conserve les doublons ; `UNION ALL` les supprime."
+        },
+        {
+          "key": "D",
+          "text": "`UNION` supprime les doublons ; `UNION ALL` les conserve."
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "D",
+      "correctAnswerRaw": "✅ Réponse correcte : D",
+      "explanation": "`UNION` combine les résultats de deux requêtes et élimine les lignes en double. `UNION ALL` combine tous les résultats, doublons compris, et est généralement plus rapide.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** Les deux requêtes doivent avoir le même nombre de colonnes et des types compatibles. `UNION` trie souvent les résultats pour éliminer les doublons, ce qui a un coût."
+    },
+    {
+      "id": 31,
+      "partTitle": "PARTIE 2 : Développement",
+      "prompt": "On fusionne deux tableaux triés `A = [1, 3, 5]` et `B = [2, 3, 6]`.\n**Quel est le tableau fusionné trié, sans doublons ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "`[1, 2, 3, 3, 5, 6]`"
+        },
+        {
+          "key": "B",
+          "text": "`[1, 2, 3, 5, 6]`"
+        },
+        {
+          "key": "C",
+          "text": "`[1, 3, 5, 2, 3, 6]`"
+        },
+        {
+          "key": "D",
+          "text": "`[1, 2, 3, 6, 5]`"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctAnswerRaw": "✅ Réponse correcte : B (`[1, 2, 3, 5, 6]`)",
+      "explanation": "La fusion classique compare les têtes de chaque tableau et produit `[1, 2, 3, 3, 5, 6]`. En supprimant le doublon `3`, on obtient `[1, 2, 3, 5, 6]`.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** La fusion de deux tableaux triés est en `O(n + m)`. Si l'on supprime les doublons, il faut comparer chaque nouvel élément au dernier élément ajouté, pas seulement aux têtes des deux tableaux."
+    },
+    {
+      "id": 32,
+      "partTitle": "PARTIE 2 : Développement",
+      "prompt": "On considère le code C suivant :\n\n{{CODE_0}}\n\n**Que se passe-t-il à l'exécution ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Une erreur de compilation."
+        },
+        {
+          "key": "B",
+          "text": "La variable `p` reçoit la valeur `0`."
+        },
+        {
+          "key": "C",
+          "text": "Le programme affiche `5`."
+        },
+        {
+          "key": "D",
+          "text": "Un segmentation fault (accès mémoire invalide) se produit."
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "D",
+      "correctAnswerRaw": "✅ Réponse correcte : D (segmentation fault)",
+      "explanation": "`p` vaut `NULL` : il ne pointe vers aucune zone mémoire valide. Écrire `*p = 5` tente d'accéder à l'adresse `0`, ce qui provoque une erreur de segmentation.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** Le compilateur accepte souvent ce code : l'erreur apparaît à l'exécution. Il faut toujours vérifier qu'un pointeur est valide avant de le déréférencer.",
+      "codeBlocks": [
+        {
+          "language": "c",
+          "code": "int *p = NULL;\n*p = 5;"
+        }
+      ]
+    },
+    {
+      "id": 33,
+      "partTitle": "PARTIE 2 : Développement",
+      "prompt": "**Que déclare l'instruction C `int *tab[5];` ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Un pointeur vers un tableau de 5 entiers."
+        },
+        {
+          "key": "B",
+          "text": "Un tableau de 5 pointeurs vers des entiers."
+        },
+        {
+          "key": "C",
+          "text": "Un pointeur vers un pointeur d'entier."
+        },
+        {
+          "key": "D",
+          "text": "Un tableau de 5 tableaux d'entiers."
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctAnswerRaw": "✅ Réponse correcte : B",
+      "explanation": "Les crochets sont prioritaires sur l'étoile : `tab` est d'abord un tableau de 5 éléments, chaque élément étant un `int *`. C'est donc un tableau de 5 pointeurs vers des entiers.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** `int (*tab)[5]` déclare un pointeur vers un tableau de 5 entiers. La position des parenthèses change complètement le sens de la déclaration."
+    },
+    {
+      "id": 34,
+      "partTitle": "PARTIE 2 : Développement",
+      "prompt": "**En C++, quel est l'effet du passage d'un paramètre par référence `int &x` ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "La fonction reçoit une copie de la variable."
+        },
+        {
+          "key": "B",
+          "text": "La fonction reçoit un alias de la variable d'origine et peut la modifier."
+        },
+        {
+          "key": "C",
+          "text": "La fonction reçoit obligatoirement un pointeur."
+        },
+        {
+          "key": "D",
+          "text": "La variable devient constante."
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctAnswerRaw": "✅ Réponse correcte : B",
+      "explanation": "Une référence est un alias : `x` désigne directement la variable passée en argument. Toute modification de `x` dans la fonction modifie la variable d'origine.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** `const int &x` évite la copie tout en interdisant la modification. C'est utile pour passer de gros objets en lecture seule sans les recopier."
+    },
+    {
+      "id": 35,
+      "partTitle": "PARTIE 2 : Développement",
+      "prompt": "**En Flexbox, quelle est la différence entre `justify-content` et `align-items` ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Les deux alignent les éléments sur l'axe principal."
+        },
+        {
+          "key": "B",
+          "text": "`justify-content` aligne sur l'axe principal ; `align-items` aligne sur l'axe secondaire."
+        },
+        {
+          "key": "C",
+          "text": "`justify-content` aligne sur l'axe secondaire ; `align-items` sur l'axe principal."
+        },
+        {
+          "key": "D",
+          "text": "`align-items` ne fonctionne que verticalement, quelle que soit la direction."
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctAnswerRaw": "✅ Réponse correcte : B",
+      "explanation": "Dans un conteneur `display: flex`, l'axe principal est défini par `flex-direction`. `justify-content` répartit les éléments le long de cet axe, tandis que `align-items` les aligne sur l'axe perpendiculaire.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** Si `flex-direction: column`, l'axe principal devient vertical : `justify-content` agit alors verticalement et `align-items` horizontalement. Ne raisonne pas toujours en « horizontal/vertical »."
+    },
+    {
+      "id": 36,
+      "partTitle": "PARTIE 2 : Développement",
+      "prompt": "**Que retourne l'opérateur SQL `INTERSECT` ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Les lignes présentes dans les deux requêtes."
+        },
+        {
+          "key": "B",
+          "text": "Toutes les lignes des deux requêtes, avec doublons."
+        },
+        {
+          "key": "C",
+          "text": "Les lignes de la première requête absentes de la seconde."
+        },
+        {
+          "key": "D",
+          "text": "Le produit cartésien des deux requêtes."
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "A",
+      "correctAnswerRaw": "✅ Réponse correcte : A",
+      "explanation": "`INTERSECT` renvoie l'intersection des ensembles : uniquement les lignes communes aux deux requêtes. `EXCEPT` renvoie la différence.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** `INTERSECT` élimine les doublons. `EXCEPT` (ou `MINUS` selon le SGBD) retourne les lignes de la première requête qui ne sont pas dans la seconde."
+    },
+    {
+      "id": 37,
+      "partTitle": "PARTIE 2 : Développement",
+      "prompt": "On recherche la sous-chaîne `\"info\"` dans la chaîne `\"informatique\"`.\n**Quel indice est retourné par une recherche naïve, avec des indices commençant à 0 ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "-1"
+        },
+        {
+          "key": "B",
+          "text": "1"
+        },
+        {
+          "key": "C",
+          "text": "0"
+        },
+        {
+          "key": "D",
+          "text": "7"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctAnswerRaw": "✅ Réponse correcte : C (`0`)",
+      "explanation": "La sous-chaîne `\"info\"` commence au premier caractère de `\"informatique\"`. Avec des indices commençant à 0, sa position est `0`.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** Une recherche naive compare caractère par caractère et peut être en `O(n × m)`. Si la sous-chaîne n'était pas trouvée, la fonction retournerait souvent `-1`, pas `0`."
+    },
+    {
+      "id": 38,
+      "partTitle": "PARTIE 2 : Développement",
+      "prompt": "Dans un arbre binaire de recherche, on supprime un nœud qui possède **deux fils**.\n**Quelle stratégie permet de conserver la propriété d'ABR ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Le remplacer par le minimum de son sous-arbre droit ou le maximum de son sous-arbre gauche."
+        },
+        {
+          "key": "B",
+          "text": "Supprimer tout son sous-arbre."
+        },
+        {
+          "key": "C",
+          "text": "Le remplacer par la racine de l'arbre."
+        },
+        {
+          "key": "D",
+          "text": "Le laisser dans l'arbre sans modifier les liens."
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "A",
+      "correctAnswerRaw": "✅ Réponse correcte : A",
+      "explanation": "Le successeur infixe (minimum du sous-arbre droit) ou le prédécesseur (maximum du sous-arbre gauche) est la valeur qui préserve l'ordre de l'ABR. On copie cette valeur dans le nœud, puis on supprime le nœud remplaçant.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** On ne supprime pas tout le sous-arbre : cela ferait perdre de nombreuses valeurs. La suppression d'un nœud à deux fils se ramène à la suppression d'un nœud à zéro ou un fils."
+    },
+    {
+      "id": 39,
+      "partTitle": "PARTIE 2 : Développement",
+      "prompt": "On considère le code C suivant :\n\n{{CODE_0}}\n\n**Que contient la variable `taille` ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Le nombre d'enregistrements du fichier."
+        },
+        {
+          "key": "B",
+          "text": "La position courante avant le déplacement."
+        },
+        {
+          "key": "C",
+          "text": "La taille du fichier en octets."
+        },
+        {
+          "key": "D",
+          "text": "Le nombre de lignes du fichier."
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctAnswerRaw": "✅ Réponse correcte : C",
+      "explanation": "`fseek(f, 0, SEEK_END)` place le curseur à la fin du fichier. `ftell` retourne alors la position du curseur, c'est-à-dire la taille totale du fichier en octets.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** `ftell` retourne un déplacement en octets, pas un nombre d'enregistrements ni de lignes. Pour obtenir le nombre d'enregistrements, il faut diviser par `sizeof(type)`.",
+      "codeBlocks": [
+        {
+          "language": "c",
+          "code": "fseek(f, 0, SEEK_END);\nlong taille = ftell(f);"
+        }
+      ]
+    },
+    {
+      "id": 40,
+      "partTitle": "PARTIE 2 : Développement",
+      "prompt": "On considère le programme Java suivant :\n\n{{CODE_0}}\n\n**Qu'affiche ce programme ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Une erreur de compilation"
+        },
+        {
+          "key": "B",
+          "text": "Une `ClassCastException`"
+        },
+        {
+          "key": "C",
+          "text": "5"
+        },
+        {
+          "key": "D",
+          "text": "0"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctAnswerRaw": "✅ Réponse correcte : C (`5`)",
+      "explanation": "`o` référence une chaîne `\"hello\"`. Le test `instanceof String` est vrai, donc le transtypage `(String) o` est sûr. `s.length()` renvoie `5`.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** Un transtypage descendant sans vérification peut provoquer une `ClassCastException`. `instanceof` permet de vérifier le type réel avant de caster.",
+      "codeBlocks": [
+        {
+          "language": "java",
+          "code": "Object o = \"hello\";\nif (o instanceof String) {\n    String s = (String) o;\n    System.out.println(s.length());\n}"
+        }
+      ]
+    },
+    {
+      "id": 41,
+      "partTitle": "PARTIE 2 : Développement",
+      "prompt": "On considère le code JavaScript suivant :\n\n{{CODE_0}}\n\n**Qu'affiche ce code ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "8"
+        },
+        {
+          "key": "B",
+          "text": "4"
+        },
+        {
+          "key": "C",
+          "text": "6"
+        },
+        {
+          "key": "D",
+          "text": "Une erreur"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctAnswerRaw": "✅ Réponse correcte : C (`6`)",
+      "explanation": "La variable `y` déclarée dans le bloc avec `let` est locale à ce bloc. Le `y` utilisé dans `console.log` est celui du scope externe, qui vaut `3`. La fonction fléchée `f` double cette valeur : `3 × 2 = 6`.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** `let` et `const` sont limités au bloc ; `var` aurait été visible à l'extérieur du bloc. La fonction fléchée `x => x * 2` retourne implicitement l'expression.",
+      "codeBlocks": [
+        {
+          "language": "javascript",
+          "code": "const f = (x) => x * 2;\nlet y = 3;\n\n{\n    let y = 4;\n}\n\nconsole.log(f(y));"
+        }
+      ]
+    },
+    {
+      "id": 42,
+      "partTitle": "PARTIE 2 : Développement",
+      "prompt": "On considère les tables `client(id, nom)` et `commande(id, id_client, date_commande)`.\n**Que retourne la requête suivante ?**\n\n{{CODE_0}}",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Les clients qui n'ont aucune commande."
+        },
+        {
+          "key": "B",
+          "text": "Les clients qui ont au moins une commande."
+        },
+        {
+          "key": "C",
+          "text": "Tous les clients, même sans commande."
+        },
+        {
+          "key": "D",
+          "text": "Les commandes sans client."
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctAnswerRaw": "✅ Réponse correcte : B",
+      "explanation": "`EXISTS` est vrai dès qu'une ligne est trouvée dans la sous-requête. Ici, la sous-requête cherche une commande liée au client courant. On garde donc les clients ayant au moins une commande.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** `NOT EXISTS` donnerait l'inverse : les clients sans commande. Une sous-requête corrélée fait référence à la requête externe (`c.id`). `> ALL` compare à toutes les valeurs retournées, tandis que `> ANY` compare à au moins une valeur.",
+      "codeBlocks": [
+        {
+          "language": "sql",
+          "code": "SELECT nom\nFROM client c\nWHERE EXISTS (\n    SELECT 1 FROM commande cmd\n    WHERE cmd.id_client = c.id\n);"
+        }
+      ]
+    },
+    {
+      "id": 43,
+      "partTitle": "PARTIE 2 : Développement",
+      "prompt": "**Parmi les tris suivants, lequel partitionne le tableau autour d'un pivot et a une complexité moyenne en `O(n log n)` ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Le tri à bulles optimisé"
+        },
+        {
+          "key": "B",
+          "text": "Le tri fusion"
+        },
+        {
+          "key": "C",
+          "text": "Le tri par insertion"
+        },
+        {
+          "key": "D",
+          "text": "Le tri rapide (QuickSort)"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "D",
+      "correctAnswerRaw": "✅ Réponse correcte : D (QuickSort)",
+      "explanation": "QuickSort choisit un pivot, partitionne le tableau en éléments plus petits et plus grands, puis trie récursivement les deux parties. Sa complexité moyenne est `O(n log n)`.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** Dans le pire cas, avec un pivot mal choisi, QuickSort devient `O(n²)`. Le tri fusion garantit `O(n log n)` mais utilise un tableau auxiliaire."
+    },
+    {
+      "id": 44,
+      "partTitle": "PARTIE 2 : Développement",
+      "prompt": "On donne les parcours d'un arbre binaire :\n- Préfixe : `A B D E C F`\n- Infixe : `D B E A C F`\n\n**Quel est le fils droit du nœud `B` ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "`D`"
+        },
+        {
+          "key": "B",
+          "text": "`E`"
+        },
+        {
+          "key": "C",
+          "text": "`C`"
+        },
+        {
+          "key": "D",
+          "text": "`F`"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctAnswerRaw": "✅ Réponse correcte : B (`E`)",
+      "explanation": "Le préfixe donne la racine `A`. L'infixe coupe le sous-arbre gauche `D B E` et le sous-arbre droit `C F`. Dans le sous-arbre gauche, `B` est la racine, `D` est à gauche et `E` à droite. Le fils droit de `B` est donc `E`.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** Le premier élément du parcours préfixe est toujours la racine. Le parcours infixe permet de séparer les nœuds à gauche et à droite de cette racine."
+    },
+    {
+      "id": 45,
+      "partTitle": "PARTIE 2 : Développement",
+      "prompt": "On considère le code C suivant :\n\n{{CODE_0}}\n\n**Que peut-on dire de ce code ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Il provoque une erreur de compilation certaine."
+        },
+        {
+          "key": "B",
+          "text": "Il affiche correctement `3.14`."
+        },
+        {
+          "key": "C",
+          "text": "Il affiche toujours `3`."
+        },
+        {
+          "key": "D",
+          "text": "Le format `%d` ne correspond pas au type `double` : le comportement est indéfini et l'affichage est incorrect."
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "D",
+      "correctAnswerRaw": "✅ Réponse correcte : D",
+      "explanation": "`3.14` est un littéral `double`. Le format `%d` attend un `int`. Le compilateur peut émettre un avertissement, mais le programme peut se compiler ; à l'exécution, l'affichage est incohérent.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** Utilise `%f` pour un `float` ou un `double`, `%d` pour un `int`, `%s` pour une chaîne et `%p` pour un pointeur. Une erreur de format est une erreur d'exécution, pas nécessairement une erreur de compilation.",
+      "codeBlocks": [
+        {
+          "language": "c",
+          "code": "printf(\"%d\", 3.14);"
+        }
+      ]
+    },
+    {
+      "id": 46,
+      "partTitle": "PARTIE 2 : Développement",
+      "prompt": "**En Java, quand le bloc `finally` d'un `try / catch / finally` est-il exécuté ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Uniquement lorsqu'une exception est levée."
+        },
+        {
+          "key": "B",
+          "text": "Uniquement lorsqu'aucune exception n'est levée."
+        },
+        {
+          "key": "C",
+          "text": "Jamais, sauf si l'on appelle `System.exit`."
+        },
+        {
+          "key": "D",
+          "text": "Quasiment toujours, qu'une exception soit levée ou non."
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "D",
+      "correctAnswerRaw": "✅ Réponse correcte : D",
+      "explanation": "Le bloc `finally` est prévu pour libérer les ressources (fichiers, connexions). Il s'exécute après le `try` et le `catch`, qu'une exception ait été levée ou non.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** `finally` ne s'exécute pas si la JVM est arrêtée brutalement avec `System.exit`. `throw` lève une exception ; `throws` déclare qu'une méthode peut en lever une."
+    },
+    {
+      "id": 47,
+      "partTitle": "PARTIE 2 : Développement",
+      "prompt": "On considère le code JavaScript suivant :\n\n{{CODE_0}}\n\n**Que contient `resultat` ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "`[10, 20, 30, 40]`"
+        },
+        {
+          "key": "B",
+          "text": "`[2, 4]`"
+        },
+        {
+          "key": "C",
+          "text": "`[1, 3]`"
+        },
+        {
+          "key": "D",
+          "text": "`[20, 40]`"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "D",
+      "correctAnswerRaw": "✅ Réponse correcte : D (`[20, 40]`)",
+      "explanation": "`filter` garde les nombres pairs : `[2, 4]`. Ensuite, `map` multiplie chaque élément par `10` : `[20, 40]`.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** `filter` renvoie un nouveau tableau de même type, `map` transforme chaque élément, et `find` renvoie seulement le **premier** élément correspondant. Ne confonds pas `filter` et `find`.",
+      "codeBlocks": [
+        {
+          "language": "javascript",
+          "code": "const resultat = [1, 2, 3, 4]\n    .filter(x => x % 2 === 0)\n    .map(x => x * 10);"
+        }
+      ]
+    },
+    {
+      "id": 48,
+      "partTitle": "PARTIE 2 : Développement",
+      "prompt": "**Quelle commande SQL supprime toutes les lignes d'une table tout en conservant sa structure, et est généralement plus rapide que `DELETE` sans condition ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "`DELETE FROM table;`"
+        },
+        {
+          "key": "B",
+          "text": "`DROP TABLE table;`"
+        },
+        {
+          "key": "C",
+          "text": "`TRUNCATE TABLE table;`"
+        },
+        {
+          "key": "D",
+          "text": "`ALTER TABLE table;`"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctAnswerRaw": "✅ Réponse correcte : C (`TRUNCATE`)",
+      "explanation": "`TRUNCATE` vide la table en libérant les pages de données, sans traiter les lignes une par une. La structure de la table reste intacte.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** `DELETE` peut être filtré avec `WHERE` et peut être annulé dans une transaction selon le SGBD. `DROP` supprime la table elle-même, structure comprise. `TRUNCATE` est souvent irréversible."
+    },
+    {
+      "id": 49,
+      "partTitle": "PARTIE 2 : Développement",
+      "prompt": "Dans un fichier binaire d'enregistrements de type `Employe`, on exécute :\n\n{{CODE_0}}\n\n**Quel type d'accès cela réalise-t-il ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Un accès direct à l'enregistrement d'indice `i`."
+        },
+        {
+          "key": "B",
+          "text": "Un accès strictement séquentiel depuis le début du fichier."
+        },
+        {
+          "key": "C",
+          "text": "Une suppression de l'enregistrement `i`."
+        },
+        {
+          "key": "D",
+          "text": "Un truncate du fichier."
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "A",
+      "correctAnswerRaw": "✅ Réponse correcte : A",
+      "explanation": "`fseek` déplace le curseur directement à l'offset de l'enregistrement `i`, puis `fread` lit cet enregistrement. C'est un accès direct (ou aléatoire), car on peut sauter immédiatement à un enregistrement précis.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** L'accès direct est possible dans un fichier binaire de taille fixe par enregistrement. Dans un fichier texte de longueur variable, on ne peut pas calculer l'offset aussi simplement.",
+      "codeBlocks": [
+        {
+          "language": "c",
+          "code": "fseek(f, i * sizeof(Employe), SEEK_SET);\nfread(&e, sizeof(Employe), 1, f);"
+        }
+      ]
+    },
+    {
+      "id": 50,
+      "partTitle": "PARTIE 2 : Développement",
+      "prompt": "**Quel algorithme calcule le plus court chemin depuis une source dans un graphe pondéré sans poids négatifs ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Kruskal"
+        },
+        {
+          "key": "B",
+          "text": "Prim"
+        },
+        {
+          "key": "C",
+          "text": "Dijkstra"
+        },
+        {
+          "key": "D",
+          "text": "Un parcours BFS simple"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctAnswerRaw": "✅ Réponse correcte : C (Dijkstra)",
+      "explanation": "Dijkstra explore les sommets par distance croissante depuis la source et met à jour les distances des voisins. Il fonctionne avec des poids positifs ou nuls.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** BFS trouve le plus court chemin en nombre d'arêtes, pas en poids. Dijkstra ne fonctionne pas avec des poids négatifs ; il faut alors utiliser Bellman-Ford."
+    },
+    {
+      "id": 51,
+      "partTitle": "PARTIE 2 : Développement",
+      "prompt": "**Que fait la fonction JavaScript `JSON.stringify` ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Elle convertit un objet JavaScript en chaîne JSON."
+        },
+        {
+          "key": "B",
+          "text": "Elle convertit une chaîne JSON en objet JavaScript."
+        },
+        {
+          "key": "C",
+          "text": "Elle clone un objet en conservant ses méthodes."
+        },
+        {
+          "key": "D",
+          "text": "Elle valide un fichier JSON sans le modifier."
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "A",
+      "correctAnswerRaw": "✅ Réponse correcte : A",
+      "explanation": "`JSON.stringify(objet)` sérialise un objet en chaîne JSON, utile pour l'envoyer via HTTP ou le stocker. `JSON.parse(chaine)` fait l'opération inverse.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** `JSON.stringify` ignore les fonctions et les propriétés `undefined`. Il ne clone pas les méthodes : JSON ne représente que des données."
+    },
+    {
+      "id": 52,
+      "partTitle": "PARTIE 2 : Développement",
+      "prompt": "**Qu'est-ce qu'une vue (`VIEW`) en SQL ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Une copie physique complète des données."
+        },
+        {
+          "key": "B",
+          "text": "Un index spécialisé pour accélérer les recherches."
+        },
+        {
+          "key": "C",
+          "text": "Un déclencheur exécuté automatiquement."
+        },
+        {
+          "key": "D",
+          "text": "Une table virtuelle définie par une requête."
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "D",
+      "correctAnswerRaw": "✅ Réponse correcte : D",
+      "explanation": "Une vue est une requête stockée sous un nom. Elle ne contient pas nécessairement de données : elle affiche le résultat de sa requête à chaque consultation.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** Une vue peut simplifier les requêtes et restreindre l'accès à certaines colonnes. Elle n'est pas forcément une copie physique : on parle de vue matérialisée seulement lorsqu'il y a stockage."
+    },
+    {
+      "id": 53,
+      "partTitle": "PARTIE 2 : Développement",
+      "prompt": "**Que vaut l'expression suivante ?**\n`NON (10 MOD 3 = 1) OU (2 * 3 > 5)`",
+      "choices": [
+        {
+          "key": "A",
+          "text": "FAUX"
+        },
+        {
+          "key": "B",
+          "text": "VRAI"
+        },
+        {
+          "key": "C",
+          "text": "1"
+        },
+        {
+          "key": "D",
+          "text": "0"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctAnswerRaw": "✅ Réponse correcte : B (VRAI)",
+      "explanation": "* `10 MOD 3 = 1` est vrai.\n  * `NON (VRAI)` vaut faux.\n  * `2 * 3 > 5` est vrai (`6 > 5`).\n  * `FAUX OU VRAI` vaut **VRAI**.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** Les parenthèses imposent l'ordre. `NON` s'applique à toute la comparaison entre parenthèses, pas seulement au `10`. `OU` est vrai dès qu'une seule proposition est vraie."
+    },
+    {
+      "id": 54,
+      "partTitle": "PARTIE 2 : Développement",
+      "prompt": "**Quels algorithmes permettent de construire un arbre couvrant minimal (MST) ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Dijkstra et BFS"
+        },
+        {
+          "key": "B",
+          "text": "BFS et DFS"
+        },
+        {
+          "key": "C",
+          "text": "Dijkstra et Bellman-Ford"
+        },
+        {
+          "key": "D",
+          "text": "Prim et Kruskal"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "D",
+      "correctAnswerRaw": "✅ Réponse correcte : D (Prim et Kruskal)",
+      "explanation": "Prim construit l'arbre à partir d'un sommet en ajoutant toujours l'arête de coût minimal qui relie l'arbre à un nouveau sommet. Kruskal trie les arêtes et les ajoute si elles ne créent pas de cycle.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** Dijkstra calcule des plus courts chemins depuis une source, pas un arbre couvrant minimal. Prim et Kruskal produisent un arbre qui relie tous les sommets avec le coût total minimal."
+    },
+    {
+      "id": 55,
+      "partTitle": "PARTIE 2 : Développement",
+      "prompt": "**En PHP, que valent `count([1, 2, 3])` et que fait `require_once` ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "`2` et inclut le fichier à chaque appel."
+        },
+        {
+          "key": "B",
+          "text": "`3` et inclut le fichier une seule fois, même si l'instruction est répétée."
+        },
+        {
+          "key": "C",
+          "text": "`3` et inclut le fichier uniquement s'il est optionnel."
+        },
+        {
+          "key": "D",
+          "text": "`4` et inclut le fichier une seule fois."
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctAnswerRaw": "✅ Réponse correcte : B",
+      "explanation": "`count` retourne le nombre d'éléments du tableau, ici `3`. `require_once` inclut le fichier une seule fois : si le fichier a déjà été inclus, PHP l'ignore.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** `include` peut inclure plusieurs fois et émet un avertissement si le fichier manque. `require` provoque une erreur fatale si le fichier est absent. `require_once` combine l'obligation et l'unicité."
+    },
+    {
+      "id": 56,
+      "partTitle": "PARTIE 2 : Développement",
+      "prompt": "**Dans un diagramme de séquence UML, quel fragment combiné représente un choix conditionnel avec plusieurs branches ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "`alt`"
+        },
+        {
+          "key": "B",
+          "text": "`opt`"
+        },
+        {
+          "key": "C",
+          "text": "`loop`"
+        },
+        {
+          "key": "D",
+          "text": "`par`"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "A",
+      "correctAnswerRaw": "✅ Réponse correcte : A (`alt`)",
+      "explanation": "`alt` représente une alternative : plusieurs branches conditionnelles, comme un `if / else`. `opt` représente une partie optionnelle, `loop` une répétition et `par` des exécutions parallèles.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** `opt` n'a qu'une seule branche optionnelle ; `alt` a plusieurs branches mutuellement exclusives. Ne confonds pas les deux."
+    },
+    {
+      "id": 57,
+      "partTitle": "PARTIE 2 : Développement",
+      "prompt": "**Quelle variable superglobale PHP contient les informations sur un fichier envoyé via un formulaire `multipart/form-data` ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "`$_POST`"
+        },
+        {
+          "key": "B",
+          "text": "`$_GET`"
+        },
+        {
+          "key": "C",
+          "text": "`$_FILES`"
+        },
+        {
+          "key": "D",
+          "text": "`$_SESSION`"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctAnswerRaw": "✅ Réponse correcte : C (`$_FILES`)",
+      "explanation": "`$_FILES` contient le nom temporaire, le nom original, la taille, le type et le code d'erreur du fichier uploadé. On déplace ensuite le fichier avec `move_uploaded_file`.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** `$_POST` contient les champs texte, pas le contenu binaire du fichier. Il faut vérifier la taille, le type MIME et le code d'erreur avant de déplacer le fichier."
+    },
+    {
+      "id": 58,
+      "partTitle": "PARTIE 2 : Développement",
+      "prompt": "**Dans Scrum, qui est responsable de maximiser la valeur du produit et de gérer le Product Backlog ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Le Scrum Master"
+        },
+        {
+          "key": "B",
+          "text": "Le Product Owner"
+        },
+        {
+          "key": "C",
+          "text": "Le client final"
+        },
+        {
+          "key": "D",
+          "text": "Le testeur"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctAnswerRaw": "✅ Réponse correcte : B (le Product Owner)",
+      "explanation": "Le Product Owner porte la vision du produit, priorise le Product Backlog et maximise la valeur livrée. Le Scrum Master facilite le processus et lève les obstacles.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** Le Scrum Master n'est pas le chef de projet et ne décide pas des priorités fonctionnelles. Il veille au respect de Scrum et aide l'équipe à s'améliorer."
+    },
+    {
+      "id": 59,
+      "partTitle": "PARTIE 2 : Développement",
+      "prompt": "**Que signifient les critères SMART pour définir un objectif de projet ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Simple, Mesurable, Automatique, Rapide, Testé"
+        },
+        {
+          "key": "B",
+          "text": "Spécifique, Motivant, Ambitieux, Réaliste, Terminé"
+        },
+        {
+          "key": "C",
+          "text": "Spécifique, Mesurable, Atteignable, Réaliste, Temporellement défini"
+        },
+        {
+          "key": "D",
+          "text": "Standard, Méthodique, Agile, Rapide, Transparent"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctAnswerRaw": "✅ Réponse correcte : C",
+      "explanation": "SMART signifie Specific, Measurable, Achievable, Relevant, Time-bound : spécifique, mesurable, atteignable, pertinent/réaliste et limité dans le temps.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** Un objectif SMART doit pouvoir être évalué objectivement. « Améliorer le système » n'est pas SMART ; « réduire le temps de réponse de 20 % en trois mois » l'est."
+    },
+    {
+      "id": 60,
+      "partTitle": "PARTIE 2 : Développement",
+      "prompt": "**Quelle est la différence entre la maîtrise d'ouvrage (MOA) et la maîtrise d'œuvre (MOE) ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "La MOE exprime les besoins et finance le projet ; la MOA réalise le projet."
+        },
+        {
+          "key": "B",
+          "text": "La MOA réalise le projet ; la MOE exprime les besoins."
+        },
+        {
+          "key": "C",
+          "text": "La MOA et la MOE ont exactement le même rôle."
+        },
+        {
+          "key": "D",
+          "text": "La MOA exprime les besoins et représente le client ; la MOE réalise techniquement le projet."
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "D",
+      "correctAnswerRaw": "✅ Réponse correcte : D",
+      "explanation": "La MOA (maîtrise d'ouvrage) représente le client, définit les besoins, le budget et les attentes. La MOE (maîtrise d'œuvre) est chargée de la conception technique et de la réalisation.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** La MOA dit « quoi » et « pourquoi » ; la MOE dit « comment ». Ne confonds pas le commanditaire avec le réalisateur."
+    },
+    {
+      "id": 61,
+      "partTitle": "PARTIE 3 : Logiciels et Multimédia",
+      "prompt": "Dans un tableau croisé dynamique Excel, on veut regrouper les ventes par ville, avec une ligne par ville.\n**Dans quelle zone faut-il placer le champ `Ville` ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Dans la zone `Lignes`"
+        },
+        {
+          "key": "B",
+          "text": "Dans la zone `Valeurs`"
+        },
+        {
+          "key": "C",
+          "text": "Dans la zone `Filtres`"
+        },
+        {
+          "key": "D",
+          "text": "Dans la zone `Colonnes`"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "A",
+      "correctAnswerRaw": "✅ Réponse correcte : A (zone Lignes)",
+      "explanation": "La zone `Lignes` crée une ligne par valeur distincte du champ. En plaçant `Ville` dans `Lignes`, on obtient une ligne par ville.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** `Colonnes` crée des colonnes par valeur, `Valeurs` contient les mesures à calculer (somme, moyenne, etc.) et `Filtres` restreint l'affichage. Ne place pas un texte dans `Valeurs` si tu veux seulement regrouper."
+    },
+    {
+      "id": 62,
+      "partTitle": "PARTIE 3 : Logiciels et Multimédia",
+      "prompt": "**Quel outil de PowerPoint permet de lister tous les objets d'une diapositive, de les renommer et de gérer leur visibilité ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Le volet des diapositives"
+        },
+        {
+          "key": "B",
+          "text": "Le volet de sélection"
+        },
+        {
+          "key": "C",
+          "text": "Le volet des commentaires"
+        },
+        {
+          "key": "D",
+          "text": "Le volet des transitions"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctAnswerRaw": "✅ Réponse correcte : B (le volet de sélection)",
+      "explanation": "Le volet de sélection affiche la liste des objets de la diapositive. On peut les renommer, les masquer, les réordonner et les sélectionner facilement, même lorsqu'ils sont superposés.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** Le volet des diapositives affiche les miniatures des diapositives, pas les objets internes. Le volet de sélection est indispensable pour gérer les objets cachés derrière d'autres."
+    },
+    {
+      "id": 63,
+      "partTitle": "PARTIE 3 : Logiciels et Multimédia",
+      "prompt": "**Quel format d'image utilise une compression avec perte de qualité ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "PNG"
+        },
+        {
+          "key": "B",
+          "text": "GIF"
+        },
+        {
+          "key": "C",
+          "text": "JPEG"
+        },
+        {
+          "key": "D",
+          "text": "SVG"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctAnswerRaw": "✅ Réponse correcte : C (JPEG)",
+      "explanation": "JPEG utilise une compression avec perte : il supprime des détails peu perceptibles pour réduire fortement le poids. Il est adapté aux photographies.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** PNG est sans perte et gère la transparence alpha ; GIF est limité à 256 couleurs ; SVG est vectoriel. Pour une image contenant du texte ou des contours nets, PNG est souvent préférable."
+    },
+    {
+      "id": 64,
+      "partTitle": "PARTIE 3 : Logiciels et Multimédia",
+      "prompt": "Dans un tableau croisé dynamique Excel, on place un champ numérique `Montant` dans la zone `Valeurs`.\n**Quel calcul est utilisé par défaut ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Le nombre de valeurs (`NB`)"
+        },
+        {
+          "key": "B",
+          "text": "La somme (`SOMME`)"
+        },
+        {
+          "key": "C",
+          "text": "La moyenne (`MOYENNE`)"
+        },
+        {
+          "key": "D",
+          "text": "Le maximum (`MAX`)"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctAnswerRaw": "✅ Réponse correcte : B (SOMME)",
+      "explanation": "Pour un champ numérique, Excel utilise par défaut la somme dans un tableau croisé dynamique. On peut ensuite choisir `NB`, `MOYENNE`, `MAX`, `MIN`, etc.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** Pour un champ texte, le calcul par défaut est le nombre de valeurs. Vérifie toujours le calcul affiché dans l'en-tête de la zone `Valeurs`."
+    },
+    {
+      "id": 65,
+      "partTitle": "PARTIE 3 : Logiciels et Multimédia",
+      "prompt": "**Quel réglage d'animation PowerPoint permet de déclencher une animation en cliquant sur un objet précis ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "La durée"
+        },
+        {
+          "key": "B",
+          "text": "Le délai"
+        },
+        {
+          "key": "C",
+          "text": "Le déclencheur (trigger)"
+        },
+        {
+          "key": "D",
+          "text": "La transition"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctAnswerRaw": "✅ Réponse correcte : C (le déclencheur)",
+      "explanation": "Un déclencheur associe une animation à un objet interactif. Lorsque l'on clique sur cet objet, l'animation démarre, indépendamment de l'ordre normal du diaporama.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** La durée contrôle la vitesse de l'animation et le délai son temps d'attente. Le déclencheur contrôle le **moment** et **l'événement** de départ."
+    },
+    {
+      "id": 66,
+      "partTitle": "PARTIE 3 : Logiciels et Multimédia",
+      "prompt": "**Quel format d'image est sans perte et prend en charge la transparence alpha ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "JPEG"
+        },
+        {
+          "key": "B",
+          "text": "GIF"
+        },
+        {
+          "key": "C",
+          "text": "BMP"
+        },
+        {
+          "key": "D",
+          "text": "PNG"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "D",
+      "correctAnswerRaw": "✅ Réponse correcte : D (PNG)",
+      "explanation": "PNG utilise une compression sans perte et gère un canal alpha pour la transparence. Il est adapté aux logos, aux icônes et aux images avec du texte.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** GIF gère aussi la transparence, mais avec seulement 256 couleurs et une transparence binaire (transparent ou opaque). PNG offre une transparence progressive."
+    },
+    {
+      "id": 67,
+      "partTitle": "PARTIE 3 : Logiciels et Multimédia",
+      "prompt": "Dans Excel, on veut colorer les lignes de la plage `A2:D100` lorsque le salaire de la colonne `D` dépasse `5000`.\n**Quelle formule faut-il utiliser dans la mise en forme conditionnelle ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "`=D$2>5000`"
+        },
+        {
+          "key": "B",
+          "text": "`=$D$2>5000`"
+        },
+        {
+          "key": "C",
+          "text": "`=$D2>5000`"
+        },
+        {
+          "key": "D",
+          "text": "`=D2>5000`"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctAnswerRaw": "✅ Réponse correcte : C (`=$D2>5000`)",
+      "explanation": "La formule est appliquée à partir de la première cellule de la plage. `$D` bloque la colonne D, et `2` reste relatif pour que chaque ligne utilise son propre salaire. La ligne 2 est colorée si `D2 > 5000`, la ligne 3 si `D3 > 5000`, etc.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** `=$D$2>5000` testerait toujours la même cellule D2 pour toutes les lignes. `=D2>5000` décalerait aussi la colonne et testerait E2, F2, etc. Le `$` devant D est essentiel."
+    },
+    {
+      "id": 68,
+      "partTitle": "PARTIE 3 : Logiciels et Multimédia",
+      "prompt": "**Quel mode d'affichage PowerPoint présente les diapositives sous forme de miniatures pour les réorganiser rapidement ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Le mode Normal"
+        },
+        {
+          "key": "B",
+          "text": "Le mode Lecture"
+        },
+        {
+          "key": "C",
+          "text": "Le mode Présentateur"
+        },
+        {
+          "key": "D",
+          "text": "Le mode Trieuse de diapositives"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "D",
+      "correctAnswerRaw": "✅ Réponse correcte : D (Trieuse de diapositives)",
+      "explanation": "Le mode Trieuse affiche toutes les diapositives en miniatures. On peut les déplacer, les dupliquer, les supprimer et organiser la présentation globalement.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** Le mode Normal sert à modifier le contenu d'une diapositive. Le mode Lecture affiche le diaporama. La trieuse est le mode de gestion de l'ordre des diapositives."
+    },
+    {
+      "id": 69,
+      "partTitle": "PARTIE 3 : Logiciels et Multimédia",
+      "prompt": "**Quel format d'image est limité à 256 couleurs et peut contenir une animation ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "JPEG"
+        },
+        {
+          "key": "B",
+          "text": "PNG"
+        },
+        {
+          "key": "C",
+          "text": "SVG"
+        },
+        {
+          "key": "D",
+          "text": "TIFF"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "E",
+      "correctAnswerRaw": "✅ Réponse correcte : E (le format GIF)",
+      "explanation": "GIF utilise une palette de 256 couleurs au maximum et peut stocker plusieurs images pour créer une animation simple. Il est adapté aux petites animations et aux images à aplats.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** GIF n'est pas adapté aux photographies, car la palette de 256 couleurs provoque des pertes visibles. Pour une animation moderne de meilleure qualité, on utilise souvent WebP ou une vidéo."
+    },
+    {
+      "id": 70,
+      "partTitle": "PARTIE 3 : Logiciels et Multimédia",
+      "prompt": "Dans Excel, on veut empêcher la saisie d'une valeur qui ne fait pas partie d'une liste prédéfinie.\n**Quel outil faut-il utiliser ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "La mise en forme conditionnelle"
+        },
+        {
+          "key": "B",
+          "text": "Un tableau croisé dynamique"
+        },
+        {
+          "key": "C",
+          "text": "Un filtre automatique"
+        },
+        {
+          "key": "D",
+          "text": "La validation des données avec une liste"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "D",
+      "correctAnswerRaw": "✅ Réponse correcte : D (validation des données)",
+      "explanation": "La validation des données permet de définir une liste autorisée, une plage de valeurs, une longueur maximale ou un message d'erreur. Une valeur hors liste est refusée.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** La mise en forme conditionnelle change seulement l'apparence ; elle ne bloque pas la saisie. La validation des données contrôle réellement le contenu entré."
+    },
+    {
+      "id": 71,
+      "partTitle": "PARTIE 3 : Logiciels et Multimédia",
+      "prompt": "**Quel format PowerPoint ouvre directement le diaporama en mode plein écran lorsqu'on double-clique sur le fichier ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "`.pptx`"
+        },
+        {
+          "key": "B",
+          "text": "`.potx`"
+        },
+        {
+          "key": "C",
+          "text": "`.docx`"
+        },
+        {
+          "key": "D",
+          "text": "`.xlsx`"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "E",
+      "correctAnswerRaw": "✅ Réponse correcte : E (le format `.ppsx`)",
+      "explanation": "Un fichier `.ppsx` est un diaporama PowerPoint qui démarre directement en mode présentation. Le format `.pptx` ouvre la présentation en mode édition.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** `.pptx` = présentation éditable, `.ppsx` = diaporama, `.potx` = modèle. Ne confonds pas le format de travail et le format de diffusion."
+    },
+    {
+      "id": 72,
+      "partTitle": "PARTIE 3 : Logiciels et Multimédia",
+      "prompt": "**Quel format audio est compressé sans perte de qualité ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "FLAC"
+        },
+        {
+          "key": "B",
+          "text": "MP3"
+        },
+        {
+          "key": "C",
+          "text": "WAV"
+        },
+        {
+          "key": "D",
+          "text": "AIFF"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "A",
+      "correctAnswerRaw": "✅ Réponse correcte : A (FLAC)",
+      "explanation": "FLAC compresse les données audio sans perte : le fichier est plus petit qu'un WAV, mais la qualité reste identique après décodage. MP3 est avec perte ; WAV et AIFF sont généralement non compressés.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** « Compressé » ne veut pas dire « avec perte ». FLAC réduit la taille sans supprimer d'information audio, contrairement au MP3."
+    },
+    {
+      "id": 73,
+      "partTitle": "PARTIE 3 : Logiciels et Multimédia",
+      "prompt": "**Quel type de graphique est le plus adapté pour visualiser l'évolution d'une grandeur dans le temps ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Un graphique en secteurs (camembert)"
+        },
+        {
+          "key": "B",
+          "text": "Un graphique en barres"
+        },
+        {
+          "key": "C",
+          "text": "Un nuage de points"
+        },
+        {
+          "key": "D",
+          "text": "Un graphique radar"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "E",
+      "correctAnswerRaw": "✅ Réponse correcte : E (le graphique en courbes)",
+      "explanation": "Un graphique en courbes place le temps en abscisse et la grandeur en ordonnée. Il montre clairement les tendances et les variations continues.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** Le camembert montre des proportions, les barres comparent des catégories, le nuage de points étudie la corrélation entre deux variables. Pour une évolution temporelle, la courbe est le choix standard."
+    },
+    {
+      "id": 74,
+      "partTitle": "PARTIE 3 : Logiciels et Multimédia",
+      "prompt": "**Quel est le format d'un modèle PowerPoint réutilisable ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "`.potx`"
+        },
+        {
+          "key": "B",
+          "text": "`.ppsx`"
+        },
+        {
+          "key": "C",
+          "text": "`.pptx`"
+        },
+        {
+          "key": "D",
+          "text": "`.pdf`"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "A",
+      "correctAnswerRaw": "✅ Réponse correcte : A (`.potx`)",
+      "explanation": "`.potx` est un modèle PowerPoint. Il conserve les masques, les dispositions, les thèmes et les styles, mais pas le contenu d'une présentation spécifique.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** `.pptx` est une présentation, `.ppsx` un diaporama, `.potx` un modèle. Le modèle sert à créer de nouvelles présentations avec la même identité visuelle."
+    },
+    {
+      "id": 75,
+      "partTitle": "PARTIE 3 : Logiciels et Multimédia",
+      "prompt": "**Quelle affirmation distingue correctement un codec d'un conteneur vidéo ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "H.264 est un conteneur et MP4 est un codec."
+        },
+        {
+          "key": "B",
+          "text": "MP4 est un conteneur et H.264 est un codec."
+        },
+        {
+          "key": "C",
+          "text": "MP4 et H.264 sont tous les deux des codecs."
+        },
+        {
+          "key": "D",
+          "text": "MP4 et H.264 sont tous les deux des conteneurs."
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctAnswerRaw": "✅ Réponse correcte : B",
+      "explanation": "MP4 est un conteneur : il peut contenir une piste vidéo, une piste audio, des sous-titres et des métadonnées. H.264 est un codec vidéo : il définit comment compresser et décompresser l'image.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** Un conteneur n'est pas un codec. MKV et MP4 sont des conteneurs ; H.264, H.265 et VP9 sont des codecs. Un fichier MP4 peut contenir du H.264 ou du H.265."
+    },
+    {
+      "id": 76,
+      "partTitle": "PARTIE 3 : Logiciels et Multimédia",
+      "prompt": "**Quel type de graphique est le plus adapté pour montrer la répartition d'un total en pourcentages ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Un graphique en secteurs (camembert)"
+        },
+        {
+          "key": "B",
+          "text": "Un graphique en courbes"
+        },
+        {
+          "key": "C",
+          "text": "Un nuage de points"
+        },
+        {
+          "key": "D",
+          "text": "Un histogramme"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "A",
+      "correctAnswerRaw": "✅ Réponse correcte : A (le camembert)",
+      "explanation": "Le camembert divise un cercle en secteurs proportionnels à chaque catégorie. Il est adapté pour montrer des parts d'un tout, surtout avec peu de catégories.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** Le camembert n'est pas adapté pour comparer beaucoup de catégories ou montrer une évolution. Dans ce cas, préfère un graphique en barres ou en courbes."
+    },
+    {
+      "id": 77,
+      "partTitle": "PARTIE 3 : Logiciels et Multimédia",
+      "prompt": "**Quel est le format standard d'une présentation PowerPoint modifiable ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "`.ppsx`"
+        },
+        {
+          "key": "B",
+          "text": "`.pptx`"
+        },
+        {
+          "key": "C",
+          "text": "`.potx`"
+        },
+        {
+          "key": "D",
+          "text": "`.mp4`"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctAnswerRaw": "✅ Réponse correcte : B (`.pptx`)",
+      "explanation": "`.pptx` est le format XML standard des présentations PowerPoint. Il contient les diapositives, les objets, les animations et les mises en forme, et reste modifiable.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** `.ppsx` est destiné à la diffusion, `.potx` à la création de modèles et `.mp4` à l'export vidéo. Pour travailler et modifier, utilise `.pptx`."
+    },
+    {
+      "id": 78,
+      "partTitle": "PARTIE 3 : Logiciels et Multimédia",
+      "prompt": "**Quel est l'avantage principal du codec H.265 (HEVC) par rapport à H.264 ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Il ne compresse pas les vidéos."
+        },
+        {
+          "key": "B",
+          "text": "Il produit toujours une qualité inférieure."
+        },
+        {
+          "key": "C",
+          "text": "Il offre une meilleure compression à qualité visuelle équivalente, ce qui réduit le débit ou la taille."
+        },
+        {
+          "key": "D",
+          "text": "Il ne fonctionne que pour l'audio."
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctAnswerRaw": "✅ Réponse correcte : C",
+      "explanation": "H.265 améliore la compression : à qualité équivalente, il nécessite environ 25 à 50 % de débit en moins que H.264. Il est adapté à la 4K et aux vidéos à haute résolution.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** H.265 est plus exigeant en calcul et moins universellement supporté que H.264. Meilleure compression ne signifie pas toujours meilleure compatibilité."
+    },
+    {
+      "id": 79,
+      "partTitle": "PARTIE 3 : Logiciels et Multimédia",
+      "prompt": "Une vidéo a un débit de `5 Mbps` et une durée de `2 minutes`.\n**Quel est le poids approximatif de la vidéo (1 Mo = 8 Mb) ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "150 Mo"
+        },
+        {
+          "key": "B",
+          "text": "60 Mo"
+        },
+        {
+          "key": "C",
+          "text": "10 Mo"
+        },
+        {
+          "key": "D",
+          "text": "75 Mo"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "D",
+      "correctAnswerRaw": "✅ Réponse correcte : D (`75 Mo`)",
+      "explanation": "`2 minutes = 120 secondes`. Le poids est `5 Mbps × 120 s = 600 Mb`. On convertit en Mo : `600 / 8 = 75 Mo`.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** Ne confonds pas Mb (mégabits) et Mo (mégaoctets) : il faut diviser par 8. Le débit est souvent donné en Mbps, alors que la taille des fichiers est en Mo."
+    },
+    {
+      "id": 80,
+      "partTitle": "PARTIE 3 : Logiciels et Multimédia",
+      "prompt": "Une vidéo dure `1 h 30 min`. Elle a un débit vidéo de `4 Mbps` et un débit audio de `128 kbps`.\n**Quel est son poids total approximatif (1 Go = 8 Gb) ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "1,5 Go"
+        },
+        {
+          "key": "B",
+          "text": "2,0 Go"
+        },
+        {
+          "key": "C",
+          "text": "3,5 Go"
+        },
+        {
+          "key": "D",
+          "text": "5,0 Go"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "E",
+      "correctAnswerRaw": "✅ Réponse correcte : E (le poids total est environ `2,79 Go`)",
+      "explanation": "* Durée : `1 h 30 = 5400 s`.\n  * Vidéo : `4 Mbps × 5400 = 21 600 Mb`, soit `2 700 Mo ≈ 2,70 Go`.\n  * Audio : `128 kbps = 0,128 Mbps`, donc `0,128 × 5400 = 691,2 Mb`, soit `86,4 Mo ≈ 0,086 Go`.\n  * Total : `2,70 + 0,086 ≈ 2,79 Go`.\n  * Cette valeur n'apparaît pas dans les choix A à D.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** Il faut additionner les débits vidéo et audio avant de convertir, ou convertir séparément puis additionner. `2,70 Go` correspond à la vidéo seule, pas au total."
+    }
+  ]
+}

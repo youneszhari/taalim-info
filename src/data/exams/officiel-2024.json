@@ -1,0 +1,2564 @@
+{
+  "id": "officiel-2024",
+  "title": "Examen Officiel 2024",
+  "year": "2024",
+  "category": "officiel",
+  "subject": "Spécialité Informatique",
+  "durationMinutes": 240,
+  "coefficient": 20,
+  "totalQuestions": 80,
+  "questions": [
+    {
+      "id": 1,
+      "partTitle": "PARTIE 1 : Les Logiciels",
+      "prompt": "**Pour insérer un saut de page dans Word, on utilise :**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "`Entrée`"
+        },
+        {
+          "key": "B",
+          "text": "`Shift + Entrée`"
+        },
+        {
+          "key": "C",
+          "text": "`Ctrl + Entrée`"
+        },
+        {
+          "key": "D",
+          "text": "`Alt + Entrée`"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctAnswerRaw": "✅ Réponse correcte : C (`Ctrl + Entrée`)",
+      "explanation": "* **`Ctrl + Entrée` :** Insère un **saut de page** manuel.\n  * **`Shift + Entrée` :** Insère un **saut de ligne** manuel sans changer de paragraphe.\n  * **`Entrée` :** Crée un nouveau paragraphe.",
+      "trapOrTip": "**Aucun piège spécifique signalé :** Le corrigé officiel ne mentionne pas de piège particulier pour cette question. Relis attentivement l'énoncé et élimine les choix manifestement faux avant de valider."
+    },
+    {
+      "id": 2,
+      "partTitle": "PARTIE 1 : Les Logiciels",
+      "prompt": "**Pour insérer un espace insécable, on utilise la combinaison :**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "`Ctrl + Shift + Espace`"
+        },
+        {
+          "key": "B",
+          "text": "`Ctrl + Alt + Espace`"
+        },
+        {
+          "key": "C",
+          "text": "`Ctrl + AltGr + Espace`"
+        },
+        {
+          "key": "D",
+          "text": "`Ctrl + Espace`"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses"
+        }
+      ],
+      "correctAnswer": "A",
+      "correctAnswerRaw": "✅ Réponse correcte : A (`Ctrl + Shift + Espace`)",
+      "explanation": "L'**espace insécable** (`Ctrl + Maj + Espace`) empêche Word de séparer deux mots ou un nombre et son unité (ex. `100 %`, `15 km`, `:`) sur deux lignes différentes. (`Ctrl + Espace` efface la mise en forme des caractères).",
+      "trapOrTip": "**Aucun piège spécifique signalé :** Le corrigé officiel ne mentionne pas de piège particulier pour cette question. Relis attentivement l'énoncé et élimine les choix manifestement faux avant de valider."
+    },
+    {
+      "id": 3,
+      "partTitle": "PARTIE 1 : Les Logiciels",
+      "prompt": "**L'image en arrière-plan que l'on voit en transparence dans un document est appelée :**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Lettrine"
+        },
+        {
+          "key": "B",
+          "text": "Filigrane"
+        },
+        {
+          "key": "C",
+          "text": "Banderole"
+        },
+        {
+          "key": "D",
+          "text": "Trame de fond"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctAnswerRaw": "✅ Réponse correcte : B (`Filigrane`)",
+      "explanation": "Le **filigrane** (*Watermark*) est un texte (ex. *CONFIDENTIEL*, *BROUILLON*) ou un logo affiché en transparence derrière le texte principal de chaque page.",
+      "trapOrTip": "**Aucun piège spécifique signalé :** Le corrigé officiel ne mentionne pas de piège particulier pour cette question. Relis attentivement l'énoncé et élimine les choix manifestement faux avant de valider."
+    },
+    {
+      "id": 4,
+      "partTitle": "PARTIE 1 : Les Logiciels",
+      "prompt": "**Sous Word, les quatre types de saut de section sont :**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "section suivante – continu – section paire – section impaire"
+        },
+        {
+          "key": "B",
+          "text": "section suivante – continu – page paire – page impaire"
+        },
+        {
+          "key": "C",
+          "text": "Page suivante – continu – page paire – page impaire"
+        },
+        {
+          "key": "D",
+          "text": "Page suivante – continu – section paire – section impaire"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctAnswerRaw": "✅ Réponse correcte : C (`Page suivante – continu – page paire – page impaire`)",
+      "explanation": "Dans l'onglet *Mise en page > Sauts de pages*, la rubrique *Sauts de section* propose exactement ces 4 options : **Page suivante**, **Continu**, **Page paire** et **Page impaire**.",
+      "trapOrTip": "**⚠️ Piège QCM :** Attention aux mots piégés dans A, B et D qui remplacent le mot « **Page** » par « Section » (*section suivante*, *section paire*)."
+    },
+    {
+      "id": 5,
+      "partTitle": "PARTIE 1 : Les Logiciels",
+      "prompt": "**Sous Excel, dans le filtre avancé, le critère `\"*bois\"` retrace tous les enregistrements :**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Qui commence par le mot bois"
+        },
+        {
+          "key": "B",
+          "text": "Qui se termine par le mot bois"
+        },
+        {
+          "key": "C",
+          "text": "Qui contient le mot bois"
+        },
+        {
+          "key": "D",
+          "text": "Qui ne contient pas le mot bois"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctAnswerRaw": "✅ Réponse correcte : B (`Qui se termine par le mot bois`)",
+      "explanation": "Le caractère générique `*` remplace n'importe quelle suite de caractères :\n  * **`\"bois*\"`** : commence par `bois`.\n  * **`\"*bois\"`** : se termine par `bois` (car l'étoile est uniquement *avant* le mot).\n  * **`\"*bois*\"`** : contient le mot `bois` n'importe où.",
+      "trapOrTip": "**⚠️ Piège fréquent :** Beaucoup de candidats cochent C par précipitation sans remarquer qu'il n'y a **pas** d'étoile à la fin de `\"*bois\"` !"
+    },
+    {
+      "id": 6,
+      "partTitle": "PARTIE 1 : Les Logiciels",
+      "prompt": "**Sous Excel, la formule `=EQUIV(\"V\" ; D5:D11)` renvoie :**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "La ligne de « V » dans la plage « D5 : D11 » si v est dans cette plage"
+        },
+        {
+          "key": "B",
+          "text": "La colonne de « V » dans la plage « D5 : D11 » si v est dans cette plage"
+        },
+        {
+          "key": "C",
+          "text": "La cellule de « V » dans la plage « D5 : D11 » si v est dans cette plage"
+        },
+        {
+          "key": "D",
+          "text": "Le rang de « V » dans la plage « D5 : D11 » si v est dans cette plage"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses"
+        }
+      ],
+      "correctAnswer": "D",
+      "correctAnswerRaw": "✅ Réponse correcte : D (`Le rang de « V » dans la plage « D5 : D11 » si v est dans cette plage`)",
+      "explanation": "La fonction `EQUIV` (*MATCH* en anglais) renvoie la **position relative (le rang : 1, 2, 3...)** de la valeur cherchée à l'intérieur de la plage `D5:D11`, et non le numéro de ligne global de la feuille Excel. (Par exemple, si `\"V\"` est en `D5`, `EQUIV` renvoie `1` et non `5`).",
+      "trapOrTip": "**Aucun piège spécifique signalé :** Le corrigé officiel ne mentionne pas de piège particulier pour cette question. Relis attentivement l'énoncé et élimine les choix manifestement faux avant de valider."
+    },
+    {
+      "id": 7,
+      "partTitle": "PARTIE 1 : Les Logiciels",
+      "prompt": "**Sous Excel, l'écriture : `=SI(Et(A1;B2);1000;1500)` écrit `1000` dans la cellule si :**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "A1 et B2 valent FAUX"
+        },
+        {
+          "key": "B",
+          "text": "A1 vaut FAUX et B2 vaut VRAI"
+        },
+        {
+          "key": "C",
+          "text": "A1 vaut VRAI et B2 vaut VRAI"
+        },
+        {
+          "key": "D",
+          "text": "A1 vaut VRAI et B2 vaut FAUX"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctAnswerRaw": "✅ Réponse correcte : C (`A1 vaut VRAI et B2 vaut VRAI`)",
+      "explanation": "La fonction `ET(A1; B2)` ne renvoie `VRAI` que si **toutes** ses conditions sont vraies simultanément. C'est uniquement dans ce cas que `SI` renvoie son deuxième argument (`1000`).",
+      "trapOrTip": "**Aucun piège spécifique signalé :** Le corrigé officiel ne mentionne pas de piège particulier pour cette question. Relis attentivement l'énoncé et élimine les choix manifestement faux avant de valider."
+    },
+    {
+      "id": 8,
+      "partTitle": "PARTIE 1 : Les Logiciels",
+      "prompt": "**Sous Excel, la formule `=Ent(9,78)` génère la valeur :**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "9"
+        },
+        {
+          "key": "B",
+          "text": "10"
+        },
+        {
+          "key": "C",
+          "text": "9,7"
+        },
+        {
+          "key": "D",
+          "text": "9,8"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses"
+        }
+      ],
+      "correctAnswer": "A",
+      "correctAnswerRaw": "✅ Réponse correcte : A (`9`)",
+      "explanation": "La fonction `ENT(nombre)` (*INT* en anglais) renvoie la **partie entière inférieure** d'un nombre réel (et non l'arrondi !). Ainsi, `ENT(9,78)` vaut **`9`** (alors que `ARRONDI(9,78; 0)` vaudrait `10`).",
+      "trapOrTip": "**Aucun piège spécifique signalé :** Le corrigé officiel ne mentionne pas de piège particulier pour cette question. Relis attentivement l'énoncé et élimine les choix manifestement faux avant de valider."
+    },
+    {
+      "id": 9,
+      "partTitle": "PARTIE 1 : Les Logiciels",
+      "prompt": "**Dans PowerPoint, une transition est une animation qui a lieu lors :**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Du démarrage d'un diaporama"
+        },
+        {
+          "key": "B",
+          "text": "De l'arrêt d'un diaporama"
+        },
+        {
+          "key": "C",
+          "text": "Du passage d'une diapositive à une autre"
+        },
+        {
+          "key": "D",
+          "text": "Du démarrage d'une vidéo"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctAnswerRaw": "✅ Réponse correcte : C (`Du passage d'une diapositive à une autre`)",
+      "explanation": "Une **transition** est l'effet visuel appliqué lors du passage d'une diapositive à la suivante, tandis qu'une **animation** s'applique à un objet (texte, image, forme) à l'intérieur d'une même diapositive.",
+      "trapOrTip": "**Aucun piège spécifique signalé :** Le corrigé officiel ne mentionne pas de piège particulier pour cette question. Relis attentivement l'énoncé et élimine les choix manifestement faux avant de valider."
+    },
+    {
+      "id": 10,
+      "partTitle": "PARTIE 1 : Les Logiciels",
+      "prompt": "**Quelle fonctionnalité permet de faire défiler automatiquement les diapositives dans PowerPoint ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Diapositive"
+        },
+        {
+          "key": "B",
+          "text": "Transition"
+        },
+        {
+          "key": "C",
+          "text": "Animation"
+        },
+        {
+          "key": "D",
+          "text": "Diaporama"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctAnswerRaw": "✅ Réponse correcte : B (`Transition` — groupe *Minutage > Passer à la diapositive suivante : Après...*) ou D (`Diaporama` — *Vérification du minutage / Utiliser le minutage*)",
+      "explanation": "Dans PowerPoint, le minutage automatique de défilement de chaque diapositive (*Passer à la diapositive suivante : Après 00:05*) se règle dans l'onglet **Transitions**, et son exécution automatique s'active dans l'onglet **Diaporama** (*Utiliser le minutage*).",
+      "trapOrTip": "**Aucun piège spécifique signalé :** Le corrigé officiel ne mentionne pas de piège particulier pour cette question. Relis attentivement l'énoncé et élimine les choix manifestement faux avant de valider."
+    },
+    {
+      "id": 11,
+      "partTitle": "PARTIE 1 : Les Logiciels",
+      "prompt": "**On insère une nouvelle diapositive dans une présentation PowerPoint en utilisant le clavier par :**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "`Ctrl + N`"
+        },
+        {
+          "key": "B",
+          "text": "`Ctrl + D`"
+        },
+        {
+          "key": "C",
+          "text": "`Ctrl + V`"
+        },
+        {
+          "key": "D",
+          "text": "`Ctrl + I`"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "E",
+      "correctAnswerRaw": "✅ Réponse correcte : E (`Aucune de ces réponses n'est juste` — le raccourci est `Ctrl + M`)",
+      "explanation": "* **`Ctrl + M` :** Insérer une **nouvelle diapositive** dans la présentation en cours.\n  * **`Ctrl + N` :** Créer une **nouvelle présentation** vierge (nouveau fichier `.pptx`).\n  * **`Ctrl + D` :** Dupliquer la diapositive ou l'objet sélectionné.",
+      "trapOrTip": "**⚠️ Piège redoutable :** Ne confondez jamais `Ctrl + N` (*New presentation*) et `Ctrl + M` (*New slide*) dans PowerPoint !"
+    },
+    {
+      "id": 12,
+      "partTitle": "PARTIE 1 : Les Logiciels",
+      "prompt": "**Sous PowerPoint le mode qui permet de voir toutes les diapositives sous forme de miniatures pour les réorganiser facilement :**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Mode création"
+        },
+        {
+          "key": "B",
+          "text": "Mode Normal"
+        },
+        {
+          "key": "C",
+          "text": "Mode Trieuse de diapositives"
+        },
+        {
+          "key": "D",
+          "text": "Mode Diaporama"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctAnswerRaw": "✅ Réponse correcte : C (`Mode Trieuse de diapositives`)",
+      "explanation": "Le mode **Trieuse de diapositives** (*Slide Sorter*) affiche toutes les diapositives côte à côte sous forme de vignettes, ce qui permet de changer leur ordre par simple glisser-déposer.",
+      "trapOrTip": "**Aucun piège spécifique signalé :** Le corrigé officiel ne mentionne pas de piège particulier pour cette question. Relis attentivement l'énoncé et élimine les choix manifestement faux avant de valider."
+    },
+    {
+      "id": 13,
+      "partTitle": "PARTIE 1 : Les Logiciels",
+      "prompt": "**Sous Access, un index :**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Accélère la recherche des enregistrements"
+        },
+        {
+          "key": "B",
+          "text": "Assure l'intégrité référentielle"
+        },
+        {
+          "key": "C",
+          "text": "Ne concerne qu'un champ"
+        },
+        {
+          "key": "D",
+          "text": "Ne peut pas être créé"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "A",
+      "correctAnswerRaw": "✅ Réponse correcte : A (`Accélère la recherche des enregistrements`)",
+      "explanation": "Dans une base de données (Access, MySQL, etc.), un **index** est une structure de données qui accélère considérablement les opérations de recherche (`WHERE`) et de tri (`ORDER BY`) sur un ou plusieurs champs.",
+      "trapOrTip": "**Aucun piège spécifique signalé :** Le corrigé officiel ne mentionne pas de piège particulier pour cette question. Relis attentivement l'énoncé et élimine les choix manifestement faux avant de valider."
+    },
+    {
+      "id": 14,
+      "partTitle": "PARTIE 1 : Les Logiciels",
+      "prompt": "**Si la propriété `\"Null interdit\"` d'un champ d'une table ACCESS a la valeur `\"OUI\"`, ce champ ne peut pas :**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Contenir la valeur 0"
+        },
+        {
+          "key": "B",
+          "text": "Contenir la valeur Null"
+        },
+        {
+          "key": "C",
+          "text": "Être vide"
+        },
+        {
+          "key": "D",
+          "text": "Contenir les espacements"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctAnswerRaw": "✅ Réponse correcte : B (`Contenir la valeur Null`)",
+      "explanation": "La propriété `\"Null interdit = Oui\"` d'Access équivaut à la contrainte SQL `NOT NULL` : elle oblige l'utilisateur à saisir une valeur pour ce champ et interdit qu'il reste à la valeur `Null`.",
+      "trapOrTip": "**Aucun piège spécifique signalé :** Le corrigé officiel ne mentionne pas de piège particulier pour cette question. Relis attentivement l'énoncé et élimine les choix manifestement faux avant de valider."
+    },
+    {
+      "id": 15,
+      "partTitle": "PARTIE 1 : Les Logiciels",
+      "prompt": "**Sous Access, le masque de saisie qui convient pour un champ réservé à la carte nationale d'identité est :**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "`L?000000`"
+        },
+        {
+          "key": "B",
+          "text": "`L???????`"
+        },
+        {
+          "key": "C",
+          "text": "`LL######`"
+        },
+        {
+          "key": "D",
+          "text": "`L?######`"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "A",
+      "correctAnswerRaw": "✅ Réponse correcte : A (`L?000000`) ou D (`L?######`) / E selon le nombre variable de chiffres",
+      "explanation": "Dans un masque de saisie MS Access :\n  * **`L`** = Lettre obligatoire (A–Z).\n  * **`?`** = Lettre facultative (A–Z) — car la CIN marocaine commence par 1 ou 2 lettres !\n  * **`0`** = Chiffre obligatoire (0–9).\n  * **`9`** = Chiffre ou espace facultatif (tandis que `#` autorise aussi les signes `+` et `-`).\n  * Si la CIN comporte 1 ou 2 lettres suivies de 6 chiffres obligatoires, c'est `L?000000` (**A**) ; si le nombre de chiffres varie de 1 à 6, c'est `L?099999` (**E**).",
+      "trapOrTip": "**Aucun piège spécifique signalé :** Le corrigé officiel ne mentionne pas de piège particulier pour cette question. Relis attentivement l'énoncé et élimine les choix manifestement faux avant de valider."
+    },
+    {
+      "id": 16,
+      "partTitle": "PARTIE 1 : Les Logiciels",
+      "prompt": "**Sous ACCESS l'icône `[Table avec !]` permet de créer une requête de type :**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Mise à jour"
+        },
+        {
+          "key": "B",
+          "text": "Sélection"
+        },
+        {
+          "key": "C",
+          "text": "Analyse croisée"
+        },
+        {
+          "key": "D",
+          "text": "Création de table"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "D",
+      "correctAnswerRaw": "✅ Réponse correcte : D (`Création de table`)",
+      "explanation": "Dans Access, les requêtes d'action sont repérées par un point d'exclamation **`!`** :\n  * **Table avec `!` (ou étoile/`+` et `!`) :** Requête **Création de table**.\n  * **Crayon avec `!` :** Requête **Mise à jour**.\n  * **Signe `+` vert avec `!` :** Requête **Ajout**.\n  * **Croix `X` avec `!` :** Requête **Suppression**.",
+      "trapOrTip": "**Aucun piège spécifique signalé :** Le corrigé officiel ne mentionne pas de piège particulier pour cette question. Relis attentivement l'énoncé et élimine les choix manifestement faux avant de valider."
+    },
+    {
+      "id": 17,
+      "partTitle": "PARTIE 1 : Les Logiciels",
+      "prompt": "**Qu'est-ce que la segmentation d'une image ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Le processus de diviser une image en régions ou objets distincts"
+        },
+        {
+          "key": "B",
+          "text": "Le processus de flouter une image"
+        },
+        {
+          "key": "C",
+          "text": "Le processus de convertir une image en niveaux de gris"
+        },
+        {
+          "key": "D",
+          "text": "Le processus d'ajouter du bruit à une image"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "A",
+      "correctAnswerRaw": "✅ Réponse correcte : A (`Le processus de diviser une image en régions ou objets distincts`)",
+      "explanation": "En traitement d'image, la **segmentation** consiste à regrouper les pixels partageant des caractéristiques communes (couleur, intensité, texture) afin d'isoler les différents objets ou régions d'une image (ex. détourage).",
+      "trapOrTip": "**Aucun piège spécifique signalé :** Le corrigé officiel ne mentionne pas de piège particulier pour cette question. Relis attentivement l'énoncé et élimine les choix manifestement faux avant de valider."
+    },
+    {
+      "id": 18,
+      "partTitle": "PARTIE 1 : Les Logiciels",
+      "prompt": "**Dans le domaine du traitement du son, qu'est-ce que la distorsion du son ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Un effet qui ajoute des harmoniques au son"
+        },
+        {
+          "key": "B",
+          "text": "Un effet qui modifie la balance des fréquences dans le son"
+        },
+        {
+          "key": "C",
+          "text": "Un effet qui simule l'acoustique d'un espace"
+        },
+        {
+          "key": "D",
+          "text": "Un effet qui réduit la dynamique du son"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "A",
+      "correctAnswerRaw": "✅ Réponse correcte : A (`Un effet qui ajoute des harmoniques au son`)",
+      "explanation": "* **Distorsion / Saturation (A) :** Altère la forme d'onde (écrêtage / *clipping*) en générant de nouvelles fréquences harmoniques.\n  * **Égalisation / EQ (B) :** Modifie la balance des fréquences.\n  * **Réverbération / Reverb (C) :** Simule l'acoustique d'une pièce.\n  * **Compression (D) :** Réduit l'écart dynamique entre les sons faibles et les sons forts.",
+      "trapOrTip": "**Aucun piège spécifique signalé :** Le corrigé officiel ne mentionne pas de piège particulier pour cette question. Relis attentivement l'énoncé et élimine les choix manifestement faux avant de valider."
+    },
+    {
+      "id": 19,
+      "partTitle": "PARTIE 1 : Les Logiciels",
+      "prompt": "**Qu'est-ce que la post-production vidéo ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "L'étape de production où les scènes sont tournées"
+        },
+        {
+          "key": "B",
+          "text": "L'étape de production où le montage et les effets visuels sont ajoutés"
+        },
+        {
+          "key": "C",
+          "text": "L'étape de production où le son est enregistré"
+        },
+        {
+          "key": "D",
+          "text": "L'étape de production où les acteurs apprennent leurs rôles"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctAnswerRaw": "✅ Réponse correcte : B (`L'étape de production où le montage et les effets visuels sont ajoutés`)",
+      "explanation": "Un projet vidéo se déroule en 3 phases : **Pré-production** (scénario, préparation), **Production** (tournage des scènes et prise de son), et **Post-production** (dérushage, montage, effets spéciaux, étalonnage couleur, mixage et encodage).",
+      "trapOrTip": "**Aucun piège spécifique signalé :** Le corrigé officiel ne mentionne pas de piège particulier pour cette question. Relis attentivement l'énoncé et élimine les choix manifestement faux avant de valider."
+    },
+    {
+      "id": 20,
+      "partTitle": "PARTIE 1 : Les Logiciels",
+      "prompt": "**Qu'est-ce que le keyframe dans l'animation ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Un dessin de base utilisé pour animer un personnage"
+        },
+        {
+          "key": "B",
+          "text": "Un point de repère pour indiquer une étape clé de l'animation"
+        },
+        {
+          "key": "C",
+          "text": "Un outil de contrôle de la vitesse d'animation"
+        },
+        {
+          "key": "D",
+          "text": "Une technique d'animation pour ajouter des ombres et des reflets"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctAnswerRaw": "✅ Réponse correcte : B (`Un point de repère pour indiquer une étape clé de l'animation`)",
+      "explanation": "Une **image clé (*keyframe*)** marque sur la ligne de temps (*timeline*) le début ou la fin d'une transformation (position, taille, opacité), et le logiciel calcule automatiquement les images intermédiaires (*interpolation*).",
+      "trapOrTip": "**Aucun piège spécifique signalé :** Le corrigé officiel ne mentionne pas de piège particulier pour cette question. Relis attentivement l'énoncé et élimine les choix manifestement faux avant de valider."
+    },
+    {
+      "id": 21,
+      "partTitle": "PARTIE 2 : Développement",
+      "prompt": "Soit l'algorithme suivant :\n\n{{CODE_0}}\n\n**On suppose que les valeurs entrées sont `(0, 2, 5, 8)`, donner le résultat d'exécution de cet algorithme ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "6"
+        },
+        {
+          "key": "B",
+          "text": "8"
+        },
+        {
+          "key": "C",
+          "text": "9"
+        },
+        {
+          "key": "D",
+          "text": "8,5"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctAnswerRaw": "✅ Réponse correcte : C (`9`)",
+      "explanation": "* La condition est **`x > 5`** (strictement supérieur à 5).\n  * Pour `x = 0`, `x = 2` et `x = 5` : la condition `x > 5` est **Fausse** ! Donc `a` reste égal à `5`.\n  * Pour `x = 8` : `8 > 5` est **Vrai** $\\rightarrow$ `a <- 5 + 8 / 2 = 5 + 4 = 9`.",
+      "trapOrTip": "**⚠️ Piège QCM :** Attention à `x = 5` : comme le test est `x > 5` et non `x >= 5`, la valeur `5` n'entre pas dans le `Si` (sinon on aurait trouvé `8,5` au choix D !).",
+      "codeBlocks": [
+        {
+          "language": "pascal",
+          "code": "n <- 4\na <- 5\nPour i allant de 1 à n Faire\n    Lire (x)\n    Si x > 5 Alors a <- a + x / 2\n    Finsi\nFin pour\nEcrire (a)"
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "partTitle": "PARTIE 2 : Développement",
+      "prompt": "**Lequel des algorithmes de tri suivants présente la plus faible complexité dans le pire des cas ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Tri par fusion"
+        },
+        {
+          "key": "B",
+          "text": "Tri à bulles"
+        },
+        {
+          "key": "C",
+          "text": "Tri par insertion"
+        },
+        {
+          "key": "D",
+          "text": "Tri par sélection"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "A",
+      "correctAnswerRaw": "✅ Réponse correcte : A (`Tri par fusion`)",
+      "explanation": "Le **tri par fusion** (*Merge Sort*) garantit une complexité de **$O(n \\log n)$** dans le pire des cas, alors que les tris à bulles, par insertion et par sélection ont tous une complexité de **$O(n^2)$** dans le pire des cas.",
+      "trapOrTip": "**Aucun piège spécifique signalé :** Le corrigé officiel ne mentionne pas de piège particulier pour cette question. Relis attentivement l'énoncé et élimine les choix manifestement faux avant de valider."
+    },
+    {
+      "id": 23,
+      "partTitle": "PARTIE 2 : Développement",
+      "prompt": "**La file est une structure de données qui fonctionne sur :**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "LIFO"
+        },
+        {
+          "key": "B",
+          "text": "FIFO"
+        },
+        {
+          "key": "C",
+          "text": "FILO"
+        },
+        {
+          "key": "D",
+          "text": "FIFO et LIFO"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctAnswerRaw": "✅ Réponse correcte : B (`FIFO`)",
+      "explanation": "Une **File** (*Queue*) suit le principe **FIFO** (*First In, First Out* : Premier entré, premier sorti), tandis qu'une **Pile** (*Stack*) suit le principe **LIFO** (*Last In, First Out* ou FILO).",
+      "trapOrTip": "**Aucun piège spécifique signalé :** Le corrigé officiel ne mentionne pas de piège particulier pour cette question. Relis attentivement l'énoncé et élimine les choix manifestement faux avant de valider."
+    },
+    {
+      "id": 24,
+      "partTitle": "PARTIE 2 : Développement",
+      "prompt": "Soit l'algorithme suivant :\n\n{{CODE_0}}\n\n**On suppose que les valeurs entrées sont `(2, 3)`, donner les valeurs de `X` et `Y` après l'exécution de cet algorithme ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "`X=2 et Y=3`"
+        },
+        {
+          "key": "B",
+          "text": "`X=-1 et Y=5`"
+        },
+        {
+          "key": "C",
+          "text": "`X=-3 et Y=9`"
+        },
+        {
+          "key": "D",
+          "text": "`X=6 et Y=9`"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctAnswerRaw": "✅ Réponse correcte : C (`X=-3 et Y=9`)",
+      "explanation": "1. Entrée : `x = 2`, `y = 3`.\n  2. `x <- 2 * y` $\\rightarrow$ `x = 2 * 3 = 6` (la valeur initiale `2` de `x` est écrasée dès la 1re ligne !).\n  3. `y <- x + y` $\\rightarrow$ `y = 6 + 3 = 9`.\n  4. `x <- x - y` $\\rightarrow$ `x = 6 - 9 = -3`.\n  5. Résultat final : **`X=-3 et Y=9`**.",
+      "trapOrTip": "**Aucun piège spécifique signalé :** Le corrigé officiel ne mentionne pas de piège particulier pour cette question. Relis attentivement l'énoncé et élimine les choix manifestement faux avant de valider.",
+      "codeBlocks": [
+        {
+          "language": "pascal",
+          "code": "lire(x, y);\nx <- 2 * y;\ny <- x + y;\nx <- x - y;\nécrire('X=', x, 'et Y=', y);"
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "partTitle": "PARTIE 2 : Développement",
+      "prompt": "**Une fonction récursive est une fonction qui :**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Ne peut pas appeler d'autres fonctions."
+        },
+        {
+          "key": "B",
+          "text": "Utilise une boucle pour itérer."
+        },
+        {
+          "key": "C",
+          "text": "S'appelle elle-même."
+        },
+        {
+          "key": "D",
+          "text": "N'accepte pas de paramètres"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctAnswerRaw": "✅ Réponse correcte : C (`S'appelle elle-même.`)",
+      "explanation": "Par définition, un sous-programme (fonction ou procédure) est dit **récursif** lorsqu'il contient au moins un appel à lui-même (avec une condition d'arrêt pour éviter une récursion infinie).",
+      "trapOrTip": "**Aucun piège spécifique signalé :** Le corrigé officiel ne mentionne pas de piège particulier pour cette question. Relis attentivement l'énoncé et élimine les choix manifestement faux avant de valider."
+    },
+    {
+      "id": 26,
+      "partTitle": "PARTIE 2 : Développement",
+      "prompt": "**Pour vérifier qu'un tableau n'est pas trié :**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Il faut obligatoirement parcourir tout le tableau"
+        },
+        {
+          "key": "B",
+          "text": "Il faut inverser des valeurs du tableau"
+        },
+        {
+          "key": "C",
+          "text": "Il n'est pas nécessaire de connaître sa taille"
+        },
+        {
+          "key": "D",
+          "text": "Il est possible de ne pas parcourir tout le tableau"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "D",
+      "correctAnswerRaw": "✅ Réponse correcte : D (`Il est possible de ne pas parcourir tout le tableau`)",
+      "explanation": "Dès que l'on rencontre deux éléments consécutifs mal ordonnés (par exemple dès les 2 premières cases si `T[0] > T[1]`), on sait immédiatement que le tableau n'est pas trié et on arrête le parcours sans lire le reste du tableau !",
+      "trapOrTip": "**Aucun piège spécifique signalé :** Le corrigé officiel ne mentionne pas de piège particulier pour cette question. Relis attentivement l'énoncé et élimine les choix manifestement faux avant de valider."
+    },
+    {
+      "id": 27,
+      "partTitle": "PARTIE 2 : Développement",
+      "prompt": "**La complexité d'un algorithme est :**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Le temps d'exécution de cet algorithme en fonction de la taille de l'entrée"
+        },
+        {
+          "key": "B",
+          "text": "Le nombre de variables manipulées par cet algorithme"
+        },
+        {
+          "key": "C",
+          "text": "La difficulté à comprendre le fonctionnement de cet algorithme"
+        },
+        {
+          "key": "D",
+          "text": "La taille du résultat calculé en fonction de la taille de l'entrée"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "A",
+      "correctAnswerRaw": "✅ Réponse correcte : A (`Le temps d'exécution de cet algorithme en fonction de la taille de l'entrée`)",
+      "explanation": "La complexité temporelle mesure l'évolution du nombre d'opérations élémentaires (donc du temps d'exécution) en fonction de la taille $n$ des données en entrée.",
+      "trapOrTip": "**Aucun piège spécifique signalé :** Le corrigé officiel ne mentionne pas de piège particulier pour cette question. Relis attentivement l'énoncé et élimine les choix manifestement faux avant de valider."
+    },
+    {
+      "id": 28,
+      "partTitle": "PARTIE 2 : Développement",
+      "prompt": "Soit la fonction `algo1` suivante :\n\n{{CODE_0}}\n\n**La valeur de la variable `R` après l'exécution de cette fonction si `A=7` et `B=4` :**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "R aura la même valeur que B"
+        },
+        {
+          "key": "B",
+          "text": "On ne peut pas déterminer la valeur de R"
+        },
+        {
+          "key": "C",
+          "text": "1"
+        },
+        {
+          "key": "D",
+          "text": "0"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "D",
+      "correctAnswerRaw": "✅ Réponse correcte : D (`0`)",
+      "explanation": "Regardez les deux premières lignes :\n  1. `R <- 0`\n  2. `Tant que (R != 0) faire`\n  * Comme `R` vient d'être initialisé à `0`, la condition `R != 0` est **immédiatement fausse** ! Le programme n'entre **jamais** dans la boucle `Tant que` et retourne directement **`R = 0`** !",
+      "trapOrTip": "**⚠️ Piège magnifique du concours :** L'algorithme ressemble à l'algorithme d'Euclide du PGCD (qui donnerait 1 pour 7 et 4), ce qui pousse les candidats pressés à cocher C (`1`). Mais à cause de `R <- 0` suivi de `Tant que (R != 0)`, la boucle ne s'exécute jamais !",
+      "codeBlocks": [
+        {
+          "language": "pascal",
+          "code": "algo1(A, B : entiers) : entier\nVariables : A, B, R : entiers\nDébut\n    R <- 0\n    Tant que (R != 0) faire\n        R <- A % B;\n        A <- B;\n        B <- R;\n    Fin tant que\n    retourner R;\nFin"
+        }
+      ]
+    },
+    {
+      "id": 29,
+      "partTitle": "PARTIE 2 : Développement",
+      "prompt": "Pour `A = 4` et `B = 5`, quelle est la valeur de `P` après l'exécution de l'algorithme suivant :\n\n{{CODE_0}}",
+      "choices": [
+        {
+          "key": "A",
+          "text": "0"
+        },
+        {
+          "key": "B",
+          "text": "9"
+        },
+        {
+          "key": "C",
+          "text": "20"
+        },
+        {
+          "key": "D",
+          "text": "19"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctAnswerRaw": "✅ Réponse correcte : C (`20`)",
+      "explanation": "Cet algorithme calcule le produit $A \\times B$ par additions successives : il ajoute `A` (`4`) exactement `B` fois (`5` fois) dans `P`, soit $4 \\times 5 = 20$.",
+      "trapOrTip": "**Aucun piège spécifique signalé :** Le corrigé officiel ne mentionne pas de piège particulier pour cette question. Relis attentivement l'énoncé et élimine les choix manifestement faux avant de valider.",
+      "codeBlocks": [
+        {
+          "language": "pascal",
+          "code": "Algorithme exemple\nVar A, B, P, I : entier\nDébut\n    Ecrire('Donner deux entiers A et B')\n    Lire(A, B);\n    Si A=0 ou B=0 Alors P <- 0\n    Sinon P <- 0\n        Pour I <- 1 à B Faire\n            P <- P + A\n    Fin si\n    Ecrire(P)\nFin."
+        }
+      ]
+    },
+    {
+      "id": 30,
+      "partTitle": "PARTIE 2 : Développement",
+      "prompt": "**Pour pouvoir utiliser un algorithme de recherche par dichotomie dans une liste, quelle condition doit être vraie ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "La liste ne doit pas comporter de doublons"
+        },
+        {
+          "key": "B",
+          "text": "La liste ne doit pas être triée"
+        },
+        {
+          "key": "C",
+          "text": "La liste doit être triée"
+        },
+        {
+          "key": "D",
+          "text": "La longueur de la liste doit être une puissance de 2"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctAnswerRaw": "✅ Réponse correcte : C (`La liste doit être triée`)",
+      "explanation": "La recherche dichotomique compare l'élément cherché à l'élément du milieu pour éliminer la moitié gauche ou la moitié droite : cela exige impérativement que le tableau soit **préalablement trié**.",
+      "trapOrTip": "**Aucun piège spécifique signalé :** Le corrigé officiel ne mentionne pas de piège particulier pour cette question. Relis attentivement l'énoncé et élimine les choix manifestement faux avant de valider."
+    },
+    {
+      "id": 31,
+      "partTitle": "PARTIE 2 : Développement",
+      "prompt": "Soit l'algorithme `estTrié` suivant :\n\n{{CODE_0}}\n\nPour illustrer cet algorithme, on suppose que le tableau `T` est le suivant :\n\n| 1 | 8 | 6 | 11 | 15 | 12 | 23 |\n| :-: | :-: | :-: | :-: | :-: | :-: | :-: |\n\n**Quelle est la valeur de `CPT` après l'exécution de cet algorithme ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "2"
+        },
+        {
+          "key": "B",
+          "text": "6"
+        },
+        {
+          "key": "C",
+          "text": "1"
+        },
+        {
+          "key": "D",
+          "text": "7"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctAnswerRaw": "✅ Réponse correcte : C (`1`)",
+      "explanation": "* Départ : `CPT = 0`, `RES = VRAI`.\n  * **Tour 1 (`CPT = 0`) :** On compare `T[0] = 1` et `T[1] = 8`. Comme `1 > 8` est Faux, on va dans `sinon` : **`CPT` devient `1`**.\n  * **Tour 2 (`CPT = 1`) :** On compare `T[1] = 8` et `T[2] = 6`. Comme `8 > 6` est **Vrai**, on entre dans le `si` : `RES <- FAUX` (et on n'incrémente **pas** `CPT` car c'est dans le `sinon` !).\n  * La boucle s'arrête car `RES = FAUX`. La valeur finale de `CPT` est donc **`1`**.",
+      "trapOrTip": "**Aucun piège spécifique signalé :** Le corrigé officiel ne mentionne pas de piège particulier pour cette question. Relis attentivement l'énoncé et élimine les choix manifestement faux avant de valider.",
+      "codeBlocks": [
+        {
+          "language": "pascal",
+          "code": "Algorithme estTrié (T : tableau d'entiers) : booléen\nVariables :\n    TAI, CPT : entier\n    RES : booléen\nDébut\n    TAI <- taille(T)\n    RES <- VRAI\n    CPT <- 0\n    Tant que (CPT < TAI - 1) ET (RES = VRAI) faire\n        si (T[CPT] > T[CPT + 1]) alors\n            RES <- FAUX\n        sinon\n            CPT <- CPT + 1\n        fin si\n    Fin tant que\n    retourner RES\nFin"
+        }
+      ]
+    },
+    {
+      "id": 32,
+      "partTitle": "PARTIE 2 : Développement",
+      "prompt": "**Avec un algorithme de recherche dichotomique, combien d'étapes sont nécessaires pour déterminer que `35` est présent dans le tableau `[1, 7, 12, 16, 18, 20, 24, 28, 35, 43, 69]` ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "2"
+        },
+        {
+          "key": "B",
+          "text": "3"
+        },
+        {
+          "key": "C",
+          "text": "7"
+        },
+        {
+          "key": "D",
+          "text": "8"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "A",
+      "correctAnswerRaw": "✅ Réponse correcte : A (`2`)",
+      "explanation": "Le tableau comporte 11 éléments (indices `0` à `10`) :\n  * **Étape 1 :** Milieu de `[0..10]` $\\rightarrow$ indice `m = (0 + 10) / 2 = 5`, valeur `T[5] = 20`. Comme `35 > 20`, on cherche dans la moitié droite `[6..10]`.\n  * **Étape 2 :** Milieu de `[6..10]` $\\rightarrow$ indice `m = (6 + 10) / 2 = 8`, valeur **`T[8] = 35`** ! On a trouvé `35` en exactement **2 étapes**.",
+      "trapOrTip": "**Aucun piège spécifique signalé :** Le corrigé officiel ne mentionne pas de piège particulier pour cette question. Relis attentivement l'énoncé et élimine les choix manifestement faux avant de valider."
+    },
+    {
+      "id": 33,
+      "partTitle": "PARTIE 2 : Développement",
+      "prompt": "Pour `A = 8` et `B = 4`, quelle est la valeur de `D` après l'exécution du pseudo-code suivant :\n\n{{CODE_0}}",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Vrai"
+        },
+        {
+          "key": "B",
+          "text": "Faux"
+        },
+        {
+          "key": "C",
+          "text": "Non D"
+        },
+        {
+          "key": "D",
+          "text": "0"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctAnswerRaw": "✅ Réponse correcte : B (`Faux`)",
+      "explanation": "* Attention à l'ordre : la condition teste **`B mod A = 0`**, c'est-à-dire **`4 mod 8`** (et non `8 mod 4` !).\n  * Dans la division entière de `4` par `8`, le quotient est `0` et le reste vaut **`4`**.\n  * Donc `4 mod 8 = 4 != 0`. La condition est fausse, et `D` conserve sa valeur initiale **`Faux`**.",
+      "trapOrTip": "**Aucun piège spécifique signalé :** Le corrigé officiel ne mentionne pas de piège particulier pour cette question. Relis attentivement l'énoncé et élimine les choix manifestement faux avant de valider.",
+      "codeBlocks": [
+        {
+          "language": "pascal",
+          "code": "D <- Faux\nSi B mod A = 0 Alors D <- Non D"
+        }
+      ]
+    },
+    {
+      "id": 34,
+      "partTitle": "PARTIE 2 : Développement",
+      "prompt": "**Quelle est la complexité d'un algorithme de recherche séquentielle :**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "$O(n)$"
+        },
+        {
+          "key": "B",
+          "text": "$O(n \\log(n))$"
+        },
+        {
+          "key": "C",
+          "text": "$O(n^2)$"
+        },
+        {
+          "key": "D",
+          "text": "$O(n^3)$"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "A",
+      "correctAnswerRaw": "✅ Réponse correcte : A ($O(n)$)",
+      "explanation": "La recherche séquentielle parcourt au maximum les $n$ éléments du tableau un par un, d'où une complexité linéaire en **$O(n)$**.",
+      "trapOrTip": "**Aucun piège spécifique signalé :** Le corrigé officiel ne mentionne pas de piège particulier pour cette question. Relis attentivement l'énoncé et élimine les choix manifestement faux avant de valider."
+    },
+    {
+      "id": 35,
+      "partTitle": "PARTIE 2 : Développement",
+      "prompt": "{{CODE_0}}\n\n**Pour `X = 3` l'algorithme affiche :**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "312"
+        },
+        {
+          "key": "B",
+          "text": "123"
+        },
+        {
+          "key": "C",
+          "text": "111"
+        },
+        {
+          "key": "D",
+          "text": "110"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "E",
+      "correctAnswerRaw": "✅ Réponse correcte : E (`Aucune de ces réponses n'est juste` — affiche `11`)",
+      "explanation": "Cet algorithme convertit l'entier `X` en **binaire** !\n  * Départ : `X = 3`, `P = 1`, `S = 0`.\n  * **Tour 1 :** `R = 3 mod 2 = 1` ; `S = 0 + 1 * 1 = 1` ; `P = 10` ; `X = 3 div 2 = 1` (`X != 0`, on continue).\n  * **Tour 2 :** `R = 1 mod 2 = 1` ; `S = 1 + 1 * 10 = 11` ; `P = 100` ; `X = 1 div 2 = 0` (`X = 0`, on s'arrête).\n  * L'algorithme affiche donc **`11`** (qui est l'écriture binaire de 3). Comme `11` ne figure pas dans A, B, C, D, la réponse exacte est **E** ! (Il aurait fallu `X = 7` pour afficher `111` ou `X = 6` pour afficher `110`).",
+      "trapOrTip": "**Aucun piège spécifique signalé :** Le corrigé officiel ne mentionne pas de piège particulier pour cette question. Relis attentivement l'énoncé et élimine les choix manifestement faux avant de valider.",
+      "codeBlocks": [
+        {
+          "language": "pascal",
+          "code": "Algorithme ess\nVar R, P, X : entier\nDébut\n    P <- 1\n    S <- 0;\n    Lire (X)\n    Répéter\n        R <- X mod 2\n        S <- S + R * P\n        P <- P * 10\n        X <- X div 2\n    Jusqu'à X = 0\n    Écrire S"
+        }
+      ]
+    },
+    {
+      "id": 36,
+      "partTitle": "PARTIE 2 : Développement",
+      "prompt": "**Un programme qui traduit un code source en code objet est un :**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Editeur"
+        },
+        {
+          "key": "B",
+          "text": "Compilateur"
+        },
+        {
+          "key": "C",
+          "text": "Linkeur"
+        },
+        {
+          "key": "D",
+          "text": "EDI"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctAnswerRaw": "✅ Réponse correcte : B (`Compilateur`)",
+      "explanation": "* **Éditeur :** Permet d'écrire le code source (`.c`).\n  * **Compilateur :** Traduit le code source en **code objet** (`.o` ou `.obj`).\n  * **Linkeur (Éditeur de liens) :** Assemble les fichiers objets et les bibliothèques pour produire le fichier **exécutable** (`.exe`).",
+      "trapOrTip": "**Aucun piège spécifique signalé :** Le corrigé officiel ne mentionne pas de piège particulier pour cette question. Relis attentivement l'énoncé et élimine les choix manifestement faux avant de valider."
+    },
+    {
+      "id": 37,
+      "partTitle": "PARTIE 2 : Développement",
+      "prompt": "**En langage C, la fonction qui permet de se positionner au début d'un fichier est :**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "`rewind`"
+        },
+        {
+          "key": "B",
+          "text": "`fstart`"
+        },
+        {
+          "key": "C",
+          "text": "`fbegin`"
+        },
+        {
+          "key": "D",
+          "text": "`ftell`"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "A",
+      "correctAnswerRaw": "✅ Réponse correcte : A (`rewind`)",
+      "explanation": "En C (`<stdio.h>`), `rewind(f)` remet le curseur de lecture/écriture tout au début du fichier (équivalent à `fseek(f, 0, SEEK_SET)`), tandis que `ftell(f)` renvoie la position actuelle du curseur.",
+      "trapOrTip": "**Aucun piège spécifique signalé :** Le corrigé officiel ne mentionne pas de piège particulier pour cette question. Relis attentivement l'énoncé et élimine les choix manifestement faux avant de valider."
+    },
+    {
+      "id": 38,
+      "partTitle": "PARTIE 2 : Développement",
+      "prompt": "**Quelle bibliothèque est utilisée pour l'entrée/sortie standard en C++ ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "`iostream.h`"
+        },
+        {
+          "key": "B",
+          "text": "`inputoutputstream`"
+        },
+        {
+          "key": "C",
+          "text": "`stdio.h`"
+        },
+        {
+          "key": "D",
+          "text": "`iostream`"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "D",
+      "correctAnswerRaw": "✅ Réponse correcte : D (`iostream`)",
+      "explanation": "En C++ standard moderne (ISO C++), l'en-tête des flux d'entrée/sortie (`cin`, `cout`, `cerr`) est `<iostream>` (sans `.h`), tandis que `<stdio.h>` est la bibliothèque du langage C.",
+      "trapOrTip": "**Aucun piège spécifique signalé :** Le corrigé officiel ne mentionne pas de piège particulier pour cette question. Relis attentivement l'énoncé et élimine les choix manifestement faux avant de valider."
+    },
+    {
+      "id": 39,
+      "partTitle": "PARTIE 2 : Développement",
+      "prompt": "Soit le programme C suivant :\n\n{{CODE_0}}\n\n**Ce programme affiche :**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "5"
+        },
+        {
+          "key": "B",
+          "text": "27"
+        },
+        {
+          "key": "C",
+          "text": "57"
+        },
+        {
+          "key": "D",
+          "text": "2"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctAnswerRaw": "✅ Réponse correcte : C (`57`)",
+      "explanation": "1. L'expression `x < y` (`2 < 5`) est vraie, donc en langage C elle vaut **`1`**.\n  2. Le `switch` saute directement à `case 1:` et affiche `5` (`printf(\" %d\", y)`).",
+      "trapOrTip": "3. **⚠️ Piège du `break` manquant :** Comme il n'y a **pas d'instruction `break;`** à la fin du `case 1`, l'exécution continue en cascade (*fall-through*) dans le `default:` et affiche `x + y` (`2 + 5 = 7`).\n  4. Le programme affiche donc **`57`** !",
+      "codeBlocks": [
+        {
+          "language": "c",
+          "code": "#include <stdio.h>\nmain() {\n    int x = 2, y = 5;\n    switch (x < y)\n    {\n        case 0: printf(\"%d\", x);\n        case 1: printf(\" %d\", y);\n        default: printf(\"%d\", x + y);\n    }\n}"
+        }
+      ]
+    },
+    {
+      "id": 40,
+      "partTitle": "PARTIE 2 : Développement",
+      "prompt": "**La commande qui permet de saisir une valeur en C++ est :**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "`input()`"
+        },
+        {
+          "key": "B",
+          "text": "`get_input()`"
+        },
+        {
+          "key": "C",
+          "text": "`cin`"
+        },
+        {
+          "key": "D",
+          "text": "`scanf()`"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctAnswerRaw": "✅ Réponse correcte : C (`cin`)",
+      "explanation": "En C++, la lecture au clavier se fait via le flux d'entrée standard **`cin >> variable;`** (alors que `scanf()` est propre au C et `input()` à Python).",
+      "trapOrTip": "**Aucun piège spécifique signalé :** Le corrigé officiel ne mentionne pas de piège particulier pour cette question. Relis attentivement l'énoncé et élimine les choix manifestement faux avant de valider."
+    },
+    {
+      "id": 41,
+      "partTitle": "PARTIE 2 : Développement",
+      "prompt": "Qu'affiche la portion du code C suivante :\n\n{{CODE_0}}",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Liste des nombres de 10 à 1"
+        },
+        {
+          "key": "B",
+          "text": "Liste des nombres de 10 à 0"
+        },
+        {
+          "key": "C",
+          "text": "Liste des nombres de 9 à 1"
+        },
+        {
+          "key": "D",
+          "text": "Liste des nombres de 9 à 0"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "A",
+      "correctAnswerRaw": "✅ Réponse correcte : A (`Liste des nombres de 10 à 1`)",
+      "explanation": "L'opérateur `i--` est une **post-décrémentation** : `printf` affiche d'abord la valeur actuelle de `i`, puis décrémente `i`.\n  * Premier tour (`i = 10`) : affiche `10`, puis `i` passe à `9`.\n  * Dernier tour (`i = 1`) : affiche `1`, puis `i` passe à `0` et la boucle `while (i > 0)` s'arrête.\n  * (Si c'était `--i`, il aurait affiché de `9` à `0`).",
+      "trapOrTip": "**Aucun piège spécifique signalé :** Le corrigé officiel ne mentionne pas de piège particulier pour cette question. Relis attentivement l'énoncé et élimine les choix manifestement faux avant de valider.",
+      "codeBlocks": [
+        {
+          "language": "c",
+          "code": "int i = 10;\nwhile (i > 0)\n    printf(\"%i \\n\", i--);"
+        }
+      ]
+    },
+    {
+      "id": 42,
+      "partTitle": "PARTIE 2 : Développement",
+      "prompt": "Quel est le résultat de l'exécution du programme ci-dessous ?\n\n{{CODE_0}}",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Erreur de compilation"
+        },
+        {
+          "key": "B",
+          "text": "Erreur d'exécution"
+        },
+        {
+          "key": "C",
+          "text": "`Y = 38`"
+        },
+        {
+          "key": "D",
+          "text": "`Y = 23`"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "D",
+      "correctAnswerRaw": "✅ Réponse correcte : D (`Y = 23`)",
+      "explanation": "En C, `#define` effectue un **remplacement de texte pur** avant la compilation, **sans ajouter de parenthèses** !\n  1. `g(3, 5)` est remplacé par `3*5`.\n  2. `f(4, 3*5)` est remplacé par `4+3*5`.\n  3. L'instruction `Y = 2 * f(4, g(3, 5));` devient donc littéralement :\n     $$Y = 2 * 4 + 3 * 5$$\n  4. Par priorité de la multiplication sur l'addition : $Y = 8 + 15 = \\mathbf{23}$ !",
+      "trapOrTip": "**⚠️ Piège classique des macros C :** Ne calculez pas `2 * (4 + 15) = 38` (choix C) ! Sans parenthèses dans `#define f(a,b) (a+b)`, le `2 *` ne multiplie que le `4`.",
+      "codeBlocks": [
+        {
+          "language": "c",
+          "code": "#include <stdio.h>\n#define f(a,b) a+b\n#define g(a,b) a*b\nint main(void) {\n    int Y;\n    Y = 2 * f(4, g(3, 5));\n    printf(\"\\n Y = %d\", Y);\n}"
+        }
+      ]
+    },
+    {
+      "id": 43,
+      "partTitle": "PARTIE 2 : Développement",
+      "prompt": "Combien d'instances de la classe `A` crée le code Java suivant ?\n\n{{CODE_0}}",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Aucune"
+        },
+        {
+          "key": "B",
+          "text": "5"
+        },
+        {
+          "key": "C",
+          "text": "3"
+        },
+        {
+          "key": "D",
+          "text": "2"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "D",
+      "correctAnswerRaw": "✅ Réponse correcte : D (`2`)",
+      "explanation": "En Java, une nouvelle instance (objet en mémoire) n'est créée que lors de l'appel à l'opérateur **`new`**. Ici, `new A()` est utilisé **2 fois** (pour `x` et pour `z`). Les variables `u` et `v` sont des références non initialisées, et `y = x` fait simplement pointer `y` vers le même objet que `x`.",
+      "trapOrTip": "**Aucun piège spécifique signalé :** Le corrigé officiel ne mentionne pas de piège particulier pour cette question. Relis attentivement l'énoncé et élimine les choix manifestement faux avant de valider.",
+      "codeBlocks": [
+        {
+          "language": "java",
+          "code": "A x, u, v;\nx = new A();\nA y = x;\nA z = new A();"
+        }
+      ]
+    },
+    {
+      "id": 44,
+      "partTitle": "PARTIE 2 : Développement",
+      "prompt": "**Dans une table, un champ X indexé avec doublon permet de :**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Identifier d'une façon unique un enregistrement selon la valeur du champ X"
+        },
+        {
+          "key": "B",
+          "text": "Optimiser la recherche d'un enregistrement selon la valeur du champ X"
+        },
+        {
+          "key": "C",
+          "text": "Trier les enregistrements selon la valeur du champ X"
+        },
+        {
+          "key": "D",
+          "text": "Numéroter les enregistrements selon la valeur du champ X"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctAnswerRaw": "✅ Réponse correcte : B (`Optimiser la recherche d'un enregistrement selon la valeur du champ X`)",
+      "explanation": "Un index (même avec doublons, par exemple sur le champ `Nom` ou `Ville`) a pour rôle d'**accélérer et optimiser les recherches** et les tris sur ce champ. (L'identification unique correspond à un index *sans doublons* ou à une clé primaire).",
+      "trapOrTip": "**Aucun piège spécifique signalé :** Le corrigé officiel ne mentionne pas de piège particulier pour cette question. Relis attentivement l'énoncé et élimine les choix manifestement faux avant de valider."
+    },
+    {
+      "id": 45,
+      "partTitle": "PARTIE 2 : Développement",
+      "prompt": "Qu'affiche le code Java suivant ?\n\n{{CODE_0}}",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Erreur de compilation"
+        },
+        {
+          "key": "B",
+          "text": "Erreur d'exécution"
+        },
+        {
+          "key": "C",
+          "text": "`SalutBonjour 2003`"
+        },
+        {
+          "key": "D",
+          "text": "`Bonjour 2003`"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctAnswerRaw": "✅ Réponse correcte : C (`SalutBonjour 2003` / `SalutBonjour2003`)",
+      "explanation": "1. `new B(2003)` appelle le constructeur paramétré `public B(int i)` avec `i = 2003`.\n  2. Sa première instruction est **`this();`**, qui appelle le constructeur sans paramètre `public B()` de la même classe.\n  3. `public B()` affiche `\"Salut\"` (sans retour à la ligne car c'est `print`).\n  4. Puis le constructeur paramétré poursuit et affiche `\"Bonjour2003\"`.",
+      "trapOrTip": "**Aucun piège spécifique signalé :** Le corrigé officiel ne mentionne pas de piège particulier pour cette question. Relis attentivement l'énoncé et élimine les choix manifestement faux avant de valider.",
+      "codeBlocks": [
+        {
+          "language": "java",
+          "code": "class B {\n    public B() { System.out.print(\"Salut\"); }\n    public B(int i) { this(); System.out.println(\"Bonjour\" + i); }\n    public static void main(String[] args) {\n        B MonB = new B(2003);\n    }\n}"
+        }
+      ]
+    },
+    {
+      "id": 46,
+      "partTitle": "PARTIE 2 : Développement",
+      "prompt": "**Quel est l'usage du mot clé `DISTINCT` dans une requête SQL :**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Effectuer une sélection"
+        },
+        {
+          "key": "B",
+          "text": "Effectuer une projection"
+        },
+        {
+          "key": "C",
+          "text": "Supprimer les doublons"
+        },
+        {
+          "key": "D",
+          "text": "Ecraser une jointure"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctAnswerRaw": "✅ Réponse correcte : C (`Supprimer les doublons`)",
+      "explanation": "En SQL, `SELECT DISTINCT colonne FROM table` élimine les lignes en double dans le résultat affiché afin de ne retourner que des valeurs uniques.",
+      "trapOrTip": "**Aucun piège spécifique signalé :** Le corrigé officiel ne mentionne pas de piège particulier pour cette question. Relis attentivement l'énoncé et élimine les choix manifestement faux avant de valider."
+    },
+    {
+      "id": 47,
+      "partTitle": "PARTIE 2 : Développement",
+      "prompt": "### Questions 47 à 50 — Schéma Relationnel\nLes questions Q47 à Q50 se rapportent au schéma relationnel suivant :\n* `personne(num, nom, prenom)` *(avec `num` souligné)*\n* `Livre(codlivre, libellé)` *(avec `codlivre` souligné)*\n* `Emprunt(#num, #codlivre, DateEmprunt, DateRetourPrevue, DateRetourEffective)`\n* `Retard(#num, pinalretard)`\n\n**La requête SQL qui permet de créer la table `personne` est :**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "`Create personne (num int primary key, nom varchar(50), prenom varchar(50))`"
+        },
+        {
+          "key": "B",
+          "text": "`Create table personne (num int primary key, nom varchar(50), prenom varchar(50))`"
+        },
+        {
+          "key": "C",
+          "text": "`Create personne (num int, primary key, nom varchar(50), prenom varchar(50))`"
+        },
+        {
+          "key": "D",
+          "text": "`Create table personne (num int ,primary key, nom varchar(50), prenom varchar(50))`"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctAnswerRaw": "✅ Réponse correcte : B (`Create table personne (num int primary key, nom varchar(50), prenom varchar(50))`)",
+      "explanation": "Il faut le mot-clé `CREATE TABLE` (ce qui élimine A et C), et il ne doit **pas** y avoir de virgule entre le type `int` et la contrainte `primary key` (ce qui élimine D).",
+      "trapOrTip": "**Aucun piège spécifique signalé :** Le corrigé officiel ne mentionne pas de piège particulier pour cette question. Relis attentivement l'énoncé et élimine les choix manifestement faux avant de valider."
+    },
+    {
+      "id": 48,
+      "partTitle": "PARTIE 2 : Développement",
+      "prompt": "### Questions 47 à 50 — Schéma Relationnel\nLes questions Q47 à Q50 se rapportent au schéma relationnel suivant :\n* `personne(num, nom, prenom)` *(avec `num` souligné)*\n* `Livre(codlivre, libellé)` *(avec `codlivre` souligné)*\n* `Emprunt(#num, #codlivre, DateEmprunt, DateRetourPrevue, DateRetourEffective)`\n* `Retard(#num, pinalretard)`\n\n**La requête SQL pour supprimer la table `personne` est :**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "`Delete table personne`"
+        },
+        {
+          "key": "B",
+          "text": "`Drop table personne`"
+        },
+        {
+          "key": "C",
+          "text": "`Delete personne`"
+        },
+        {
+          "key": "D",
+          "text": "`Drop table personne`"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctAnswerRaw": "✅ Réponse correcte : B / D (`Drop table personne`)",
+      "explanation": "La suppression d'une table entière en SQL s'écrit `DROP TABLE personne` (les propositions B et D sont identiques sur le sujet original).",
+      "trapOrTip": "**Aucun piège spécifique signalé :** Le corrigé officiel ne mentionne pas de piège particulier pour cette question. Relis attentivement l'énoncé et élimine les choix manifestement faux avant de valider."
+    },
+    {
+      "id": 49,
+      "partTitle": "PARTIE 2 : Développement",
+      "prompt": "### Questions 47 à 50 — Schéma Relationnel\nLes questions Q47 à Q50 se rapportent au schéma relationnel suivant :\n* `personne(num, nom, prenom)` *(avec `num` souligné)*\n* `Livre(codlivre, libellé)` *(avec `codlivre` souligné)*\n* `Emprunt(#num, #codlivre, DateEmprunt, DateRetourPrevue, DateRetourEffective)`\n* `Retard(#num, pinalretard)`\n\n**La requête SQL pour afficher les noms et les prénoms des personnes ayant emprunté au moins un livre est :**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "`Select distinct nom, prenom from personne, emprunt where personne.num=Emprunt.num`"
+        },
+        {
+          "key": "B",
+          "text": "`Select distinct nom, prenom from personne, where personne.num in emprunt`"
+        },
+        {
+          "key": "C",
+          "text": "`Select distinct nom, prenom where personne.num=personne.num`"
+        },
+        {
+          "key": "D",
+          "text": "`Select distinct nom, prenom from personne, where num in emprunt`"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "A",
+      "correctAnswerRaw": "✅ Réponse correcte : A (`Select distinct nom, prenom from personne, emprunt where personne.num=Emprunt.num`)",
+      "explanation": "Cette requête effectue une jointure entre `personne` et `emprunt` sur la clé `personne.num = Emprunt.num`, et utilise `DISTINCT` pour ne pas afficher plusieurs fois une personne qui a emprunté plusieurs livres.",
+      "trapOrTip": "**Aucun piège spécifique signalé :** Le corrigé officiel ne mentionne pas de piège particulier pour cette question. Relis attentivement l'énoncé et élimine les choix manifestement faux avant de valider."
+    },
+    {
+      "id": 50,
+      "partTitle": "PARTIE 2 : Développement",
+      "prompt": "### Questions 47 à 50 — Schéma Relationnel\nLes questions Q47 à Q50 se rapportent au schéma relationnel suivant :\n* `personne(num, nom, prenom)` *(avec `num` souligné)*\n* `Livre(codlivre, libellé)` *(avec `codlivre` souligné)*\n* `Emprunt(#num, #codlivre, DateEmprunt, DateRetourPrevue, DateRetourEffective)`\n* `Retard(#num, pinalretard)`\n\n**La requête SQL pour ajouter la personne `(457, mohamadi, amine)` dans la table `personne` est :**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "`Insert into personne values (457,'mohamadi','amine')`"
+        },
+        {
+          "key": "B",
+          "text": "`Insert into table personne values (457,'mohamadi','amine')`"
+        },
+        {
+          "key": "C",
+          "text": "`Insert values (457,'mohamadi','amine') into personne`"
+        },
+        {
+          "key": "D",
+          "text": "`Insert values (457,'mohamadi','amine') into table personne`"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "A",
+      "correctAnswerRaw": "✅ Réponse correcte : A (`Insert into personne values (457,'mohamadi','amine')`)",
+      "explanation": "En SQL, la syntaxe d'insertion est `INSERT INTO nom_table VALUES (...)` — on n'écrit jamais le mot `TABLE` après `INSERT INTO` (ni après `DELETE FROM` ou `UPDATE`).",
+      "trapOrTip": "**Aucun piège spécifique signalé :** Le corrigé officiel ne mentionne pas de piège particulier pour cette question. Relis attentivement l'énoncé et élimine les choix manifestement faux avant de valider."
+    },
+    {
+      "id": 51,
+      "partTitle": "PARTIE 3 : Réseaux et Systèmes Informatiques",
+      "prompt": "**Une association n-aire est une association qui met en relation :**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Plusieurs attributs"
+        },
+        {
+          "key": "B",
+          "text": "Plusieurs clés primaires"
+        },
+        {
+          "key": "C",
+          "text": "Plusieurs entités"
+        },
+        {
+          "key": "D",
+          "text": "Plusieurs tables"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctAnswerRaw": "✅ Réponse correcte : C (`Plusieurs entités`)",
+      "explanation": "Dans le modèle Entité-Association (Merise), le degré (ou dimension) d'une association est le nombre d'**entités** qu'elle relie : unaire/réflexive (1), binaire (2), ternaire (3), ou **n-aire** ($n$ entités).",
+      "trapOrTip": "**Aucun piège spécifique signalé :** Le corrigé officiel ne mentionne pas de piège particulier pour cette question. Relis attentivement l'énoncé et élimine les choix manifestement faux avant de valider."
+    },
+    {
+      "id": 52,
+      "partTitle": "PARTIE 3 : Réseaux et Systèmes Informatiques",
+      "prompt": "**Qu'est-ce que Scrum ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Un langage de programmation"
+        },
+        {
+          "key": "B",
+          "text": "Une méthode agile basée sur des cycles de développement"
+        },
+        {
+          "key": "C",
+          "text": "Un algorithme de tri"
+        },
+        {
+          "key": "D",
+          "text": "Un CMS"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctAnswerRaw": "✅ Réponse correcte : B (`Une méthode agile basée sur des cycles de développement`)",
+      "explanation": "**Scrum** est le cadre méthodologique (*framework*) Agile le plus utilisé en gestion de projet informatique, fondé sur des cycles itératifs courts appelés **Sprints** (de 2 à 4 semaines).",
+      "trapOrTip": "**Aucun piège spécifique signalé :** Le corrigé officiel ne mentionne pas de piège particulier pour cette question. Relis attentivement l'énoncé et élimine les choix manifestement faux avant de valider."
+    },
+    {
+      "id": 53,
+      "partTitle": "PARTIE 3 : Réseaux et Systèmes Informatiques",
+      "prompt": "**Quel diagramme UML approprié pour modéliser les relations entre différentes classes ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Diagramme de cas d'utilisation"
+        },
+        {
+          "key": "B",
+          "text": "Diagramme de séquence"
+        },
+        {
+          "key": "C",
+          "text": "Diagramme de classes"
+        },
+        {
+          "key": "D",
+          "text": "Diagramme de déploiement"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctAnswerRaw": "✅ Réponse correcte : C (`Diagramme de classes`)",
+      "explanation": "Le **diagramme de classes** représente la structure statique du système : les classes, leurs attributs, leurs méthodes et les relations entre elles (association, agrégation, composition, héritage).",
+      "trapOrTip": "**Aucun piège spécifique signalé :** Le corrigé officiel ne mentionne pas de piège particulier pour cette question. Relis attentivement l'énoncé et élimine les choix manifestement faux avant de valider."
+    },
+    {
+      "id": 54,
+      "partTitle": "PARTIE 3 : Réseaux et Systèmes Informatiques",
+      "prompt": "**En UML, que signifie la multiplicité `1..*` ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Plusieurs incluant la possibilité d'aucun"
+        },
+        {
+          "key": "B",
+          "text": "Exactement 1"
+        },
+        {
+          "key": "C",
+          "text": "Au plus un"
+        },
+        {
+          "key": "D",
+          "text": "Au moins un"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "D",
+      "correctAnswerRaw": "✅ Réponse correcte : D (`Au moins un`)",
+      "explanation": "Récapitulatif des multiplicités UML à connaître par cœur :\n  * **`1` (ou `1..1`) :** Exactement un (B).\n  * **`0..1` :** Au plus un — zéro ou un (C).\n  * **`0..*` (ou `*`) :** Plusieurs incluant la possibilité d'aucun — zéro ou plusieurs (A).\n  * **`1..*` :** **Au moins un** — un ou plusieurs (D).",
+      "trapOrTip": "**Aucun piège spécifique signalé :** Le corrigé officiel ne mentionne pas de piège particulier pour cette question. Relis attentivement l'énoncé et élimine les choix manifestement faux avant de valider."
+    },
+    {
+      "id": 55,
+      "partTitle": "PARTIE 3 : Réseaux et Systèmes Informatiques",
+      "prompt": "**Quel est le premier niveau de modélisation dans la méthode Merise ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Le modèle conceptuel de données"
+        },
+        {
+          "key": "B",
+          "text": "Le modèle logique de données"
+        },
+        {
+          "key": "C",
+          "text": "Le modèle physique de données"
+        },
+        {
+          "key": "D",
+          "text": "Le modèle organisationnel"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "A",
+      "correctAnswerRaw": "✅ Réponse correcte : A (`Le modèle conceptuel de données`)",
+      "explanation": "En Merise, la modélisation des données suit l'ordre chronologique d'abstraction : **1. MCD** (Modèle Conceptuel de Données : *Quoi ?*) $\\rightarrow$ **2. MLD** (Modèle Logique de Données) $\\rightarrow$ **3. MPD** (Modèle Physique de Données : *Comment ?*).",
+      "trapOrTip": "**Aucun piège spécifique signalé :** Le corrigé officiel ne mentionne pas de piège particulier pour cette question. Relis attentivement l'énoncé et élimine les choix manifestement faux avant de valider."
+    },
+    {
+      "id": 56,
+      "partTitle": "PARTIE 3 : Réseaux et Systèmes Informatiques",
+      "prompt": "**Dans la réalisation d'un projet, le maître d'ouvrage est celui qui :**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Définit le cahier des charges d'ouvrage"
+        },
+        {
+          "key": "B",
+          "text": "Est responsable de la coordination des intervenants"
+        },
+        {
+          "key": "C",
+          "text": "Assure les études de conception"
+        },
+        {
+          "key": "D",
+          "text": "Dirige le chantier de construction de l'ouvrage"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "A",
+      "correctAnswerRaw": "✅ Réponse correcte : A (`Définit le cahier des charges d'ouvrage`)",
+      "explanation": "* **MOA (Maître d'Ouvrage) :** C'est le **client** qui exprime le besoin, définit le **cahier des charges fonctionnel**, finance le projet et réceptionne le produit final.\n  * **MOE (Maître d'Œuvre) :** C'est le **prestataire technique** qui conçoit et réalise le logiciel (B, C, D).",
+      "trapOrTip": "**Aucun piège spécifique signalé :** Le corrigé officiel ne mentionne pas de piège particulier pour cette question. Relis attentivement l'énoncé et élimine les choix manifestement faux avant de valider."
+    },
+    {
+      "id": 57,
+      "partTitle": "PARTIE 3 : Réseaux et Systèmes Informatiques",
+      "prompt": "**Les adresses IPv4 sont codées sur :**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "2 octets"
+        },
+        {
+          "key": "B",
+          "text": "4 octets"
+        },
+        {
+          "key": "C",
+          "text": "8 octets"
+        },
+        {
+          "key": "D",
+          "text": "16 octets"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctAnswerRaw": "✅ Réponse correcte : B (`4 octets`)",
+      "explanation": "Une adresse **IPv4** est codée sur **32 bits = 4 octets** (ex. `192.168.1.1`). (Une adresse MAC est sur 6 octets = 48 bits, et une adresse IPv6 est sur 16 octets = 128 bits).",
+      "trapOrTip": "**Aucun piège spécifique signalé :** Le corrigé officiel ne mentionne pas de piège particulier pour cette question. Relis attentivement l'énoncé et élimine les choix manifestement faux avant de valider."
+    },
+    {
+      "id": 58,
+      "partTitle": "PARTIE 3 : Réseaux et Systèmes Informatiques",
+      "prompt": "**Avec une connexion VPN l'adresse IP qui circule sur le réseau Internet est celle :**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Du serveur VPN"
+        },
+        {
+          "key": "B",
+          "text": "Fournie par le serveur VPN client"
+        },
+        {
+          "key": "C",
+          "text": "Du poste"
+        },
+        {
+          "key": "D",
+          "text": "Du FAI"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "A",
+      "correctAnswerRaw": "✅ Réponse correcte : A (`Du serveur VPN`)",
+      "explanation": "Le VPN (*Virtual Private Network*) achemine le trafic du poste client dans un tunnel chiffré jusqu'au **serveur VPN** ; vis-à-vis des sites consultés sur Internet, l'adresse IP publique visible est donc celle du **serveur VPN** (ce qui masque l'IP réelle fournie par le FAI).",
+      "trapOrTip": "**Aucun piège spécifique signalé :** Le corrigé officiel ne mentionne pas de piège particulier pour cette question. Relis attentivement l'énoncé et élimine les choix manifestement faux avant de valider."
+    },
+    {
+      "id": 59,
+      "partTitle": "PARTIE 3 : Réseaux et Systèmes Informatiques",
+      "prompt": "**Entre quelles entités est établi le tunnel IP ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Poste client et serveur VPN"
+        },
+        {
+          "key": "B",
+          "text": "Poste client et FAI"
+        },
+        {
+          "key": "C",
+          "text": "DSLAM et FAI"
+        },
+        {
+          "key": "D",
+          "text": "DSLAM et serveur VPN"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "A",
+      "correctAnswerRaw": "✅ Réponse correcte : A (`Poste client et serveur VPN`)",
+      "explanation": "Dans un VPN d'accès distant, le tunnel IP chiffré est établi de bout en bout entre le **poste client** (via son logiciel client VPN) et le **serveur VPN** distant.",
+      "trapOrTip": "**Aucun piège spécifique signalé :** Le corrigé officiel ne mentionne pas de piège particulier pour cette question. Relis attentivement l'énoncé et élimine les choix manifestement faux avant de valider."
+    },
+    {
+      "id": 60,
+      "partTitle": "PARTIE 3 : Réseaux et Systèmes Informatiques",
+      "prompt": "**L'échange de messages entre les serveurs utilise :**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Le protocole POP3"
+        },
+        {
+          "key": "B",
+          "text": "Le protocole SMTP"
+        },
+        {
+          "key": "C",
+          "text": "Le protocole MIME"
+        },
+        {
+          "key": "D",
+          "text": "Le protocole IMAP"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctAnswerRaw": "✅ Réponse correcte : B (`Le protocole SMTP`)",
+      "explanation": "**SMTP** (*Simple Mail Transfer Protocol*) est utilisé à la fois pour l'envoi d'un e-mail du client vers son serveur de messagerie ET pour le **transfert des e-mails d'un serveur de messagerie à un autre**. `POP3` et `IMAP` servent uniquement à la réception/lecture des e-mails par le client final.",
+      "trapOrTip": "**Aucun piège spécifique signalé :** Le corrigé officiel ne mentionne pas de piège particulier pour cette question. Relis attentivement l'énoncé et élimine les choix manifestement faux avant de valider."
+    },
+    {
+      "id": 61,
+      "partTitle": "PARTIE 3 : Réseaux et Systèmes Informatiques",
+      "prompt": "**La translation d'adresse assure le passage d'adresses :**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Privée à publique"
+        },
+        {
+          "key": "B",
+          "text": "IPV 6 à IPV4"
+        },
+        {
+          "key": "C",
+          "text": "De la classe C à celles de la classe B"
+        },
+        {
+          "key": "D",
+          "text": "De la classe C à celles de la classe A"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "A",
+      "correctAnswerRaw": "✅ Réponse correcte : A (`Privée à publique`)",
+      "explanation": "Le mécanisme **NAT** (*Network Address Translation*), mis en œuvre sur le routeur/box d'accès à Internet, traduit les adresses IP **privées** du réseau local (LAN) en une adresse IP **publique** routable sur Internet (et inversement).",
+      "trapOrTip": "**Aucun piège spécifique signalé :** Le corrigé officiel ne mentionne pas de piège particulier pour cette question. Relis attentivement l'énoncé et élimine les choix manifestement faux avant de valider."
+    },
+    {
+      "id": 62,
+      "partTitle": "PARTIE 3 : Réseaux et Systèmes Informatiques",
+      "prompt": "**Quelle est la différence entre une architecture client-serveur 2-tiers et une architecture client-serveur 3-tiers ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "L'architecture 3-tiers inclut un serveur de données supplémentaire"
+        },
+        {
+          "key": "B",
+          "text": "L'architecture 3-tiers inclut un serveur d'application supplémentaire"
+        },
+        {
+          "key": "C",
+          "text": "L'architecture 2-tiers est plus performante que l'architecture 3-tiers"
+        },
+        {
+          "key": "D",
+          "text": "L'architecture 3-tiers est plus performante que l'architecture 2-tiers"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctAnswerRaw": "✅ Réponse correcte : B (`L'architecture 3-tiers inclut un serveur d'application supplémentaire`)",
+      "explanation": "* **2-tiers :** Client $\\leftrightarrow$ Serveur de Base de données.\n  * **3-tiers :** Client (Présentation, ex. navigateur) $\\leftrightarrow$ **Serveur d'Application / Web** (Logique métier, ex. Apache/PHP) $\\leftrightarrow$ Serveur de Base de données (ex. MySQL).",
+      "trapOrTip": "**Aucun piège spécifique signalé :** Le corrigé officiel ne mentionne pas de piège particulier pour cette question. Relis attentivement l'énoncé et élimine les choix manifestement faux avant de valider."
+    },
+    {
+      "id": 63,
+      "partTitle": "PARTIE 3 : Réseaux et Systèmes Informatiques",
+      "prompt": "**Le champ \"données\" d'un datagramme TCP peut contenir au maximum :**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "1024 octets"
+        },
+        {
+          "key": "B",
+          "text": "256 Ko"
+        },
+        {
+          "key": "C",
+          "text": "32 Ko"
+        },
+        {
+          "key": "D",
+          "text": "64 Ko"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "E",
+      "correctAnswerRaw": "✅ Réponse correcte : E (exactement $65\\,535 - 40 = 65\\,495\\text{ octets}$) ou D (`64 Ko` comme taille maximale théorique d'un datagramme IP encapsulant TCP)",
+      "explanation": "La taille totale maximale d'un datagramme IPv4 est codée sur 16 bits, soit $2^{16} - 1 = 65\\,535\\text{ octets} \\approx \\mathbf{64\\text{ Ko}}$ (**D**). Si l'on retire les 20 octets de l'en-tête IP et les 20 octets de l'en-tête TCP, le champ « données » pur contient au maximum $65\\,495\\text{ octets}$ (**E**).",
+      "trapOrTip": "**Aucun piège spécifique signalé :** Le corrigé officiel ne mentionne pas de piège particulier pour cette question. Relis attentivement l'énoncé et élimine les choix manifestement faux avant de valider."
+    },
+    {
+      "id": 64,
+      "partTitle": "PARTIE 3 : Réseaux et Systèmes Informatiques",
+      "prompt": "**Un serveur est un :**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Ordinateur qui fournit des services à d'autres ordinateurs"
+        },
+        {
+          "key": "B",
+          "text": "Ordinateur ou un programme informatique qui fournit des services à d'autres ordinateurs ou programmes"
+        },
+        {
+          "key": "C",
+          "text": "Programme informatique qui fournit des services à d'autres programmes"
+        },
+        {
+          "key": "D",
+          "text": "Ordinateur qui fournit des services à d'autres ordinateurs ou programmes"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctAnswerRaw": "✅ Réponse correcte : B (`Ordinateur ou un programme informatique qui fournit des services à d'autres ordinateurs ou programmes`)",
+      "explanation": "En informatique, le terme « **serveur** » désigne aussi bien la **machine matérielle** (ordinateur serveur) que le **programme logiciel** (ex. serveur Web Apache, serveur MySQL) qui offre des services à des clients (machines ou logiciels). La définition B est donc la plus complète et rigoureuse.",
+      "trapOrTip": "**Aucun piège spécifique signalé :** Le corrigé officiel ne mentionne pas de piège particulier pour cette question. Relis attentivement l'énoncé et élimine les choix manifestement faux avant de valider."
+    },
+    {
+      "id": 65,
+      "partTitle": "PARTIE 3 : Réseaux et Systèmes Informatiques",
+      "prompt": "**La valeur `3F` en hexadécimal correspond en décimal à :**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "48"
+        },
+        {
+          "key": "B",
+          "text": "63"
+        },
+        {
+          "key": "C",
+          "text": "45"
+        },
+        {
+          "key": "D",
+          "text": "18"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctAnswerRaw": "✅ Réponse correcte : B (`63`)",
+      "explanation": "En base 16 (hexadécimal), `F` vaut `15`. Donc :\n  $$(3\\text{F})_{16} = 3 \\times 16^1 + 15 \\times 16^0 = 48 + 15 = \\mathbf{63}$$",
+      "trapOrTip": "**Aucun piège spécifique signalé :** Le corrigé officiel ne mentionne pas de piège particulier pour cette question. Relis attentivement l'énoncé et élimine les choix manifestement faux avant de valider."
+    },
+    {
+      "id": 66,
+      "partTitle": "PARTIE 3 : Réseaux et Systèmes Informatiques",
+      "prompt": "**En base binaire `10 + 11` vaut :**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "1011"
+        },
+        {
+          "key": "B",
+          "text": "21"
+        },
+        {
+          "key": "C",
+          "text": "111"
+        },
+        {
+          "key": "D",
+          "text": "101"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "D",
+      "correctAnswerRaw": "✅ Réponse correcte : D (`101`)",
+      "explanation": "En décimal, $(10)_2 = 2$ et $(11)_2 = 3$. Leur somme vaut $2 + 3 = 5$, qui s'écrit en binaire **`101`** ($4 + 0 + 1 = 5$).",
+      "trapOrTip": "**Aucun piège spécifique signalé :** Le corrigé officiel ne mentionne pas de piège particulier pour cette question. Relis attentivement l'énoncé et élimine les choix manifestement faux avant de valider."
+    },
+    {
+      "id": 67,
+      "partTitle": "PARTIE 3 : Réseaux et Systèmes Informatiques",
+      "prompt": "**Les registres du microprocesseur :**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Contiennent les instructions du programme actuellement en exécution"
+        },
+        {
+          "key": "B",
+          "text": "Décodent les instructions et déclenchent les cycles nécessaires à leur lecture et à leur exécution"
+        },
+        {
+          "key": "C",
+          "text": "Contiennent les données sur lesquelles opèrent les instructions actuellement exécutées par la machine"
+        },
+        {
+          "key": "D",
+          "text": "Sont des composants de l'ordinateur où tous les programmes en cours d'exécution et les données associées résident"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctAnswerRaw": "✅ Réponse correcte : C (et A pour le registre d'instruction RI)",
+      "explanation": "* La proposition **B** définit l'**Unité de Commande (Séquenceur)**.\n  * La proposition **D** définit la **Mémoire Centrale (RAM)**.\n  * Les **registres** sont de très petites mémoires ultra-rapides internes au processeur qui stockent temporairement les opérandes/données manipulés par l'instruction en cours (**C**) ainsi que l'instruction en cours elle-même dans le registre RI (**A**).",
+      "trapOrTip": "**Aucun piège spécifique signalé :** Le corrigé officiel ne mentionne pas de piège particulier pour cette question. Relis attentivement l'énoncé et élimine les choix manifestement faux avant de valider."
+    },
+    {
+      "id": 68,
+      "partTitle": "PARTIE 3 : Réseaux et Systèmes Informatiques",
+      "prompt": "**La FAT dans le contexte des systèmes de fichiers est :**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Un logiciel de gestion de fichiers"
+        },
+        {
+          "key": "B",
+          "text": "Une table qui répertorie les emplacements des fichiers sur un support de stockage."
+        },
+        {
+          "key": "C",
+          "text": "Une méthode de compression de fichiers."
+        },
+        {
+          "key": "D",
+          "text": "Un type de fichier exécutable."
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctAnswerRaw": "✅ Réponse correcte : B (`Une table qui répertorie les emplacements des fichiers sur un support de stockage.`)",
+      "explanation": "**FAT** signifie *File Allocation Table* (Table d'allocation des fichiers) : c'est une table d'indexation sur le disque qui indique quels clusters (blocs) sont libres et quels clusters sont occupés par chaque fichier.",
+      "trapOrTip": "**Aucun piège spécifique signalé :** Le corrigé officiel ne mentionne pas de piège particulier pour cette question. Relis attentivement l'énoncé et élimine les choix manifestement faux avant de valider."
+    },
+    {
+      "id": 69,
+      "partTitle": "PARTIE 3 : Réseaux et Systèmes Informatiques",
+      "prompt": "**Si l'on installe deux disques durs sur le même contrôleur, ils seront définis de la façon suivante :**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Deux disques maîtres"
+        },
+        {
+          "key": "B",
+          "text": "Deux disques esclaves"
+        },
+        {
+          "key": "C",
+          "text": "Un disque maître et un disque esclave"
+        },
+        {
+          "key": "D",
+          "text": "Impossible d'installer deux disques durs sur le même contrôleur"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctAnswerRaw": "✅ Réponse correcte : C (`Un disque maître et un disque esclave`)",
+      "explanation": "Sur une nappe/contrôleur IDE (PATA) partageant deux périphériques, l'un doit impérativement être configuré en **Maître (*Master*)** et l'autre en **Esclave (*Slave*)** à l'aide de cavaliers (*jumpers*).",
+      "trapOrTip": "**Aucun piège spécifique signalé :** Le corrigé officiel ne mentionne pas de piège particulier pour cette question. Relis attentivement l'énoncé et élimine les choix manifestement faux avant de valider."
+    },
+    {
+      "id": 70,
+      "partTitle": "PARTIE 3 : Réseaux et Systèmes Informatiques",
+      "prompt": "**Le chipset de la carte mère est :**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Un support accueillant le processeur"
+        },
+        {
+          "key": "B",
+          "text": "Un support accueillant la barrette de mémoire (RAM)"
+        },
+        {
+          "key": "C",
+          "text": "Un jeu de caractère définissant si le clavier est AZERTY ou un QWERTY"
+        },
+        {
+          "key": "D",
+          "text": "Un jeu de composants permettant les échanges entre les divers éléments d'un ordinateur"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "D",
+      "correctAnswerRaw": "✅ Réponse correcte : D (`Un jeu de composants permettant les échanges entre les divers éléments d'un ordinateur`)",
+      "explanation": "Le **chipset** (jeu de circuits électroniques sur la carte mère, historiquement Pont Nord / *Northbridge* et Pont Sud / *Southbridge*) coordonne les flux de données entre le processeur, la mémoire RAM, la carte graphique et les périphériques. (Le support du processeur en A s'appelle le *Socket*).",
+      "trapOrTip": "**Aucun piège spécifique signalé :** Le corrigé officiel ne mentionne pas de piège particulier pour cette question. Relis attentivement l'énoncé et élimine les choix manifestement faux avant de valider."
+    },
+    {
+      "id": 71,
+      "partTitle": "PARTIE 3 : Réseaux et Systèmes Informatiques",
+      "prompt": "**Le SETUP est un programme qui permet de :**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Régler les paramètres du PC au démarrage"
+        },
+        {
+          "key": "B",
+          "text": "Changer le système d'exploitation"
+        },
+        {
+          "key": "C",
+          "text": "Protéger le système contre les virus"
+        },
+        {
+          "key": "D",
+          "text": "Installer les pilotes des périphériques"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "A",
+      "correctAnswerRaw": "✅ Réponse correcte : A (`Régler les paramètres du PC au démarrage`)",
+      "explanation": "Le **SETUP du BIOS/UEFI** est l'utilitaire de configuration matériel accessible au démarrage de l'ordinateur (via `Suppr`, `F2`, `F10`) permettant de régler l'ordre de démarrage (*Boot*), l'heure système et les paramètres matériels stockés dans la mémoire CMOS.",
+      "trapOrTip": "**Aucun piège spécifique signalé :** Le corrigé officiel ne mentionne pas de piège particulier pour cette question. Relis attentivement l'énoncé et élimine les choix manifestement faux avant de valider."
+    },
+    {
+      "id": 72,
+      "partTitle": "PARTIE 3 : Réseaux et Systèmes Informatiques",
+      "prompt": "**La commande `\"rstrui\"` permet :**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "De lancer l'utilitaire de restauration du système"
+        },
+        {
+          "key": "B",
+          "text": "De lancer l'invite de commande"
+        },
+        {
+          "key": "C",
+          "text": "D'afficher les propriétés Internet"
+        },
+        {
+          "key": "D",
+          "text": "De résoudre les problèmes de l'ordinateur"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "A",
+      "correctAnswerRaw": "✅ Réponse correcte : A (`De lancer l'utilitaire de restauration du système`)",
+      "explanation": "Sous Windows, la commande `rstrui.exe` (*Restore UI*) ouvre directement l'assistant de **Restauration du système** (*System Restore*).",
+      "trapOrTip": "**Aucun piège spécifique signalé :** Le corrigé officiel ne mentionne pas de piège particulier pour cette question. Relis attentivement l'énoncé et élimine les choix manifestement faux avant de valider."
+    },
+    {
+      "id": 73,
+      "partTitle": "PARTIE 3 : Réseaux et Systèmes Informatiques",
+      "prompt": "**Parmi les propositions suivantes, laquelle présente des systèmes d'exploitation ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Windows - Lynx - HP - Dell"
+        },
+        {
+          "key": "B",
+          "text": "Windows - Lynx - Office - UNIX"
+        },
+        {
+          "key": "C",
+          "text": "Windows - Linux - Android - UNIX"
+        },
+        {
+          "key": "D",
+          "text": "Windows - Linux - Office - Mac"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctAnswerRaw": "✅ Réponse correcte : C (`Windows - Linux - Android - UNIX`)",
+      "explanation": "Windows, Linux, Android et UNIX sont tous les quatre des **systèmes d'exploitation**. (HP et Dell sont des constructeurs d'ordinateurs, Office est une suite bureautique, et Lynx est un navigateur Web en mode texte).",
+      "trapOrTip": "**Aucun piège spécifique signalé :** Le corrigé officiel ne mentionne pas de piège particulier pour cette question. Relis attentivement l'énoncé et élimine les choix manifestement faux avant de valider."
+    },
+    {
+      "id": 74,
+      "partTitle": "PARTIE 3 : Réseaux et Systèmes Informatiques",
+      "prompt": "**Sous l'invite de commande Windows, la commande qui permet d'afficher le contenu du répertoire courant est :**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "`DIR`"
+        },
+        {
+          "key": "B",
+          "text": "`REP`"
+        },
+        {
+          "key": "C",
+          "text": "`LIST`"
+        },
+        {
+          "key": "D",
+          "text": "`VIEW`"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "A",
+      "correctAnswerRaw": "✅ Réponse correcte : A (`DIR`)",
+      "explanation": "Sous l'invite de commandes Windows (`cmd.exe`), la commande **`dir`** (*Directory*) liste les fichiers et sous-dossiers du répertoire courant (son équivalent sous Linux est `ls`).",
+      "trapOrTip": "**Aucun piège spécifique signalé :** Le corrigé officiel ne mentionne pas de piège particulier pour cette question. Relis attentivement l'énoncé et élimine les choix manifestement faux avant de valider."
+    },
+    {
+      "id": 75,
+      "partTitle": "PARTIE 3 : Réseaux et Systèmes Informatiques",
+      "prompt": "**Sous l'invite de commande Windows, la commande qui permet d'afficher les informations systèmes est :**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "`Msconfig`"
+        },
+        {
+          "key": "B",
+          "text": "`Dxdiag`"
+        },
+        {
+          "key": "C",
+          "text": "`Inform`"
+        },
+        {
+          "key": "D",
+          "text": "`System`"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "E",
+      "correctAnswerRaw": "✅ Réponse correcte : E (la commande CMD exacte est `systeminfo` ou `msinfo32`) ou B (`Dxdiag` qui ouvre l'outil d'informations système et DirectX)",
+      "explanation": "* En ligne de commande pure, c'est **`systeminfo`** qui affiche toutes les informations système dans la console (le choix D `System` est incomplet).\n  * Parmi les exécutables valides listés, **`dxdiag`** (**B**) affiche une fenêtre complète d'informations système (OS, processeur, RAM, affichage, son), tandis que `msconfig` (**A**) gère les options de démarrage et les services.",
+      "trapOrTip": "**Aucun piège spécifique signalé :** Le corrigé officiel ne mentionne pas de piège particulier pour cette question. Relis attentivement l'énoncé et élimine les choix manifestement faux avant de valider."
+    },
+    {
+      "id": 76,
+      "partTitle": "PARTIE 3 : Réseaux et Systèmes Informatiques",
+      "prompt": "**Sous Linux, la commande à utiliser pour afficher le numéro d'inode d'un fichier est :**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "`ls -l`"
+        },
+        {
+          "key": "B",
+          "text": "`ls -u`"
+        },
+        {
+          "key": "C",
+          "text": "`ls -a`"
+        },
+        {
+          "key": "D",
+          "text": "`ls -i`"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "D",
+      "correctAnswerRaw": "✅ Réponse correcte : D (`ls -i`)",
+      "explanation": "L'option **`-i`** (*inode*) de la commande `ls` affiche le numéro d'i-nœud unique associé à chaque fichier. (`-l` = format long détaillé, `-a` = inclut les fichiers cachés commençant par `.`).",
+      "trapOrTip": "**Aucun piège spécifique signalé :** Le corrigé officiel ne mentionne pas de piège particulier pour cette question. Relis attentivement l'énoncé et élimine les choix manifestement faux avant de valider."
+    },
+    {
+      "id": 77,
+      "partTitle": "PARTIE 3 : Réseaux et Systèmes Informatiques",
+      "prompt": "**Sous Linux, le répertoire qui ne peut pas être positionné sur une partition chiffrée est :**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "`/etc`"
+        },
+        {
+          "key": "B",
+          "text": "`/proc`"
+        },
+        {
+          "key": "C",
+          "text": "`/boot`"
+        },
+        {
+          "key": "D",
+          "text": "`/bin`"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctAnswerRaw": "✅ Réponse correcte : C (`/boot`) (ou B `/proc` car c'est un système de fichiers virtuel en RAM)",
+      "explanation": "Classiquement sous Linux, le répertoire **`/boot`** contient le noyau (*vmlinuz*) et l'image *initramfs* nécessaires au chargeur d'amorçage (BIOS/GRUB) **avant** que le système ne puisse demander le mot de passe de déchiffrement du disque ; il est donc placé sur une partition non chiffrée (**C**). Par ailleurs, `/proc` (**B**) est un pseudo-système de fichiers virtuel résidant uniquement en mémoire vive (RAM) et non sur une partition disque.",
+      "trapOrTip": "**Aucun piège spécifique signalé :** Le corrigé officiel ne mentionne pas de piège particulier pour cette question. Relis attentivement l'énoncé et élimine les choix manifestement faux avant de valider."
+    },
+    {
+      "id": 78,
+      "partTitle": "PARTIE 3 : Réseaux et Systèmes Informatiques",
+      "prompt": "**La commande qui permet de visualiser les connexions réseau actives sur un système Windows est :**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "`Netstat`"
+        },
+        {
+          "key": "B",
+          "text": "`Ping`"
+        },
+        {
+          "key": "C",
+          "text": "`Ipconfig`"
+        },
+        {
+          "key": "D",
+          "text": "`net view`"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "A",
+      "correctAnswerRaw": "✅ Réponse correcte : A (`Netstat`)",
+      "explanation": "La commande **`netstat`** (*Network Statistics*) affiche toutes les connexions TCP/UDP actives, les ports en écoute et les tables de routage.",
+      "trapOrTip": "**Aucun piège spécifique signalé :** Le corrigé officiel ne mentionne pas de piège particulier pour cette question. Relis attentivement l'énoncé et élimine les choix manifestement faux avant de valider."
+    },
+    {
+      "id": 79,
+      "partTitle": "PARTIE 3 : Réseaux et Systèmes Informatiques",
+      "prompt": "**Sous Linux, `\"chroot\"` permet :**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Démarrer le système sans partition racine"
+        },
+        {
+          "key": "B",
+          "text": "Changer le répertoire racine d'un processus"
+        },
+        {
+          "key": "C",
+          "text": "Changer, en cours d'utilisation, le système de fichiers de la partition racine"
+        },
+        {
+          "key": "D",
+          "text": "Remonter d'un répertoire (aller à son parent)"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctAnswerRaw": "✅ Réponse correcte : B (`Changer le répertoire racine d'un processus`)",
+      "explanation": "La commande **`chroot`** (*Change Root*) modifie le répertoire racine `/` apparent pour le processus en cours et ses processus fils (créant un environnement isolé appelé *prison chroot*).",
+      "trapOrTip": "**Aucun piège spécifique signalé :** Le corrigé officiel ne mentionne pas de piège particulier pour cette question. Relis attentivement l'énoncé et élimine les choix manifestement faux avant de valider."
+    },
+    {
+      "id": 80,
+      "partTitle": "PARTIE 3 : Réseaux et Systèmes Informatiques",
+      "prompt": "**Sous Windows, l'outil qui permet de gérer les dossiers et les fichiers est :**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Le gestionnaire des tâches"
+        },
+        {
+          "key": "B",
+          "text": "L'explorateur Windows"
+        },
+        {
+          "key": "C",
+          "text": "Le panneau de configuration"
+        },
+        {
+          "key": "D",
+          "text": "Le menu Démarrer"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctAnswerRaw": "✅ Réponse correcte : B (`L'explorateur Windows`)",
+      "explanation": "L'**Explorateur Windows** (ou *Explorateur de fichiers*, raccourci `Windows + E`) est le gestionnaire graphique permettant de parcourir, créer, copier, déplacer et supprimer les dossiers et fichiers.",
+      "trapOrTip": "**Aucun piège spécifique signalé :** Le corrigé officiel ne mentionne pas de piège particulier pour cette question. Relis attentivement l'énoncé et élimine les choix manifestement faux avant de valider."
+    }
+  ]
+}

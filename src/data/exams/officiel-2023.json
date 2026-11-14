@@ -1,0 +1,2558 @@
+{
+  "id": "officiel-2023",
+  "title": "Examen Officiel 2023",
+  "year": "2023",
+  "category": "officiel",
+  "subject": "Spécialité Informatique",
+  "durationMinutes": 240,
+  "coefficient": 20,
+  "totalQuestions": 80,
+  "questions": [
+    {
+      "id": 1,
+      "partTitle": "PARTIE 1 : Développement",
+      "prompt": "**Les instructions de base en algorithmique sont :**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Déclaration - Lecture - Écriture"
+        },
+        {
+          "key": "B",
+          "text": "Lecture - Écriture - Affectation"
+        },
+        {
+          "key": "C",
+          "text": "Affectation - Test - Boucle"
+        },
+        {
+          "key": "D",
+          "text": "Type - Variable - Constante"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctAnswerRaw": "✅ Réponse correcte : B (`Lecture - Écriture - Affectation`)",
+      "explanation": "Les trois instructions élémentaires (de base) qui composent toute séquence algorithmique sont : **Lire** (entrée), **Écrire** (sortie) et **Affecter** (`<-`). La déclaration fait partie de l'en-tête déclaratif et non du corps des instructions.",
+      "trapOrTip": "**Aucun piège spécifique signalé :** Le corrigé officiel ne mentionne pas de piège particulier pour cette question. Relis attentivement l'énoncé et élimine les choix manifestement faux avant de valider."
+    },
+    {
+      "id": 2,
+      "partTitle": "PARTIE 1 : Développement",
+      "prompt": "**Les structures algorithmiques sont :**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Séquentielle - Alternative - Évènementielle"
+        },
+        {
+          "key": "B",
+          "text": "Séquentielle - Procédurale - Itérative"
+        },
+        {
+          "key": "C",
+          "text": "Séquentielle - Procédurale - Évènementielle"
+        },
+        {
+          "key": "D",
+          "text": "Séquentielle - Alternative - Itérative"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "D",
+      "correctAnswerRaw": "✅ Réponse correcte : D (`Séquentielle - Alternative - Itérative`)",
+      "explanation": "Selon le théorème de Böhm-Jacopini (programmation structurée), tout algorithme s'écrit à l'aide de 3 structures de contrôle fondamentales : **Séquentielle** (enchaînement linéaire), **Alternative / Conditionnelle** (`Si...Alors...Sinon`) et **Itérative / Répétitive** (boucles `Pour`, `Tant que`, `Répéter`).",
+      "trapOrTip": "**Aucun piège spécifique signalé :** Le corrigé officiel ne mentionne pas de piège particulier pour cette question. Relis attentivement l'énoncé et élimine les choix manifestement faux avant de valider."
+    },
+    {
+      "id": 3,
+      "partTitle": "PARTIE 1 : Développement",
+      "prompt": "**La différence entre les boucles \"Tant que\" et \"Répéter jusqu'à\" est :**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "\"Tant que\" est pré-testée alors que \"Répéter jusqu'à\" est post-testée"
+        },
+        {
+          "key": "B",
+          "text": "\"Tant que\" est post-testée alors que \"Répéter jusqu'à\" est pré-testée"
+        },
+        {
+          "key": "C",
+          "text": "À l'inverse de \"Tant que\", le nombre d'itérations de \"Répéter jusqu'à\" est connu à l'avance"
+        },
+        {
+          "key": "D",
+          "text": "À l'inverse de \"Répéter jusqu'à\", le nombre d'itérations de \"Tant que\" est connu à l'avance"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "A",
+      "correctAnswerRaw": "✅ Réponse correcte : A (`\"Tant que\" est pré-testée alors que \"Répéter jusqu'à\" est post-testée`)",
+      "explanation": "* **`Tant que`** teste la condition **avant** d'entrer dans la boucle (pré-testée : peut s'exécuter `0` fois).\n  * **`Répéter ... jusqu'à`** teste la condition **à la fin** du tour (post-testée : s'exécute toujours **au moins `1` fois**).",
+      "trapOrTip": "**Aucun piège spécifique signalé :** Le corrigé officiel ne mentionne pas de piège particulier pour cette question. Relis attentivement l'énoncé et élimine les choix manifestement faux avant de valider."
+    },
+    {
+      "id": 4,
+      "partTitle": "PARTIE 1 : Développement",
+      "prompt": "**En algorithmique, la boucle `POUR` est utilisée :**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Lorsqu'on souhaite répéter une séquence d'instructions sans arrêt"
+        },
+        {
+          "key": "B",
+          "text": "Lorsqu'on souhaite répéter une séquence d'instructions un nombre connu de fois"
+        },
+        {
+          "key": "C",
+          "text": "Lorsqu'on souhaite effectuer des tests conditionnels répétitifs"
+        },
+        {
+          "key": "D",
+          "text": "Lorsqu'on souhaite effectuer des tests conditionnels imbriqués"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctAnswerRaw": "✅ Réponse correcte : B (`Lorsqu'on souhaite répéter une séquence d'instructions un nombre connu de fois`)",
+      "explanation": "La boucle `Pour` utilise un compteur dont la valeur initiale et la valeur finale sont connues avant le début de la boucle.",
+      "trapOrTip": "**Aucun piège spécifique signalé :** Le corrigé officiel ne mentionne pas de piège particulier pour cette question. Relis attentivement l'énoncé et élimine les choix manifestement faux avant de valider."
+    },
+    {
+      "id": 5,
+      "partTitle": "PARTIE 1 : Développement",
+      "prompt": "**Parmi les structures de données suivantes, celle qui n'est pas linéaire est :**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Tableau"
+        },
+        {
+          "key": "B",
+          "text": "File"
+        },
+        {
+          "key": "C",
+          "text": "Pile"
+        },
+        {
+          "key": "D",
+          "text": "Arbre"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "D",
+      "correctAnswerRaw": "✅ Réponse correcte : D (`Arbre`)",
+      "explanation": "* **Structures linéaires (séquentielles) :** Tableau, Liste chaînée, Pile, File.\n  * **Structures non linéaires (hiérarchiques ou relationnelles) :** **Arbre** et **Graphe**.",
+      "trapOrTip": "**Aucun piège spécifique signalé :** Le corrigé officiel ne mentionne pas de piège particulier pour cette question. Relis attentivement l'énoncé et élimine les choix manifestement faux avant de valider."
+    },
+    {
+      "id": 6,
+      "partTitle": "PARTIE 1 : Développement",
+      "prompt": "**Après l'exécution de l'instruction `\"X <- 5+5*5-5/5\"`, le contenu de la variable `X` est :**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "9"
+        },
+        {
+          "key": "B",
+          "text": "5"
+        },
+        {
+          "key": "C",
+          "text": "29"
+        },
+        {
+          "key": "D",
+          "text": "1"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctAnswerRaw": "✅ Réponse correcte : C (`29`)",
+      "explanation": "La multiplication `*` et la division `/` sont prioritaires sur l'addition `+` et la soustraction `-` :\n  $$X = 5 + (5 \\times 5) - (5 / 5) = 5 + 25 - 1 = \\mathbf{29}$$",
+      "trapOrTip": "**Aucun piège spécifique signalé :** Le corrigé officiel ne mentionne pas de piège particulier pour cette question. Relis attentivement l'énoncé et élimine les choix manifestement faux avant de valider."
+    },
+    {
+      "id": 7,
+      "partTitle": "PARTIE 1 : Développement",
+      "prompt": "L'algorithme suivant :\n\n{{CODE_0}}\n\n**Affiche :**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "745"
+        },
+        {
+          "key": "B",
+          "text": "547"
+        },
+        {
+          "key": "C",
+          "text": "7450"
+        },
+        {
+          "key": "D",
+          "text": "5470"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctAnswerRaw": "✅ Réponse correcte : B (`547`)",
+      "explanation": "Cet algorithme classique **inverse les chiffres d'un nombre entier** :\n  * Tour 1 (`M = 745`) : `R = 5`, `S = 0 * 10 + 5 = 5`, `M = 74`.\n  * Tour 2 (`M = 74`) : `R = 4`, `S = 5 * 10 + 4 = 54`, `M = 7`.\n  * Tour 3 (`M = 7`) : `R = 7`, `S = 54 * 10 + 7 = 547`, `M = 0` (fin).",
+      "trapOrTip": "**Aucun piège spécifique signalé :** Le corrigé officiel ne mentionne pas de piège particulier pour cette question. Relis attentivement l'énoncé et élimine les choix manifestement faux avant de valider.",
+      "codeBlocks": [
+        {
+          "language": "pascal",
+          "code": "Variables N, M, R, S : Entier\nDEBUT\n    N <- 745\n    M <- N\n    S <- 0\n    Tant Que M != 0 faire\n        R <- M Mod 10\n        S <- S * 10 + R\n        M <- M / 10  -- la division entière\n    Fin Tant Que\n    Afficher (S)\nFIN."
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "partTitle": "PARTIE 1 : Développement",
+      "prompt": "{{CODE_0}}\n\n**La procédure `proc1` permet :**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "D'afficher les éléments d'un tableau à deux dimensions"
+        },
+        {
+          "key": "B",
+          "text": "D'introduire les éléments d'un tableau à deux dimensions"
+        },
+        {
+          "key": "C",
+          "text": "D'afficher les indices d'un tableau à deux dimensions"
+        },
+        {
+          "key": "D",
+          "text": "D'introduire les indices d'un tableau à deux dimensions"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctAnswerRaw": "✅ Réponse correcte : B (`D'introduire les éléments d'un tableau à deux dimensions`)",
+      "explanation": "L'instruction `Lire(T[i][j])` permet à l'utilisateur de saisir (introduire au clavier) chaque élément de la matrice carrée `T` de taille $L \\times L$.",
+      "trapOrTip": "**Aucun piège spécifique signalé :** Le corrigé officiel ne mentionne pas de piège particulier pour cette question. Relis attentivement l'énoncé et élimine les choix manifestement faux avant de valider.",
+      "codeBlocks": [
+        {
+          "language": "pascal",
+          "code": "proc1()\nEntier i, j, L, T[40][40]\nAfficher(\"Entrer le nombre de lignes ou de colonnes (L=C): \")\nLire(L)\nPour i <- 0 à L-1\n    Pour j <- 0 à L-1\n        Lire(T[i][j])\n    Fin pour\nFin pour\nFin"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "partTitle": "PARTIE 1 : Développement",
+      "prompt": "{{CODE_0}}\n\n**Pour `n = 4`, la fonction `f` retourne :**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "24"
+        },
+        {
+          "key": "B",
+          "text": "1"
+        },
+        {
+          "key": "C",
+          "text": "12"
+        },
+        {
+          "key": "D",
+          "text": "0"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "A",
+      "correctAnswerRaw": "✅ Réponse correcte : A (`24`)",
+      "explanation": "Il s'agit de la fonction récursive **Factorielle** ($n!$) :\n  $$f(4) = 4 \\times 3 \\times 2 \\times 1 \\times f(0) = 24 \\times 1 = \\mathbf{24}$$",
+      "trapOrTip": "**Aucun piège spécifique signalé :** Le corrigé officiel ne mentionne pas de piège particulier pour cette question. Relis attentivement l'énoncé et élimine les choix manifestement faux avant de valider.",
+      "codeBlocks": [
+        {
+          "language": "pascal",
+          "code": "f(n : entier)\n    if n=0 alors retourner 1\n    Sinon retourner n * f(n-1)\nfin"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "partTitle": "PARTIE 1 : Développement",
+      "prompt": "{{CODE_0}}\n\n**L'algorithme ci-dessus implémente un tri :**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Par sélection"
+        },
+        {
+          "key": "B",
+          "text": "Par insertion"
+        },
+        {
+          "key": "C",
+          "text": "À bulle"
+        },
+        {
+          "key": "D",
+          "text": "Rapide (QuickSort)"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctAnswerRaw": "✅ Réponse correcte : C (`À bulle`)",
+      "explanation": "Dès que vous voyez la comparaison et la permutation de deux éléments adjacents **`T[j]` et `T[j+1]`** dans une boucle `j` allant jusqu'à `n - i`, il s'agit immédiatement du **Tri à bulles** (ici par ordre décroissant).",
+      "trapOrTip": "**Aucun piège spécifique signalé :** Le corrigé officiel ne mentionne pas de piège particulier pour cette question. Relis attentivement l'énoncé et élimine les choix manifestement faux avant de valider.",
+      "codeBlocks": [
+        {
+          "language": "pascal",
+          "code": "Soit T un tableau de taille n\nPour i allant de 1 à n :\n    Pour j allant de 1 à n-i-1\n        SI T[j] < T[j+1] alors\n            Permuter (T[j], T[j+1])\n        FINSI\n    FinPour\nFinPour"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "partTitle": "PARTIE 1 : Développement",
+      "prompt": "**Le contenu de la variable booléenne `z` est : `z <- 8>4 ou 5>9`**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "VRAI"
+        },
+        {
+          "key": "B",
+          "text": "FAUX"
+        },
+        {
+          "key": "C",
+          "text": "VRAI ou FAUX"
+        },
+        {
+          "key": "D",
+          "text": "5>4 ou 3>7"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "A",
+      "correctAnswerRaw": "✅ Réponse correcte : A (`VRAI`)",
+      "explanation": "`8 > 4` est `VRAI` et `5 > 9` est `FAUX`. Or `VRAI ou FAUX` vaut **`VRAI`**.",
+      "trapOrTip": "**Aucun piège spécifique signalé :** Le corrigé officiel ne mentionne pas de piège particulier pour cette question. Relis attentivement l'énoncé et élimine les choix manifestement faux avant de valider."
+    },
+    {
+      "id": 12,
+      "partTitle": "PARTIE 1 : Développement",
+      "prompt": "**Parmi ces langages, lequel est un langage de programmation de bas niveau ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Python"
+        },
+        {
+          "key": "B",
+          "text": "Assembleur"
+        },
+        {
+          "key": "C",
+          "text": "Java"
+        },
+        {
+          "key": "D",
+          "text": "Visuel BASIC"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctAnswerRaw": "✅ Réponse correcte : B (`Assembleur`)",
+      "explanation": "Le langage **Assembleur** est un langage de bas niveau proche du langage machine (propre à chaque architecture de processeur : mnémoniques `MOV`, `ADD`, `JMP`), tandis que Python, Java et Visual Basic sont des langages de haut niveau.",
+      "trapOrTip": "**Aucun piège spécifique signalé :** Le corrigé officiel ne mentionne pas de piège particulier pour cette question. Relis attentivement l'énoncé et élimine les choix manifestement faux avant de valider."
+    },
+    {
+      "id": 13,
+      "partTitle": "PARTIE 1 : Développement",
+      "prompt": "Que retourne la fonction `F` définie ci-dessous ?\n\n{{CODE_0}}",
+      "choices": [
+        {
+          "key": "A",
+          "text": "L'indice de l'élément maximal d'un tableau"
+        },
+        {
+          "key": "B",
+          "text": "L'élément minimal d'un tableau"
+        },
+        {
+          "key": "C",
+          "text": "L'élément maximal d'un tableau"
+        },
+        {
+          "key": "D",
+          "text": "L'indice de l'élément minimal d'un tableau"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctAnswerRaw": "✅ Réponse correcte : B (`L'élément minimal d'un tableau`)",
+      "explanation": "`m` est initialisé avec le premier élément `tab[0]`, et chaque fois qu'un élément `x` est plus petit que `m` (`x < m`), `m` prend la valeur de `x`. La fonction retourne donc la **valeur minimale** du tableau (et non son indice).",
+      "trapOrTip": "**Aucun piège spécifique signalé :** Le corrigé officiel ne mentionne pas de piège particulier pour cette question. Relis attentivement l'énoncé et élimine les choix manifestement faux avant de valider.",
+      "codeBlocks": [
+        {
+          "language": "pascal",
+          "code": "Fonction F(tab)\n    m <- tab[0]\n    Pour chaque élément x du tableau tab\n        Si x < m Alors m <- x\n    Fin Pour\n    Retourner m\nFin"
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "partTitle": "PARTIE 1 : Développement",
+      "prompt": "**Un langage de programmation est dit compilé si :**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Le programme est converti en langage machine et exécuté ligne par ligne"
+        },
+        {
+          "key": "B",
+          "text": "Le programme est converti en entier en langage machine avant d'être exécuté"
+        },
+        {
+          "key": "C",
+          "text": "Le langage traduit directement la solution algorithmique en programme"
+        },
+        {
+          "key": "D",
+          "text": "Le langage fournit des bibliothèques et la documentation d'aide"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctAnswerRaw": "✅ Réponse correcte : B (`Le programme est converti en entier en langage machine avant d'être exécuté`)",
+      "explanation": "* **Langage compilé (ex. C, C++) :** Traduit **en totalité** en langage machine (fichier exécutable) avant l'exécution (**B**).\n  * **Langage interprété :** Traduit et exécuté **ligne par ligne** au moment de l'exécution (A).",
+      "trapOrTip": "**Aucun piège spécifique signalé :** Le corrigé officiel ne mentionne pas de piège particulier pour cette question. Relis attentivement l'énoncé et élimine les choix manifestement faux avant de valider."
+    },
+    {
+      "id": 15,
+      "partTitle": "PARTIE 1 : Développement",
+      "prompt": "**En langage C, la différence entre une variable pointeur et une variable normale est :**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Une variable pointeur stocke une adresse mémoire tandis qu'une variable normale stocke une valeur"
+        },
+        {
+          "key": "B",
+          "text": "Une variable pointeur stocke à la fois une adresse mémoire et une valeur tandis qu'une variable normale ne stocke que la valeur"
+        },
+        {
+          "key": "C",
+          "text": "Une variable pointeur peut être utilisée pour accéder à une variable globale tandis qu'une variable normale ne le permet pas"
+        },
+        {
+          "key": "D",
+          "text": "Une variable pointeur stocke une valeur tandis qu'une variable normale stocke une adresse mémoire"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "A",
+      "correctAnswerRaw": "✅ Réponse correcte : A (`Une variable pointeur stocke une adresse mémoire tandis qu'une variable normale stocke une valeur`)",
+      "explanation": "En C, une variable ordinaire (`int x = 10;`) contient directement une valeur, tandis qu'un pointeur (`int *p = &x;`) a pour valeur l'**adresse mémoire** d'une autre variable.",
+      "trapOrTip": "**Aucun piège spécifique signalé :** Le corrigé officiel ne mentionne pas de piège particulier pour cette question. Relis attentivement l'énoncé et élimine les choix manifestement faux avant de valider."
+    },
+    {
+      "id": 16,
+      "partTitle": "PARTIE 1 : Développement",
+      "prompt": "**En Java, la différence entre les opérateurs `==` et `=` est :**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "L'opérateur `==` est utilisé pour affecter une valeur à une variable tandis que l'opérateur `=` est utilisé pour comparer deux valeurs"
+        },
+        {
+          "key": "B",
+          "text": "L'opérateur `==` est utilisé pour comparer deux valeurs tandis que l'opérateur `=` est utilisé pour affecter une valeur à une variable"
+        },
+        {
+          "key": "C",
+          "text": "L'opérateur `=` est utilisé pour comparer les nombres alors que l'opérateur `==` est utilisé pour comparer les chaînes de caractères"
+        },
+        {
+          "key": "D",
+          "text": "Les deux opérateurs `==` et `=` sont utilisés pour affecter une valeur à une variable"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctAnswerRaw": "✅ Réponse correcte : B (`L'opérateur == est utilisé pour comparer deux valeurs tandis que l'opérateur = est utilisé pour affecter une valeur à une variable`)",
+      "explanation": "En C, C++, Java, PHP et JavaScript, `=` est l'opérateur d'**affectation** et `==` est l'opérateur de **comparaison d'égalité**.",
+      "trapOrTip": "**Aucun piège spécifique signalé :** Le corrigé officiel ne mentionne pas de piège particulier pour cette question. Relis attentivement l'énoncé et élimine les choix manifestement faux avant de valider."
+    },
+    {
+      "id": 17,
+      "partTitle": "PARTIE 1 : Développement",
+      "prompt": "**Le tri dont le principe est d'aller chercher le plus petit élément d'un tableau pour le mettre en premier, puis de repartir du second élément et d'aller chercher le plus petit élément du tableau pour le mettre en second, etc... est un tri :**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Par sélection"
+        },
+        {
+          "key": "B",
+          "text": "Par insertion"
+        },
+        {
+          "key": "C",
+          "text": "À bulle"
+        },
+        {
+          "key": "D",
+          "text": "Rapide (QuickSort)"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "A",
+      "correctAnswerRaw": "✅ Réponse correcte : A (`Par sélection`)",
+      "explanation": "C'est la définition exacte du **tri par sélection** (*Selection Sort*) : à chaque étape $i$, on sélectionne le minimum parmi les éléments restants et on l'échange avec la case $i$.",
+      "trapOrTip": "**Aucun piège spécifique signalé :** Le corrigé officiel ne mentionne pas de piège particulier pour cette question. Relis attentivement l'énoncé et élimine les choix manifestement faux avant de valider."
+    },
+    {
+      "id": 18,
+      "partTitle": "PARTIE 1 : Développement",
+      "prompt": "Quelle ligne du code suivant contient une erreur de syntaxe ?\n\n{{CODE_0}}",
+      "choices": [
+        {
+          "key": "A",
+          "text": "1"
+        },
+        {
+          "key": "B",
+          "text": "2"
+        },
+        {
+          "key": "C",
+          "text": "3"
+        },
+        {
+          "key": "D",
+          "text": "6"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctAnswerRaw": "✅ Réponse correcte : B (`2`)",
+      "explanation": "À la **ligne 2**, il est écrit `int i; j = 1;` avec un **point-virgule `;`** au lieu d'une **virgule `,`** (`int i, j = 1;`). À cause du point-virgule, l'instruction `int i;` se termine, et `j` est utilisé sans jamais avoir été déclaré !",
+      "trapOrTip": "**Aucun piège spécifique signalé :** Le corrigé officiel ne mentionne pas de piège particulier pour cette question. Relis attentivement l'énoncé et élimine les choix manifestement faux avant de valider.",
+      "codeBlocks": [
+        {
+          "language": "c",
+          "code": "1  void f(unsigned int n) {\n2  int i; j = 1;\n3  for (i=1; i<n; i++) {\n4  j = i*i*i;\n5  }\n6  printf(\"Resultat : %d -> %d\\n\", n, j);\n7  }"
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "partTitle": "PARTIE 1 : Développement",
+      "prompt": "Qu'affiche le code Java suivant :\n\n{{CODE_0}}",
+      "choices": [
+        {
+          "key": "A",
+          "text": "5"
+        },
+        {
+          "key": "B",
+          "text": "4.5"
+        },
+        {
+          "key": "C",
+          "text": "4"
+        },
+        {
+          "key": "D",
+          "text": "1"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctAnswerRaw": "✅ Réponse correcte : C (`4`)",
+      "explanation": "En Java (comme en C et C++), la division `/` entre deux entiers (`int`) effectue une **division entière** qui tronque la partie décimale : `9 / 2` vaut **`4`** (et non `4.5`).",
+      "trapOrTip": "**Aucun piège spécifique signalé :** Le corrigé officiel ne mentionne pas de piège particulier pour cette question. Relis attentivement l'énoncé et élimine les choix manifestement faux avant de valider.",
+      "codeBlocks": [
+        {
+          "language": "java",
+          "code": "public class Main {\n    public static void main(String[] args) {\n        int x = 9;\n        int y = 2;\n        System.out.println(x / y);\n    }\n}"
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "partTitle": "PARTIE 1 : Développement",
+      "prompt": "**La clause SQL utilisée pour supprimer des données d'une table est :**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Drop"
+        },
+        {
+          "key": "B",
+          "text": "Delete"
+        },
+        {
+          "key": "C",
+          "text": "Erase"
+        },
+        {
+          "key": "D",
+          "text": "Remove"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctAnswerRaw": "✅ Réponse correcte : B (`Delete`)",
+      "explanation": "`DELETE FROM nom_table WHERE ...` supprime des lignes (données) d'une table, tandis que `DROP TABLE` supprime la table entière (structure + données).",
+      "trapOrTip": "**Aucun piège spécifique signalé :** Le corrigé officiel ne mentionne pas de piège particulier pour cette question. Relis attentivement l'énoncé et élimine les choix manifestement faux avant de valider."
+    },
+    {
+      "id": 21,
+      "partTitle": "PARTIE 1 : Développement",
+      "prompt": "Qu'affiche le code Java suivant :\n\n{{CODE_0}}",
+      "choices": [
+        {
+          "key": "A",
+          "text": "`Maroc== Maroc`"
+        },
+        {
+          "key": "B",
+          "text": "`true`"
+        },
+        {
+          "key": "C",
+          "text": "`false`"
+        },
+        {
+          "key": "D",
+          "text": "Une erreur de compilation"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctAnswerRaw": "✅ Réponse correcte : C (`false`)",
+      "explanation": "En Java, sur des objets comme `String`, l'opérateur **`==` compare les adresses mémoire (les références)** et non le contenu du texte !\n  * `s1` pointe vers le *String Pool*, tandis que `new String(\"Maroc\")` force la création d'un **nouvel objet distinct** sur le tas (*Heap*).\n  * Leurs adresses sont différentes, donc `s1 == s2` affiche **`false`**. (Pour comparer le texte, il faut utiliser `s1.equals(s2)` qui renverrait `true`).",
+      "trapOrTip": "**Aucun piège spécifique signalé :** Le corrigé officiel ne mentionne pas de piège particulier pour cette question. Relis attentivement l'énoncé et élimine les choix manifestement faux avant de valider.",
+      "codeBlocks": [
+        {
+          "language": "java",
+          "code": "public class Main {\n    public static void main(String[] args) {\n        String s1 = \"Maroc\";\n        String s2 = new String(\"Maroc\");\n        System.out.println(s1 == s2);\n    }\n}"
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "partTitle": "PARTIE 1 : Développement",
+      "prompt": "Qu'affiche le code C++ suivant :\n\n{{CODE_0}}",
+      "choices": [
+        {
+          "key": "A",
+          "text": "10"
+        },
+        {
+          "key": "B",
+          "text": "0"
+        },
+        {
+          "key": "C",
+          "text": "Une adresse mémoire"
+        },
+        {
+          "key": "D",
+          "text": "Une erreur de compilation"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "A",
+      "correctAnswerRaw": "✅ Réponse correcte : A (`10`)",
+      "explanation": "`p` contient l'adresse de `n` (`&n`). L'opérateur de déréférencement `*p` accède à la **valeur** stockée à cette adresse, soit **`10`** (tandis que `cout << p` sans étoile aurait affiché l'adresse mémoire).",
+      "trapOrTip": "**Aucun piège spécifique signalé :** Le corrigé officiel ne mentionne pas de piège particulier pour cette question. Relis attentivement l'énoncé et élimine les choix manifestement faux avant de valider.",
+      "codeBlocks": [
+        {
+          "language": "cpp",
+          "code": "#include <iostream>\nusing namespace std;\nint main() {\n    int n = 10;\n    int *p = &n;\n    cout << *p << endl;\n    return 0;\n}"
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "partTitle": "PARTIE 1 : Développement",
+      "prompt": "**L'instruction SQL utilisée pour mettre à jour les données d'une table est :**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Modify"
+        },
+        {
+          "key": "B",
+          "text": "Change"
+        },
+        {
+          "key": "C",
+          "text": "Alter"
+        },
+        {
+          "key": "D",
+          "text": "Update"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "D",
+      "correctAnswerRaw": "✅ Réponse correcte : D (`Update`)",
+      "explanation": "En SQL, la mise à jour des données se fait avec `UPDATE nom_table SET colonne = valeur WHERE ...`.",
+      "trapOrTip": "**Aucun piège spécifique signalé :** Le corrigé officiel ne mentionne pas de piège particulier pour cette question. Relis attentivement l'énoncé et élimine les choix manifestement faux avant de valider."
+    },
+    {
+      "id": 24,
+      "partTitle": "PARTIE 1 : Développement",
+      "prompt": "Quelle est la sortie de l'exécution du code C++ suivant :\n\n{{CODE_0}}",
+      "choices": [
+        {
+          "key": "A",
+          "text": "19"
+        },
+        {
+          "key": "B",
+          "text": "0"
+        },
+        {
+          "key": "C",
+          "text": "Erreur d'exécution"
+        },
+        {
+          "key": "D",
+          "text": "Erreur de compilation"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "A",
+      "correctAnswerRaw": "✅ Réponse correcte : A (`19`)",
+      "explanation": "La syntaxe `MyClass(int val) : x(val) {}` est une **liste d'initialisation** de constructeur valide en C++ qui initialise l'attribut `x` avec la valeur `val` (`19`). L'appel `inst.display()` affiche donc **`19`**.",
+      "trapOrTip": "**Aucun piège spécifique signalé :** Le corrigé officiel ne mentionne pas de piège particulier pour cette question. Relis attentivement l'énoncé et élimine les choix manifestement faux avant de valider.",
+      "codeBlocks": [
+        {
+          "language": "cpp",
+          "code": "#include <iostream>\nusing namespace std;\nclass MyClass {\npublic:\n    int x;\n    MyClass(int val) : x(val) {}\n    void display() {\n        cout << x << endl;\n    }\n};\nint main() {\n    MyClass inst(19);\n    inst.display();\n    return 0;\n}"
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "partTitle": "PARTIE 1 : Développement",
+      "prompt": "Que fait ce code ?\n\n{{CODE_0}}",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Affiche le contenu de la table \"matable\" de la base de données \"mabase\""
+        },
+        {
+          "key": "B",
+          "text": "Affiche le nombre d'enregistrements de la table \"matable\""
+        },
+        {
+          "key": "C",
+          "text": "Affiche la structure de la table \"matable\" de la base de données \"mabase\""
+        },
+        {
+          "key": "D",
+          "text": "Affiche le nombre des colonnes de la table \"matable\""
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctAnswerRaw": "✅ Réponse correcte : B (`Affiche le nombre d'enregistrements de la table \"matable\"`)",
+      "explanation": "La fonction `mysql_numrows($req)` (*number of rows*) compte et renvoie le **nombre de lignes (enregistrements)** retournées par la requête `SELECT * FROM matable`.",
+      "trapOrTip": "**Aucun piège spécifique signalé :** Le corrigé officiel ne mentionne pas de piège particulier pour cette question. Relis attentivement l'énoncé et élimine les choix manifestement faux avant de valider.",
+      "codeBlocks": [
+        {
+          "language": "php",
+          "code": "<?\n$db = mysql_connect(localhost, mabase, mot-de-passe);\nmysql_select_db('mabase', $db);\n$req = mysql_query('SELECT * FROM matable');\n$res = mysql_numrows($req);\nEcho \".$res \";\nMysql_close($db);\n?>"
+        }
+      ]
+    },
+    {
+      "id": 26,
+      "partTitle": "PARTIE 1 : Développement",
+      "prompt": "**La non-redondance des enregistrements dans une table relationnelle est assurée par la contrainte :**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Clé primaire"
+        },
+        {
+          "key": "B",
+          "text": "Clé étrangère"
+        },
+        {
+          "key": "C",
+          "text": "Unicité"
+        },
+        {
+          "key": "D",
+          "text": "NULL interdit"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "A",
+      "correctAnswerRaw": "✅ Réponse correcte : A (`Clé primaire`)",
+      "explanation": "La **clé primaire** (*Primary Key*) identifie de façon unique chaque enregistrement d'une table (elle est à la fois unique et non nulle), ce qui interdit d'avoir deux enregistrements identiques dans la table.",
+      "trapOrTip": "**Aucun piège spécifique signalé :** Le corrigé officiel ne mentionne pas de piège particulier pour cette question. Relis attentivement l'énoncé et élimine les choix manifestement faux avant de valider."
+    },
+    {
+      "id": 27,
+      "partTitle": "PARTIE 1 : Développement",
+      "prompt": "### Questions 27 à 30 — Schéma Relationnel\nLes questions de Q27 à Q30 se rapportent au schéma relationnel suivant :\n* `candidat (Code_candidat, Nom, prenom)`\n* `participe (#Code_candidat, #Code_concours)`\n* `concours (Code_concours, Date)`\n\n**La requête SQL qui permet d'afficher les noms des candidats est :**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "`Select from candidat column(2)`"
+        },
+        {
+          "key": "B",
+          "text": "`Select column(2) from candidat`"
+        },
+        {
+          "key": "C",
+          "text": "`Select from candidat Nom`"
+        },
+        {
+          "key": "D",
+          "text": "`Select Nom from candidat`"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "D",
+      "correctAnswerRaw": "✅ Réponse correcte : D (`Select Nom from candidat`)",
+      "explanation": "En SQL, l'ordre des clauses est toujours `SELECT nom_colonne FROM nom_table`.",
+      "trapOrTip": "**Aucun piège spécifique signalé :** Le corrigé officiel ne mentionne pas de piège particulier pour cette question. Relis attentivement l'énoncé et élimine les choix manifestement faux avant de valider."
+    },
+    {
+      "id": 28,
+      "partTitle": "PARTIE 1 : Développement",
+      "prompt": "### Questions 27 à 30 — Schéma Relationnel\nLes questions de Q27 à Q30 se rapportent au schéma relationnel suivant :\n* `candidat (Code_candidat, Nom, prenom)`\n* `participe (#Code_candidat, #Code_concours)`\n* `concours (Code_concours, Date)`\n\n**La requête qui supprime de la table `\"candidat\"` le candidat ayant le code `125` est :**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "`Delete from candidat where Code_candidat=125`"
+        },
+        {
+          "key": "B",
+          "text": "`Delete from candidat where Code_candidat==125`"
+        },
+        {
+          "key": "C",
+          "text": "`drop from candidat where Code_candidat=125`"
+        },
+        {
+          "key": "D",
+          "text": "`drop from candidat where Code_candidat==125`"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "A",
+      "correctAnswerRaw": "✅ Réponse correcte : A (`Delete from candidat where Code_candidat=125`)",
+      "explanation": "En SQL, l'opérateur d'égalité dans une clause `WHERE` s'écrit avec un seul signe égal **`=`** (et jamais `==` comme en C/Java !).",
+      "trapOrTip": "**Aucun piège spécifique signalé :** Le corrigé officiel ne mentionne pas de piège particulier pour cette question. Relis attentivement l'énoncé et élimine les choix manifestement faux avant de valider."
+    },
+    {
+      "id": 29,
+      "partTitle": "PARTIE 1 : Développement",
+      "prompt": "### Questions 27 à 30 — Schéma Relationnel\nLes questions de Q27 à Q30 se rapportent au schéma relationnel suivant :\n* `candidat (Code_candidat, Nom, prenom)`\n* `participe (#Code_candidat, #Code_concours)`\n* `concours (Code_concours, Date)`\n\n**La requête SQL qui remplace le prénom du candidat ayant le `Code_candidat = 523` par `\"ahmed\"` est :**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "`Modify candidat (523) set prenom = \"ahmed\"`"
+        },
+        {
+          "key": "B",
+          "text": "`Modify candidat set prenom = \" ahmed \" where Code_candidat = 523`"
+        },
+        {
+          "key": "C",
+          "text": "`Update candidat (523) set prenom = \" ahmed \"`"
+        },
+        {
+          "key": "D",
+          "text": "`Update candidat set prenom = \" ahmed \" where Code_candidat = 523`"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "D",
+      "correctAnswerRaw": "✅ Réponse correcte : D (`Update candidat set prenom = \" ahmed \" where Code_candidat = 523`)",
+      "explanation": "La syntaxe officielle est `UPDATE nom_table SET colonne = valeur WHERE condition`.",
+      "trapOrTip": "**Aucun piège spécifique signalé :** Le corrigé officiel ne mentionne pas de piège particulier pour cette question. Relis attentivement l'énoncé et élimine les choix manifestement faux avant de valider."
+    },
+    {
+      "id": 30,
+      "partTitle": "PARTIE 1 : Développement",
+      "prompt": "### Questions 27 à 30 — Schéma Relationnel\nLes questions de Q27 à Q30 se rapportent au schéma relationnel suivant :\n* `candidat (Code_candidat, Nom, prenom)`\n* `participe (#Code_candidat, #Code_concours)`\n* `concours (Code_concours, Date)`\n\n**La requête SQL pour vider la table `candidat` est :**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "`Delete * from candidat`"
+        },
+        {
+          "key": "B",
+          "text": "`Delete * from table candidat`"
+        },
+        {
+          "key": "C",
+          "text": "`Delete from table candidat`"
+        },
+        {
+          "key": "D",
+          "text": "`Delete from candidat`"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "D",
+      "correctAnswerRaw": "✅ Réponse correcte : D (`Delete from candidat`)",
+      "explanation": "En SQL standard, pour supprimer toutes les lignes d'une table, on écrit **`DELETE FROM candidat`** (sans étoile `*` et sans le mot `table`).",
+      "trapOrTip": "**⚠️ Piège QCM très fréquent :** On écrit `SELECT * FROM candidat`, mais **jamais** `DELETE * FROM candidat` en SQL standard !"
+    },
+    {
+      "id": 31,
+      "partTitle": "PARTIE 1 : Développement",
+      "prompt": "**Un diagramme de classes en UML sert à :**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Montrer les interactions entre les objets d'un système"
+        },
+        {
+          "key": "B",
+          "text": "Représenter la structure statique d'un système en identifiant ses classes, attributs, et relations"
+        },
+        {
+          "key": "C",
+          "text": "Définir les scénarios d'utilisation d'un système"
+        },
+        {
+          "key": "D",
+          "text": "Spécifier la chronologie des étapes d'un processus"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctAnswerRaw": "✅ Réponse correcte : B (`Représenter la structure statique d'un système en identifiant ses classes, attributs, et relations`)",
+      "explanation": "Le diagramme de classes est le diagramme **statique** central d'UML. (Les interactions dans le temps correspondent au diagramme de séquence, et les scénarios d'utilisation au diagramme de cas d'utilisation).",
+      "trapOrTip": "**Aucun piège spécifique signalé :** Le corrigé officiel ne mentionne pas de piège particulier pour cette question. Relis attentivement l'énoncé et élimine les choix manifestement faux avant de valider."
+    },
+    {
+      "id": 32,
+      "partTitle": "PARTIE 1 : Développement",
+      "prompt": "**Un attribut dans une classe UML est :**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Un attribut d'un objet"
+        },
+        {
+          "key": "B",
+          "text": "Un lien entre les objets"
+        },
+        {
+          "key": "C",
+          "text": "Une relation entre les classes"
+        },
+        {
+          "key": "D",
+          "text": "Une caractéristique ou une propriété d'une classe"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "D",
+      "correctAnswerRaw": "✅ Réponse correcte : D (`Une caractéristique ou une propriété d'une classe`)",
+      "explanation": "Un attribut décrit une propriété ou donnée commune à tous les objets de la classe (ex. `nom`, `age`, `solde`).",
+      "trapOrTip": "**Aucun piège spécifique signalé :** Le corrigé officiel ne mentionne pas de piège particulier pour cette question. Relis attentivement l'énoncé et élimine les choix manifestement faux avant de valider."
+    },
+    {
+      "id": 33,
+      "partTitle": "PARTIE 1 : Développement",
+      "prompt": "**Un diagramme de séquence en UML sert à :**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "montrer la chronologie des interactions entre les objets au fil du temps"
+        },
+        {
+          "key": "B",
+          "text": "modéliser le flux de données entre les classes d'un système"
+        },
+        {
+          "key": "C",
+          "text": "représenter la structure statique d'un système"
+        },
+        {
+          "key": "D",
+          "text": "spécifier les détails de mise en page d'une interface utilisateur"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "A",
+      "correctAnswerRaw": "✅ Réponse correcte : A (`montrer la chronologie des interactions entre les objets au fil du temps`)",
+      "explanation": "Le diagramme de séquence est un diagramme dynamique d'interaction qui met l'accent sur l'**ordre chronologique** de l'envoi des messages entre les objets au cours du temps.",
+      "trapOrTip": "**Aucun piège spécifique signalé :** Le corrigé officiel ne mentionne pas de piège particulier pour cette question. Relis attentivement l'énoncé et élimine les choix manifestement faux avant de valider."
+    },
+    {
+      "id": 34,
+      "partTitle": "PARTIE 1 : Développement",
+      "prompt": "**Une association dans un diagramme de cas d'utilisation est :**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Une relation entre les classes du système"
+        },
+        {
+          "key": "B",
+          "text": "Une relation de composition entre les cas d'utilisation"
+        },
+        {
+          "key": "C",
+          "text": "Un lien entre un acteur et un cas d'utilisation montrant une interaction"
+        },
+        {
+          "key": "D",
+          "text": "Une relation d'héritage entre les acteurs"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctAnswerRaw": "✅ Réponse correcte : C (`Un lien entre un acteur et un cas d'utilisation montrant une interaction`)",
+      "explanation": "Dans un diagramme de cas d'utilisation, le trait continu qui relie un **acteur** à un **cas d'utilisation** s'appelle une **association** et indique que l'acteur participe à ce cas d'utilisation.",
+      "trapOrTip": "**Aucun piège spécifique signalé :** Le corrigé officiel ne mentionne pas de piège particulier pour cette question. Relis attentivement l'énoncé et élimine les choix manifestement faux avant de valider."
+    },
+    {
+      "id": 35,
+      "partTitle": "PARTIE 1 : Développement",
+      "prompt": "**Un objectif SMART dans la gestion de projet est un objectif :**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Précis, irréalisable, quantifiable, pertinent et doté d'une échéance claire"
+        },
+        {
+          "key": "B",
+          "text": "Précis, quantifiable, réalisable, pertinent et doté d'une échéance claire"
+        },
+        {
+          "key": "C",
+          "text": "Quantifiable, réalisable, pertinent et non doté d'une échéance déterminée"
+        },
+        {
+          "key": "D",
+          "text": "Non quantifiable, irréalisable, pertinent et doté d'une échéance claire"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctAnswerRaw": "✅ Réponse correcte : B (`Précis, quantifiable, réalisable, pertinent et doté d'une échéance claire`)",
+      "explanation": "L'acronyme **SMART** signifie : **S**pécifique (Précis), **M**esurable (Quantifiable), **A**tteignable (Réalisable), **R**éaliste/Pertinent (*Relevant*), et **T**emporellement défini (doté d'une échéance claire).",
+      "trapOrTip": "**Aucun piège spécifique signalé :** Le corrigé officiel ne mentionne pas de piège particulier pour cette question. Relis attentivement l'énoncé et élimine les choix manifestement faux avant de valider."
+    },
+    {
+      "id": 36,
+      "partTitle": "PARTIE 1 : Développement",
+      "prompt": "**Le terme \"livrable\" dans le contexte de la clôture d'un projet est :**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Un rapport de statut du projet"
+        },
+        {
+          "key": "B",
+          "text": "Un ensemble de tâches qui restent à accomplir"
+        },
+        {
+          "key": "C",
+          "text": "Un rapport sur l'évaluation des résultats du projet"
+        },
+        {
+          "key": "D",
+          "text": "Un produit ou un résultat spécifique produit par le projet"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "D",
+      "correctAnswerRaw": "✅ Réponse correcte : D (`Un produit ou un résultat spécifique produit par le projet`)",
+      "explanation": "En gestion de projet, un **livrable** (*deliverable*) est tout résultat, document ou produit mesurable et vérifiable (ex. cahier des charges, maquette, code source, application finale) qui doit être remis au client.",
+      "trapOrTip": "**Aucun piège spécifique signalé :** Le corrigé officiel ne mentionne pas de piège particulier pour cette question. Relis attentivement l'énoncé et élimine les choix manifestement faux avant de valider."
+    },
+    {
+      "id": 37,
+      "partTitle": "PARTIE 2 : Système et Réseaux",
+      "prompt": "**Sous Unix, l'ID de l'utilisateur qui égale à `0` est :**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Un identifiant invalide"
+        },
+        {
+          "key": "B",
+          "text": "L'identifiant de l'utilisateur root"
+        },
+        {
+          "key": "C",
+          "text": "L'identifiant d'un utilisateur lorsque son compte est supprimé"
+        },
+        {
+          "key": "D",
+          "text": "L'identifiant d'un utilisateur lorsque son compte est créé"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctAnswerRaw": "✅ Réponse correcte : B (`L'identifiant de l'utilisateur root`)",
+      "explanation": "Sous Unix/Linux, le super-utilisateur administrateur **`root`** possède toujours l'identifiant **`UID = 0`** et `GID = 0` dans le fichier `/etc/passwd`.",
+      "trapOrTip": "**Aucun piège spécifique signalé :** Le corrigé officiel ne mentionne pas de piège particulier pour cette question. Relis attentivement l'énoncé et élimine les choix manifestement faux avant de valider."
+    },
+    {
+      "id": 38,
+      "partTitle": "PARTIE 2 : Système et Réseaux",
+      "prompt": "**Un processus dans un système d'exploitation est :**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Un programme en cours d'exécution"
+        },
+        {
+          "key": "B",
+          "text": "Un fichier de configuration système"
+        },
+        {
+          "key": "C",
+          "text": "Un contexte processeur"
+        },
+        {
+          "key": "D",
+          "text": "Une instance d'un programme exécutable"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "A",
+      "correctAnswerRaw": "✅ Réponse correcte : A (`Un programme en cours d'exécution`) (et D `Une instance d'un programme exécutable`)",
+      "explanation": "Un programme est un fichier passif stocké sur le disque, tandis qu'un **processus** est une entité dynamique représentant **un programme en cours d'exécution** en mémoire (avec son espace mémoire, son PCB et ses ressources).",
+      "trapOrTip": "**Aucun piège spécifique signalé :** Le corrigé officiel ne mentionne pas de piège particulier pour cette question. Relis attentivement l'énoncé et élimine les choix manifestement faux avant de valider."
+    },
+    {
+      "id": 39,
+      "partTitle": "PARTIE 2 : Système et Réseaux",
+      "prompt": "**Le système de fichiers qui n'est pas utilisé par le système d'exploitation Windows est :**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "FAT16"
+        },
+        {
+          "key": "B",
+          "text": "NTFS"
+        },
+        {
+          "key": "C",
+          "text": "FAT32"
+        },
+        {
+          "key": "D",
+          "text": "EXT4"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "D",
+      "correctAnswerRaw": "✅ Réponse correcte : D (`EXT4`)",
+      "explanation": "`FAT16`, `FAT32`, `exFAT` et `NTFS` sont les systèmes de fichiers de Microsoft Windows, tandis que **`EXT4`** (*Fourth Extended Filesystem*) est le système de fichiers natif de **Linux**.",
+      "trapOrTip": "**Aucun piège spécifique signalé :** Le corrigé officiel ne mentionne pas de piège particulier pour cette question. Relis attentivement l'énoncé et élimine les choix manifestement faux avant de valider."
+    },
+    {
+      "id": 40,
+      "partTitle": "PARTIE 2 : Système et Réseaux",
+      "prompt": "**Un système de fichiers permet de stocker les informations et de les organiser sur :**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "La mémoire cache"
+        },
+        {
+          "key": "B",
+          "text": "La mémoire vive"
+        },
+        {
+          "key": "C",
+          "text": "Les mémoires secondaires"
+        },
+        {
+          "key": "D",
+          "text": "La ROM"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctAnswerRaw": "✅ Réponse correcte : C (`Les mémoires secondaires`)",
+      "explanation": "Un système de fichiers organise le stockage persistant des fichiers et dossiers sur les **mémoires secondaires (mémoires de masse)** : disques durs, SSD, clés USB, cartes SD.",
+      "trapOrTip": "**Aucun piège spécifique signalé :** Le corrigé officiel ne mentionne pas de piège particulier pour cette question. Relis attentivement l'énoncé et élimine les choix manifestement faux avant de valider."
+    },
+    {
+      "id": 41,
+      "partTitle": "PARTIE 2 : Système et Réseaux",
+      "prompt": "**Sous WINDOWS, la signification de l'acronyme \"NTFS\" est :**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "New Text File System"
+        },
+        {
+          "key": "B",
+          "text": "Network Transfer File System"
+        },
+        {
+          "key": "C",
+          "text": "New Technology File System"
+        },
+        {
+          "key": "D",
+          "text": "Non-Text File Storage"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctAnswerRaw": "✅ Réponse correcte : C (`New Technology File System`)",
+      "explanation": "**NTFS** signifie *New Technology File System* (introduit avec Windows NT).",
+      "trapOrTip": "**Aucun piège spécifique signalé :** Le corrigé officiel ne mentionne pas de piège particulier pour cette question. Relis attentivement l'énoncé et élimine les choix manifestement faux avant de valider."
+    },
+    {
+      "id": 42,
+      "partTitle": "PARTIE 2 : Système et Réseaux",
+      "prompt": "**Le rôle de l'ordonnanceur de processus dans la gestion des processus est de :**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Allouer de la mémoire aux processus"
+        },
+        {
+          "key": "B",
+          "text": "Déterminer l'ordre d'exécution des processus"
+        },
+        {
+          "key": "C",
+          "text": "Gérer les entrées/sorties des processus"
+        },
+        {
+          "key": "D",
+          "text": "Créer de nouveaux processus"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctAnswerRaw": "✅ Réponse correcte : B (`Déterminer l'ordre d'exécution des processus`)",
+      "explanation": "L'**ordonnanceur (*scheduler*)** choisit quel processus parmi ceux de la file « Prêt » va obtenir le processeur et dans quel ordre (selon l'algorithme FIFO, SJF, Round-Robin, etc.).",
+      "trapOrTip": "**Aucun piège spécifique signalé :** Le corrigé officiel ne mentionne pas de piège particulier pour cette question. Relis attentivement l'énoncé et élimine les choix manifestement faux avant de valider."
+    },
+    {
+      "id": 43,
+      "partTitle": "PARTIE 2 : Système et Réseaux",
+      "prompt": "**Sous Windows, supprimer un lien symbolique (également appelé symlink) est de :**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Supprimer le fichier de destination"
+        },
+        {
+          "key": "B",
+          "text": "Supprime à la fois le lien symbolique et le fichier de destination"
+        },
+        {
+          "key": "C",
+          "text": "Supprime uniquement le lien symbolique"
+        },
+        {
+          "key": "D",
+          "text": "Ne supprime ni le lien symbolique ni le fichier de destination"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctAnswerRaw": "✅ Réponse correcte : C (`Supprime uniquement le lien symbolique`)",
+      "explanation": "Un lien symbolique (comme un raccourci) n'est qu'un pointeur vers le chemin cible : supprimer le lien symbolique supprime uniquement le lien lui-même et laisse le fichier cible intact.",
+      "trapOrTip": "**Aucun piège spécifique signalé :** Le corrigé officiel ne mentionne pas de piège particulier pour cette question. Relis attentivement l'énoncé et élimine les choix manifestement faux avant de valider."
+    },
+    {
+      "id": 44,
+      "partTitle": "PARTIE 2 : Système et Réseaux",
+      "prompt": "**La commande `$ who | wc -l` retourne le nombre :**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "D'utilisateurs connectés"
+        },
+        {
+          "key": "B",
+          "text": "Total des utilisateurs"
+        },
+        {
+          "key": "C",
+          "text": "D'utilisateurs déconnectés"
+        },
+        {
+          "key": "D",
+          "text": "D'utilisateurs administrateurs"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "A",
+      "correctAnswerRaw": "✅ Réponse correcte : A (`D'utilisateurs connectés`)",
+      "explanation": "Sous Linux, la commande `who` affiche une ligne par session d'utilisateur actuellement connecté au système. En envoyant sa sortie via le tube `|` à `wc -l` (*word count - lines*), on compte le nombre de lignes, c'est-à-dire le **nombre d'utilisateurs connectés**.",
+      "trapOrTip": "**Aucun piège spécifique signalé :** Le corrigé officiel ne mentionne pas de piège particulier pour cette question. Relis attentivement l'énoncé et élimine les choix manifestement faux avant de valider."
+    },
+    {
+      "id": 45,
+      "partTitle": "PARTIE 2 : Système et Réseaux",
+      "prompt": "**Dans le modèle OSI, les routeurs fonctionnent principalement au niveau de la couche :**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Physique"
+        },
+        {
+          "key": "B",
+          "text": "Liaison de données"
+        },
+        {
+          "key": "C",
+          "text": "Réseau"
+        },
+        {
+          "key": "D",
+          "text": "Transport"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctAnswerRaw": "✅ Réponse correcte : C (`Réseau`)",
+      "explanation": "* **Couche 1 (Physique) :** Répéteur, Concentrateur (*Hub*).\n  * **Couche 2 (Liaison de données) :** Pont (*Bridge*), Commutateur (*Switch*).\n  * **Couche 3 (Réseau) :** **Routeur**.",
+      "trapOrTip": "**Aucun piège spécifique signalé :** Le corrigé officiel ne mentionne pas de piège particulier pour cette question. Relis attentivement l'énoncé et élimine les choix manifestement faux avant de valider."
+    },
+    {
+      "id": 46,
+      "partTitle": "PARTIE 2 : Système et Réseaux",
+      "prompt": "**L'adresse IP réservée pour le loopback (boucle locale) dans IPv4 est :**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "`127.0.0.1`"
+        },
+        {
+          "key": "B",
+          "text": "`192.168.0.1`"
+        },
+        {
+          "key": "C",
+          "text": "`10.0.0.1`"
+        },
+        {
+          "key": "D",
+          "text": "`177.0.0.1`"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "A",
+      "correctAnswerRaw": "✅ Réponse correcte : A (`127.0.0.1`)",
+      "explanation": "L'adresse **`127.0.0.1`** (`localhost`) est l'adresse IPv4 standard de boucle locale (*loopback*). (`192.168.0.1` et `10.0.0.1` sont des adresses privées de réseaux locaux).",
+      "trapOrTip": "**Aucun piège spécifique signalé :** Le corrigé officiel ne mentionne pas de piège particulier pour cette question. Relis attentivement l'énoncé et élimine les choix manifestement faux avant de valider."
+    },
+    {
+      "id": 47,
+      "partTitle": "PARTIE 2 : Système et Réseaux",
+      "prompt": "**Le protocole de la couche réseau du modèle TCP/IP qui est responsable de l'adressage et du routage des paquets sur Internet est :**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "UDP (User Datagram Protocol)"
+        },
+        {
+          "key": "B",
+          "text": "TCP (Transmission Control Protocol)"
+        },
+        {
+          "key": "C",
+          "text": "IP (Internet Protocol)"
+        },
+        {
+          "key": "D",
+          "text": "SMTP (Simple Mail Transfer Protocol)"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctAnswerRaw": "✅ Réponse correcte : C (`IP (Internet Protocol)`)",
+      "explanation": "**IP** est le protocole de la couche Réseau/Internet chargé de l'adressage logique et du routage des paquets. (`TCP` et `UDP` appartiennent à la couche Transport, et `SMTP` à la couche Application).",
+      "trapOrTip": "**Aucun piège spécifique signalé :** Le corrigé officiel ne mentionne pas de piège particulier pour cette question. Relis attentivement l'énoncé et élimine les choix manifestement faux avant de valider."
+    },
+    {
+      "id": 48,
+      "partTitle": "PARTIE 2 : Système et Réseaux",
+      "prompt": "**Le protocole du modèle TCP/IP utilisé pour le transfert de fichiers entre un client et un serveur est :**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "HTTP (Hypertext Transfer Protocol)"
+        },
+        {
+          "key": "B",
+          "text": "FTP (File Transfer Protocol)"
+        },
+        {
+          "key": "C",
+          "text": "SMTP (Simple Mail Transfer Protocol)"
+        },
+        {
+          "key": "D",
+          "text": "DNS (Domain Name System)"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctAnswerRaw": "✅ Réponse correcte : B (`FTP (File Transfer Protocol)`)",
+      "explanation": "**FTP** (ports 20 et 21) est le protocole dédié à l'envoi et au téléchargement de fichiers entre un client et un serveur.",
+      "trapOrTip": "**Aucun piège spécifique signalé :** Le corrigé officiel ne mentionne pas de piège particulier pour cette question. Relis attentivement l'énoncé et élimine les choix manifestement faux avant de valider."
+    },
+    {
+      "id": 49,
+      "partTitle": "PARTIE 2 : Système et Réseaux",
+      "prompt": "**Le nombre de bits qui compose une adresse IP version 4 (IPv4) est :**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "32 bits"
+        },
+        {
+          "key": "B",
+          "text": "64 bits"
+        },
+        {
+          "key": "C",
+          "text": "128 bits"
+        },
+        {
+          "key": "D",
+          "text": "256 bits"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "A",
+      "correctAnswerRaw": "✅ Réponse correcte : A (`32 bits`)",
+      "explanation": "Une adresse IPv4 est composée de 4 octets de 8 bits chacun, soit $4 \\times 8 = \\mathbf{32\\text{ bits}}$.",
+      "trapOrTip": "**Aucun piège spécifique signalé :** Le corrigé officiel ne mentionne pas de piège particulier pour cette question. Relis attentivement l'énoncé et élimine les choix manifestement faux avant de valider."
+    },
+    {
+      "id": 50,
+      "partTitle": "PARTIE 2 : Système et Réseaux",
+      "prompt": "**Le nombre de bits qui compose une adresse IP version 6 (IPv6) est :**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "32 bits"
+        },
+        {
+          "key": "B",
+          "text": "64 bits"
+        },
+        {
+          "key": "C",
+          "text": "128 bits"
+        },
+        {
+          "key": "D",
+          "text": "256 bits"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctAnswerRaw": "✅ Réponse correcte : C (`128 bits`)",
+      "explanation": "Une adresse IPv6 est composée de 16 octets (8 groupes de 16 bits en hexadécimal), soit $\\mathbf{128\\text{ bits}}$.",
+      "trapOrTip": "**Aucun piège spécifique signalé :** Le corrigé officiel ne mentionne pas de piège particulier pour cette question. Relis attentivement l'énoncé et élimine les choix manifestement faux avant de valider."
+    },
+    {
+      "id": 51,
+      "partTitle": "PARTIE 2 : Système et Réseaux",
+      "prompt": "**La couche OSI qui fournit les services de segmentation et de réassemblage des données est :**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "La couche de transport"
+        },
+        {
+          "key": "B",
+          "text": "La couche de liaison de données"
+        },
+        {
+          "key": "C",
+          "text": "La couche réseau"
+        },
+        {
+          "key": "D",
+          "text": "La couche physique"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "A",
+      "correctAnswerRaw": "✅ Réponse correcte : A (`La couche de transport`)",
+      "explanation": "La **couche Transport (couche 4)** découpe les données applicatives en **segments** à l'émission (*segmentation*) et les réassemble dans le bon ordre à la réception.",
+      "trapOrTip": "**Aucun piège spécifique signalé :** Le corrigé officiel ne mentionne pas de piège particulier pour cette question. Relis attentivement l'énoncé et élimine les choix manifestement faux avant de valider."
+    },
+    {
+      "id": 52,
+      "partTitle": "PARTIE 2 : Système et Réseaux",
+      "prompt": "**La commande qui permet l'émulation du terminal est :**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "`Nfs`"
+        },
+        {
+          "key": "B",
+          "text": "`ping`"
+        },
+        {
+          "key": "C",
+          "text": "`ftp`"
+        },
+        {
+          "key": "D",
+          "text": "`telnet`"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "D",
+      "correctAnswerRaw": "✅ Réponse correcte : D (`telnet`)",
+      "explanation": "**Telnet** (port 23) est le protocole et la commande permettant d'ouvrir une session de terminal à distance en mode texte sur une machine distante (remplacé aujourd'hui par `ssh` pour la sécurité).",
+      "trapOrTip": "**Aucun piège spécifique signalé :** Le corrigé officiel ne mentionne pas de piège particulier pour cette question. Relis attentivement l'énoncé et élimine les choix manifestement faux avant de valider."
+    },
+    {
+      "id": 53,
+      "partTitle": "PARTIE 2 : Système et Réseaux",
+      "prompt": "**Un registre dans un microprocesseur représente :**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Un dispositif de stockage de données non volatiles"
+        },
+        {
+          "key": "B",
+          "text": "Une unité de calcul flottant"
+        },
+        {
+          "key": "C",
+          "text": "Un composant qui gère les entrées et les sorties"
+        },
+        {
+          "key": "D",
+          "text": "Un petit espace de stockage conçu pour un accès rapide aux données temporaires"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "D",
+      "correctAnswerRaw": "✅ Réponse correcte : D (`Un petit espace de stockage conçu pour un accès rapide aux données temporaires`)",
+      "explanation": "Les **registres** se situent tout en haut de la hiérarchie mémoire, directement à l'intérieur du processeur, offrant un accès quasi instantané aux données et adresses en cours de traitement.",
+      "trapOrTip": "**Aucun piège spécifique signalé :** Le corrigé officiel ne mentionne pas de piège particulier pour cette question. Relis attentivement l'énoncé et élimine les choix manifestement faux avant de valider."
+    },
+    {
+      "id": 54,
+      "partTitle": "PARTIE 2 : Système et Réseaux",
+      "prompt": "**L'architecture de Von Neumann représente :**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Une architecture avec une séparation entre la mémoire et l'unité de traitement"
+        },
+        {
+          "key": "B",
+          "text": "Une architecture qui utilise uniquement des mémoires ROM"
+        },
+        {
+          "key": "C",
+          "text": "Une architecture basée sur des instructions complexes"
+        },
+        {
+          "key": "D",
+          "text": "Une architecture conçue pour les ordinateurs quantiques"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "A",
+      "correctAnswerRaw": "✅ Réponse correcte : A (`Une architecture avec une séparation entre la mémoire et l'unité de traitement`)",
+      "explanation": "Dans l'architecture de Von Neumann, l'unité centrale de traitement (CPU) est séparée de la mémoire centrale unique (qui stocke à la fois les programmes et les données) et communique avec elle via un bus système unique. (À ne pas confondre avec l'architecture de *Harvard* qui sépare la mémoire des instructions et la mémoire des données).",
+      "trapOrTip": "**Aucun piège spécifique signalé :** Le corrigé officiel ne mentionne pas de piège particulier pour cette question. Relis attentivement l'énoncé et élimine les choix manifestement faux avant de valider."
+    },
+    {
+      "id": 55,
+      "partTitle": "PARTIE 2 : Système et Réseaux",
+      "prompt": "**Le BIOS (Basic Input/Output System) d'un ordinateur est stocké dans :**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "La mémoire morte (ROM)"
+        },
+        {
+          "key": "B",
+          "text": "La mémoire cache"
+        },
+        {
+          "key": "C",
+          "text": "La mémoire centrale (RAM)"
+        },
+        {
+          "key": "D",
+          "text": "Le disque dur"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "A",
+      "correctAnswerRaw": "✅ Réponse correcte : A (`La mémoire morte (ROM)`)",
+      "explanation": "Le programme du **BIOS/UEFI** doit être conservé même lorsque l'ordinateur est éteint pour pouvoir démarrer la machine : il est donc stocké dans une mémoire non volatile sur la carte mère (**ROM / EEPROM / Flash**).",
+      "trapOrTip": "**Aucun piège spécifique signalé :** Le corrigé officiel ne mentionne pas de piège particulier pour cette question. Relis attentivement l'énoncé et élimine les choix manifestement faux avant de valider."
+    },
+    {
+      "id": 56,
+      "partTitle": "PARTIE 2 : Système et Réseaux",
+      "prompt": "**La mémoire cache permet de stocker les données :**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Permanentes"
+        },
+        {
+          "key": "B",
+          "text": "Fréquemment utilisées"
+        },
+        {
+          "key": "C",
+          "text": "De grande taille"
+        },
+        {
+          "key": "D",
+          "text": "Cachées"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctAnswerRaw": "✅ Réponse correcte : B (`Fréquemment utilisées`)",
+      "explanation": "Placée entre le processeur et la RAM, la **mémoire cache** (SRAM) conserve une copie des instructions et données **les plus fréquemment ou récemment utilisées** par le CPU afin d'éviter d'attendre la mémoire RAM plus lente.",
+      "trapOrTip": "**Aucun piège spécifique signalé :** Le corrigé officiel ne mentionne pas de piège particulier pour cette question. Relis attentivement l'énoncé et élimine les choix manifestement faux avant de valider."
+    },
+    {
+      "id": 57,
+      "partTitle": "PARTIE 2 : Système et Réseaux",
+      "prompt": "**Le chipset permet :**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Le traitement de l'information"
+        },
+        {
+          "key": "B",
+          "text": "Le stockage de l'information"
+        },
+        {
+          "key": "C",
+          "text": "La gestion de la communication entre le processeur, la mémoire, les périphériques et d'autres composants."
+        },
+        {
+          "key": "D",
+          "text": "La gestion de la mémoire RAM de l'ordinateur"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctAnswerRaw": "✅ Réponse correcte : C (`La gestion de la communication entre le processeur, la mémoire, les périphériques et d'autres composants.`)",
+      "explanation": "Le **chipset** de la carte mère agit comme un chef d'orchestre qui aiguille les échanges de données entre le CPU, la RAM, les bus PCIe et les périphériques d'entrée/sortie. *(Notez que cette même question est retombée presque à l'identique en 2024 à la Q70 !)*",
+      "trapOrTip": "**Aucun piège spécifique signalé :** Le corrigé officiel ne mentionne pas de piège particulier pour cette question. Relis attentivement l'énoncé et élimine les choix manifestement faux avant de valider."
+    },
+    {
+      "id": 58,
+      "partTitle": "PARTIE 2 : Système et Réseaux",
+      "prompt": "**Un bus d'adresse sur 16 bits représente une capacité d'adressage maximale de :**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "$16^2$"
+        },
+        {
+          "key": "B",
+          "text": "$15^2$"
+        },
+        {
+          "key": "C",
+          "text": "$2^{16}$"
+        },
+        {
+          "key": "D",
+          "text": "$2^{15}$"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctAnswerRaw": "✅ Réponse correcte : C ($2^{16}$)",
+      "explanation": "Un bus d'adresses comportant $n$ lignes (bits) permet d'adresser exactement **$2^n$** emplacements mémoire distincts. Pour $n = 16$ bits, la capacité d'adressage est donc de **$2^{16} = 65\\,536$** adresses.",
+      "trapOrTip": "**Aucun piège spécifique signalé :** Le corrigé officiel ne mentionne pas de piège particulier pour cette question. Relis attentivement l'énoncé et élimine les choix manifestement faux avant de valider."
+    },
+    {
+      "id": 59,
+      "partTitle": "PARTIE 2 : Système et Réseaux",
+      "prompt": "**On accède aux paramètres de configuration stockés dans la mémoire CMOS :**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "En utilisant un logiciel spécial au CMOS"
+        },
+        {
+          "key": "B",
+          "text": "En utilisant une séquence de touches spécifiques lors du démarrage de l'ordinateur afin d'accéder au BIOS"
+        },
+        {
+          "key": "C",
+          "text": "En se connectant à Internet"
+        },
+        {
+          "key": "D",
+          "text": "En utilisant un câble USB"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctAnswerRaw": "✅ Réponse correcte : B (`En utilisant une séquence de touches spécifiques lors du démarrage de l'ordinateur afin d'accéder au BIOS`)",
+      "explanation": "On modifie les paramètres stockés dans la puce CMOS en entrant dans le menu **SETUP du BIOS/UEFI** au démarrage du PC à l'aide d'une touche dédiée (`Suppr`, `F2`, `F10` ou `Échap`).",
+      "trapOrTip": "**Aucun piège spécifique signalé :** Le corrigé officiel ne mentionne pas de piège particulier pour cette question. Relis attentivement l'énoncé et élimine les choix manifestement faux avant de valider."
+    },
+    {
+      "id": 60,
+      "partTitle": "PARTIE 2 : Système et Réseaux",
+      "prompt": "**L'acronyme \"USB\" signifie :**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "User Software Bridge"
+        },
+        {
+          "key": "B",
+          "text": "Ultra Speed Bit"
+        },
+        {
+          "key": "C",
+          "text": "Unrestricted System Buffer"
+        },
+        {
+          "key": "D",
+          "text": "Universal Serial Bus"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "D",
+      "correctAnswerRaw": "✅ Réponse correcte : D (`Universal Serial Bus`)",
+      "explanation": "**USB** signifie *Universal Serial Bus* (Bus Série Universel).",
+      "trapOrTip": "**Aucun piège spécifique signalé :** Le corrigé officiel ne mentionne pas de piège particulier pour cette question. Relis attentivement l'énoncé et élimine les choix manifestement faux avant de valider."
+    },
+    {
+      "id": 61,
+      "partTitle": "PARTIE 3 : Logiciels",
+      "prompt": "**La taille d'une image de `800x600` non compressée et codée sur 24 bits est de :**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "1,6 Mo"
+        },
+        {
+          "key": "B",
+          "text": "1,4 Mo"
+        },
+        {
+          "key": "C",
+          "text": "11,5 Mo"
+        },
+        {
+          "key": "D",
+          "text": "0,5 Mo"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctAnswerRaw": "✅ Réponse correcte : B (`1,4 Mo`)",
+      "explanation": "1. **Nombre de pixels :** $800 \\times 600 = 480\\,000\\text{ pixels}$.\n  2. **Profondeur de couleur :** $24\\text{ bits} = \\frac{24}{8} = 3\\text{ octets par pixel}$.\n  3. **Taille en octets :** $480\\,000 \\times 3 = 1\\,440\\,000\\text{ octets}$.\n  4. **Conversion en Mo :** $\\frac{1\\,440\\,000}{1024 \\times 1024} \\approx 1,37\\text{ Mo}$ (ou $1,44\\text{ Mo}$ en divisant par $10^6$), soit **`1,4 Mo`**.",
+      "trapOrTip": "**Aucun piège spécifique signalé :** Le corrigé officiel ne mentionne pas de piège particulier pour cette question. Relis attentivement l'énoncé et élimine les choix manifestement faux avant de valider."
+    },
+    {
+      "id": 62,
+      "partTitle": "PARTIE 3 : Logiciels",
+      "prompt": "**La taille mémoire occupée sur un support numérique par une minute de son stéréo codée sur 16 bits et avec une fréquence d'échantillonnage de 44,1 kHz, est :**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "2,5 Mo"
+        },
+        {
+          "key": "B",
+          "text": "5 Mo"
+        },
+        {
+          "key": "C",
+          "text": "10 Mo"
+        },
+        {
+          "key": "D",
+          "text": "20 Mo"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctAnswerRaw": "✅ Réponse correcte : C (`10 Mo`)",
+      "explanation": "* **Formule du poids d'un fichier audio :**\n    $$\\text{Taille} = \\text{Fréquence (Hz)} \\times \\text{Résolution (octets)} \\times \\text{Nombre de canaux} \\times \\text{Durée (s)}$$\n  * Ici : $44\\,100\\text{ Hz} \\times 2\\text{ octets (16 bits)} \\times 2\\text{ (stéréo)} \\times 60\\text{ s} = 10\\,584\\,000\\text{ octets} \\approx \\mathbf{10,09\\text{ Mo} \\approx 10\\text{ Mo}}$.",
+      "trapOrTip": "**⚠️ Astuce Mnémotechnique Concours :** Retenez par cœur que **1 minute de son qualité CD (44,1 kHz, 16 bits, Stéréo) pèse toujours $\\approx 10\\text{ Mo}$** (et 5 Mo en Mono) !"
+    },
+    {
+      "id": 63,
+      "partTitle": "PARTIE 3 : Logiciels",
+      "prompt": "**Une image codée sur 16 bits peut contenir jusqu'à :**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "16 couleurs"
+        },
+        {
+          "key": "B",
+          "text": "256 couleurs"
+        },
+        {
+          "key": "C",
+          "text": "65536 couleurs"
+        },
+        {
+          "key": "D",
+          "text": "plus de 16 millions de couleurs"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctAnswerRaw": "✅ Réponse correcte : C (`65536 couleurs`)",
+      "explanation": "Une profondeur de $n$ bits par pixel permet de coder $2^n$ couleurs :\n  * 1 bit $\\rightarrow 2^1 = 2$ couleurs (noir et blanc)\n  * 8 bits $\\rightarrow 2^8 = 256$ couleurs\n  * **16 bits $\\rightarrow 2^{16} = \\mathbf{65\\,536}$ couleurs**\n  * 24 bits $\\rightarrow 2^{24} \\approx 16,7$ millions de couleurs",
+      "trapOrTip": "**Aucun piège spécifique signalé :** Le corrigé officiel ne mentionne pas de piège particulier pour cette question. Relis attentivement l'énoncé et élimine les choix manifestement faux avant de valider."
+    },
+    {
+      "id": 64,
+      "partTitle": "PARTIE 3 : Logiciels",
+      "prompt": "**La résolution qui permet la meilleure qualité d'image est :**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "720p"
+        },
+        {
+          "key": "B",
+          "text": "1080p"
+        },
+        {
+          "key": "C",
+          "text": "HD"
+        },
+        {
+          "key": "D",
+          "text": "4K"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "D",
+      "correctAnswerRaw": "✅ Réponse correcte : D (`4K`)",
+      "explanation": "La définition **4K (Ultra HD : $3840 \\times 2160$ pixels)** contient 4 fois plus de pixels que le Full HD `1080p` ($1920 \\times 1080$) et 9 fois plus que le HD `720p` ($1280 \\times 720$).",
+      "trapOrTip": "**Aucun piège spécifique signalé :** Le corrigé officiel ne mentionne pas de piège particulier pour cette question. Relis attentivement l'énoncé et élimine les choix manifestement faux avant de valider."
+    },
+    {
+      "id": 65,
+      "partTitle": "PARTIE 3 : Logiciels",
+      "prompt": "**Les en-têtes d'une table des matières dans MS-Word sont formatés automatiquement sous la forme de :**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Signets"
+        },
+        {
+          "key": "B",
+          "text": "Références croisées"
+        },
+        {
+          "key": "C",
+          "text": "Hyperliens"
+        },
+        {
+          "key": "D",
+          "text": "Champs"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctAnswerRaw": "✅ Réponse correcte : C (`Hyperliens`) (tandis que la table entière est générée par un `Champ` TOC)",
+      "explanation": "Par défaut dans Word, chaque ligne (en-tête) d'une table des matières automatique est formatée sous forme d'**hyperlien** permettant de sauter directement au chapitre correspondant via `Ctrl + Clic`.",
+      "trapOrTip": "**Aucun piège spécifique signalé :** Le corrigé officiel ne mentionne pas de piège particulier pour cette question. Relis attentivement l'énoncé et élimine les choix manifestement faux avant de valider."
+    },
+    {
+      "id": 66,
+      "partTitle": "PARTIE 3 : Logiciels",
+      "prompt": "**Pour la création des macros, MS-Word utilise le langage :**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Visual C++"
+        },
+        {
+          "key": "B",
+          "text": "VBA"
+        },
+        {
+          "key": "C",
+          "text": "Excel"
+        },
+        {
+          "key": "D",
+          "text": "Access"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctAnswerRaw": "✅ Réponse correcte : B (`VBA`)",
+      "explanation": "Toute la suite Microsoft Office (Word, Excel, PowerPoint, Access) utilise le langage **VBA** (*Visual Basic for Applications*) pour programmer et automatiser des macros.",
+      "trapOrTip": "**Aucun piège spécifique signalé :** Le corrigé officiel ne mentionne pas de piège particulier pour cette question. Relis attentivement l'énoncé et élimine les choix manifestement faux avant de valider."
+    },
+    {
+      "id": 67,
+      "partTitle": "PARTIE 3 : Logiciels",
+      "prompt": "**La fonctionnalité utilisée pour surveiller toutes les modifications de document est :**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Modifier le document"
+        },
+        {
+          "key": "B",
+          "text": "Surveiller les modifications"
+        },
+        {
+          "key": "C",
+          "text": "Suivi des modifications"
+        },
+        {
+          "key": "D",
+          "text": "Suivi et révision"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctAnswerRaw": "✅ Réponse correcte : C (`Suivi des modifications`)",
+      "explanation": "Dans l'onglet **Révision** de MS Word, le bouton **Suivi des modifications** (*Track Changes*, raccourci `Ctrl + Maj + E`) enregistre chaque insertion, suppression ou changement de mise en forme effectué dans le document.",
+      "trapOrTip": "**Aucun piège spécifique signalé :** Le corrigé officiel ne mentionne pas de piège particulier pour cette question. Relis attentivement l'énoncé et élimine les choix manifestement faux avant de valider."
+    },
+    {
+      "id": 68,
+      "partTitle": "PARTIE 3 : Logiciels",
+      "prompt": "**La fonctionnalité qui permet de créer un lot de documents personnalisés à partir d'un document type, pour différents destinataires est :**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Mise en forme"
+        },
+        {
+          "key": "B",
+          "text": "Références"
+        },
+        {
+          "key": "C",
+          "text": "Publipostage"
+        },
+        {
+          "key": "D",
+          "text": "Lettres types"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctAnswerRaw": "✅ Réponse correcte : C (`Publipostage`)",
+      "explanation": "Le **publipostage** fusionne un document type avec une liste de destinataires pour générer un lot de lettres, étiquettes ou e-mails personnalisés. *(Notez que cette même question est retombée en 2025 à la Q68 !)*",
+      "trapOrTip": "**Aucun piège spécifique signalé :** Le corrigé officiel ne mentionne pas de piège particulier pour cette question. Relis attentivement l'énoncé et élimine les choix manifestement faux avant de valider."
+    },
+    {
+      "id": 69,
+      "partTitle": "PARTIE 3 : Logiciels",
+      "prompt": "**Pour calculer la somme des cellules allant de `B2` à `B7`, quelle formule peut-on placer en `B8` ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "`=SOMME(B2;B7;B8)`"
+        },
+        {
+          "key": "B",
+          "text": "`=SOMME(B2 À B7)`"
+        },
+        {
+          "key": "C",
+          "text": "`B8=SOMME(B2:B7)`"
+        },
+        {
+          "key": "D",
+          "text": "`=SOMME(B2:B7)`"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "D",
+      "correctAnswerRaw": "✅ Réponse correcte : D (`=SOMME(B2:B7)`)",
+      "explanation": "Dans Excel, toute formule commence par **`=`** et une plage de cellules contiguës se note avec les deux-points **`:`** (`B2:B7`). (Avec le point-virgule `;`, `B2;B7` n'additionnerait que les deux cellules `B2` et `B7` sans celles du milieu).",
+      "trapOrTip": "**Aucun piège spécifique signalé :** Le corrigé officiel ne mentionne pas de piège particulier pour cette question. Relis attentivement l'énoncé et élimine les choix manifestement faux avant de valider."
+    },
+    {
+      "id": 70,
+      "partTitle": "PARTIE 3 : Logiciels",
+      "prompt": "**La représentation graphique en secteurs (camembert) permet de :**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Représenter plusieurs séries"
+        },
+        {
+          "key": "B",
+          "text": "Connaître la valeur cumulée des données"
+        },
+        {
+          "key": "C",
+          "text": "Faire ressortir les proportions relatives des données"
+        },
+        {
+          "key": "D",
+          "text": "Mettre en évidence la dimension cyclique des données"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctAnswerRaw": "✅ Réponse correcte : C (`Faire ressortir les proportions relatives des données`)",
+      "explanation": "Un graphique en **secteurs (camembert)** ne représente qu'**une seule série de données** et sert à visualiser la part (le pourcentage / la proportion relative) de chaque catégorie par rapport à un total (100 %).",
+      "trapOrTip": "**Aucun piège spécifique signalé :** Le corrigé officiel ne mentionne pas de piège particulier pour cette question. Relis attentivement l'énoncé et élimine les choix manifestement faux avant de valider."
+    },
+    {
+      "id": 71,
+      "partTitle": "PARTIE 3 : Logiciels",
+      "prompt": "**La notation suivante : `$B$3` fait appel au type de référence suivant :**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "La référence absolue"
+        },
+        {
+          "key": "B",
+          "text": "La référence relative"
+        },
+        {
+          "key": "C",
+          "text": "La référence mixte"
+        },
+        {
+          "key": "D",
+          "text": "La référence standard"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "A",
+      "correctAnswerRaw": "✅ Réponse correcte : A (`La référence absolue`)",
+      "explanation": "* **`$B$3` :** Référence **absolue** (colonne ET ligne figées par `$`).\n  * **`B3` :** Référence **relative** (colonne et ligne s'adaptent à la recopie).\n  * **`$B3` ou `B$3` :** Référence **mixte** (un seul `$`).",
+      "trapOrTip": "**Aucun piège spécifique signalé :** Le corrigé officiel ne mentionne pas de piège particulier pour cette question. Relis attentivement l'énoncé et élimine les choix manifestement faux avant de valider."
+    },
+    {
+      "id": 72,
+      "partTitle": "PARTIE 3 : Logiciels",
+      "prompt": "**Laquelle de ces références est une référence relative ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "`$B3$`"
+        },
+        {
+          "key": "B",
+          "text": "`$B3`"
+        },
+        {
+          "key": "C",
+          "text": "`B3`"
+        },
+        {
+          "key": "D",
+          "text": "`$B$3`"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctAnswerRaw": "✅ Réponse correcte : C (`B3`)",
+      "explanation": "Une référence **relative** ne comporte aucun symbole dollar `$` : **`B3`**.",
+      "trapOrTip": "**Aucun piège spécifique signalé :** Le corrigé officiel ne mentionne pas de piège particulier pour cette question. Relis attentivement l'énoncé et élimine les choix manifestement faux avant de valider."
+    },
+    {
+      "id": 73,
+      "partTitle": "PARTIE 3 : Logiciels",
+      "prompt": "**Le mode « masque des diapositives », permet de :**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Modifier la disposition de certaines diapositives"
+        },
+        {
+          "key": "B",
+          "text": "Masquer certaines diapositives en mode plan"
+        },
+        {
+          "key": "C",
+          "text": "Changer le thème de certaines diapositives"
+        },
+        {
+          "key": "D",
+          "text": "Contrôler l'apparence de la présentation"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "D",
+      "correctAnswerRaw": "✅ Réponse correcte : D (`Contrôler l'apparence de la présentation`)",
+      "explanation": "Le **Masque des diapositives** (*Slide Master*, dans l'onglet *Affichage*) contrôle de façon globale et uniforme l'apparence de toute la présentation (polices, couleurs, arrière-plan, position du logo et des pieds de page sur toutes les diapositives).",
+      "trapOrTip": "**Aucun piège spécifique signalé :** Le corrigé officiel ne mentionne pas de piège particulier pour cette question. Relis attentivement l'énoncé et élimine les choix manifestement faux avant de valider."
+    },
+    {
+      "id": 74,
+      "partTitle": "PARTIE 3 : Logiciels",
+      "prompt": "**Dans une diapositive, la sélection de plusieurs objets simultanément à l'aide de la souris et de la touche :**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "`ALT`"
+        },
+        {
+          "key": "B",
+          "text": "`MAJ`"
+        },
+        {
+          "key": "C",
+          "text": "`Espace`"
+        },
+        {
+          "key": "D",
+          "text": "`Fn`"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctAnswerRaw": "✅ Réponse correcte : B (`MAJ`)",
+      "explanation": "Dans PowerPoint (et Office), maintenir la touche **`MAJ` (`Shift`)** (ou `Ctrl`) enfoncée tout en cliquant sur plusieurs objets permet de les sélectionner simultanément (pour les grouper, les aligner ou les déplacer ensemble).",
+      "trapOrTip": "**Aucun piège spécifique signalé :** Le corrigé officiel ne mentionne pas de piège particulier pour cette question. Relis attentivement l'énoncé et élimine les choix manifestement faux avant de valider."
+    },
+    {
+      "id": 75,
+      "partTitle": "PARTIE 3 : Logiciels",
+      "prompt": "**Un fichier PowerPoint ayant comme extension `.ppsx` est :**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Un modèle PowerPoint"
+        },
+        {
+          "key": "B",
+          "text": "Un diaporama"
+        },
+        {
+          "key": "C",
+          "text": "Une présentation PowerPoint"
+        },
+        {
+          "key": "D",
+          "text": "Un fichier PowerPoint standard"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctAnswerRaw": "✅ Réponse correcte : B (`Un diaporama`)",
+      "explanation": "* **`.pptx` :** Présentation PowerPoint standard (s'ouvre en mode édition).\n  * **`.ppsx` :** **Diaporama PowerPoint** (*PowerPoint Show* : se lance directement en mode plein écran).\n  * **`.potx` :** Modèle PowerPoint (*Template*).",
+      "trapOrTip": "**Aucun piège spécifique signalé :** Le corrigé officiel ne mentionne pas de piège particulier pour cette question. Relis attentivement l'énoncé et élimine les choix manifestement faux avant de valider."
+    },
+    {
+      "id": 76,
+      "partTitle": "PARTIE 3 : Logiciels",
+      "prompt": "**Les transitions entre diapositives sont :**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Toujours automatiques"
+        },
+        {
+          "key": "B",
+          "text": "Toujours manuelles"
+        },
+        {
+          "key": "C",
+          "text": "Automatique et/ou manuelle"
+        },
+        {
+          "key": "D",
+          "text": "Parfois aléatoires"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctAnswerRaw": "✅ Réponse correcte : C (`Automatique et/ou manuelle`)",
+      "explanation": "Dans l'onglet *Transitions* de PowerPoint, le passage à la diapositive suivante peut être déclenché **manuellement** (*Au clic de la souris*) **et/ou automatiquement** (*Après XX secondes*).",
+      "trapOrTip": "**Aucun piège spécifique signalé :** Le corrigé officiel ne mentionne pas de piège particulier pour cette question. Relis attentivement l'énoncé et élimine les choix manifestement faux avant de valider."
+    },
+    {
+      "id": 77,
+      "partTitle": "PARTIE 3 : Logiciels",
+      "prompt": "**La clé qui identifie de manière unique chaque enregistrement d'une table est appelée :**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Clé d'enregistrement"
+        },
+        {
+          "key": "B",
+          "text": "Clé composite"
+        },
+        {
+          "key": "C",
+          "text": "Clé étrangère"
+        },
+        {
+          "key": "D",
+          "text": "Clé primaire"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "D",
+      "correctAnswerRaw": "✅ Réponse correcte : D (`Clé primaire`)",
+      "explanation": "La **clé primaire** (*Primary Key*) identifie de façon unique chaque ligne (enregistrement) d'une table, tandis que la **clé étrangère** (*Foreign Key*) fait référence à la clé primaire d'une autre table.",
+      "trapOrTip": "**Aucun piège spécifique signalé :** Le corrigé officiel ne mentionne pas de piège particulier pour cette question. Relis attentivement l'énoncé et élimine les choix manifestement faux avant de valider."
+    },
+    {
+      "id": 78,
+      "partTitle": "PARTIE 3 : Logiciels",
+      "prompt": "**Dans une requête, sous ACCESS le test conditionnel est exprimé par :**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "`Si`"
+        },
+        {
+          "key": "B",
+          "text": "`OuiNon`"
+        },
+        {
+          "key": "C",
+          "text": "`If`"
+        },
+        {
+          "key": "D",
+          "text": "`VraiFaux`"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "D",
+      "correctAnswerRaw": "✅ Réponse correcte : D (`VraiFaux`)",
+      "explanation": "Dans la version française de **Microsoft Access**, la fonction conditionnelle dans une requête s'appelle **`VraiFaux(condition; valeur_si_vrai; valeur_si_faux)`** (qui correspond à `IIf` en version anglaise d'Access, et à `SI` dans Excel !).",
+      "trapOrTip": "**⚠️ Piège classique MS Access :** Ne confondez pas **`SI(...)` dans Excel** avec **`VraiFaux(...)` dans Access** !"
+    },
+    {
+      "id": 79,
+      "partTitle": "PARTIE 3 : Logiciels",
+      "prompt": "**Sous ACCESS, une colonne d'une table s'appelle un :**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Enregistrement"
+        },
+        {
+          "key": "B",
+          "text": "Type"
+        },
+        {
+          "key": "C",
+          "text": "Champ"
+        },
+        {
+          "key": "D",
+          "text": "Élément"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctAnswerRaw": "✅ Réponse correcte : C (`Champ`)",
+      "explanation": "Dans une table de base de données (Access), une **colonne** s'appelle un **Champ** (ou attribut), et une **ligne** s'appelle un **Enregistrement** (ou tuple / n-uplet).",
+      "trapOrTip": "**Aucun piège spécifique signalé :** Le corrigé officiel ne mentionne pas de piège particulier pour cette question. Relis attentivement l'énoncé et élimine les choix manifestement faux avant de valider."
+    },
+    {
+      "id": 80,
+      "partTitle": "PARTIE 3 : Logiciels",
+      "prompt": "**Sous ACCESS, une entité du modèle \"entité-association\" devient une :**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Relation"
+        },
+        {
+          "key": "B",
+          "text": "Vue"
+        },
+        {
+          "key": "C",
+          "text": "Requête"
+        },
+        {
+          "key": "D",
+          "text": "Table"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "D",
+      "correctAnswerRaw": "✅ Réponse correcte : D (`Table`)",
+      "explanation": "Lors du passage du Modèle Conceptuel de Données (Entité-Association) à l'implémentation sous SGBD (MS Access), chaque **entité** devient une **Table**, chaque propriété devient un **Champ**, et l'identifiant devient la **Clé primaire**.",
+      "trapOrTip": "**Aucun piège spécifique signalé :** Le corrigé officiel ne mentionne pas de piège particulier pour cette question. Relis attentivement l'énoncé et élimine les choix manifestement faux avant de valider."
+    }
+  ]
+}

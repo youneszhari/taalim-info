@@ -1,0 +1,2530 @@
+{
+  "id": "blanc-2",
+  "title": "Examen Blanc 2",
+  "category": "blanc",
+  "subject": "Spécialité Informatique",
+  "durationMinutes": 240,
+  "coefficient": 20,
+  "totalQuestions": 80,
+  "questions": [
+    {
+      "id": 1,
+      "partTitle": "PARTIE 1 : Logiciels et Multimédia",
+      "prompt": "**Quelle est la différence entre une note de bas de page et une note de fin dans Word ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "La note de bas de page apparaît à la fin du document ; la note de fin apparaît en bas de page."
+        },
+        {
+          "key": "B",
+          "text": "La note de bas de page apparaît en bas de la page ; la note de fin apparaît à la fin du document."
+        },
+        {
+          "key": "C",
+          "text": "Les deux apparaissent toujours à la fin du document."
+        },
+        {
+          "key": "D",
+          "text": "La note de fin ne peut contenir que des images."
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctAnswerRaw": "✅ Réponse correcte : B",
+      "explanation": "Une note de bas de page est placée au bas de la page où se trouve l'appel de note. Une note de fin est regroupée à la fin du document ou à la fin d'une section.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** Ne confonds pas la position de l'appel de note et la position du texte de la note. L'appel est dans le corps du texte ; la note de bas de page est en bas de la même page."
+    },
+    {
+      "id": 2,
+      "partTitle": "PARTIE 1 : Logiciels et Multimédia",
+      "prompt": "Dans Word, on veut générer automatiquement une liste des figures et des tableaux avec leur numéro et leur page.\n**Quelle fonction faut-il utiliser après avoir ajouté des légendes ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Un index alphabétique"
+        },
+        {
+          "key": "B",
+          "text": "Une table des matières"
+        },
+        {
+          "key": "C",
+          "text": "Une table des illustrations"
+        },
+        {
+          "key": "D",
+          "text": "Une bibliographie"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctAnswerRaw": "✅ Réponse correcte : C (la table des illustrations)",
+      "explanation": "Les légendes (caption) identifient les figures et les tableaux. La table des illustrations parcourt ces légendes et génère automatiquement la liste avec les numéros et les pages.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** La table des matières utilise les styles de titres, pas les légendes. La table des illustrations utilise les légendes et peut être mise à jour après ajout de figures."
+    },
+    {
+      "id": 3,
+      "partTitle": "PARTIE 1 : Logiciels et Multimédia",
+      "prompt": "**Que fait la fonction « Suivi des modifications » dans Word ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Elle supprime définitivement toutes les modifications."
+        },
+        {
+          "key": "B",
+          "text": "Elle chiffre le document avec un mot de passe."
+        },
+        {
+          "key": "C",
+          "text": "Elle compare le document avec une imprimante."
+        },
+        {
+          "key": "D",
+          "text": "Elle enregistre les insertions, suppressions et commentaires effectués par les relecteurs."
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "D",
+      "correctAnswerRaw": "✅ Réponse correcte : D",
+      "explanation": "Le suivi des modifications conserve une trace des ajouts, suppressions et commentaires. On peut ensuite accepter ou refuser chaque modification.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** Accepter une modification ne revient pas à la supprimer de l'historique : cela valide le changement dans le document. Pour retrouver l'historique, il faut utiliser le volet de révision."
+    },
+    {
+      "id": 4,
+      "partTitle": "PARTIE 1 : Logiciels et Multimédia",
+      "prompt": "**Quel est le rôle d'un espace insécable dans un document Word ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Il empêche une coupure de ligne entre les deux mots qu'il sépare."
+        },
+        {
+          "key": "B",
+          "text": "Il crée un saut de page."
+        },
+        {
+          "key": "C",
+          "text": "Il masque le texte qui le suit."
+        },
+        {
+          "key": "D",
+          "text": "Il insère une tabulation automatique."
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "A",
+      "correctAnswerRaw": "✅ Réponse correcte : A",
+      "explanation": "Un espace insécable maintient deux éléments sur la même ligne. Il est utile entre un nombre et son unité, ou entre « M. » et le nom.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** L'espace insécable ne supprime pas l'espace : il empêche seulement la coupure de ligne. Le trait d'union insécable joue le même rôle pour les mots composés."
+    },
+    {
+      "id": 5,
+      "partTitle": "PARTIE 1 : Logiciels et Multimédia",
+      "prompt": "Dans Excel, la fonction `RECHERCHEV` possède un quatrième argument.\n**Quelle est la différence entre `FAUX` et `VRAI` pour cet argument ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "`FAUX` effectue une recherche approximative ; `VRAI` une recherche exacte."
+        },
+        {
+          "key": "B",
+          "text": "`FAUX` effectue une recherche exacte ; `VRAI` une recherche approximative."
+        },
+        {
+          "key": "C",
+          "text": "Les deux effectuent toujours une recherche exacte."
+        },
+        {
+          "key": "D",
+          "text": "`VRAI` interdit l'utilisation des nombres."
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctAnswerRaw": "✅ Réponse correcte : B",
+      "explanation": "Avec `FAUX` (ou `0`), Excel cherche une correspondance exacte. Avec `VRAI` (ou `1`), il cherche la valeur la plus proche dans une plage triée par ordre croissant.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** Pour une recherche de nom ou de code, utilise presque toujours `FAUX`. `VRAI` est réservé aux barèmes et aux tranches, et la première colonne doit être triée."
+    },
+    {
+      "id": 6,
+      "partTitle": "PARTIE 1 : Logiciels et Multimédia",
+      "prompt": "**Quel est l'avantage principal de la combinaison `INDEX` + `EQUIV` par rapport à `RECHERCHEV` ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Elle ne fonctionne qu'avec des nombres."
+        },
+        {
+          "key": "B",
+          "text": "Elle est toujours plus rapide, quelle que soit la taille du tableau."
+        },
+        {
+          "key": "C",
+          "text": "Elle peut rechercher vers la gauche et ne dépend pas de la position de la colonne de résultat."
+        },
+        {
+          "key": "D",
+          "text": "Elle crée automatiquement un tableau croisé dynamique."
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctAnswerRaw": "✅ Réponse correcte : C",
+      "explanation": "`EQUIV` trouve la position de la valeur cherchée, et `INDEX` renvoie la valeur à cette position dans une autre colonne. On peut donc chercher dans n'importe quelle direction, y compris vers la gauche.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** `RECHERCHEV` cherche toujours dans la première colonne de la plage et renvoie une colonne située à droite. `INDEX` + `EQUIV` est plus souple, mais pas nécessairement plus rapide."
+    },
+    {
+      "id": 7,
+      "partTitle": "PARTIE 1 : Logiciels et Multimédia",
+      "prompt": "On considère le tableau suivant :\n\n{{TABLE}}\n\n**Que renvoie la formule `=SOMME.SI.ENS(Montant;Ville;\"Rabat\";Categorie;\"Informatique\")` ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "1000"
+        },
+        {
+          "key": "B",
+          "text": "1300"
+        },
+        {
+          "key": "C",
+          "text": "1800"
+        },
+        {
+          "key": "D",
+          "text": "1500"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "D",
+      "correctAnswerRaw": "✅ Réponse correcte : D (`1500`)",
+      "explanation": "La formule additionne les montants qui respectent **les deux** critères : ville = Rabat et catégorie = Informatique. Les lignes concernées sont `1000` et `500`, donc `1500`.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** `SOMME.SI.ENS` applique un `ET` entre les critères. La ligne `Rabat / Maths / 300` est exclue, même si la ville est Rabat.",
+      "tableMarkdown": "| Ville | Catégorie | Montant |\n|---|---|---:|\n| Rabat | Informatique | 1000 |\n| Rabat | Informatique | 500 |\n| Casa | Informatique | 800 |\n| Rabat | Maths | 300 |"
+    },
+    {
+      "id": 8,
+      "partTitle": "PARTIE 1 : Logiciels et Multimédia",
+      "prompt": "On considère le tableau suivant :\n\n{{TABLE}}\n\n**Que renvoie la formule `=NB.SI.ENS(Ville;\"Rabat\";Note;\">=10\")` ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "2"
+        },
+        {
+          "key": "B",
+          "text": "3"
+        },
+        {
+          "key": "C",
+          "text": "1"
+        },
+        {
+          "key": "D",
+          "text": "4"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "A",
+      "correctAnswerRaw": "✅ Réponse correcte : A (`2`)",
+      "explanation": "On compte les lignes qui vérifient les deux conditions : ville = Rabat **et** note >= 10. Les lignes concernées sont `Rabat / 12` et `Rabat / 10`, soit `2` lignes.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** La ligne `Casa / 15` a une note suffisante mais n'est pas à Rabat. La ligne `Rabat / 8` est à Rabat mais sa note est insuffisante. Les deux critères doivent être vrais.",
+      "tableMarkdown": "| Ville | Note |\n|---|---:|\n| Rabat | 12 |\n| Rabat | 8 |\n| Casa | 15 |\n| Rabat | 10 |"
+    },
+    {
+      "id": 9,
+      "partTitle": "PARTIE 1 : Logiciels et Multimédia",
+      "prompt": "Dans Excel, une formule de recherche affiche l'erreur `#N/A`.\n**Quelle est la cause la plus probable ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Une division par zéro."
+        },
+        {
+          "key": "B",
+          "text": "Une référence à une colonne supprimée."
+        },
+        {
+          "key": "C",
+          "text": "Un nom de fonction mal orthographié."
+        },
+        {
+          "key": "D",
+          "text": "Une colonne trop étroite pour afficher le résultat."
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "E",
+      "correctAnswerRaw": "✅ Réponse correcte : E (la valeur cherchée n'a pas été trouvée)",
+      "explanation": "`#N/A` signifie « non disponible » : la fonction de recherche n'a pas trouvé la valeur demandée dans la plage. Cela arrive souvent avec `RECHERCHEV` ou `EQUIV`.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** `#DIV/0!` vient d'une division par zéro, `#REF!` d'une référence invalide, `#NAME?` d'un nom inconnu et `#####` d'une colonne trop étroite. Ne confonds pas ces erreurs."
+    },
+    {
+      "id": 10,
+      "partTitle": "PARTIE 1 : Logiciels et Multimédia",
+      "prompt": "**Quelle situation provoque l'erreur `#DIV/0!` dans Excel ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Une cellule contient du texte au lieu d'un nombre."
+        },
+        {
+          "key": "B",
+          "text": "Une division par zéro ou par une cellule vide."
+        },
+        {
+          "key": "C",
+          "text": "Une colonne a été supprimée."
+        },
+        {
+          "key": "D",
+          "text": "Une fonction est mal orthographiée."
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctAnswerRaw": "✅ Réponse correcte : B",
+      "explanation": "`#DIV/0!` apparaît lorsque le dénominateur d'une division vaut zéro ou que la cellule du dénominateur est vide. Excel ne peut pas diviser par zéro.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** Utilise `SIERREUR` ou teste le dénominateur avec `SI(B1=0;\"\";A1/B1)` pour éviter l'affichage de l'erreur. Ne confonds pas avec `#VALUE!`, qui concerne un type de donnée incorrect."
+    },
+    {
+      "id": 11,
+      "partTitle": "PARTIE 1 : Logiciels et Multimédia",
+      "prompt": "**Quelle situation provoque l'erreur `#REF!` dans Excel ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Une division par zéro."
+        },
+        {
+          "key": "B",
+          "text": "Un nom de fonction mal orthographié."
+        },
+        {
+          "key": "C",
+          "text": "Une formule fait référence à une cellule ou à une colonne qui a été supprimée."
+        },
+        {
+          "key": "D",
+          "text": "Le texte est trop long pour la cellule."
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctAnswerRaw": "✅ Réponse correcte : C",
+      "explanation": "`#REF!` signifie que la référence n'est plus valide : la cellule, la ligne ou la colonne pointée a été supprimée ou déplacée hors de la feuille.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** `#NAME?` concerne un nom inconnu, `#VALUE!` un type incompatible, `#N/A` une valeur absente. `#REF!` est spécifiquement une référence cassée."
+    },
+    {
+      "id": 12,
+      "partTitle": "PARTIE 1 : Logiciels et Multimédia",
+      "prompt": "Dans Access, on active l'intégrité référentielle entre une table `Client` et une table `Commande`.\n**Que garantit cette option ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Que chaque client possède un mot de passe unique."
+        },
+        {
+          "key": "B",
+          "text": "Que les sauvegardes sont automatiques."
+        },
+        {
+          "key": "C",
+          "text": "Que les enregistrements sont triés automatiquement."
+        },
+        {
+          "key": "D",
+          "text": "Qu'une commande ne peut pas référencer un client inexistant et qu'un client utilisé ne peut pas être supprimé sans précaution."
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "D",
+      "correctAnswerRaw": "✅ Réponse correcte : D",
+      "explanation": "L'intégrité référentielle impose que chaque clé étrangère corresponde à une clé primaire existante. Elle empêche les enregistrements orphelins et protège les liens entre les tables.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** L'intégrité référentielle ne crée pas de sauvegarde ni de tri. Elle contrôle la cohérence des relations. Pour supprimer un client ayant des commandes, il faut d'abord traiter ses commandes ou activer une suppression en cascade."
+    },
+    {
+      "id": 13,
+      "partTitle": "PARTIE 1 : Logiciels et Multimédia",
+      "prompt": "Dans Access, on choisit l'option « Mettre à jour en cascade » sur une relation entre `Client` et `Commande`.\n**Quel est l'effet de cette option ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Si la clé primaire d'un client change, les clés étrangères de ses commandes sont mises à jour automatiquement."
+        },
+        {
+          "key": "B",
+          "text": "Toutes les commandes du client sont supprimées automatiquement."
+        },
+        {
+          "key": "C",
+          "text": "La modification de la clé primaire est interdite."
+        },
+        {
+          "key": "D",
+          "text": "Les commandes sont dupliquées dans une nouvelle table."
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "A",
+      "correctAnswerRaw": "✅ Réponse correcte : A",
+      "explanation": "La mise à jour en cascade propage la nouvelle valeur de la clé primaire aux clés étrangères liées. Les commandes restent associées au bon client.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** « Mettre à jour en cascade » ne supprime rien. C'est « Supprimer en cascade » qui supprime les enregistrements enfants lorsque le parent est supprimé."
+    },
+    {
+      "id": 14,
+      "partTitle": "PARTIE 1 : Logiciels et Multimédia",
+      "prompt": "Dans Access, on utilise la fonction `VraiFaux`.\n**Quelle est la syntaxe correcte de cette fonction ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "`VraiFaux(valeur1; valeur2)`"
+        },
+        {
+          "key": "B",
+          "text": "`VraiFaux(condition)`"
+        },
+        {
+          "key": "C",
+          "text": "`VraiFaux(condition; valeur_si_faux; valeur_si_vrai)`"
+        },
+        {
+          "key": "D",
+          "text": "`VraiFaux` additionne toujours les deux valeurs."
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "E",
+      "correctAnswerRaw": "✅ Réponse correcte : E (la syntaxe est `VraiFaux(condition; valeur_si_vrai; valeur_si_faux)`)",
+      "explanation": "`VraiFaux` évalue une condition, puis renvoie la première valeur si la condition est vraie, sinon la seconde. L'ordre est : condition, valeur si vrai, valeur si faux.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** L'ordre des deux valeurs est souvent inversé dans les propositions fausses. Retiens : **vrai d'abord, faux ensuite**, comme dans `SI`."
+    },
+    {
+      "id": 15,
+      "partTitle": "PARTIE 1 : Logiciels et Multimédia",
+      "prompt": "Dans Access, **quelle est la différence principale entre un formulaire et un état ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Un état sert à saisir des données ; un formulaire sert à imprimer."
+        },
+        {
+          "key": "B",
+          "text": "Un formulaire sert à saisir et consulter des données ; un état sert à présenter et imprimer des données."
+        },
+        {
+          "key": "C",
+          "text": "Les deux servent uniquement à imprimer."
+        },
+        {
+          "key": "D",
+          "text": "Un formulaire ne peut afficher qu'une seule table ; un état ne peut afficher que des requêtes."
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctAnswerRaw": "✅ Réponse correcte : B",
+      "explanation": "Le formulaire est l'interface de saisie et de consultation. L'état est destiné à la présentation soignée et à l'impression, souvent avec des regroupements et des totaux.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** Un état n'est pas fait pour modifier les données. Un formulaire peut contenir des contrôles de saisie, des listes déroulantes et des boutons de navigation."
+    },
+    {
+      "id": 16,
+      "partTitle": "PARTIE 1 : Logiciels et Multimédia",
+      "prompt": "**Quelle affirmation décrit correctement une image vectorielle comme le format SVG ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Elle est composée d'une grille de pixels et perd de la qualité quand on l'agrandit."
+        },
+        {
+          "key": "B",
+          "text": "Elle ne peut contenir que des photographies."
+        },
+        {
+          "key": "C",
+          "text": "Elle est décrite par des formes géométriques et peut être agrandie sans perte de qualité."
+        },
+        {
+          "key": "D",
+          "text": "Elle est exclusivement utilisée pour le son."
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctAnswerRaw": "✅ Réponse correcte : C",
+      "explanation": "Une image vectorielle est décrite par des objets mathématiques : points, lignes, courbes, polygones. Elle peut être redimensionnée sans pixelisation. SVG est un format vectoriel.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** Une image matricielle (JPEG, PNG, BMP) est composée de pixels et peut devenir floue lorsqu'on l'agrandit. Ne confonds pas vectoriel et matriciel."
+    },
+    {
+      "id": 17,
+      "partTitle": "PARTIE 1 : Logiciels et Multimédia",
+      "prompt": "**Quel modèle de couleurs est utilisé pour l'impression et fonctionne par synthèse soustractive ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Le modèle RVB (RGB)"
+        },
+        {
+          "key": "B",
+          "text": "Le modèle TSL (HSL)"
+        },
+        {
+          "key": "C",
+          "text": "Le modèle RVB additif"
+        },
+        {
+          "key": "D",
+          "text": "Le modèle CMJN (CMYK)"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "D",
+      "correctAnswerRaw": "✅ Réponse correcte : D (CMJN)",
+      "explanation": "Le modèle CMJN (cyan, magenta, jaune, noir) est utilisé en imprimerie. Il fonctionne par soustraction de lumière : les encres absorbent certaines couleurs.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** Le modèle RVB est additif et destiné aux écrans. Le modèle CMJN est soustractif et destiné à l'impression. Les couleurs peuvent différer entre l'écran et le papier."
+    },
+    {
+      "id": 18,
+      "partTitle": "PARTIE 1 : Logiciels et Multimédia",
+      "prompt": "Un signal audio contient des fréquences allant jusqu'à `20 kHz`.\n**Quelle est la fréquence d'échantillonnage minimale selon le théorème de Shannon-Nyquist ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "40 kHz"
+        },
+        {
+          "key": "B",
+          "text": "20 kHz"
+        },
+        {
+          "key": "C",
+          "text": "10 kHz"
+        },
+        {
+          "key": "D",
+          "text": "80 kHz"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "A",
+      "correctAnswerRaw": "✅ Réponse correcte : A (`40 kHz`)",
+      "explanation": "Le théorème de Shannon-Nyquist impose une fréquence d'échantillonnage au moins égale au **double** de la fréquence maximale du signal. Ici : `2 × 20 kHz = 40 kHz`.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** Échantillonner à 20 kHz serait insuffisant et provoquerait un repliement spectral. Le CD audio utilise 44,1 kHz, légèrement au-dessus de la limite théorique de 40 kHz."
+    },
+    {
+      "id": 19,
+      "partTitle": "PARTIE 1 : Logiciels et Multimédia",
+      "prompt": "On enregistre un son stéréo pendant `10 secondes` avec une fréquence d'échantillonnage de `44,1 kHz` et une quantification de `16 bits`.\n**Quel est le poids approximatif du fichier non compressé en Mo (1 Mo = 1 048 576 octets) ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "0,88 Mo"
+        },
+        {
+          "key": "B",
+          "text": "1,41 Mo"
+        },
+        {
+          "key": "C",
+          "text": "3,36 Mo"
+        },
+        {
+          "key": "D",
+          "text": "0,44 Mo"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "E",
+      "correctAnswerRaw": "✅ Réponse correcte : E (le poids exact est environ `1,68 Mo`)",
+      "explanation": "Poids = `fréquence × bits × canaux × durée / 8`.\n  * `44 100 × 16 × 2 × 10 / 8 = 1 764 000 octets`.\n  * `1 764 000 / 1 048 576 ≈ 1,68 Mo`.\n  * Cette valeur n'apparaît pas dans les choix A à D.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** N'oublie pas le facteur `2` pour la stéréo et la division par `8` pour convertir les bits en octets. `1,41 Mo` correspondrait à un son mono."
+    },
+    {
+      "id": 20,
+      "partTitle": "PARTIE 1 : Logiciels et Multimédia",
+      "prompt": "**Quel format audio est un format compressé avec perte de données ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "WAV"
+        },
+        {
+          "key": "B",
+          "text": "MP3"
+        },
+        {
+          "key": "C",
+          "text": "FLAC"
+        },
+        {
+          "key": "D",
+          "text": "AIFF"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctAnswerRaw": "✅ Réponse correcte : B (MP3)",
+      "explanation": "Le MP3 utilise une compression avec perte : il supprime certaines informations peu perceptibles pour réduire fortement le poids. WAV et AIFF sont généralement non compressés ; FLAC est compressé sans perte.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** « Compressé » ne signifie pas toujours « avec perte ». FLAC réduit la taille sans supprimer d'information audio, contrairement au MP3."
+    },
+    {
+      "id": 21,
+      "partTitle": "PARTIE 2 : Développement",
+      "prompt": "**En C++, quel est l'effet du mot-clé `virtual` sur une méthode ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "La méthode est résolue uniquement à la compilation."
+        },
+        {
+          "key": "B",
+          "text": "La méthode empêche toute héritage."
+        },
+        {
+          "key": "C",
+          "text": "La méthode peut être redéfinie et appelle la version de l'objet réel à l'exécution (liaison dynamique)."
+        },
+        {
+          "key": "D",
+          "text": "La méthode devient automatiquement statique."
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctAnswerRaw": "✅ Réponse correcte : C",
+      "explanation": "Une méthode `virtual` permet la liaison dynamique : si un pointeur de la classe mère pointe vers un objet de la classe fille, c'est la version de la classe fille qui est appelée.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** Sans `virtual`, l'appel est résolu à la compilation selon le type du pointeur. Avec `virtual`, il est résolu à l'exécution selon le type réel de l'objet."
+    },
+    {
+      "id": 22,
+      "partTitle": "PARTIE 2 : Développement",
+      "prompt": "On considère le programme Java suivant :\n\n{{CODE_0}}\n\n**Qu'affiche ce programme ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "A"
+        },
+        {
+          "key": "B",
+          "text": "AB"
+        },
+        {
+          "key": "C",
+          "text": "Une erreur de compilation"
+        },
+        {
+          "key": "D",
+          "text": "B"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "D",
+      "correctAnswerRaw": "✅ Réponse correcte : D (`B`)",
+      "explanation": "La variable `a` est de type `A`, mais elle référence un objet de type `B`. En Java, les méthodes non statiques sont appelées selon le type réel de l'objet : c'est le polymorphisme dynamique.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** Le type déclaré ne détermine pas la méthode exécutée ; c'est le type de l'objet créé avec `new`. Ici, l'objet est bien de type `B`.",
+      "codeBlocks": [
+        {
+          "language": "java",
+          "code": "class A {\n    void f() { System.out.print(\"A\"); }\n}\n\nclass B extends A {\n    void f() { System.out.print(\"B\"); }\n}\n\npublic class Test {\n    public static void main(String[] args) {\n        A a = new B();\n        a.f();\n    }\n}"
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "partTitle": "PARTIE 2 : Développement",
+      "prompt": "**En normalisation relationnelle, que permet d'éliminer la troisième forme normale (3FN) ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Les dépendances transitives entre attributs non clés."
+        },
+        {
+          "key": "B",
+          "text": "Les valeurs atomiques."
+        },
+        {
+          "key": "C",
+          "text": "Les clés primaires."
+        },
+        {
+          "key": "D",
+          "text": "Les dépendances fonctionnelles entre clé et attributs."
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "A",
+      "correctAnswerRaw": "✅ Réponse correcte : A",
+      "explanation": "La 3FN exige que les attributs non clés ne dépendent pas d'autres attributs non clés. Elle élimine les dépendances transitives, par exemple `id_commande → id_client → nom_client`.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** La 1FN impose des valeurs atomiques ; la 2FN élimine les dépendances partielles à une clé composée ; la 3FN élimine les dépendances transitives. Ne les confonds pas."
+    },
+    {
+      "id": 24,
+      "partTitle": "PARTIE 2 : Développement",
+      "prompt": "On considère la macro C suivante :\n\n{{CODE_0}}\n\n**Que vaut l'expression `CARRE(2 + 3)` après préprocesseur ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "25"
+        },
+        {
+          "key": "B",
+          "text": "11"
+        },
+        {
+          "key": "C",
+          "text": "10"
+        },
+        {
+          "key": "D",
+          "text": "13"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctAnswerRaw": "✅ Réponse correcte : B (`11`)",
+      "explanation": "Le préprocesseur remplace `x` par `2 + 3` sans ajouter de parenthèses : `2 + 3 * 2 + 3`. La multiplication est prioritaire : `2 + 6 + 3 = 11`.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** La bonne pratique est `#define CARRE(x) ((x) * (x))`. Sans parenthèses, la macro peut produire des résultats faux à cause de la priorité des opérateurs.",
+      "codeBlocks": [
+        {
+          "language": "c",
+          "code": "#define CARRE(x) x * x"
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "partTitle": "PARTIE 2 : Développement",
+      "prompt": "**En Java, quelle affirmation est correcte à propos des interfaces ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Une classe peut étendre plusieurs classes."
+        },
+        {
+          "key": "B",
+          "text": "Une interface peut être instanciée directement avec `new`."
+        },
+        {
+          "key": "C",
+          "text": "Une classe peut implémenter plusieurs interfaces."
+        },
+        {
+          "key": "D",
+          "text": "Une classe abstraite ne peut pas être déclarée `final`."
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctAnswerRaw": "✅ Réponse correcte : C",
+      "explanation": "Java autorise l'héritage multiple d'interfaces : `class C implements A, B`. En revanche, une classe ne peut étendre qu'une seule classe.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** Une interface ne s'instancie pas directement ; il faut une classe qui l'implémente. Une classe abstraite peut être `final` ? Non, `abstract` et `final` sont incompatibles, car une classe finale ne peut pas être héritée."
+    },
+    {
+      "id": 26,
+      "partTitle": "PARTIE 2 : Développement",
+      "prompt": "On considère deux tables : `client(id, nom)` et `commande(id, id_client, date_commande)`.\n**Quelle requête affiche les clients qui n'ont passé aucune commande ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "`SELECT nom FROM client INNER JOIN commande ON client.id = commande.id_client;`"
+        },
+        {
+          "key": "B",
+          "text": "`SELECT nom FROM client RIGHT JOIN commande ON client.id = commande.id_client;`"
+        },
+        {
+          "key": "C",
+          "text": "`SELECT nom FROM client LEFT JOIN commande ON client.id = commande.id_client WHERE commande.id IS NOT NULL;`"
+        },
+        {
+          "key": "D",
+          "text": "`SELECT nom FROM client LEFT JOIN commande ON client.id = commande.id_client WHERE commande.id IS NULL;`"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "D",
+      "correctAnswerRaw": "✅ Réponse correcte : D",
+      "explanation": "Le `LEFT JOIN` conserve tous les clients, même ceux sans commande. Pour ces derniers, les colonnes de `commande` valent `NULL`. Le filtre `commande.id IS NULL` garde uniquement les clients sans commande.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** `IS NOT NULL` ferait exactement l'inverse : il garderait les clients ayant au moins une commande. Ne confonds pas `NULL` et `0`."
+    },
+    {
+      "id": 27,
+      "partTitle": "PARTIE 2 : Développement",
+      "prompt": "**Parmi les affirmations suivantes sur les chaînes en C, laquelle est correcte ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "`sizeof(\"abc\")` vaut `4` et `strlen(\"abc\")` vaut `3`."
+        },
+        {
+          "key": "B",
+          "text": "`strcmp` renvoie toujours exactement `1` ou `-1`."
+        },
+        {
+          "key": "C",
+          "text": "`strcpy` compare deux chaînes de caractères."
+        },
+        {
+          "key": "D",
+          "text": "`strlen` inclut le caractère nul final dans son résultat."
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "A",
+      "correctAnswerRaw": "✅ Réponse correcte : A",
+      "explanation": "La chaîne `\"abc\"` occupe `4` octets en mémoire : `a`, `b`, `c` et le caractère nul `'\\0'`. `sizeof` compte cet octet, donc `sizeof(\"abc\") = 4`. `strlen` s'arrête avant le `'\\0'`, donc `strlen(\"abc\") = 3`.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** `strcmp` renvoie une valeur négative, nulle ou positive, pas nécessairement `-1` ou `1`. `strcpy` copie, `strcat` concatène et `strchr` recherche un caractère. Ne confonds pas la taille du tableau et la longueur de la chaîne."
+    },
+    {
+      "id": 28,
+      "partTitle": "PARTIE 2 : Développement",
+      "prompt": "On considère le programme Java suivant :\n\n{{CODE_0}}\n\n**Qu'affiche ce programme ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "0"
+        },
+        {
+          "key": "B",
+          "text": "3"
+        },
+        {
+          "key": "C",
+          "text": "1"
+        },
+        {
+          "key": "D",
+          "text": "2"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctAnswerRaw": "✅ Réponse correcte : B (`3`)",
+      "explanation": "`n` est un attribut `static` : il est partagé par toutes les instances. Chaque appel du constructeur incrémente le même compteur. Trois objets créés donnent `n = 3`.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** Un attribut statique n'est pas recopié dans chaque objet. Il appartient à la classe elle-même et se consulte avec `Compteur.n`.",
+      "codeBlocks": [
+        {
+          "language": "java",
+          "code": "class Compteur {\n    static int n = 0;\n\n    Compteur() {\n        n++;\n    }\n}\n\npublic class Test {\n    public static void main(String[] args) {\n        new Compteur();\n        new Compteur();\n        new Compteur();\n        System.out.print(Compteur.n);\n    }\n}"
+        }
+      ]
+    },
+    {
+      "id": 29,
+      "partTitle": "PARTIE 2 : Développement",
+      "prompt": "On considère la table `employe(id, nom, id_manager)`, où `id_manager` référence l'`id` du manager.\n**Quelle requête affiche le nom de chaque employé avec le nom de son manager ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "`SELECT e.nom, m.nom FROM employe e JOIN employe m ON e.id = m.id;`"
+        },
+        {
+          "key": "B",
+          "text": "`SELECT e.nom, m.nom FROM employe e GROUP BY e.id_manager;`"
+        },
+        {
+          "key": "C",
+          "text": "`SELECT e.nom, m.nom FROM employe e JOIN employe m ON e.id_manager = m.id;`"
+        },
+        {
+          "key": "D",
+          "text": "`SELECT nom FROM employe UNION SELECT nom FROM employe;`"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctAnswerRaw": "✅ Réponse correcte : C",
+      "explanation": "On réalise une auto-jointure : la table `employe` est utilisée deux fois avec des alias différents. `e` représente l'employé, `m` le manager. La condition `e.id_manager = m.id` relie chaque employé à son manager.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** Joindre `e.id = m.id` compare l'employé à lui-même. Il faut joindre la clé étrangère `id_manager` à la clé primaire `id` du manager."
+    },
+    {
+      "id": 30,
+      "partTitle": "PARTIE 2 : Développement",
+      "prompt": "**À quoi sert la directive C `#ifdef` ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "À inclure un fichier d'en-tête."
+        },
+        {
+          "key": "B",
+          "text": "À déclarer une variable globale."
+        },
+        {
+          "key": "C",
+          "text": "À commenter automatiquement une ligne."
+        },
+        {
+          "key": "D",
+          "text": "À compiler conditionnellement une portion de code selon qu'une macro est définie ou non."
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "D",
+      "correctAnswerRaw": "✅ Réponse correcte : D",
+      "explanation": "`#ifdef NOM` vérifie si la macro `NOM` est définie. Si oui, le bloc jusqu'à `#endif` est compilé ; sinon, il est ignoré. Cela permet d'adapter le code à plusieurs plateformes.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** `#ifdef` ne définit pas la macro ; il teste seulement son existence. Pour la définir, on utilise `#define`, souvent avec `#ifndef` pour éviter les doubles inclusions."
+    },
+    {
+      "id": 31,
+      "partTitle": "PARTIE 2 : Développement",
+      "prompt": "On considère une clé étrangère déclarée avec `ON DELETE CASCADE`.\n**Que se passe-t-il lorsqu'on supprime l'enregistrement parent ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Les enregistrements enfants liés sont supprimés automatiquement."
+        },
+        {
+          "key": "B",
+          "text": "La suppression est bloquée."
+        },
+        {
+          "key": "C",
+          "text": "Les clés étrangères des enfants sont mises à `NULL`."
+        },
+        {
+          "key": "D",
+          "text": "Les enfants sont dupliqués dans une autre table."
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "A",
+      "correctAnswerRaw": "✅ Réponse correcte : A",
+      "explanation": "`ON DELETE CASCADE` propage la suppression du parent aux enfants. Si un client est supprimé, toutes ses commandes liées sont supprimées.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** `ON DELETE SET NULL` met la clé étrangère à `NULL` au lieu de supprimer l'enfant. `RESTRICT` bloque la suppression. Choisis l'option selon la règle métier."
+    },
+    {
+      "id": 32,
+      "partTitle": "PARTIE 2 : Développement",
+      "prompt": "**Que vaut l'expression C `5 & 3` ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "7"
+        },
+        {
+          "key": "B",
+          "text": "1"
+        },
+        {
+          "key": "C",
+          "text": "8"
+        },
+        {
+          "key": "D",
+          "text": "15"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctAnswerRaw": "✅ Réponse correcte : B (`1`)",
+      "explanation": "`5` s'écrit `101` et `3` s'écrit `011`. Le ET bit à bit donne `001`, soit `1`.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** `&` est le ET bit à bit, `&&` est le ET logique. `5 && 3` vaudrait `1` (vrai), mais pour une autre raison : les deux opérandes sont non nuls."
+    },
+    {
+      "id": 33,
+      "partTitle": "PARTIE 2 : Développement",
+      "prompt": "**Dans un diagramme de classes UML, comment modélise-t-on une association qui possède ses propres attributs ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Par une généralisation"
+        },
+        {
+          "key": "B",
+          "text": "Par une composition"
+        },
+        {
+          "key": "C",
+          "text": "Par une classe d'association"
+        },
+        {
+          "key": "D",
+          "text": "Par une interface"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctAnswerRaw": "✅ Réponse correcte : C (classe d'association)",
+      "explanation": "Quand une association porte des attributs, on crée une classe d'association reliée à l'association. Exemple : `Inscription` entre `Etudiant` et `Module`, avec l'attribut `date_inscription`.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** Une classe d'association n'est pas une classe d'entité indépendante. Elle dépend de l'association et ne peut pas être comprise sans les deux classes reliées."
+    },
+    {
+      "id": 34,
+      "partTitle": "PARTIE 2 : Développement",
+      "prompt": "En C, si `p` est un pointeur vers une structure contenant un champ `nom`, **à quoi est équivalent `p->nom` ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "`*p.nom`"
+        },
+        {
+          "key": "B",
+          "text": "`p.nom`"
+        },
+        {
+          "key": "C",
+          "text": "`&p.nom`"
+        },
+        {
+          "key": "D",
+          "text": "`(*p).nom`"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "D",
+      "correctAnswerRaw": "✅ Réponse correcte : D (`(*p).nom`)",
+      "explanation": "`p->nom` est une notation abrégée pour `(*p).nom`. On déréférence le pointeur pour accéder à la structure, puis on sélectionne le champ `nom`.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** `*p.nom` est incorrect car `.` est prioritaire sur `*`. Il faudrait écrire `(*p).nom`. L'opérateur `->` évite justement cette confusion."
+    },
+    {
+      "id": 35,
+      "partTitle": "PARTIE 2 : Développement",
+      "prompt": "**Quelle relation UML exprime une composition forte, où la partie est détruite avec le tout ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "La composition"
+        },
+        {
+          "key": "B",
+          "text": "L'agrégation"
+        },
+        {
+          "key": "C",
+          "text": "L'association simple"
+        },
+        {
+          "key": "D",
+          "text": "L'héritage"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "A",
+      "correctAnswerRaw": "✅ Réponse correcte : A (la composition)",
+      "explanation": "La composition est représentée par un losange plein. La partie ne peut pas exister indépendamment du tout : si la maison est détruite, ses pièces le sont aussi dans le modèle.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** L'agrégation est représentée par un losange vide : la partie peut exister indépendamment du tout. La composition est plus forte que l'agrégation."
+    },
+    {
+      "id": 36,
+      "partTitle": "PARTIE 2 : Développement",
+      "prompt": "**Dans le cycle en V, la phase de recette (acceptation) valide principalement quoi ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Le code source ligne par ligne."
+        },
+        {
+          "key": "B",
+          "text": "Les besoins exprimés par le client."
+        },
+        {
+          "key": "C",
+          "text": "Les tests unitaires des développeurs."
+        },
+        {
+          "key": "D",
+          "text": "La conception détaillée des classes."
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctAnswerRaw": "✅ Réponse correcte : B (les besoins)",
+      "explanation": "Le cycle en V associe chaque phase de conception à une phase de test. La recette, située en haut à droite, vérifie que le système répond aux besoins exprimés au début du projet.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** Les tests unitaires valident les modules, les tests d'intégration valident les interactions, et la recette valide l'adéquation au besoin client. Ne confonds pas recette et tests unitaires."
+    },
+    {
+      "id": 37,
+      "partTitle": "PARTIE 2 : Développement",
+      "prompt": "**Quelle est la différence entre un passage de paramètre par valeur et un passage par référence ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Les deux permettent toujours de modifier la variable de l'appelant."
+        },
+        {
+          "key": "B",
+          "text": "Le passage par valeur modifie la variable de l'appelant ; le passage par référence non."
+        },
+        {
+          "key": "C",
+          "text": "Le passage par référence permet de modifier la variable de l'appelant ; le passage par valeur transmet une copie."
+        },
+        {
+          "key": "D",
+          "text": "Aucun des deux ne transmet de valeur."
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctAnswerRaw": "✅ Réponse correcte : C",
+      "explanation": "Par valeur, la fonction reçoit une copie : modifier le paramètre ne change pas l'original. Par référence (ou par adresse), la fonction reçoit un accès à la variable d'origine et peut la modifier.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** En C, le passage par adresse s'écrit avec des pointeurs (`&x` à l'appel, `*p` dans la fonction). En Java, les objets sont passés par valeur de référence : on peut modifier l'objet, mais pas réaffecter la variable de l'appelant."
+    },
+    {
+      "id": 38,
+      "partTitle": "PARTIE 2 : Développement",
+      "prompt": "On considère la matrice `M = [[1, 2, 3], [4, 5, 6]]`.\n**Quelle est la deuxième ligne de sa transposée ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "`[1, 2, 3]`"
+        },
+        {
+          "key": "B",
+          "text": "`[4, 5, 6]`"
+        },
+        {
+          "key": "C",
+          "text": "`[1, 4]`"
+        },
+        {
+          "key": "D",
+          "text": "`[2, 5]`"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "D",
+      "correctAnswerRaw": "✅ Réponse correcte : D (`[2, 5]`)",
+      "explanation": "La transposée de `M` est `[[1, 4], [2, 5], [3, 6]]`. La deuxième ligne est donc `[2, 5]`, qui correspond à la deuxième colonne de `M`.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** La transposée échange les lignes et les colonnes. Une matrice `2 × 3` devient `3 × 2`. Ne recopie pas les lignes dans le même ordre."
+    },
+    {
+      "id": 39,
+      "partTitle": "PARTIE 2 : Développement",
+      "prompt": "**Quelle condition caractérise une matrice carrée symétrique `M` ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "`M[i][j] = M[j][i]` pour tous les indices `i` et `j`."
+        },
+        {
+          "key": "B",
+          "text": "`M[i][j] = M[i][j+1]` pour tous les indices."
+        },
+        {
+          "key": "C",
+          "text": "Tous les éléments de la diagonale sont nuls."
+        },
+        {
+          "key": "D",
+          "text": "La matrice est rectangulaire."
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "A",
+      "correctAnswerRaw": "✅ Réponse correcte : A",
+      "explanation": "Une matrice est symétrique si elle est égale à sa transposée : l'élément ligne `i`, colonne `j` est égal à l'élément ligne `j`, colonne `i`.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** Une matrice symétrique est nécessairement carrée. La condition doit être vérifiée pour tous les couples `(i, j)`, pas seulement pour la diagonale."
+    },
+    {
+      "id": 40,
+      "partTitle": "PARTIE 2 : Développement",
+      "prompt": "On applique le tri par insertion au tableau `T = [5, 2, 4, 1]`.\n**Quel est l'état du tableau après le troisième passage (insertion du quatrième élément) ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "`[2, 5, 4, 1]`"
+        },
+        {
+          "key": "B",
+          "text": "`[1, 2, 4, 5]`"
+        },
+        {
+          "key": "C",
+          "text": "`[2, 4, 5, 1]`"
+        },
+        {
+          "key": "D",
+          "text": "`[5, 2, 4, 1]`"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctAnswerRaw": "✅ Réponse correcte : B (`[1, 2, 4, 5]`)",
+      "explanation": "Le tri par insertion construit progressivement la partie triée :\n  * Insertion de `2` : `[2, 5, 4, 1]`.\n  * Insertion de `4` : `[2, 4, 5, 1]`.\n  * Insertion de `1` : `[1, 2, 4, 5]`.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** Après le troisième passage, tout le tableau est trié ici, mais ce n'est pas toujours le cas. Le nombre de passages dépend de la position des éléments, pas seulement de leur valeur."
+    },
+    {
+      "id": 41,
+      "partTitle": "PARTIE 2 : Développement",
+      "prompt": "**Qu'appelle-t-on un algorithme de tri « stable » ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Un algorithme qui trie plus vite que tous les autres."
+        },
+        {
+          "key": "B",
+          "text": "Un algorithme qui utilise moins de mémoire que les autres."
+        },
+        {
+          "key": "C",
+          "text": "Un algorithme qui conserve l'ordre relatif des éléments égaux."
+        },
+        {
+          "key": "D",
+          "text": "Un algorithme qui ne fonctionne que sur des entiers."
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctAnswerRaw": "✅ Réponse correcte : C",
+      "explanation": "Si deux éléments ont la même clé de tri, un tri stable conserve leur ordre d'apparition initial. C'est important lorsqu'on trie d'abord par un critère secondaire, puis par un critère principal.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** La stabilité est indépendante de la complexité. Le tri par insertion est stable ; le tri par sélection classique ne l'est pas ; le tri rapide ne l'est pas par défaut."
+    },
+    {
+      "id": 42,
+      "partTitle": "PARTIE 2 : Développement",
+      "prompt": "On recherche la valeur `23` dans le tableau trié suivant par recherche dichotomique :\n`[2, 5, 8, 12, 16, 23, 38, 56, 72, 91]` (indices de `0` à `9`).\n**Combien de comparaisons sont nécessaires ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "1"
+        },
+        {
+          "key": "B",
+          "text": "2"
+        },
+        {
+          "key": "C",
+          "text": "4"
+        },
+        {
+          "key": "D",
+          "text": "3"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "D",
+      "correctAnswerRaw": "✅ Réponse correcte : D (`3`)",
+      "explanation": "* Comparaison 1 : milieu `(0+9)/2 = 4`, valeur `16`. `23 > 16`, on cherche à droite.\n  * Comparaison 2 : milieu `(5+9)/2 = 7`, valeur `56`. `23 < 56`, on cherche à gauche.\n  * Comparaison 3 : milieu `(5+6)/2 = 5`, valeur `23`. Trouvé.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** La recherche dichotomique exige un tableau **trié**. À chaque étape, on élimine la moitié des éléments restants, d'où une complexité en `O(log n)`."
+    },
+    {
+      "id": 43,
+      "partTitle": "PARTIE 2 : Développement",
+      "prompt": "On dispose d'un tableau d'enregistrements `Employe` contenant les champs `nom`, `service` et `salaire`.\n**Quel algorithme permet d'afficher les employés du service Informatique dont le salaire dépasse 5000 ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Parcourir le tableau et tester les deux conditions pour chaque enregistrement."
+        },
+        {
+          "key": "B",
+          "text": "Additionner tous les salaires du tableau."
+        },
+        {
+          "key": "C",
+          "text": "Trier le tableau par nom, puis afficher tous les employés."
+        },
+        {
+          "key": "D",
+          "text": "Supprimer les employés dont le salaire est inférieur à 5000."
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "A",
+      "correctAnswerRaw": "✅ Réponse correcte : A",
+      "explanation": "On parcourt chaque enregistrement et on teste `service = \"Informatique\" ET salaire > 5000`. Si les deux conditions sont vraies, on affiche l'enregistrement.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** Le tri ne filtre pas les enregistrements : il change seulement leur ordre. Pour sélectionner, il faut un test conditionnel pendant le parcours."
+    },
+    {
+      "id": 44,
+      "partTitle": "PARTIE 2 : Développement",
+      "prompt": "On considère la boucle suivante :\n\n{{CODE_0}}\n\n**Quelle est la complexité temporelle de cette boucle ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "`O(n)`"
+        },
+        {
+          "key": "B",
+          "text": "`O(log n)`"
+        },
+        {
+          "key": "C",
+          "text": "`O(n²)`"
+        },
+        {
+          "key": "D",
+          "text": "`O(1)`"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctAnswerRaw": "✅ Réponse correcte : B (`O(log n)`)",
+      "explanation": "`i` prend les valeurs `1, 2, 4, 8, 16, ...` jusqu'à dépasser `n`. Le nombre d'itérations est le nombre de fois qu'on peut doubler `1` avant d'atteindre `n`, soit environ `log₂(n)`.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** Une boucle `i++` est en `O(n)` ; une boucle `i = i * 2` est en `O(log n)`. Ce n'est pas le nombre de lignes de code qui compte, mais l'évolution de la variable de boucle.",
+      "codeBlocks": [
+        {
+          "language": "c",
+          "code": "for (int i = 1; i < n; i = i * 2) {\n    // traitement constant\n}"
+        }
+      ]
+    },
+    {
+      "id": 45,
+      "partTitle": "PARTIE 2 : Développement",
+      "prompt": "**Quelle caractéristique distingue une liste doublement chaînée d'une liste simplement chaînée ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Elle ne contient qu'un seul pointeur par nœud."
+        },
+        {
+          "key": "B",
+          "text": "Elle est obligatoirement circulaire."
+        },
+        {
+          "key": "C",
+          "text": "Chaque nœud contient deux pointeurs : vers le suivant et vers le précédent."
+        },
+        {
+          "key": "D",
+          "text": "Elle est stockée dans un tableau contigu."
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctAnswerRaw": "✅ Réponse correcte : C",
+      "explanation": "Dans une liste doublement chaînée, chaque nœud possède un pointeur `suivant` et un pointeur `precedent`. On peut donc parcourir la liste dans les deux sens.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** Cette structure utilise plus de mémoire qu'une liste simplement chaînée, mais facilite la suppression d'un nœud lorsque l'on possède son adresse : on accède directement au précédent."
+    },
+    {
+      "id": 46,
+      "partTitle": "PARTIE 2 : Développement",
+      "prompt": "Dans une file circulaire implémentée avec un tableau de taille `N`, on met à jour la queue avec `queue = (queue + 1) % N`.\n**Quel est le rôle de l'opérateur `% N` ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Trier les éléments de la file."
+        },
+        {
+          "key": "B",
+          "text": "Supprimer le dernier élément."
+        },
+        {
+          "key": "C",
+          "text": "Doubler la capacité du tableau."
+        },
+        {
+          "key": "D",
+          "text": "Revenir au début du tableau après la dernière case."
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "D",
+      "correctAnswerRaw": "✅ Réponse correcte : D",
+      "explanation": "Le modulo `N` ramène l'indice dans l'intervalle `0` à `N-1`. Quand `queue` atteint `N-1`, `(N-1+1) % N = 0` : on réutilise la première case.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** Il faut distinguer la file vide de la file pleine, souvent avec un compteur ou une case sacrifiée. Le modulo seul ne gère pas cette distinction."
+    },
+    {
+      "id": 47,
+      "partTitle": "PARTIE 2 : Développement",
+      "prompt": "On considère l'arbre binaire suivant :\n- Racine `A`.\n- `A` a pour enfants `B` (gauche) et `C` (droite).\n- `B` a pour enfants `D` et `E`.\n- `C` a pour enfant droit `F`.\n\n**Combien cet arbre possède-t-il de feuilles ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "3"
+        },
+        {
+          "key": "B",
+          "text": "2"
+        },
+        {
+          "key": "C",
+          "text": "4"
+        },
+        {
+          "key": "D",
+          "text": "6"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "A",
+      "correctAnswerRaw": "✅ Réponse correcte : A (`3`)",
+      "explanation": "Une feuille est un nœud sans enfant. Ici, les feuilles sont `D`, `E` et `F`. `B` et `C` ont des enfants, et `A` est la racine.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** Ne compte pas les nœuds internes. Le nombre de feuilles n'est pas égal au nombre total de nœuds : ici, il y a 6 nœuds mais seulement 3 feuilles."
+    },
+    {
+      "id": 48,
+      "partTitle": "PARTIE 2 : Développement",
+      "prompt": "**Qu'est-ce qu'un arbre binaire parfait ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Un arbre où chaque nœud a au plus un enfant."
+        },
+        {
+          "key": "B",
+          "text": "Un arbre où tous les nœuds internes ont deux enfants et où toutes les feuilles sont au même niveau."
+        },
+        {
+          "key": "C",
+          "text": "Un arbre binaire de recherche équilibré."
+        },
+        {
+          "key": "D",
+          "text": "Un arbre où chaque nœud possède un pointeur vers son parent."
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctAnswerRaw": "✅ Réponse correcte : B",
+      "explanation": "Un arbre parfait est complet à tous les niveaux : chaque nœud interne a exactement deux enfants, et toutes les feuilles sont à la même profondeur.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** Un arbre **complet** est rempli niveau par niveau, de gauche à droite, mais le dernier niveau peut être partiellement rempli. Un arbre parfait est un cas particulier d'arbre complet."
+    },
+    {
+      "id": 49,
+      "partTitle": "PARTIE 2 : Développement",
+      "prompt": "**Quelles structures de données utilise-t-on classiquement pour un parcours en largeur (BFS) et un parcours en profondeur (DFS) ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "BFS : pile ; DFS : file."
+        },
+        {
+          "key": "B",
+          "text": "BFS : file ; DFS : file."
+        },
+        {
+          "key": "C",
+          "text": "BFS : file ; DFS : pile."
+        },
+        {
+          "key": "D",
+          "text": "BFS : pile ; DFS : pile."
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctAnswerRaw": "✅ Réponse correcte : C",
+      "explanation": "Le BFS explore niveau par niveau : il utilise une **file** (premier entré, premier sorti). Le DFS explore une branche jusqu'au bout : il utilise une **pile** (dernier entré, premier sorti) ou la récursion.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** Retiens « BFS = file, DFS = pile ». Inverser les deux structures change complètement l'ordre de visite."
+    },
+    {
+      "id": 50,
+      "partTitle": "PARTIE 2 : Développement",
+      "prompt": "**Quel code HTTP indique une erreur interne du serveur ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "200"
+        },
+        {
+          "key": "B",
+          "text": "301"
+        },
+        {
+          "key": "C",
+          "text": "404"
+        },
+        {
+          "key": "D",
+          "text": "500"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "D",
+      "correctAnswerRaw": "✅ Réponse correcte : D (`500`)",
+      "explanation": "`500 Internal Server Error` signale une erreur côté serveur. `200` signifie succès, `301` une redirection permanente, `404` une ressource introuvable.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** Les codes `4xx` concernent le client, les codes `5xx` concernent le serveur. `404` n'est pas une erreur serveur : la requête est correcte, mais la ressource n'existe pas."
+    },
+    {
+      "id": 51,
+      "partTitle": "PARTIE 2 : Développement",
+      "prompt": "**Quelle méthode HTTP est généralement utilisée pour remplacer ou mettre à jour une ressource ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "`PUT`"
+        },
+        {
+          "key": "B",
+          "text": "`GET`"
+        },
+        {
+          "key": "C",
+          "text": "`DELETE`"
+        },
+        {
+          "key": "D",
+          "text": "`HEAD`"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "A",
+      "correctAnswerRaw": "✅ Réponse correcte : A (`PUT`)",
+      "explanation": "`PUT` envoie une représentation complète de la ressource à créer ou remplacer. `PATCH` est souvent utilisé pour une modification partielle. `GET` lit, `DELETE` supprime.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** `GET` ne doit pas modifier la ressource. `PUT` est idempotent : répéter la même requête produit le même état final."
+    },
+    {
+      "id": 52,
+      "partTitle": "PARTIE 2 : Développement",
+      "prompt": "On considère le code JavaScript suivant :\n\n{{CODE_0}}\n\n**Quel est l'effet de cette instruction ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Elle modifie la couleur CSS de l'élément."
+        },
+        {
+          "key": "B",
+          "text": "Elle remplace le contenu HTML de l'élément `titre` par « Bienvenue »."
+        },
+        {
+          "key": "C",
+          "text": "Elle supprime l'élément `titre` du document."
+        },
+        {
+          "key": "D",
+          "text": "Elle crée un cookie nommé `titre`."
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctAnswerRaw": "✅ Réponse correcte : B",
+      "explanation": "`getElementById(\"titre\")` sélectionne l'élément dont l'identifiant est `titre`. `innerHTML` remplace son contenu HTML par la chaîne « Bienvenue ».",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** `innerHTML` interprète le HTML contenu dans la chaîne. Pour insérer du texte brut et éviter une injection, il vaut mieux utiliser `textContent`.",
+      "codeBlocks": [
+        {
+          "language": "javascript",
+          "code": "document.getElementById(\"titre\").innerHTML = \"Bienvenue\";"
+        }
+      ]
+    },
+    {
+      "id": 53,
+      "partTitle": "PARTIE 2 : Développement",
+      "prompt": "On considère les expressions JavaScript suivantes :\n\n{{CODE_0}}\n\n**Quels sont leurs résultats ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "`true` et `true`"
+        },
+        {
+          "key": "B",
+          "text": "`false` et `false`"
+        },
+        {
+          "key": "C",
+          "text": "`true` et `false`"
+        },
+        {
+          "key": "D",
+          "text": "`false` et `true`"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctAnswerRaw": "✅ Réponse correcte : C (`true` et `false`)",
+      "explanation": "`==` effectue une conversion de type : la chaîne `\"5\"` est convertie en nombre, donc `\"5\" == 5` est vrai. `===` compare à la fois la valeur et le type : une chaîne et un nombre ne sont jamais strictement égaux.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** En JavaScript moderne, privilégie `===` pour éviter les conversions implicites surprenantes. `null == undefined` est vrai, mais `null === undefined` est faux.",
+      "codeBlocks": [
+        {
+          "language": "javascript",
+          "code": "\"5\" == 5\n\"5\" === 5"
+        }
+      ]
+    },
+    {
+      "id": 54,
+      "partTitle": "PARTIE 2 : Développement",
+      "prompt": "**Quel est l'intérêt principal des requêtes préparées (PDO) en PHP ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Elles rendent toujours les requêtes plus rapides, quelle que soit la base."
+        },
+        {
+          "key": "B",
+          "text": "Elles chiffrent automatiquement toute la base de données."
+        },
+        {
+          "key": "C",
+          "text": "Elles créent des sauvegardes automatiques."
+        },
+        {
+          "key": "D",
+          "text": "Elles séparent le code SQL des données et réduisent fortement le risque d'injection SQL."
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "D",
+      "correctAnswerRaw": "✅ Réponse correcte : D",
+      "explanation": "Une requête préparée est analysée par le serveur SQL avant de recevoir les valeurs. Les paramètres sont transmis séparément, ce qui empêche un utilisateur d'injecter du code SQL.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** Concaténer directement `$_GET` ou `$_POST` dans une requête est dangereux, même avec `addslashes`. Les requêtes préparées avec des paramètres nommés ou positionnels sont la bonne pratique."
+    },
+    {
+      "id": 55,
+      "partTitle": "PARTIE 2 : Développement",
+      "prompt": "**À quoi sert la fonction PHP `htmlspecialchars` ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "À échapper les caractères spéciaux HTML pour éviter une injection de script (XSS)."
+        },
+        {
+          "key": "B",
+          "text": "À hacher un mot de passe avant de le stocker."
+        },
+        {
+          "key": "C",
+          "text": "À empêcher les injections SQL."
+        },
+        {
+          "key": "D",
+          "text": "À compresser une page HTML avant l'envoi."
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "A",
+      "correctAnswerRaw": "✅ Réponse correcte : A",
+      "explanation": "`htmlspecialchars` transforme `<`, `>`, `&`, `\"` et `'` en entités HTML. Le navigateur affiche alors le texte sans l'interpréter comme du code, ce qui bloque les scripts injectés.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** `htmlspecialchars` protège contre le XSS, pas contre l'injection SQL. Pour SQL, il faut des requêtes préparées ; pour les mots de passe, `password_hash`."
+    },
+    {
+      "id": 56,
+      "partTitle": "PARTIE 2 : Développement",
+      "prompt": "**Dans un diagramme de classes UML, que signifient respectivement `-` et `/` devant un attribut ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Public et statique."
+        },
+        {
+          "key": "B",
+          "text": "Privé et dérivé (calculé)."
+        },
+        {
+          "key": "C",
+          "text": "Protégé et constant."
+        },
+        {
+          "key": "D",
+          "text": "Package et abstrait."
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctAnswerRaw": "✅ Réponse correcte : B",
+      "explanation": "`-` indique une visibilité privée. `/` indique un attribut dérivé, c'est-à-dire calculé à partir d'autres attributs, comme `/age` calculé à partir de la date de naissance.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** Les symboles de visibilité sont `+` public, `-` privé, `#` protégé et `~` package. Un attribut dérivé n'est pas stocké directement dans la base."
+    },
+    {
+      "id": 57,
+      "partTitle": "PARTIE 3 : Systèmes et Réseaux",
+      "prompt": "**Quelle est la propriété fondamentale d'une section critique ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Un seul processus peut y accéder à la fois (exclusion mutuelle)."
+        },
+        {
+          "key": "B",
+          "text": "Tous les processus peuvent y accéder simultanément."
+        },
+        {
+          "key": "C",
+          "text": "Elle ne contient jamais de ressource partagée."
+        },
+        {
+          "key": "D",
+          "text": "Elle supprime automatiquement les processus bloqués."
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "A",
+      "correctAnswerRaw": "✅ Réponse correcte : A",
+      "explanation": "Une section critique contient du code qui manipule une ressource partagée. L'exclusion mutuelle garantit qu'un seul processus y entre à la fois, pour éviter les incohérences.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** L'exclusion mutuelle ne garantit pas l'absence d'interblocage. Il faut aussi éviter la famine et respecter la progression des processus."
+    },
+    {
+      "id": 58,
+      "partTitle": "PARTIE 3 : Systèmes et Réseaux",
+      "prompt": "**Que fait l'opération `P` (wait) sur un sémaphore ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Elle incrémente la valeur du sémaphore."
+        },
+        {
+          "key": "B",
+          "text": "Elle décrémente la valeur et bloque le processus si la valeur devient négative."
+        },
+        {
+          "key": "C",
+          "text": "Elle remet le sémaphore à zéro."
+        },
+        {
+          "key": "D",
+          "text": "Elle supprime le sémaphore."
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctAnswerRaw": "✅ Réponse correcte : B",
+      "explanation": "`P` décrémente le sémaphore. Si la valeur devient négative, le processus est bloqué jusqu'à ce qu'un autre processus effectue `V`. `V` incrémente et réveille un processus en attente.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** `P` est aussi appelé `wait` ou `down` ; `V` est appelé `signal` ou `up`. Ne confonds pas les deux : `P` réserve, `V` libère."
+    },
+    {
+      "id": 59,
+      "partTitle": "PARTIE 3 : Systèmes et Réseaux",
+      "prompt": "**Parmi les propositions suivantes, laquelle n'est pas une condition nécessaire à un interblocage (deadlock) au sens de Coffman ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "L'exclusion mutuelle"
+        },
+        {
+          "key": "B",
+          "text": "L'attente circulaire"
+        },
+        {
+          "key": "C",
+          "text": "La préemption obligatoire des ressources"
+        },
+        {
+          "key": "D",
+          "text": "La conservation et l'attente (hold and wait)"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctAnswerRaw": "✅ Réponse correcte : C",
+      "explanation": "Les quatre conditions de Coffman sont : exclusion mutuelle, conservation et attente, non-préemption et attente circulaire. La préemption obligatoire n'en fait pas partie ; c'est justement l'absence de préemption qui favorise le deadlock.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** Pour éviter un interblocage, on peut casser une des quatre conditions, par exemple en autorisant la préemption ou en imposant un ordre global d'allocation des ressources."
+    },
+    {
+      "id": 60,
+      "partTitle": "PARTIE 3 : Systèmes et Réseaux",
+      "prompt": "Dans un système paginé, la taille d'une page est de `4 Ko` (`4096` octets). On veut accéder à la page numéro `5`, à l'offset `200`.\n**Quelle est l'adresse physique correspondante ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "5 200"
+        },
+        {
+          "key": "B",
+          "text": "4 296"
+        },
+        {
+          "key": "C",
+          "text": "20 480"
+        },
+        {
+          "key": "D",
+          "text": "20 680"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "D",
+      "correctAnswerRaw": "✅ Réponse correcte : D (`20 680`)",
+      "explanation": "L'adresse physique se calcule par `numéro_de_page × taille_de_page + offset` :\n  `5 × 4096 + 200 = 20 480 + 200 = 20 680`.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** L'offset doit être inférieur à la taille de la page. Ici, `200 < 4096`, donc l'adresse est valide. Ne multiplie pas l'offset par la taille de la page."
+    },
+    {
+      "id": 61,
+      "partTitle": "PARTIE 3 : Systèmes et Réseaux",
+      "prompt": "**Quel type de fragmentation est provoqué par des partitions de taille variable en mémoire ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "La fragmentation interne"
+        },
+        {
+          "key": "B",
+          "text": "Aucune fragmentation"
+        },
+        {
+          "key": "C",
+          "text": "La fragmentation double"
+        },
+        {
+          "key": "D",
+          "text": "La fragmentation de pagination"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "E",
+      "correctAnswerRaw": "✅ Réponse correcte : E (la fragmentation externe)",
+      "explanation": "Avec des partitions de taille variable, des trous libres apparaissent entre les blocs alloués. Ces trous sont parfois trop petits pour accueillir un nouveau processus, même si la mémoire libre totale est suffisante : c'est la **fragmentation externe**.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** La fragmentation interne concerne l'espace perdu **à l'intérieur** d'un bloc alloué, typiquement avec des pages de taille fixe. La fragmentation externe concerne des trous **entre** les blocs."
+    },
+    {
+      "id": 62,
+      "partTitle": "PARTIE 3 : Systèmes et Réseaux",
+      "prompt": "**Que signifient les permissions Linux `754` appliquées à un fichier ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "`rwxr-xr--`"
+        },
+        {
+          "key": "B",
+          "text": "`rwxr--r--`"
+        },
+        {
+          "key": "C",
+          "text": "`rw-r-xr--`"
+        },
+        {
+          "key": "D",
+          "text": "`rwxrwxr--`"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "A",
+      "correctAnswerRaw": "✅ Réponse correcte : A (`rwxr-xr--`)",
+      "explanation": "Les droits sont lus par groupes de trois chiffres :\n  * `7` = `rwx` pour le propriétaire.\n  * `5` = `r-x` pour le groupe.\n  * `4` = `r--` pour les autres.\n  * Résultat : `rwxr-xr--`.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** `4` = lecture, `2` = écriture, `1` = exécution. On additionne les droits : `7 = 4+2+1`, `5 = 4+1`, `4 = 4`. La commande `umask` définit les permissions retirées par défaut lors de la création d'un fichier ou d'un répertoire."
+    },
+    {
+      "id": 63,
+      "partTitle": "PARTIE 3 : Systèmes et Réseaux",
+      "prompt": "**Quelles commandes Linux créent respectivement un lien symbolique et une archive compressée avec gzip ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "`chmod` et `grep`"
+        },
+        {
+          "key": "B",
+          "text": "`ln -s` et `tar -czf`"
+        },
+        {
+          "key": "C",
+          "text": "`cp -s` et `zip -r`"
+        },
+        {
+          "key": "D",
+          "text": "`mv` et `gzip`"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctAnswerRaw": "✅ Réponse correcte : B",
+      "explanation": "`ln -s cible lien` crée un lien symbolique. `tar -czf archive.tar.gz dossier` crée une archive `tar` compressée avec `gzip` (`-c` créer, `-z` gzip, `-f` fichier).",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** `ln` sans `-s` crée un lien **physique**, qui ne peut pas traverser les systèmes de fichiers et ne peut pas pointer vers un répertoire. `tar -xzf` sert à extraire, pas à créer."
+    },
+    {
+      "id": 64,
+      "partTitle": "PARTIE 3 : Systèmes et Réseaux",
+      "prompt": "**Quelle commande Windows permet d'interroger le serveur DNS pour résoudre un nom de domaine ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "`ipconfig`"
+        },
+        {
+          "key": "B",
+          "text": "`tracert`"
+        },
+        {
+          "key": "C",
+          "text": "`nslookup`"
+        },
+        {
+          "key": "D",
+          "text": "`arp -a`"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctAnswerRaw": "✅ Réponse correcte : C (`nslookup`)",
+      "explanation": "`nslookup exemple.com` interroge le DNS et affiche l'adresse IP associée au nom. `ipconfig /all` affiche la configuration réseau, `tracert` trace la route, `arp -a` affiche le cache ARP et `route print` affiche la table de routage.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** `ping` teste la connectivité mais ne montre pas directement la résolution DNS détaillée. `nslookup` est l'outil spécifique pour interroger les enregistrements DNS."
+    },
+    {
+      "id": 65,
+      "partTitle": "PARTIE 3 : Systèmes et Réseaux",
+      "prompt": "**Parmi les adresses IPv4 suivantes, laquelle appartient à une plage privée ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "`8.8.8.8`"
+        },
+        {
+          "key": "B",
+          "text": "`172.15.0.1`"
+        },
+        {
+          "key": "C",
+          "text": "`192.169.1.1`"
+        },
+        {
+          "key": "D",
+          "text": "`192.168.1.10`"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "D",
+      "correctAnswerRaw": "✅ Réponse correcte : D (`192.168.1.10`)",
+      "explanation": "Les plages privées IPv4 sont `10.0.0.0/8`, `172.16.0.0/12` et `192.168.0.0/16`. `192.168.1.10` appartient donc au réseau privé `192.168.0.0/16`.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** `172.15.0.1` est publique : la plage privée commence à `172.16.0.0`. `192.169.1.1` est également publique : seule la plage `192.168.x.x` est privée."
+    },
+    {
+      "id": 66,
+      "partTitle": "PARTIE 3 : Systèmes et Réseaux",
+      "prompt": "**Que vaut le nombre `11110010` interprété comme un entier signé sur 8 bits en complément à deux ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "242"
+        },
+        {
+          "key": "B",
+          "text": "-14"
+        },
+        {
+          "key": "C",
+          "text": "-13"
+        },
+        {
+          "key": "D",
+          "text": "14"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctAnswerRaw": "✅ Réponse correcte : B (`-14`)",
+      "explanation": "Le bit de poids fort vaut `1`, donc le nombre est négatif. On inverse les bits : `00001101`, puis on ajoute `1` : `00001110`, soit `14`. Le résultat est donc `-14`.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** Ne lis pas directement `242` : en complément à deux sur 8 bits, `11110010` est négatif. La valeur non signée serait `242`, mais la valeur signée est `-14`."
+    },
+    {
+      "id": 67,
+      "partTitle": "PARTIE 3 : Systèmes et Réseaux",
+      "prompt": "**Quelle plage d'adresses est utilisée par APIPA lorsqu'un client DHCP ne trouve aucun serveur ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "`127.0.0.1`"
+        },
+        {
+          "key": "B",
+          "text": "`10.0.0.0/8`"
+        },
+        {
+          "key": "C",
+          "text": "`192.168.0.0/16`"
+        },
+        {
+          "key": "D",
+          "text": "`224.0.0.0/4`"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "E",
+      "correctAnswerRaw": "✅ Réponse correcte : E (la plage APIPA est `169.254.0.0/16`)",
+      "explanation": "Quand un client DHCP ne reçoit pas de bail, Windows (et d'autres systèmes) s'attribue une adresse dans `169.254.0.0/16`. C'est le lien-local, aussi appelé APIPA.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** Une adresse en `169.254.x.x` est souvent le signe d'un problème DHCP. `127.0.0.1` est la boucle locale, pas APIPA."
+    },
+    {
+      "id": 68,
+      "partTitle": "PARTIE 3 : Systèmes et Réseaux",
+      "prompt": "**Quelle est la plage des entiers représentables sur `n` bits en complément à deux ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "`0` à `2^n - 1`"
+        },
+        {
+          "key": "B",
+          "text": "`-2^n` à `2^n - 1`"
+        },
+        {
+          "key": "C",
+          "text": "`-2^(n-1)` à `2^(n-1) - 1`"
+        },
+        {
+          "key": "D",
+          "text": "`-2^(n-1) - 1` à `2^(n-1)`"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctAnswerRaw": "✅ Réponse correcte : C",
+      "explanation": "En complément à deux, il y a `2^n` valeurs : `2^(n-1)` valeurs négatives et `2^(n-1)` valeurs positives ou nulles. La plage est donc `-2^(n-1)` à `2^(n-1) - 1`.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** Sur 8 bits, la plage est `-128` à `127`, pas `-127` à `128`. Le zéro occupe une des valeurs positives, ce qui explique l'asymétrie."
+    },
+    {
+      "id": 69,
+      "partTitle": "PARTIE 3 : Systèmes et Réseaux",
+      "prompt": "**Dans le NAT avec surcharge (PAT), quel élément permet de distinguer plusieurs connexions qui partagent la même adresse IP publique ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Le numéro de port"
+        },
+        {
+          "key": "B",
+          "text": "L'adresse MAC"
+        },
+        {
+          "key": "C",
+          "text": "Uniquement l'adresse IP de destination"
+        },
+        {
+          "key": "D",
+          "text": "Le nom DNS"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "A",
+      "correctAnswerRaw": "✅ Réponse correcte : A (le numéro de port)",
+      "explanation": "Le PAT traduit les adresses privées vers une seule adresse publique et utilise des numéros de port différents pour chaque connexion. La table NAT associe `IP privée + port` à `IP publique + port`.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** Le NAT simple traduit une adresse IP vers une autre, sans partage. Le PAT, aussi appelé NAT avec surcharge, permet à plusieurs machines de partager une seule adresse publique grâce aux ports."
+    },
+    {
+      "id": 70,
+      "partTitle": "PARTIE 3 : Systèmes et Réseaux",
+      "prompt": "**Quelle est la répartition des bits dans un nombre IEEE 754 en simple précision ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "1 bit de signe, 7 bits d'exposant, 24 bits de mantisse"
+        },
+        {
+          "key": "B",
+          "text": "1 bit de signe, 8 bits d'exposant, 24 bits de mantisse"
+        },
+        {
+          "key": "C",
+          "text": "1 bit de signe, 11 bits d'exposant, 20 bits de mantisse"
+        },
+        {
+          "key": "D",
+          "text": "1 bit de signe, 8 bits d'exposant, 23 bits de mantisse"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "D",
+      "correctAnswerRaw": "✅ Réponse correcte : D (1 + 8 + 23 = 32 bits)",
+      "explanation": "En simple précision, le format utilise 32 bits : 1 bit de signe, 8 bits pour l'exposant et 23 bits pour la mantisse. L'exposant est biaisé par 127.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** En double précision, on utilise 1 bit de signe, 11 bits d'exposant et 52 bits de mantisse, soit 64 bits. Ne mélange pas les deux formats."
+    },
+    {
+      "id": 71,
+      "partTitle": "PARTIE 3 : Systèmes et Réseaux",
+      "prompt": "On dispose du réseau `192.168.1.0/24`. On veut créer un sous-réseau pouvant accueillir au moins `50` hôtes.\n**Quel masque faut-il choisir ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "`/24`"
+        },
+        {
+          "key": "B",
+          "text": "`/26`"
+        },
+        {
+          "key": "C",
+          "text": "`/27`"
+        },
+        {
+          "key": "D",
+          "text": "`/28`"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctAnswerRaw": "✅ Réponse correcte : B (`/26`)",
+      "explanation": "Un masque `/26` laisse `6` bits pour les hôtes : `2^6 - 2 = 62` adresses utilisables, ce qui suffit pour 50 hôtes. Un `/27` ne laisserait que `2^5 - 2 = 30` adresses, insuffisant.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** On retire toujours 2 adresses (réseau et diffusion). Ne choisis pas le masque en fonction du nombre total d'adresses, mais du nombre d'hôtes **utilisables**."
+    },
+    {
+      "id": 72,
+      "partTitle": "PARTIE 3 : Systèmes et Réseaux",
+      "prompt": "Un processeur possède un bus d'adresses de `20 bits` et un bus de données de `8 bits`.\n**Quelle est la capacité mémoire maximale adressable en Mo (1 Mo = 1 048 576 octets) ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "512 Ko"
+        },
+        {
+          "key": "B",
+          "text": "2 Mo"
+        },
+        {
+          "key": "C",
+          "text": "1 Ko"
+        },
+        {
+          "key": "D",
+          "text": "8 Mo"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "E",
+      "correctAnswerRaw": "✅ Réponse correcte : E (la capacité exacte est `1 Mo`)",
+      "explanation": "Le bus d'adresses de `20 bits` permet `2^20 = 1 048 576` adresses. Chaque adresse pointe vers un mot de `8 bits = 1 octet`. La capacité est donc `1 048 576 octets = 1 Mo`.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** La capacité dépend du nombre d'adresses **et** de la taille du mot. Avec un bus de données de 16 bits, la capacité aurait été de 2 Mo pour 20 bits d'adresse."
+    },
+    {
+      "id": 73,
+      "partTitle": "PARTIE 3 : Systèmes et Réseaux",
+      "prompt": "On considère la table de routage suivante :\n\n{{TABLE}}\n\n**Vers quelle interface est envoyé un paquet destiné à `10.1.2.5` ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "A"
+        },
+        {
+          "key": "B",
+          "text": "B"
+        },
+        {
+          "key": "C",
+          "text": "C"
+        },
+        {
+          "key": "D",
+          "text": "D"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctAnswerRaw": "✅ Réponse correcte : C (interface C)",
+      "explanation": "Le routeur choisit la route la plus spécifique, c'est-à-dire celle dont le préfixe est le plus long. `10.1.2.0/24` correspond exactement au réseau de l'adresse `10.1.2.5` et est plus spécifique que `/8` et `/16`.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** La route par défaut `0.0.0.0/0` ne sert que si aucune autre route ne correspond. Ici, la route `/24` est la plus précise.",
+      "tableMarkdown": "| Destination | Interface |\n|---|---|\n| `10.0.0.0/8` | A |\n| `10.1.0.0/16` | B |\n| `10.1.2.0/24` | C |\n| `0.0.0.0/0` | D |"
+    },
+    {
+      "id": 74,
+      "partTitle": "PARTIE 3 : Systèmes et Réseaux",
+      "prompt": "Une mémoire de `1 Mo` est construite avec des puces de `128 Ko` chacune.\n**Combien de puces faut-il ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "8"
+        },
+        {
+          "key": "B",
+          "text": "4"
+        },
+        {
+          "key": "C",
+          "text": "16"
+        },
+        {
+          "key": "D",
+          "text": "2"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "A",
+      "correctAnswerRaw": "✅ Réponse correcte : A (`8`)",
+      "explanation": "`1 Mo = 1024 Ko`. Chaque puce fait `128 Ko`. Nombre de puces : `1024 / 128 = 8`.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** Vérifie que les unités sont identiques avant de diviser. Ne compare pas des Mo et des Ko sans conversion. Le nombre de puces dépend aussi de l'organisation des bits, pas seulement de la capacité."
+    },
+    {
+      "id": 75,
+      "partTitle": "PARTIE 3 : Systèmes et Réseaux",
+      "prompt": "**Quelle est la particularité de la route par défaut et de la métrique dans une table de routage ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "La route par défaut est `255.255.255.255` et la métrique la plus élevée est toujours préférée."
+        },
+        {
+          "key": "B",
+          "text": "La route par défaut est `127.0.0.1` et la métrique n'a aucune importance."
+        },
+        {
+          "key": "C",
+          "text": "La route par défaut est toujours la première ligne et la métrique la plus haute gagne."
+        },
+        {
+          "key": "D",
+          "text": "La route par défaut est `0.0.0.0/0` et, à destinations égales, la métrique la plus faible est préférée."
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "D",
+      "correctAnswerRaw": "✅ Réponse correcte : D",
+      "explanation": "La route par défaut `0.0.0.0/0` correspond à toutes les destinations. Quand plusieurs routes mènent à la même destination, le routeur préfère généralement la métrique la plus faible, car elle représente un chemin plus court ou plus fiable.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** Une métrique faible est meilleure qu'une métrique élevée. Ne confonds pas la métrique avec le nombre de sauts : selon le protocole, elle peut être exprimée en sauts, en coût ou en bande passante."
+    },
+    {
+      "id": 76,
+      "partTitle": "PARTIE 3 : Systèmes et Réseaux",
+      "prompt": "**Quelle affirmation décrit correctement le sens des bus d'adresses et de données ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Le bus d'adresses est bidirectionnel et le bus de données est unidirectionnel."
+        },
+        {
+          "key": "B",
+          "text": "Les deux bus sont unidirectionnels."
+        },
+        {
+          "key": "C",
+          "text": "Le bus d'adresses est bidirectionnel et le bus de données est bidirectionnel."
+        },
+        {
+          "key": "D",
+          "text": "Le bus de données est unidirectionnel et le bus d'adresses est bidirectionnel."
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "E",
+      "correctAnswerRaw": "✅ Réponse correcte : E (le bus d'adresses est unidirectionnel, le bus de données est bidirectionnel)",
+      "explanation": "Le processeur envoie une adresse vers la mémoire : le bus d'adresses est **unidirectionnel**. Les données circulent dans les deux sens, en lecture et en écriture : le bus de données est **bidirectionnel**.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** Le bus de contrôle est également unidirectionnel ou bidirectionnel selon les signaux, mais il transporte des commandes, pas des adresses. Ne confonds pas les trois bus."
+    },
+    {
+      "id": 77,
+      "partTitle": "PARTIE 3 : Systèmes et Réseaux",
+      "prompt": "**Quelle affirmation est correcte à propos d'UDP par rapport à TCP ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "TCP ne nécessite aucune connexion."
+        },
+        {
+          "key": "B",
+          "text": "UDP garantit l'ordre et la livraison des paquets."
+        },
+        {
+          "key": "C",
+          "text": "TCP est toujours plus rapide qu'UDP."
+        },
+        {
+          "key": "D",
+          "text": "UDP établit une session avant d'envoyer les données."
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "E",
+      "correctAnswerRaw": "✅ Réponse correcte : E (UDP ne garantit ni la livraison ni l'ordre)",
+      "explanation": "UDP est un protocole sans connexion : il envoie les datagrammes sans accusé de réception ni retransmission. Il est rapide et léger, mais ne garantit pas la livraison, l'ordre ou l'absence de doublons.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** TCP est fiable et orienté connexion ; UDP est non fiable et sans connexion. UDP est adapté au streaming, à la VoIP et au DNS, où la rapidité prime sur la perte occasionnelle."
+    },
+    {
+      "id": 78,
+      "partTitle": "PARTIE 3 : Systèmes et Réseaux",
+      "prompt": "**Quel est le rôle du bus de contrôle ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Transporter les données entre le processeur et la mémoire."
+        },
+        {
+          "key": "B",
+          "text": "Transporter les adresses mémoire."
+        },
+        {
+          "key": "C",
+          "text": "Transporter les signaux de commande comme la lecture, l'écriture, l'horloge et les interruptions."
+        },
+        {
+          "key": "D",
+          "text": "Alimenter électriquement les composants."
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctAnswerRaw": "✅ Réponse correcte : C",
+      "explanation": "Le bus de contrôle transporte les signaux qui synchronisent et commandent les échanges : lecture/écriture, validation d'adresse, horloge, interruption, reset.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** Le bus de données transporte les informations, le bus d'adresses indique où lire ou écrire, et le bus de contrôle indique **quoi faire** et **quand**."
+    },
+    {
+      "id": 79,
+      "partTitle": "PARTIE 3 : Systèmes et Réseaux",
+      "prompt": "**Quel est l'ordre correct des messages DHCP lors de l'attribution d'une adresse IP ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Discover, Offer, Request, Acknowledge (DORA)"
+        },
+        {
+          "key": "B",
+          "text": "ARP, DNS, DHCP, TCP"
+        },
+        {
+          "key": "C",
+          "text": "Request, Discover, Offer, Acknowledge"
+        },
+        {
+          "key": "D",
+          "text": "Offer, Discover, Acknowledge, Request"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "A",
+      "correctAnswerRaw": "✅ Réponse correcte : A (DORA)",
+      "explanation": "Le client diffuse un `DHCP Discover`, le serveur répond par un `DHCP Offer`, le client demande l'adresse avec `DHCP Request`, et le serveur confirme avec `DHCP Acknowledge`.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** Le client commence toujours par `Discover`, pas par `Request`. Retiens l'acronyme **DORA** pour l'ordre des quatre messages."
+    },
+    {
+      "id": 80,
+      "partTitle": "PARTIE 3 : Systèmes et Réseaux",
+      "prompt": "**Quelle est la valeur du biais (bias) de l'exposant en IEEE 754 simple précision ?**",
+      "choices": [
+        {
+          "key": "A",
+          "text": "128"
+        },
+        {
+          "key": "B",
+          "text": "255"
+        },
+        {
+          "key": "C",
+          "text": "1023"
+        },
+        {
+          "key": "D",
+          "text": "127"
+        },
+        {
+          "key": "E",
+          "text": "Aucune de ces réponses n'est juste"
+        }
+      ],
+      "correctAnswer": "D",
+      "correctAnswerRaw": "✅ Réponse correcte : D (`127`)",
+      "explanation": "En simple précision, l'exposant est codé sur 8 bits avec un biais de `127`. La valeur réelle de l'exposant est donc `exposant_stocké - 127`.",
+      "trapOrTip": "**⚠️ Piège à éviter / Astuce Concours :** `1023` est le biais de la double précision (11 bits d'exposant). `255` correspond à la valeur maximale d'un exposant sur 8 bits, pas au biais."
+    }
+  ]
+}
